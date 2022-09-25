@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<script src="small_example_adventure.js"></script>
+<h1>Output Log: COYA Helper</h1>
+<p>The output should be recorded below, place input into console for now</p>
+
+<div style="outline: 2px solid black">
+<div id="demo"></div>
+</div>
+
+<script>
+	fetch("small_example_adventure.json")
+		.then(response => response.json())
+		.then(data => { 
+			console.log(data)
+			document.querySelector("#demo").innerText = data.pages
+			})
+
+</script>
+</body>
+</html>

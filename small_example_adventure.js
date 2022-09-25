@@ -1,3 +1,4 @@
+var small_example_adventure = toString(
 {
 	"pages": [{
 			"short_name": "Example Room Object, does not need to be unique, just serves as a way to help keep the room human trackable",
@@ -108,3 +109,4 @@
 		}
 	]
 }
+);
