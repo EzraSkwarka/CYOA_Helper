@@ -55,24 +55,16 @@
 <body>
 <!-- <h1>Output Log: COYA Helper</h1> -->
 
-<div>
 <div id="gameText"></div>
 
 <div id="inputBox">
 	<input type="text" id="roomNumber">
 	<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
 </div>
-</div>
-
-
-<div id="app"></div>
 
 
 <script>
 	requestRoom(1);
-	typeRoom();
-
-
 </script>
 </body>
-</html>
+</html> 	

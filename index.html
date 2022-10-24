@@ -24,13 +24,7 @@
 		  left: 0;
 		  width: 100vw;
 		  height: 100vh;
-		  background: repeating-linear-gradient(
-			0deg,
-			rgba(black, 0.15),
-			rgba(black, 0.15) 1px,
-			transparent 1px,
-			transparent 2px
-			);
+		  background: repeating-linear-gradient(0deg, rgba(black, 0.15), rgba(black, 0.15) 1px, transparent 1px, transparent 2px);
 		}
 	
 		#gameText {
@@ -55,24 +49,16 @@
 <body>
 <!-- <h1>Output Log: COYA Helper</h1> -->
 
-<div>
 <div id="gameText"></div>
 
 <div id="inputBox">
 	<input type="text" id="roomNumber">
 	<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
 </div>
-</div>
-
-
-<div id="app"></div>
 
 
 <script>
 	requestRoom(1);
-	typeRoom();
-
-
 </script>
 </body>
 </html> 	

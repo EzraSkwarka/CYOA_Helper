@@ -73,23 +73,23 @@ function typeRoom(roomData, mainContainer) {
 	var customNodeCreator = function(character) {
 		return document.createTextNode(character);
 	}
+	var div = document.createElement("div");
+	mainContainer.appendChild(div);
 
-	var typewriter = new Typewriter(mainContainer, {
+	var typewriter = new Typewriter(div, {
 	loop: false,
-	delay: 75,
+	delay: 25,
 	onCreateTextNode: customNodeCreator,
 	});
 
 	var textString = String((
-		roomData.ID + '   ' + roomData.short_name + '<br><br>' +
+		roomData.ID + ' - ' + roomData.short_name + '<br><br>' +
 		roomData.entry_text + '<br><br>' +
-		roomData.exit_text + '<br><br>'
-		
-		
-		
+		roomData.exit_text
 		));
 	typewriter
 	.typeString(textString)
+	.typeString('test')
 	.pauseFor(300)
 	.start();
 }

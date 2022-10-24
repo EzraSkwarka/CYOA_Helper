@@ -21,3 +21,9 @@ https://itnext.io/how-to-create-interactive-terminal-like-website-888bb0972288
 
 Page Background:
 https://lostandtaken.com/downloads/20th-century-deconstructed-vintage-book-texture-5/
+
+Typewriter:
+https://www.w3schools.com/howto/howto_js_typewriter.asp
+
+Old school look:
+https://css-tricks.com/old-timey-terminal-styling/
