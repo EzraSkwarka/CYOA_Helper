@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="Scripts/roomReader.js"></script>
 </head>
 
 <body>
@@ -9,32 +10,13 @@
 <div style="outline: 2px solid black">
 <div id="demo"></div>
 </div>
+<input type="text" id="roomNumber">
+<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
+
 
 
 <script>
-	fetch("Assets/small_example_adventure.json")
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-        function appendData(data) {
-            var mainContainer = document.getElementById("demo");
-            for (var i = 0; i < data.length; i++) {
-				if(data[i].ID > 0) {
-					//Create new container
-					var div = document.createElement("div");
-					//Formet Text
-					div.innerHTML = 'Name: ' + data[i].short_name;
-					//Append to Parent
-					mainContainer.appendChild(div);
-				}
-            }
-        }
+	requestRoom(0)
 
 </script>
 </body>

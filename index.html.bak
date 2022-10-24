@@ -1,41 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="Scripts/roomReader.js"></script>
 </head>
 
 <body>
 <h1>Output Log: COYA Helper</h1>
-<p>The output should be recorded below, place input into console for now</p>
 
 <div style="outline: 2px solid black">
 <div id="demo"></div>
 </div>
+<input type="text" id="roomNumber">
+<input id="clickMe" type="button" value="Go" onclick="requestRoom(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
+
 
 
 <script>
-	fetch("Assets/small_example_adventure.json")
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-        function appendData(data) {
-            var mainContainer = document.getElementById("demo");
-            for (var i = 0; i < data.length; i++) {
-				if(data[i].ID > 0) {
-					//Create new container
-					var div = document.createElement("div");
-					//Formet Text
-					div.innerHTML = 'Name: ' + data[i].short_name;
-					//Append to Parent
-					mainContainer.appendChild(div);
-				}
-            }
-        }
+	requestRoom(0)
 
 </script>
 </body>
