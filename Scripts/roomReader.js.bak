@@ -13,12 +13,7 @@ function requestRoom(ID_target) {
             var mainContainer = document.getElementById("demo");
             for (var i = 0; i < data.length; i++) {
 				if(data[i].ID == ID_target) {
-					//Create new container
-					var div = document.createElement("div");
-					//Formet Text
-					div.innerHTML = 'Name: ' + data[i].short_name;
-					//Append to Parent
-					mainContainer.appendChild(div);
+					printRoom(data[i], mainContainer)
 				}
             }
         }
@@ -53,4 +48,22 @@ function requestRoomRange(ID_target_min, ID_target_max) {
 
 function readRoomInput (x) {
 	requestRoom(x);
+	//will need to make sure room ID 'x' exists and if not output something to the user so they know why it failed
+}
+
+function printRoom(roomData, mainContainer) {
+	//Create new container
+	var div = document.createElement("div");
+	//Formet Text
+	div.innerHTML = (
+		roomData.ID + '   ' + roomData.short_name + '<br><br>' +
+		roomData.entry_text + '<br><br>' +
+		roomData.exit_text
+		
+		
+		
+		);
+	//Append to Parent
+	mainContainer.appendChild(div);
+	
 }
