@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="Scripts/roomReader.js"></script>
+	<script src="Scripts/roomReader.js"></script>
+	
+	<style>
+		#gameText {
+			color: lime
+		}
+	
+		.roomNumber {
+			color: pink;
+		}
+	
+	</style>
 </head>
 
-<body>
-<h1>Output Log: COYA Helper</h1>
+<body style="background-color: black;">
+<!-- <h1>Output Log: COYA Helper</h1> -->
 
-<div style="background-image: url('Assets/bookPage.jpg'); height:900px; width:780px">
-<div id="demo"></div>
+<div>
+<div id="gameText"></div>
+
+<div id="inputBox" style="
+		position:fixed;
+		left:0px;
+		bottom:0px;
+		height:30px;
+		width:100%;">
+	<input type="text" id="roomNumber">
+	<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
 </div>
-<input type="text" id="roomNumber">
-<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
+</div>
+
 
 
 

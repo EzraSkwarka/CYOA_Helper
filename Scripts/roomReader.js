@@ -10,7 +10,7 @@ function requestRoom(ID_target) {
                 console.log('error: ' + err);
             });
         function appendData(data) {
-            var mainContainer = document.getElementById("demo");
+            var mainContainer = document.getElementById("gameText");
             for (var i = 0; i < data.length; i++) {
 				if(data[i].ID == ID_target) {
 					printRoom(data[i], mainContainer)
@@ -31,7 +31,7 @@ function requestRoomRange(ID_target_min, ID_target_max) {
                 console.log('error: ' + err);
             });
         function appendData(data) {
-            var mainContainer = document.getElementById("demo");
+            var mainContainer = document.getElementById("gameText");
             for (var i = 0; i < data.length; i++) {
 				if(and((data[i].ID >= ID_target_min),(data[i].ID <= ID_target_max)) ) {
 					//Create new container

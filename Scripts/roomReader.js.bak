@@ -58,7 +58,7 @@ function printRoom(roomData, mainContainer) {
 	div.innerHTML = (
 		roomData.ID + '   ' + roomData.short_name + '<br><br>' +
 		roomData.entry_text + '<br><br>' +
-		roomData.exit_text
+		roomData.exit_text + '<br><br>'
 		
 		
 		
