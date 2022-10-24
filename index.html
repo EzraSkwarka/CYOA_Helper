@@ -5,7 +5,6 @@
 
 <body>
 <h1>Output Log: COYA Helper</h1>
-<p>The output should be recorded below, place input into console for now</p>
 
 <div style="outline: 2px solid black">
 <div id="demo"></div>
@@ -26,12 +25,14 @@
         function appendData(data) {
             var mainContainer = document.getElementById("demo");
             for (var i = 0; i < data.length; i++) {
-				//Create new container
-                var div = document.createElement("div");
-				//Formet Text
-                div.innerHTML = 'Name: ' + data[i].short_name;
-				//Append to Parent
-                mainContainer.appendChild(div);
+				if(data[i].ID > 0) {
+					//Create new container
+					var div = document.createElement("div");
+					//Formet Text
+					div.innerHTML = 'Name: ' + data[i].short_name;
+					//Append to Parent
+					mainContainer.appendChild(div);
+				}
             }
         }
 
