@@ -15,3 +15,6 @@ https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_t
 
 Understanding Fetch:
 https://howtocreateapps.com/fetch-and-display-json-html-javascript/
+
+Page Background:
+https://lostandtaken.com/downloads/20th-century-deconstructed-vintage-book-texture-5/

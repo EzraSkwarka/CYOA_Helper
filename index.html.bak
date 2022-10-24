@@ -7,11 +7,11 @@
 <body>
 <h1>Output Log: COYA Helper</h1>
 
-<div style="outline: 2px solid black">
+<div style="outline: 2px solid black; background-image: url('Assets/bookPage.jpg'); height:900px; width:780px">
 <div id="demo"></div>
 </div>
 <input type="text" id="roomNumber">
-<input id="clickMe" type="button" value="Go" onclick="requestRoom(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
+<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
 
 
 
