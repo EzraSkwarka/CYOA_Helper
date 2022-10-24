@@ -13,7 +13,7 @@ function requestRoom(ID_target) {
             var mainContainer = document.getElementById("gameText");
             for (var i = 0; i < data.length; i++) {
 				if(data[i].ID == ID_target) {
-					printRoom(data[i], mainContainer)
+					typeRoom(data[i], mainContainer)
 				}
             }
         }
@@ -66,4 +66,30 @@ function printRoom(roomData, mainContainer) {
 	//Append to Parent
 	mainContainer.appendChild(div);
 	
+}
+
+function typeRoom(roomData, mainContainer) {
+
+	var customNodeCreator = function(character) {
+		return document.createTextNode(character);
+	}
+
+	var typewriter = new Typewriter(mainContainer, {
+	loop: false,
+	delay: 75,
+	onCreateTextNode: customNodeCreator,
+	});
+
+	var textString = String((
+		roomData.ID + '   ' + roomData.short_name + '<br><br>' +
+		roomData.entry_text + '<br><br>' +
+		roomData.exit_text + '<br><br>'
+		
+		
+		
+		));
+	typewriter
+	.typeString(textString)
+	.pauseFor(300)
+	.start();
 }

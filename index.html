@@ -2,42 +2,77 @@
 <html>
 <head>
 	<script src="Scripts/roomReader.js"></script>
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 	
 	<style>
+		body {
+			background-color: black;
+			background-image: radial-gradient(
+			rgba(0, 150, 0, 0.75), black 120%
+			);
+			height: 100vh;
+			color: white;
+			font: 1.3rem Inconsolata, monospace;
+			text-shadow: 0 0 5px #C8C8C8;
+			overflow: hidden;
+		}
+		
+		body::after {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100vw;
+		  height: 100vh;
+		  background: repeating-linear-gradient(
+			0deg,
+			rgba(black, 0.15),
+			rgba(black, 0.15) 1px,
+			transparent 1px,
+			transparent 2px
+			);
+		}
+	
 		#gameText {
-			color: lime
+			color: white
 		}
 	
 		.roomNumber {
-			color: pink;
+			color: blue;
+		}
+		
+		.inputBox {
+			position:fixed;
+			left:0px;
+			bottom:0px;
+			height:30px;
+			width:100%;
 		}
 	
 	</style>
 </head>
 
-<body style="background-color: black;">
+<body>
 <!-- <h1>Output Log: COYA Helper</h1> -->
 
 <div>
 <div id="gameText"></div>
 
-<div id="inputBox" style="
-		position:fixed;
-		left:0px;
-		bottom:0px;
-		height:30px;
-		width:100%;">
+<div id="inputBox">
 	<input type="text" id="roomNumber">
 	<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
 </div>
 </div>
 
 
+<div id="app"></div>
 
 
 <script>
-	requestRoom(1)
+	requestRoom(1);
+	typeRoom();
+
 
 </script>
 </body>
-</html>
+</html> 	
