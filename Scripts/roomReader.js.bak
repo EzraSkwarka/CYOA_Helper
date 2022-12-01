@@ -78,7 +78,7 @@ function typeRoom(roomData, mainContainer) {
 	// console.log("Child: " + String(div))
 
 
-	//Formet Text
+	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
 	var textString = String((
 		roomData.ID + ' - ' + roomData.short_name + '<br><br>' +
 		roomData.entry_text + '<br><br>' +

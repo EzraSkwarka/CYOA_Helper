@@ -87,7 +87,7 @@ function typeRoom(roomData, mainContainer) {
 	// console.log("textString: " + textString)
 	
 	//Append to Parent
-	appearChars(textString, div, 20)
+	appearChars(textString, div, 10)
 	
 }
 
