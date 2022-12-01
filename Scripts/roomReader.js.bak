@@ -1,4 +1,4 @@
-function requestRoom(ID_target) {
+function requestRoom(ID_target, print = false) {
 	fetch("Assets/small_example_adventure.json")
             .then(function (response) {
                 return response.json();
@@ -87,7 +87,7 @@ function typeRoom(roomData, mainContainer) {
 	// console.log("textString: " + textString)
 	
 	//Append to Parent
-	appearChars(textString, div, 20)
+	appearChars(textString, div, 10)
 	
 }
 

@@ -13,6 +13,7 @@ TODO:
 > ~ text formating in printout
 > ~ change '[home ~/]' to be the name of the currently loaded book
 > ~ make room numbers clickable
+> ~ move the 'open Sidebar' button into the side bar and make it an arrow https://codepen.io/aydin4ik/pen/QqEKmq
 
 Strech goals:
 

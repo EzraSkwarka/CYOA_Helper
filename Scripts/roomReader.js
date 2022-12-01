@@ -1,4 +1,4 @@
-function requestRoom(ID_target) {
+function requestRoom(ID_target, print = false) {
 	fetch("Assets/small_example_adventure.json")
             .then(function (response) {
                 return response.json();
@@ -14,7 +14,11 @@ function requestRoom(ID_target) {
             for (var i = 0; i < data.length; i++) {
 				if(data[i].ID == ID_target) {
 					// console.log("Typing Room " + String(data[i]) + "in element " + String(mainContainer))
-					typeRoom(data[i], mainContainer)
+					if (print) {
+						printRoom(data[i], mainContainer)
+					} else {
+						typeRoom(data[i], mainContainer)
+					}
 				}
             }
         }
