@@ -13,7 +13,7 @@ function requestRoom(ID_target) {
             var mainContainer = document.getElementById("gameText");
             for (var i = 0; i < data.length; i++) {
 				if(data[i].ID == ID_target) {
-					console.log("Typing Room " + String(data[i]) + "in element " + String(mainContainer))
+					// console.log("Typing Room " + String(data[i]) + "in element " + String(mainContainer))
 					typeRoom(data[i], mainContainer)
 				}
             }

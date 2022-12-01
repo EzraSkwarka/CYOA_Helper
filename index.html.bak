@@ -22,6 +22,7 @@
 		
 		body::after {
 		  content: "";
+		  z-index: -1;
 		  position: absolute;
 		  top: 0;
 		  left: 0;
@@ -38,12 +39,34 @@
 			color: blue;
 		}
 		
-		.inputBox {
-			position:fixed;
+		#inputContianer {
+			position:absolute;
 			left:0px;
 			bottom:0px;
 			height:30px;
 			width:100%;
+		}
+		
+		#inputBox {
+			width: 95vw;
+			white-space: nowrap;
+		}
+		
+		#inputBoxLeft {
+			float: left;
+		}
+		
+		#inputBoxRight {
+			height: 10px;
+			margin-right: 90px;
+		}
+		
+		#inputBox #roomNumber{
+			width: 95vw;
+			white-space: nowrap;
+			background-color: transparent;
+			max-width: 95vw;
+			
 		}
 		
 		#Navbar {
@@ -56,8 +79,9 @@
 		
 		}
 		
-		#MainBody{
+		#main{
 			position: relative;
+			height: 93%;
 		
 		}
 		
@@ -80,10 +104,27 @@
 <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
 <div id="gameText" class="flex-box"></div>
 
+<!-- This is the players input box, the main way for them to interact -->
+<div id='inputContianer'>
 <div id="inputBox">
-	<input type="text" id="roomNumber">
-	<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);
-	document.getElementById('roomNumber').value=''" />
+	<div id="inputBoxLeft">[home ~/] </div> <!--left-->
+	<div id="inputBoxRight"><!--right-->
+		<input type="text" id="roomNumber">
+		<input id="inputTriggerButton" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);
+		document.getElementById('roomNumber').value=''" hidden>
+	</div>
+	<script>
+	<!-- via: https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp -->
+		var input = document.getElementById("roomNumber");
+			input.addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				document.getElementById("inputTriggerButton").click();
+			}
+		});
+	</script>
+
+</div>
 </div>
 </div>
 <script>
