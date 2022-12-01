@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="Scripts/roomReader.js"></script>
-	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+	<!-- Scripts -->
+	<script type="text/javascript" src="Scripts/roomReader.js" ></script>
+	<script type="text/javascript" src="Scripts/sidebar.js"></script>
+	
+	<!-- Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="Style/sidebar.css">
 	
 	<style>
 		body {
 			background-color: black;
 			background-image: radial-gradient(
-			rgba(0, 150, 0, 0.75), black 120%
+			rgba(0, 50, 0, 0.75), black 120%
 			);
 			height: 100vh;
 			color: white;
-			font: 1.3rem Inconsolata, monospace;
-			text-shadow: 0 0 5px #C8C8C8;
+			font-family: 'Courier New', monospace;
 			overflow: hidden;
 		}
 		
 		body::after {
 		  content: "";
+		  z-index: -1;
 		  position: absolute;
 		  top: 0;
 		  left: 0;
@@ -42,23 +46,50 @@
 			height:30px;
 			width:100%;
 		}
+		
+		#Navbar {
+			position: fixed;
+			bottom: 0;
+			top: 0;
+			left: 0;
+			width: 300px;
+			border: 3px solid #73AD21;
+		
+		}
+		
+		#MainBody{
+			position: relative;
+		
+		}
+		
+		.flex-box {
+			display: flex;
+			flex-direction: column;
+		
+		}
 	
 	</style>
 </head>
 
 <body>
 <!-- <h1>Output Log: COYA Helper</h1> -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
 
-<div id="gameText"></div>
+<div id='main'> 
+<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+<div id="gameText" class="flex-box"></div>
 
 <div id="inputBox">
 	<input type="text" id="roomNumber">
-	<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);document.getElementById('roomNumber').value=''" />
+	<input id="clickMe" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);
+	document.getElementById('roomNumber').value=''" />
 </div>
-
-
+</div>
 <script>
 	requestRoom(1);
+	requestRoom(2);
 </script>
 </body>
 </html> 	
