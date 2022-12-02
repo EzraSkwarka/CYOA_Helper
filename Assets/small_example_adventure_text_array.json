@@ -54,7 +54,7 @@
       "short_name":"Branching Path",
       "ID":4,
       "text_array": [
-		true, "You arrived in this room after having gone further down the hall. it is a big room that is full of 	nothing and two doors.", 
+		true, "You arrived in this room after having gone further down the hall. it is a big room that is full of nothing and two doors.", 
 		true, "You should not be able to get back to this room, this is an error: Branching Path", 
 		true, "You may either go through the Red Door (#6) or the Green Door (#5)."
 	  ],
