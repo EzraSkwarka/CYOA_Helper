@@ -135,8 +135,8 @@
 </div>
 </div>
 <script>
-	requestRoom(1);
-	requestRoom(2);
+	requestRoom(12, true);
+	<!-- requestRoom(2); -->
 </script>
 </body>
 </html> 	

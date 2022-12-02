@@ -1,5 +1,5 @@
 function requestRoom(ID_target, print = false) {
-	fetch("Assets/small_example_adventure.json")
+	fetch("Assets/small_example_adventure_text_array.json")
             .then(function (response) {
                 return response.json();
             })
@@ -61,14 +61,14 @@ function printRoom(roomData, mainContainer) {
 	//Create new container
 	var div = document.createElement("div");
 	//Formet Text
-	div.innerHTML = String((
-		roomData.ID + '   ' + roomData.short_name + '<br><br>' +
-		roomData.entry_text + '<br><br>' +
-		roomData.exit_text + '<br><br>'
-		
-		
-		
-		));
+	var textString = '';
+	for (let i = 0; i < roomData.text_array.length; i+=2) {
+		textString = textString + roomData.text_array[i + 1];
+	}
+	console.log("textString: " + textString)
+	
+	
+	div.innerHTML = textString;
 	//Append to Parent
 	mainContainer.appendChild(div);
 	
@@ -83,15 +83,19 @@ function typeRoom(roomData, mainContainer) {
 
 
 	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
-	var textString = String((
-		roomData.ID + ' - ' + roomData.short_name + '<br><br>' +
-		roomData.entry_text + '<br><br>' +
-		roomData.exit_text
-		));
-	// console.log("textString: " + textString)
+	// var textString = String((
+		// roomData.ID + ' - ' + roomData.short_name + '<br><br>' +
+		// roomData.entry_text + '<br><br>' +
+		// roomData.exit_text
+		// ));	
+	var textString = '';
+	for (let i = 0; i < roomData.text_array.length; i+=2) {
+		textString = textString + roomData.text_array[i + 1];
+		appearChars(String(roomData.text_array[i + 1]), div, 10)
+	}
+	console.log("textString: " + textString)
 	
 	//Append to Parent
-	appearChars(textString, div, 10)
 	
 }
 
