@@ -83,7 +83,7 @@ Arguments:
 */
 function readRoomInput (room_number) {
 	console.log("Room Input: " + String(room_number))
-	requestRoom(x);
+	requestRoom(room_number);
 	//will need to make sure room ID 'x' exists and if not output something to the user so they know why it failed
 }
 

@@ -89,8 +89,11 @@ function readRoomInput (room_number) {
 
 /*
 Short Description:
-
+	This function renders a room if its name is valid in a single formated block
+	
 Arguments:
+	roomData: an array pulled from the JSON file containing all data about a given room
+	mainContianer: Element refrence, the refrence of where to render the text div, will be appended as a seperate child with no class or id
 	
 	return = None
 */
@@ -118,8 +121,11 @@ function printRoom(roomData, mainContainer) {
 
 /*
 Short Description:
-
+	This function renders a room if its name is valid in a formated block one char at a time at a fixed speed
+	
 Arguments:
+	roomData: an array pulled from the JSON file containing all data about a given room
+	mainContianer: Element refrence, the refrence of where to render the text div, will be appended as a seperate child with no class or id
 	
 	return = None
 */

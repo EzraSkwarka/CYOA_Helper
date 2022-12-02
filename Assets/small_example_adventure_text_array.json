@@ -2,7 +2,15 @@
    {
       "short_name":"Example Room Object, does not need to be unique, just serves as a way to help keep the room human trackable",
       "ID":-1,
-      "text_array":["The text to display as the player enters the room", "The text to display as the player enters the room after the first time", "The text to display as the player gets ready to leave the room and lists where they can go"],
+      "text_array": [
+		true, "The text to display as the player enters the room.", 
+		false, "</br>",
+		true, "More text to display, but remember, formating needs to be labeled.", 
+		false, "</br>",
+		true, "The text to display as the player gets ready to leave the room and lists where they can go. For instance, I'd recomend room ",
+		false, "<span class='roomNumber'>(#1)</span>",
+		true, "."
+		],
       "visited?":"Boolean to see if the room has already been visited, I may just keep a record in the players save file of the rooms they have visited so I dont need to clutter up the JSON file"
    },
    {
@@ -14,7 +22,12 @@
    {
       "short_name":"Entryway",
       "ID":1,
-      "text_array":["This room is the first room at the player should enter ", "You should not be able to get back to this room, this is an error: Entryway", "From the entrance way you can go south to the t-junction <span class='roomNumber'>(#2)</span>"],
+      "text_array":[
+		true, "This room is the first room at the player should enter.", 
+		false, "</br>",
+		true, "From the entrance way you can go south to the t-junction ",
+		false, "<span class='roomNumber'>(#2)</span>"
+		],
       "visited?":false
    },
    {
@@ -81,7 +94,16 @@
    {
       "short_name":"Test Array Room",
       "ID":12,
-      "text_array":[true, "This should be Room 1 but with typed formating", false, "</br>", true, "This room is the first room at the player should enter",false, "</br>", true, "You should not be able to get back to this room, this is an error",false, "</br>", true, "From the entrance way you can go south to the t-junction ", false, "<span class='roomNumber'>(#2)</span>"],
+      "text_array": [
+		true, "This should be Room 1 but with typed formating", 
+		false, "</br>", 
+		true, "This room is the first room at the player should enter",
+		false, "</br>", 
+		true, "You should not be able to get back to this room, this is an error",
+		false, "</br>", 
+		true, "From the entrance way you can go south to the t-junction ", 
+		false, "<span class='roomNumber'>(#2)</span>"
+		],
       "visited?":false
    }
    
