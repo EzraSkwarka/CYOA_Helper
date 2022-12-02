@@ -83,6 +83,6 @@
       "ID":12,
       "text_array":[true, "This should be Room 1 but with typed formating", false, "</br>", true, "This room is the first room at the player should enter",false, "</br>", true, "You should not be able to get back to this room, this is an error",false, "</br>", true, "From the entrance way you can go south to the t-junction", false, "<span class='roomNumber'>(#2)</span>"],
       "visited?":false
-   },
+   }
    
 ]
