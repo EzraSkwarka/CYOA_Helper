@@ -102,13 +102,14 @@
 </head>
 
 <body>
-<!-- <h1>Output Log: COYA Helper</h1> -->
+<!--Sidebar Pannel -->
+<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 </div>
 
+<!-- Main Boday -->
 <div id='main'> 
-<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
 <div id="gameText" class="flex-box"></div>
 
 <!-- This is the players input box, the main way for them to interact -->
@@ -135,7 +136,7 @@
 </div>
 </div>
 <script>
-	requestRoom(12, true);
+	requestRoom(12);
 	<!-- requestRoom(2); -->
 </script>
 </body>
