@@ -99,7 +99,7 @@ function readPlayerInput (inputString) {
 	} else if (inputString.includes('load ')){
 		inputString = String(inputString).slice(5)
 		logToPlayerConsole("Attempting to load '" + inputString + "'");
-		loadedBook = inputString;
+		loadedBook = String(inputString);
 	} else {
 		logToPlayerConsole("ERROR: INVALID INPUT", false);
 	}
