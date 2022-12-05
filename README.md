@@ -6,19 +6,35 @@
 
 TODO:
 
-> ~ Fix input bar so it fills screen width
-> ~ Add upper boarder for text overflow in main output
+> ~ make input commands list
+>
+> ~ make console scrollable
+>
 > ~ prevent typeing into input field till current room is finished typing?
-> ~ populate navbar (eventually want to be able to load books and change settings from there, maybe also a notes section)
+>
+> ~ echo player input into console
+>
 > ~ text formating in printout
+>
 > ~ change '[home ~/]' to be the name of the currently loaded book
+>
 > ~ make room numbers clickable
+>
 > ~ move the 'open Sidebar' button into the side bar and make it an arrow https://codepen.io/aydin4ik/pen/QqEKmq
+
+Done:
+
+> ~ Fix input bar so it fills screen width
+>
+> ~ Add upper boarder for text overflow in main output
 
 Strech goals:
 
 > ~ popup tracker for tracking stats relevent to book
+>
 > ~ Way to specify popup tracker fields in book json file
+>
+> ~ populate navbar (eventually want to be able to load books and change settings from there, maybe also a notes section)
 
 
 
