@@ -91,15 +91,27 @@ function readPlayerInput (inputString) {
 	inputString = inputString.toLowerCase();
 	//Test Cases, a switch case will be better eventually probably, and maybe use regular expressions instead of string.include, but thats a later problem
 	if (inputString.includes('goto ')) {
+		//Slice of the goto of the command
 		inputString = String(inputString).slice(5)
 		console.log("Room Input: " + inputString)
+		//Attempt to resolve room ref
 		requestRoom(inputString);
 	} else if (inputString.includes('help')){
+		//Eventually needs to display all possible commands and a short description to go with them
 		logToPlayerConsole("HELP MESSAGE, type goto 1")
 	} else if (inputString.includes('load ')){
+		//Slice of the load of the command
 		inputString = String(inputString).slice(5)
+		//Update user
 		logToPlayerConsole("Attempting to load '" + inputString + "'");
+		//change loaded book, does not check to see if book exists
 		loadedBook = String(inputString);
+	} else if (inputString.includes('roll ')){
+		//Slice of the load of the command
+		inputString = String(inputString).slice(6)
+		result = Math.floor(math.random() * inputString);
+		logToPlayerConsole("Rolling a d" + inputString + ": " + result);
+		
 	} else {
 		logToPlayerConsole("ERROR: INVALID INPUT", false);
 	}

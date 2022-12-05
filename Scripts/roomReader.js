@@ -106,6 +106,12 @@ function readPlayerInput (inputString) {
 		logToPlayerConsole("Attempting to load '" + inputString + "'");
 		//change loaded book, does not check to see if book exists
 		loadedBook = String(inputString);
+	} else if (inputString.includes('roll ')){
+		//Slice of the load of the command
+		inputString = String(inputString).slice(6)
+		result = Math.floor(Math.random() * inputString);
+		logToPlayerConsole("Rolling a d" + inputString + ": " + result);
+		
 	} else {
 		logToPlayerConsole("ERROR: INVALID INPUT", false);
 	}

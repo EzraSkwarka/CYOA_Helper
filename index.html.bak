@@ -120,7 +120,7 @@
 <div id="inputBox">
 	<div id="inputBoxLeft">[home ~/]> </div> <!--left-->
 	<div id="inputBoxRight"><!--right-->
-		<input type="text" id="roomNumber">
+		<input type="text" spellcheck="false" id="roomNumber">
 		<input id="inputTriggerButton" type="button" value="Go" onclick="readPlayerInput(document.getElementById('roomNumber').value);
 		document.getElementById('roomNumber').value=''" hidden>
 	</div>

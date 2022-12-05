@@ -21,6 +21,10 @@ TODO:
 > ~ make room numbers clickable
 >
 > ~ move the 'open Sidebar' button into the side bar and make it an arrow https://codepen.io/aydin4ik/pen/QqEKmq
+>
+> ~ up arrow load previos command
+>
+> 
 
 Done:
 
