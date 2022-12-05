@@ -12,25 +12,11 @@ TODO:
 >
 > ~ prevent typeing into input field till current room is finished typing?
 >
-> ~ echo player input into console
->
-> ~ text formating in printout
->
 > ~ change '[home ~/]' to be the name of the currently loaded book
 >
 > ~ make room numbers clickable
 >
 > ~ move the 'open Sidebar' button into the side bar and make it an arrow https://codepen.io/aydin4ik/pen/QqEKmq
->
-> ~ up arrow load previos command
->
-> 
-
-Done:
-
-> ~ Fix input bar so it fills screen width
->
-> ~ Add upper boarder for text overflow in main output
 
 Strech goals:
 
