@@ -21,6 +21,10 @@ TODO:
 > ~ make room numbers clickable
 >
 > ~ move the 'open Sidebar' button into the side bar and make it an arrow https://codepen.io/aydin4ik/pen/QqEKmq
+>
+> ~ up arrow load previos command
+>
+> 
 
 Done:
 
@@ -31,6 +35,7 @@ Done:
 Strech goals:
 
 > ~ popup tracker for tracking stats relevent to book
+> https://www.w3schools.com/howto/howto_js_draggable.asp
 >
 > ~ Way to specify popup tracker fields in book json file
 >

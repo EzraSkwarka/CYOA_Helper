@@ -1,17 +1,19 @@
 // This is the suite of functions that allows me to parse and render books and pages from a JSON file
 
 
+var loadedBook = "Assets/small_example_adventure_text_array.json";
+
 /*
 Short Description:
 	This function reads a whole book so it can return and render a single page, I would eventually like to have each of those be there own tasks so as not to parse the entire book each time
 Arguments:
-	ID_target = int, thios is the page number to be rendered
+	ID_target = int, this is the page number to be rendered
 	print = boolean, defaults to false, if true skips the char by char render effect and drops then whole page at once
 	
 	return = None
 */
 function requestRoom(ID_target, print = false) {
-	fetch("Assets/small_example_adventure_text_array.json")
+	fetch(loadedBook)
             .then(function (response) {
                 return response.json();
             })
@@ -75,17 +77,47 @@ function requestRoomRange(ID_target_min, ID_target_max) {
 
 /*
 Short Description:
-	This function exists to see if a room is valid and if not to allert the user, unfinished
+	This function exists to see if the user's input is valid and if not to alert the user, unfinished
+	
 Arguments:
-	room_number, int, room number to be checked
+	inputString =  Str, input to be parsed
 	
 	return = Boolean
 */
-function readRoomInput (room_number) {
-	console.log("Room Input: " + String(room_number))
-	requestRoom(room_number);
+function readPlayerInput (inputString) {
+	//Echo input
+	logToPlayerConsole(inputString);
+	//Simplify input
+	inputString = inputString.toLowerCase();
+	//Test Cases, a switch case will be better eventually probably, and maybe use regular expressions instead of string.include, but thats a later problem
+	if (inputString.includes('goto ')) {
+		//Slice of the goto of the command
+		inputString = String(inputString).slice(5)
+		console.log("Room Input: " + inputString)
+		//Attempt to resolve room ref
+		requestRoom(inputString);
+	} else if (inputString.includes('help')){
+		//Eventually needs to display all possible commands and a short description to go with them
+		logToPlayerConsole("HELP MESSAGE, type goto 1")
+	} else if (inputString.includes('load ')){
+		//Slice of the load of the command
+		inputString = String(inputString).slice(5)
+		//Update user
+		logToPlayerConsole("Attempting to load '" + inputString + "'");
+		//change loaded book, does not check to see if book exists
+		loadedBook = String(inputString);
+	} else if (inputString.includes('roll ')){
+		//Slice of the load of the command
+		inputString = String(inputString).slice(6)
+		result = Math.floor(math.random() * inputString);
+		logToPlayerConsole("Rolling a d" + inputString + ": " + result);
+		
+	} else {
+		logToPlayerConsole("ERROR: INVALID INPUT", false);
+	}
 	//will need to make sure room ID 'x' exists and if not output something to the user so they know why it failed
 }
+
 
 /*
 Short Description:
@@ -105,7 +137,6 @@ function printRoom(roomData, mainContainer) {
 	//Formet Text
 	var textString = '';
 	var tempString = '';
-	div.innerHTML = '>>';
 	for (let i = 0; i < roomData.text_array.length; i+=2) {
 		if (roomData.text_array[i] == true) {
 			tempString = div.innerHTML;
@@ -141,10 +172,13 @@ async function typeRoom(roomData, mainContainer) {
 	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
 	var textString = '';
 	var tempString = '';
-	div.innerHTML = '>>';
 	var i = 0;
 	for (let i = 0; i < roomData.text_array.length; i+=2) {
-		textString = roomData.text_array[i + 1];
+		if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
+			textString = '>> ' + roomData.text_array[i + 1];
+		} else {
+			textString = roomData.text_array[i + 1];
+		}
 		if (roomData.text_array[i] == true) {
 			for (let n = 0; n < textString.length; n++) {
 				tempString = div.innerHTML;
@@ -173,7 +207,7 @@ function logToPlayerConsole(logString, fromPlayer = true) {
 	if (fromPlayer) {
 		var frontString = String(document.getElementById("inputBoxLeft").textContent);
 	} else {
-		var frontString = '>>';
+		var frontString = '>> ';
 	}
 	//Create new container
 	var mainContainer = document.getElementById("gameText");
@@ -194,7 +228,7 @@ Arguments:
 	return = None
 */
 function clickRoom(roomID) {
-	logToPlayerConsole('GOTO(' + String(roomID) + ')');
+	logToPlayerConsole('goto ' + String(roomID));
 	requestRoom(roomID);
 }
 
