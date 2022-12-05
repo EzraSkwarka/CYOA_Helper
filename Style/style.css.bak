@@ -17,6 +17,7 @@ body {
      background: repeating-linear-gradient(0deg, rgba(black, 0.15), rgba(black, 0.15) 1px, transparent 1px, transparent 2px);
 }
  #gameText {
+     left-margin: 10px;
      display: flex;
      flex-direction: column;
      justify-content: flex-end;
