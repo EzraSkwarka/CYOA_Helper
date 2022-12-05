@@ -105,6 +105,7 @@ function printRoom(roomData, mainContainer) {
 	//Formet Text
 	var textString = '';
 	var tempString = '';
+	div.innerHTML = '>> ';
 	for (let i = 0; i < roomData.text_array.length; i+=2) {
 		if (roomData.text_array[i] == true) {
 			tempString = div.innerHTML;
@@ -140,6 +141,7 @@ async function typeRoom(roomData, mainContainer) {
 	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
 	var textString = '';
 	var tempString = '';
+	div.innerHTML = '>> ';
 	var i = 0;
 	for (let i = 0; i < roomData.text_array.length; i+=2) {
 		textString = roomData.text_array[i + 1];
@@ -157,12 +159,45 @@ async function typeRoom(roomData, mainContainer) {
 	}
 }
 
+
 /*
-Force javascript execution thread to pause for a set number of ms, async
-	milliseconds = int
+Short Description:
+Logs the player's input to the console
+
+Arguments:
+	logString = String, what to insert to the console
 	
 	return = None
 */
+function logToPlayerConsole(logString, fromPlayer = true) {
+	if (fromPlayer) {
+		var frontString = String(document.getElementById("inputBoxLeft").textContent);
+	} else {
+		var frontString = '>>';
+	}
+	//Create new container
+	var mainContainer = document.getElementById("gameText");
+	var div = document.createElement("div");
+	//Append to Parent
+	mainContainer.appendChild(div);
+	div.innerHTML = frontString + logString;
+	
+}
+
+/*
+Short Description:
+	Used to handle room clicks from the text log smoothly by calling the approbrate log and print functions
+	
+Arguments:
+	roomID = Int, the room to print
+	
+	return = None
+*/
+function clickRoom(roomID) {
+	logToPlayerConsole('GOTO(' + String(roomID) + ')');
+	requestRoom(roomID);
+}
+
 /*
 Short Description:
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 	<!-- Scripts -->
 	<script type="text/javascript" src="Scripts/roomReader.js" ></script>
 	<!-- <script type="text/javascript" src="Scripts/sidebar.js"></script> -->
@@ -50,7 +51,7 @@
 		}
 	
 		.roomNumber {
-			color: blue;
+			color: #FFBF00;
 		}
 		
 		#inputContianer {
@@ -82,6 +83,7 @@
 			width: calc(100% - 90px);
 			white-space: nowrap;
 			background-color: transparent;
+			color: green;
 			outline: none;
 			border: none;
 			
@@ -136,8 +138,7 @@
 </div>
 </div>
 <script>
-	requestRoom(11, true);
-	<!-- requestRoom(2); -->
+	requestRoom(-1, true);
 </script>
 </body>
 </html> 	
