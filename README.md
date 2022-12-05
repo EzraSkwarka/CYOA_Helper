@@ -31,6 +31,7 @@ Done:
 Strech goals:
 
 > ~ popup tracker for tracking stats relevent to book
+> https://www.w3schools.com/howto/howto_js_draggable.asp
 >
 > ~ Way to specify popup tracker fields in book json file
 >

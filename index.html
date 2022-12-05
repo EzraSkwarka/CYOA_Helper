@@ -86,6 +86,7 @@
 			color: green;
 			outline: none;
 			border: none;
+			font-family: 'Cascadia Code', monospace;
 			
 		}
 		
@@ -119,8 +120,8 @@
 <div id="inputBox">
 	<div id="inputBoxLeft">[home ~/]> </div> <!--left-->
 	<div id="inputBoxRight"><!--right-->
-		<input type="text" id="roomNumber">
-		<input id="inputTriggerButton" type="button" value="Go" onclick="readRoomInput(document.getElementById('roomNumber').value);
+		<input type="text" spellcheck="false" id="roomNumber">
+		<input id="inputTriggerButton" type="button" value="Go" onclick="readPlayerInput(document.getElementById('roomNumber').value);
 		document.getElementById('roomNumber').value=''" hidden>
 	</div>
 	<script>
@@ -138,7 +139,8 @@
 </div>
 </div>
 <script>
-	requestRoom(-1);
+	var welcomeString = "Welcome to COYA_helper, type 'help' for options";
+	logToPlayerConsole(welcomeString, false);
 </script>
 </body>
 </html> 	

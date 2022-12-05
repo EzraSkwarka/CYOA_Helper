@@ -21,6 +21,8 @@
       "short_name":"Entryway",
       "ID":1,
       "text_array":[
+		true, "If you can see this, then you loaded a diffrent book.", 
+		false, "</br>",
 		true, "This room is the first room at the player should enter.", 
 		false, "</br>",
 		true, "From the entrance way you can go south to the t-junction ",
