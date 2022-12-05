@@ -89,6 +89,7 @@
 		#main{
 			position: relative;
 			height: 93%;
+			border: 5px solid red;
 		
 		}
 		
@@ -103,11 +104,14 @@
 
 <body>
 <!--Sidebar Pannel -->
-<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+<div>
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 </div>
-
+<div id="navButtonCaseBox">
+	<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+</div>
+</div>
 <!-- Main Boday -->
 <div id='main'> 
 <div id="gameText" class="flex-box"></div>
