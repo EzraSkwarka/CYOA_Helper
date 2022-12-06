@@ -1,5 +1,4 @@
 //
-var consoleFontSize = '1em';
 /*
 Short Description:
 	This function exists to see if the user's input is valid and if not to alert the user, this is just a disambuigation function
@@ -136,5 +135,5 @@ function setFont(str) {
 	rooms.forEach(room => {
 		room.style.fontSize = str;
 	});
-	consoleFontSize = str;
+	return str
 }

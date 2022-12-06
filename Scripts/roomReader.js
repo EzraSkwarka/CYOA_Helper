@@ -3,6 +3,7 @@
 //Defaults
 var loadedBook = "Assets/small_example_adventure_text_array.json";
 var typeSpeed = 10;
+var consoleFontSize = '1em';
 
 /*
 Short Description:
@@ -55,6 +56,7 @@ function printRoom(roomData, mainContainer) {
 	//Append to Parent
 	mainContainer.appendChild(div);
 	div.className = 'typedRoom';
+	consoleFontSize = setFont("fontsize " + consoleFontSize);
 	//Formet Text
 	var textString = '';
 	var tempString = '';
@@ -94,6 +96,7 @@ async function typeRoom(roomData, mainContainer) {
 	//Append to Parent
 	mainContainer.appendChild(div);
 	div.className = 'consoleEntry';
+	consoleFontSize = setFont("fontsize " + consoleFontSize);
 	// console.log("Child: " + String(div))
 
 	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
@@ -146,6 +149,7 @@ function logToPlayerConsole(logString, fromPlayer = true) {
 	var mainContainer = document.getElementById("gameText");
 	var div = document.createElement("div");
 	div.className = 'consoleEntry';
+	consoleFontSize = setFont("fontsize " + consoleFontSize);
 	//Append to Parent
 	mainContainer.appendChild(div);
 	div.innerHTML = frontString + logString;
