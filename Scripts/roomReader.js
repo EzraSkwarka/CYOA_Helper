@@ -57,9 +57,14 @@ function printRoom(roomData, mainContainer) {
 	var textString = '';
 	var tempString = '';
 	for (let i = 0; i < roomData.text_array.length; i+=2) {
+		if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
+			textString = '>> ' + roomData.text_array[i + 1];
+		} else {
+			textString = roomData.text_array[i + 1];
+		}
 		if (roomData.text_array[i] == true) {
 			tempString = div.innerHTML;
-			div.innerHTML = tempString + roomData.text_array[i + 1];
+			div.innerHTML = tempString + textString;
 		} else {
 			tempString = div.innerHTML;
 			div.innerHTML = tempString + textString;	

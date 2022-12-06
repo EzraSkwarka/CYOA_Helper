@@ -38,43 +38,6 @@ function requestRoom(ID_target, print = false) {
         }
 }
 
-
-/*
-Short Description:
-	I think this is intended to print multiple rooms at once, but Im not sure it is used anywhere or even works tbh
-Arguments:
-	ID_target_min: int
-	ID_target_max: int
-	
-	return = None
-*/
-function requestRoomRange(ID_target_min, ID_target_max) {
-	fetch("Assets/small_example_adventure.json")
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-        function appendData(data) {
-            var mainContainer = document.getElementById("gameText");
-            for (var i = 0; i < data.length; i++) {
-				if(and((data[i].ID >= ID_target_min),(data[i].ID <= ID_target_max)) ) {
-					//Create new container
-					var div = document.createElement("div");
-					//Formet Text
-					div.innerHTML = 'Name: ' + data[i].short_name;
-					//Append to Parent
-					mainContainer.appendChild(div);
-				}
-            }
-        }
-}
-
-
 /*
 Short Description:
 	This function renders a room if its name is valid in a single formated block
@@ -93,10 +56,15 @@ function printRoom(roomData, mainContainer) {
 	//Formet Text
 	var textString = '';
 	var tempString = '';
+	if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
+		textString = '>> ' + roomData.text_array[i + 1];
+	} else {
+		textString = roomData.text_array[i + 1];
+	}
 	for (let i = 0; i < roomData.text_array.length; i+=2) {
 		if (roomData.text_array[i] == true) {
 			tempString = div.innerHTML;
-			div.innerHTML = tempString + roomData.text_array[i + 1];
+			div.innerHTML = tempString + textString;
 		} else {
 			tempString = div.innerHTML;
 			div.innerHTML = tempString + textString;	

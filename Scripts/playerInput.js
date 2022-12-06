@@ -23,20 +23,25 @@ function readPlayerInput (inputString) {
 	
 	if (/^goto /.test(inputStringLower)) {
 		//Slice of the goto of the command
-		inputStringLower = String(inputStringLower).slice(5)
-		console.log("Room Input: " + inputStringLower)
+		inputStringLower = String(inputStringLower).slice(5);
+
 		//Attempt to resolve room ref
-		requestRoom(inputStringLower);
-	} else if (/help/.test(inputStringLower)){
+		if (/ false$/.test(inputStringLower)) {
+			//Slice off false
+			inputStringLower = String(inputStringLower).slice(0, -6);
+			console.log("Room Input: " + inputStringLower);
+			requestRoom(inputStringLower, true);
+		} else {
+			console.log("Room Input: " + inputStringLower);
+			requestRoom(inputStringLower);
+		}
+
+	} else if (/help/.test(inputStringLower)) {
 		helpCommand(inputString);
-	} else if (/^load /.test(inputStringLower)){
+	} else if (/^load /.test(inputStringLower)) {
 		loadBook(inputString);
-	} else if (inputString.includes('roll ')){
-		//Slice of the load of the command
-		inputString = String(inputString).slice(6)
-		result = Math.floor(Math.random() * inputString);
-		logToPlayerConsole("Rolling a d" + inputString + ": " + result);
-		
+	} else if (/^roll /.test(inputStringLower)) {
+		rollDice(inputString);
 	} else {
 		logToPlayerConsole("ERROR: INVALID INPUT", false);
 	}
@@ -64,13 +69,13 @@ Short Description:
 Arguments:
 	str =  Str, command to follow up on
 	
-	return = Boolean
+	return = None
 */
 function loadBook(str) {
 	//Slice of the load of the command
 	var bookString = String(str).slice(5);
 	//Update user
-	logToPlayerConsole("Attempting to load '" + bookString + "'", false);
+	// logToPlayerConsole("Attempting to load '" + bookString + "'", false);
 	console.log("Looking for '" + bookString + "'");
 	fetch(bookString,
 			  { method: "HEAD" }
@@ -82,4 +87,21 @@ function loadBook(str) {
 			logToPlayerConsole("Load '" + bookString + "' failed; File not found.", false);
 		  }
 		});
+}
+
+/*
+Short Description:
+	This function rolls dice based on the users input
+	
+Arguments:
+	str =  Str, the users input string
+	
+	return = None
+*/
+function rollDice(str) {
+	//Slice of the load of the command
+		inputString = String(str).slice(6)
+		result = Math.floor(Math.random() * inputString);
+		logToPlayerConsole("Rolling a d" + inputString + ": " + result);
+	
 }
