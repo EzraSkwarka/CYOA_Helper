@@ -179,17 +179,23 @@ async function typeRoom(roomData, mainContainer) {
 		} else {
 			textString = roomData.text_array[i + 1];
 		}
-		if (roomData.text_array[i] == true) {
+		if (roomData.text_array[i] == true) { //if we are to type
 			for (let n = 0; n < textString.length; n++) {
+				//Pull whats already in the div
 				tempString = div.innerHTML;
+				//add the next char
 				div.innerHTML = tempString + textString.charAt(n);
+				//Keep the bottom of the typer in view
+				div.scrollIntoView(false);
+				//Sleep so we get the animation effect
 				const result = await sleep();
 			}
-			//I need to find a way to type the text one char at a time, I keep runninginto async issues where if I call another function inside this for loop the loop continues excuting while that function runs
-		} else {
+		} else { //if we are to print, mostly for html tags like span
 			tempString = div.innerHTML;
-			div.innerHTML = tempString + textString;	
+			div.innerHTML = tempString + textString;
+			div.scrollIntoView(false);			
 		}
+		
 	}
 }
 

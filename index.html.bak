@@ -26,10 +26,6 @@
 		<input id="inputTriggerButton" type="button" value="Go" onclick="readPlayerInput(document.getElementById('roomNumber').value);
 		document.getElementById('roomNumber').value=''" hidden>
 	</div>
-	<script>
-
-	</script>
-
 </div>
 </div>
 </div>
