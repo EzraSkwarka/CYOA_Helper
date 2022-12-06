@@ -88,18 +88,18 @@ function readPlayerInput (inputString) {
 	//Echo input
 	logToPlayerConsole(inputString);
 	//Simplify input
-	inputString = inputString.toLowerCase();
+	inputStringLower = inputString.toLowerCase();
 	//Test Cases, a switch case will be better eventually probably, and maybe use regular expressions instead of string.include, but thats a later problem
-	if (inputString.includes('goto ')) {
+	if (inputStringLower.includes('goto ')) {
 		//Slice of the goto of the command
-		inputString = String(inputString).slice(5)
-		console.log("Room Input: " + inputString)
+		inputStringLower = String(inputStringLower).slice(5)
+		console.log("Room Input: " + inputStringLower)
 		//Attempt to resolve room ref
-		requestRoom(inputString);
-	} else if (inputString.includes('help')){
+		requestRoom(inputStringLower);
+	} else if (inputStringLower.includes('help')){
 		//Eventually needs to display all possible commands and a short description to go with them
 		logToPlayerConsole("HELP MESSAGE, type goto 1")
-	} else if (inputString.includes('load ')){
+	} else if (inputStringLower.includes('load ')){
 		//Slice of the load of the command
 		inputString = String(inputString).slice(5)
 		//Update user
