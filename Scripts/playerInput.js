@@ -42,6 +42,8 @@ function readPlayerInput (inputString) {
 		loadBook(inputString);
 	} else if (/^roll /.test(inputStringLower)) {
 		rollDice(inputString);
+	} else if (/^setspeed \d+$/.test(inputStringLower)) {
+		setSpeed(inputStringLower);
 	} else {
 		logToPlayerConsole("ERROR: INVALID INPUT", false);
 	}

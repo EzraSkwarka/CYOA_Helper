@@ -1,7 +1,8 @@
 // This is the suite of functions that allows me to parse and render books and pages from a JSON file
 
-
+//Defaults
 var loadedBook = "Assets/small_example_adventure_text_array.json";
+var typeSpeed = 10;
 
 /*
 Short Description:
@@ -56,12 +57,12 @@ function printRoom(roomData, mainContainer) {
 	//Formet Text
 	var textString = '';
 	var tempString = '';
-	if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
-		textString = '>> ' + roomData.text_array[i + 1];
-	} else {
-		textString = roomData.text_array[i + 1];
-	}
 	for (let i = 0; i < roomData.text_array.length; i+=2) {
+		if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
+			textString = '>> ' + roomData.text_array[i + 1];
+		} else {
+			textString = roomData.text_array[i + 1];
+		}
 		if (roomData.text_array[i] == true) {
 			tempString = div.innerHTML;
 			div.innerHTML = tempString + textString;
@@ -169,7 +170,7 @@ Arguments:
 	
 	return = None
 */
-function sleep(ms=10) {
+function sleep(ms=typeSpeed) {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve('resolved');

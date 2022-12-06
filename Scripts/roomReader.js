@@ -1,7 +1,8 @@
 // This is the suite of functions that allows me to parse and render books and pages from a JSON file
 
-
+//Defaults
 var loadedBook = "Assets/small_example_adventure_text_array.json";
+var typeSpeed = 10;
 
 /*
 Short Description:
@@ -169,10 +170,23 @@ Arguments:
 	
 	return = None
 */
-function sleep(ms=10) {
+function sleep(ms=typeSpeed) {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve('resolved');
     }, ms);
   });
+}
+
+/*
+Short Description:
+
+Arguments:
+	
+	return = None
+*/
+function setSpeed(str) {
+	console.log("Old: " + typeSpeed);
+	typeSpeed = inputStringLower.slice(9);
+	console.log(typeSpeed);
 }

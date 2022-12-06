@@ -28,7 +28,7 @@ function readPlayerInput (inputString) {
 		//Attempt to resolve room ref
 		if (/ false$/.test(inputStringLower)) {
 			//Slice off false
-			inputStringLower = String(inputStringLower).slice(-6);
+			inputStringLower = String(inputStringLower).slice(0, -6);
 			console.log("Room Input: " + inputStringLower);
 			requestRoom(inputStringLower, true);
 		} else {
@@ -42,6 +42,10 @@ function readPlayerInput (inputString) {
 		loadBook(inputString);
 	} else if (/^roll /.test(inputStringLower)) {
 		rollDice(inputString);
+	} else if (/^setspeed \d+$/.test(inputStringLower)) {
+		console.log("Old: " + typeSpeed)
+		typeSpeed = inputStringLower.slice(9);
+		console.log(typeSpeed)
 	} else {
 		logToPlayerConsole("ERROR: INVALID INPUT", false);
 	}
