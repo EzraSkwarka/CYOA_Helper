@@ -19,7 +19,7 @@ body {
  #gameText {
      display: flex;
      flex-direction: column;
-     justify-content: flex-end;
+     /* justify-content: flex-end; */
      text-align: justify;
      position: absolute;
      bottom: 35px;
@@ -31,7 +31,16 @@ body {
      width: 96vw;
      margin-left: 2vw;
      margin-right: 2.5vw;
+	 /* Hidding Scrollbar */
+	 -ms-overflow-style: none;  /* Internet Explorer 10+ */
+     scrollbar-width: none;  /* Firefox */
 }
+
+ #gameText::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
  .roomNumber {
      color: #FFBF00;
 }
@@ -75,5 +84,5 @@ body {
  #main{
      position: relative;
      height: 97%;
-     width: 98% 
+     width: 98%;
 }
