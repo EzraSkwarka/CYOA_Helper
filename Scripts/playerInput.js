@@ -1,6 +1,5 @@
 //
-// const fs = require('fs');
-
+var consoleFontSize = '1em';
 /*
 Short Description:
 	This function exists to see if the user's input is valid and if not to alert the user, this is just a disambuigation function
@@ -44,6 +43,8 @@ function readPlayerInput (inputString) {
 		rollDice(inputString);
 	} else if (/^setspeed \d+$/.test(inputStringLower)) {
 		setSpeed(inputStringLower);
+	} else if (/^fontsize \d{1,}(px|em)$/.test(inputStringLower)) {
+		setFont(inputStringLower);
 	} else {
 		logToPlayerConsole("ERROR: INVALID INPUT", false);
 	}
@@ -60,8 +61,19 @@ Arguments:
 	return = Boolean
 */
 function helpCommand(str) {
-	logToPlayerConsole("HELP MESSAGE, type goto 1");
+	var helpArray = [
+		"Current commands:",
+		"&nbsp help &nbsp displays a list of commands",
+		"&nbsp goto [x] &nbsp turns to page x",
+		"&nbsp load [path] &nbsp loads a specfic book at [path] into memory",
+		"&nbsp roll [n]d[x] &nbsp rolls n amount of x sided dice",
+		"&nbsp setspeed [x] &nbsp sets the time in ms between each char type",
+		"&nbsp fontSize [x] &nbsp sets the deafult font size in px",
 	
+	];
+	for (let i = 0; i < helpArray.length; i++) {
+		logToPlayerConsole(helpArray[i], false);
+	}
 }
 
 /*
@@ -106,4 +118,22 @@ function rollDice(str) {
 		result = Math.floor(Math.random() * inputString);
 		logToPlayerConsole("Rolling a d" + inputString + ": " + result);
 	
+}
+
+/*
+Short Description:
+	This function rolls dice based on the users input
+	
+Arguments:
+	str =  Str, the users input string
+	
+	return = None
+*/
+function setFont(str) {
+	str = String(str).slice(9);
+	console.log("fontsize: " + str);
+	var rooms = document.querySelectorAll('.consoleEntry');
+	rooms.forEach(room => {
+		room.style.fontSize = str;
+	});
 }

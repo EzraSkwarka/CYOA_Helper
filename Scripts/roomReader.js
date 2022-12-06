@@ -54,6 +54,7 @@ function printRoom(roomData, mainContainer) {
 	var div = document.createElement("div");
 	//Append to Parent
 	mainContainer.appendChild(div);
+	div.className = 'typedRoom';
 	//Formet Text
 	var textString = '';
 	var tempString = '';
@@ -92,6 +93,7 @@ async function typeRoom(roomData, mainContainer) {
 	var div = document.createElement("div");
 	//Append to Parent
 	mainContainer.appendChild(div);
+	div.className = 'consoleEntry';
 	// console.log("Child: " + String(div))
 
 	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
@@ -143,6 +145,7 @@ function logToPlayerConsole(logString, fromPlayer = true) {
 	//Create new container
 	var mainContainer = document.getElementById("gameText");
 	var div = document.createElement("div");
+	div.className = 'consoleEntry';
 	//Append to Parent
 	mainContainer.appendChild(div);
 	div.innerHTML = frontString + logString;
