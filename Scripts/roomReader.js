@@ -38,87 +38,6 @@ function requestRoom(ID_target, print = false) {
         }
 }
 
-
-/*
-Short Description:
-	I think this is intended to print multiple rooms at once, but Im not sure it is used anywhere or even works tbh
-Arguments:
-	ID_target_min: int
-	ID_target_max: int
-	
-	return = None
-*/
-function requestRoomRange(ID_target_min, ID_target_max) {
-	fetch("Assets/small_example_adventure.json")
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-        function appendData(data) {
-            var mainContainer = document.getElementById("gameText");
-            for (var i = 0; i < data.length; i++) {
-				if(and((data[i].ID >= ID_target_min),(data[i].ID <= ID_target_max)) ) {
-					//Create new container
-					var div = document.createElement("div");
-					//Formet Text
-					div.innerHTML = 'Name: ' + data[i].short_name;
-					//Append to Parent
-					mainContainer.appendChild(div);
-				}
-            }
-        }
-}
-
-
-/*
-Short Description:
-	This function exists to see if the user's input is valid and if not to alert the user, unfinished
-	
-Arguments:
-	inputString =  Str, input to be parsed
-	
-	return = Boolean
-*/
-function readPlayerInput (inputString) {
-	//Echo input
-	logToPlayerConsole(inputString);
-	//Simplify input
-	inputStringLower = inputString.toLowerCase();
-	//Test Cases, a switch case will be better eventually probably, and maybe use regular expressions instead of string.include, but thats a later problem
-	if (inputStringLower.includes('goto ')) {
-		//Slice of the goto of the command
-		inputStringLower = String(inputStringLower).slice(5)
-		console.log("Room Input: " + inputStringLower)
-		//Attempt to resolve room ref
-		requestRoom(inputStringLower);
-	} else if (inputStringLower.includes('help')){
-		//Eventually needs to display all possible commands and a short description to go with them
-		logToPlayerConsole("HELP MESSAGE, type goto 1")
-	} else if (inputStringLower.includes('load ')){
-		//Slice of the load of the command
-		inputString = String(inputString).slice(5)
-		//Update user
-		logToPlayerConsole("Attempting to load '" + inputString + "'");
-		//change loaded book, does not check to see if book exists
-		loadedBook = String(inputString);
-	} else if (inputString.includes('roll ')){
-		//Slice of the load of the command
-		inputString = String(inputString).slice(6)
-		result = Math.floor(Math.random() * inputString);
-		logToPlayerConsole("Rolling a d" + inputString + ": " + result);
-		
-	} else {
-		logToPlayerConsole("ERROR: INVALID INPUT", false);
-	}
-	//will need to make sure room ID 'x' exists and if not output something to the user so they know why it failed
-}
-
-
 /*
 Short Description:
 	This function renders a room if its name is valid in a single formated block
@@ -146,7 +65,7 @@ function printRoom(roomData, mainContainer) {
 			div.innerHTML = tempString + textString;	
 		}
 	}
-	console.log("textString: " + textString)
+	// console.log("textString: " + textString)
 	
 	
 }

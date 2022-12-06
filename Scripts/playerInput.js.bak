@@ -76,7 +76,7 @@ function loadBook(str) {
 			  { method: "HEAD" }
 		).then((res) => {
 		  if (res.ok) {
-			loadedBook = String(bookString);
+			loadedBook = String(inputString);
 			logToPlayerConsole("Load '" + bookString + "' success.", false);
 		  } else {
 			logToPlayerConsole("Load '" + bookString + "' failed; File not found.", false);
