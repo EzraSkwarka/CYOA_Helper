@@ -2,3 +2,5 @@
 		true, "",
 
 false, "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>",
+
+load Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json
