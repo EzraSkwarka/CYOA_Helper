@@ -4,6 +4,7 @@
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 	<!-- Scripts -->
 	<script type="text/javascript" src="Scripts/roomReader.js" ></script>
+	<script type="text/javascript" src="Scripts/playerInput.js" ></script>
 	<!-- <script type="text/javascript" src="Scripts/sidebar.js"></script> -->
 	
 	<!-- Style Sheets -->
@@ -20,9 +21,9 @@
 <!-- This is the players input box, the main way for them to interact -->
 <div id='inputContianer'>
 <div id="inputBox">
-	<div id="inputBoxLeft">[home ~/]> </div> <!--left-->
-	<div id="inputBoxRight"><!--right-->
-		<input type="text" spellcheck="false" id="roomNumber">
+	<div id="inputBoxLeft" class="consoleEntry">[home ~/]> </div> <!--left-->
+	<div id="inputBoxRight" class="consoleEntry"><!--right-->
+		<input type="text" class="consoleEntry" spellcheck="false" id="roomNumber">
 		<input id="inputTriggerButton" type="button" value="Go" onclick="readPlayerInput(document.getElementById('roomNumber').value);
 		document.getElementById('roomNumber').value=''" hidden>
 	</div>
