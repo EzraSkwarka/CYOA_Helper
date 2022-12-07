@@ -56,9 +56,9 @@ function requestRoom(ID_target, print = false) {
 				if(data[i].ID == ID_target) {
 					// console.log("Typing Room " + String(data[i]) + "in element " + String(mainContainer))
 					if (print) {
-						printRoom(data[i], mainContainer)
+						renderConsoleEntry(data[i].text_array);
 					} else {
-						typeRoom(data[i], mainContainer)
+						renderConsoleEntry(data[i].text_array, true);
 					}
 				}
             }
@@ -76,6 +76,7 @@ Arguments:
 	return = None
 */
 function printRoom(roomData, mainContainer) {
+	console.log("printRoom in roomReader.js called in error!")
 	//Create new container
 	var div = createConsoleEntry();
 	
@@ -115,7 +116,7 @@ Arguments:
 	return = None
 */
 async function typeRoom(roomData, mainContainer) {
-	
+	console.log("typeRoom in roomReader.js called in error!")
 	//Create new container
 	var div = createConsoleEntry();
 
@@ -161,6 +162,7 @@ Arguments:
 	return = None
 */
 function logToPlayerConsole(logString, fromPlayer = true) {
+	console.log("logToPlayerConsole in roomReader.js called in error!")
 	//Create new container
 	var div = createConsoleEntry();
 
@@ -189,7 +191,7 @@ Arguments:
 async function renderConsoleEntry(textArray, animate = false, fromPlayer = false) {
 	//Create Container
 	var div = createConsoleEntry();
-	
+	console.log("textArray: " + textArray);
 	//Render Text
 		//Grab frontString
 		if (fromPlayer) {
@@ -204,11 +206,13 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 		for (let i = 0; i < textArray.length; i+=2) {
 			//Apply identifier on first pass
 			if (i == 0) {
-				textString = frontString;
+				textString = frontString + textArray[i + 1];
+			} else {
+				textString = textArray[i + 1];
 			}
 			
 			//Type this block or print it
-			if (roomData.text_array[i] == true && animate) { //if we are to type
+			if (textArray[i] == true && animate) { //if we are to type
 				for (let n = 0; n < textString.length; n++) {
 					//Pull whats already in the div
 					tempString = div.innerHTML;
