@@ -5,6 +5,31 @@ var loadedBook = "Assets/small_example_adventure_text_array.json";
 var typeSpeed = 10;
 var consoleFontSize = '1em';
 
+
+/*
+Short Description:
+	Creates a new div as a child of #gameText and returns a refrence to it, also updates the DOM which will eventually be its own function
+	
+Arguments:
+	None
+	
+	return = div, a refrence
+*/
+
+function createConsoleEntry() {
+	//Create new container
+	var div = document.createElement("div");
+	//Append to Parent
+	var mainContainer = document.getElementById('gameText')
+	mainContainer.appendChild(div);
+	//Set Class
+	div.className = 'typedRoom';
+	//Update DOM
+	consoleFontSize = setFont("fontsize " + consoleFontSize);
+	
+	return div
+}
+
 /*
 Short Description:
 	This function reads a whole book so it can return and render a single page, I would eventually like to have each of those be there own tasks so as not to parse the entire book each time
@@ -52,11 +77,8 @@ Arguments:
 */
 function printRoom(roomData, mainContainer) {
 	//Create new container
-	var div = document.createElement("div");
-	//Append to Parent
-	mainContainer.appendChild(div);
-	div.className = 'typedRoom';
-	consoleFontSize = setFont("fontsize " + consoleFontSize);
+	var div = createConsoleEntry();
+	
 	//Formet Text
 	var textString = '';
 	var tempString = '';
@@ -77,10 +99,10 @@ function printRoom(roomData, mainContainer) {
 	// console.log("textString: " + textString)
 	//Keep the bottom of the typer in view
 	div.scrollIntoView(false)
-
 	
 	
 }
+
 
 /*
 Short Description:
@@ -95,12 +117,7 @@ Arguments:
 async function typeRoom(roomData, mainContainer) {
 	
 	//Create new container
-	var div = document.createElement("div");
-	//Append to Parent
-	mainContainer.appendChild(div);
-	div.className = 'consoleEntry';
-	consoleFontSize = setFont("fontsize " + consoleFontSize);
-	// console.log("Child: " + String(div))
+	var div = createConsoleEntry();
 
 	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
 	var textString = '';
@@ -144,22 +161,73 @@ Arguments:
 	return = None
 */
 function logToPlayerConsole(logString, fromPlayer = true) {
+	//Create new container
+	var div = createConsoleEntry();
+
 	if (fromPlayer) {
 		var frontString = String(document.getElementById("consoleID").textContent);
 	} else {
 		var frontString = '>> ';
-	}
-	//Create new container
-	var mainContainer = document.getElementById("gameText");
-	var div = document.createElement("div");
-	div.className = 'consoleEntry';
-	consoleFontSize = setFont("fontsize " + consoleFontSize);
-	//Append to Parent
-	mainContainer.appendChild(div);
+	}	
 	div.innerHTML = frontString + logString;
 	//Keep the bottom of the typer in view
 	div.scrollIntoView(false);
 	
+}
+
+/*
+Short Description:
+	This function should handle all the rendering and typing to the console. Needs to be albe to type the tex or print it and it needs to be able to flag if its an echo or a response
+	
+Arguments:
+	textArray = Array, in the same format as the rooms
+	animate = Boolean, default false, if the text needs to go up char by char or entry by entry (print vs type)
+	fromPlayer = Boolean, default false, should the line start with '>> ' or whats in the consoleID span from main
+	
+	return = None
+*/
+async function renderConsoleEntry(textArray, animate = false, fromPlayer = false) {
+	//Create Container
+	var div = createConsoleEntry();
+	
+	//Render Text
+		//Grab frontString
+		if (fromPlayer) {
+			var frontString = String(document.getElementById("consoleID").textContent);
+		} else {
+			var frontString = '>> ';
+		}
+		//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
+		var textString = '';
+		var tempString = '';
+		var i = 0;
+		for (let i = 0; i < textArray.length; i+=2) {
+			//Apply identifier on first pass
+			if (i == 0) {
+				textString = frontString;
+			}
+			
+			//Type this block or print it
+			if (roomData.text_array[i] == true && animate) { //if we are to type
+				for (let n = 0; n < textString.length; n++) {
+					//Pull whats already in the div
+					tempString = div.innerHTML;
+					//add the next char
+					div.innerHTML = tempString + textString.charAt(n);
+					//Keep the bottom of the typer in view
+					div.scrollIntoView(false);
+					//Sleep so we get the animation effect
+					const result = await sleep();
+				}
+			} else { //if we are to print, mostly for html tags like span
+				tempString = div.innerHTML;
+				div.innerHTML = tempString + textString;
+				div.scrollIntoView(false);			
+			}
+			
+		}
+	//Keep bottom of gameText in view
+	div.scrollIntoView(false);
 }
 
 /*
@@ -178,8 +246,10 @@ function clickRoom(roomID) {
 
 /*
 Short Description:
+	creates a delay so that the terminal can have a typing effect
 
 Arguments:
+	ms = Int, time in ms that this function will cause the excution string to hang, must be accompined by an await inside an async function
 	
 	return = None
 */
@@ -193,13 +263,15 @@ function sleep(ms=typeSpeed) {
 
 /*
 Short Description:
-
+	Modifies the default typeSpeed used in the sleep function, my not be strictly needed
+	
 Arguments:
+	str = String, passed from playerInput.js
 	
 	return = None
 */
 function setSpeed(str) {
-	console.log("Old: " + typeSpeed);
+	// console.log("Old: " + typeSpeed);
 	typeSpeed = inputStringLower.slice(9);
-	console.log(typeSpeed);
+	// console.log(typeSpeed);
 }
