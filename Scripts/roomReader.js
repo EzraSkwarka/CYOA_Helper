@@ -77,6 +77,7 @@ function printRoom(roomData, mainContainer) {
 	// console.log("textString: " + textString)
 	//Keep the bottom of the typer in view
 	div.scrollIntoView(false)
+
 	
 	
 }

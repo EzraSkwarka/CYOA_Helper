@@ -56,7 +56,9 @@ function printRoom(roomData, mainContainer) {
 	//Append to Parent
 	mainContainer.appendChild(div);
 	div.className = 'typedRoom';
+
 	consoleFontSize = setFont("fontsize " + consoleFontSize);
+
 	//Formet Text
 	var textString = '';
 	var tempString = '';
@@ -77,6 +79,7 @@ function printRoom(roomData, mainContainer) {
 	// console.log("textString: " + textString)
 	//Keep the bottom of the typer in view
 	div.scrollIntoView(false)
+
 	
 	
 }
@@ -99,6 +102,7 @@ async function typeRoom(roomData, mainContainer) {
 	mainContainer.appendChild(div);
 	div.className = 'consoleEntry';
 	consoleFontSize = setFont("fontsize " + consoleFontSize);
+
 	// console.log("Child: " + String(div))
 
 	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
