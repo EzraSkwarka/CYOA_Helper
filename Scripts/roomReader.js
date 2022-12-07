@@ -75,6 +75,9 @@ function printRoom(roomData, mainContainer) {
 		}
 	}
 	// console.log("textString: " + textString)
+	//Keep the bottom of the typer in view
+	div.scrollIntoView(false)
+
 	
 	
 }
@@ -104,7 +107,8 @@ async function typeRoom(roomData, mainContainer) {
 	var tempString = '';
 	var i = 0;
 	for (let i = 0; i < roomData.text_array.length; i+=2) {
-		if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
+		// if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
+		if (i == 0) {
 			textString = '>> ' + roomData.text_array[i + 1];
 		} else {
 			textString = roomData.text_array[i + 1];
@@ -141,7 +145,7 @@ Arguments:
 */
 function logToPlayerConsole(logString, fromPlayer = true) {
 	if (fromPlayer) {
-		var frontString = String(document.getElementById("inputBoxLeft").textContent);
+		var frontString = String(document.getElementById("consoleID").textContent);
 	} else {
 		var frontString = '>> ';
 	}
@@ -153,6 +157,8 @@ function logToPlayerConsole(logString, fromPlayer = true) {
 	//Append to Parent
 	mainContainer.appendChild(div);
 	div.innerHTML = frontString + logString;
+	//Keep the bottom of the typer in view
+	div.scrollIntoView(false);
 	
 }
 
