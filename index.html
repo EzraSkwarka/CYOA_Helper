@@ -16,19 +16,24 @@
 <body>
 <!-- Main Boday -->
 <div id='main'> 
-<div id="gameText"></div>
+	<div id="gameText"></div>
 
-<!-- This is the players input box, the main way for them to interact -->
-<div id='inputContianer'>
-<div id="inputBox">
-	<div id="inputBoxLeft" class="consoleEntry">[home ~/]> </div> <!--left-->
-	<div id="inputBoxRight" class="consoleEntry"><!--right-->
-		<input type="text" class="consoleEntry" spellcheck="false" id="roomNumber">
-		<input id="inputTriggerButton" type="button" value="Go" onclick="readPlayerInput(document.getElementById('roomNumber').value);
-		document.getElementById('roomNumber').value=''" hidden>
+
+	<!-- This is the players input box, the main way for them to interact -->
+	<div id='inputContianer'>
+	<div id="inputBox" class="consoleEntry">
+		<div >
+			<!-- Display Text -->
+			<span id="consoleID">[home ~/]> </span>
+			<!-- Input Box -->
+			<input type="text" spellcheck="false" id="roomNumber">
+			<!-- Go Box -->
+			<input id="inputTriggerButton" type="button" value="Go" onclick="readPlayerInput(document.getElementById('roomNumber').value);
+			document.getElementById('roomNumber').value=''" hidden>
+		</div> 
 	</div>
-</div>
-</div>
+
+	</div>
 </div>
 <script>
 	<!-- via: https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp -->
