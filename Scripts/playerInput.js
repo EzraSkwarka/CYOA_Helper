@@ -20,20 +20,7 @@ function readPlayerInput (inputString) {
 	//Test Cases
 	
 	if (/^goto /.test(inputStringLower)) {
-		//Slice of the goto of the command
-		inputStringLower = String(inputStringLower).slice(5);
-
-		//Attempt to resolve room ref
-		if (/ false$/.test(inputStringLower)) {
-			//Slice off false
-			inputStringLower = String(inputStringLower).slice(0, -6);
-			console.log("Room Input: " + inputStringLower);
-			requestRoom(inputStringLower, true);
-		} else {
-			console.log("Room Input: " + inputStringLower);
-			requestRoom(inputStringLower);
-		}
-
+		gotoRoom(inputString);
 	} else if (/help/.test(inputStringLower)) {
 		helpCommand(inputString);
 	} else if (/^load /.test(inputStringLower)) {
@@ -61,18 +48,22 @@ Arguments:
 */
 function helpCommand(str) {
 	var helpArray = [
-		"Current commands:",
-		"&nbsp help &nbsp displays a list of commands",
-		"&nbsp goto [x] &nbsp turns to page x",
-		"&nbsp load [path] &nbsp loads a specfic book at [path] into memory",
-		"&nbsp roll [n]d[x] &nbsp rolls n amount of x sided dice",
-		"&nbsp setspeed [x] &nbsp sets the time in ms between each char type",
-		"&nbsp fontSize [x] &nbsp sets the deafult font size in px",
+		true, "Current commands:",
+		false, "</br>",
+		true, "&nbsp help &nbsp displays a list of commands",
+		false, "</br>",
+		true, "&nbsp goto [x] &nbsp turns to page x",
+		false, "</br>",
+		true, "&nbsp load [path] &nbsp loads a specfic book at [path] into memory",
+		false, "</br>",
+		true, "&nbsp roll [n]d[x] &nbsp rolls n amount of x sided dice",
+		false, "</br>",
+		true, "&nbsp setspeed [x] &nbsp sets the time in ms between each char type",
+		false, "</br>",
+		true, "&nbsp fontSize [x] &nbsp sets the deafult font size in px"
 	
 	];
-	for (let i = 0; i < helpArray.length; i++) {
-		logToPlayerConsole(helpArray[i], false);
-	}
+	renderConsoleEntry(helpArray);
 }
 
 /*
@@ -137,4 +128,29 @@ function setFont(str) {
 	});
 	consoleFontSize = str;
 	return str
+}
+
+/*
+Short Description:
+	This function renders a room based of user input
+	
+Arguments:
+	str =  Str, the users input string
+	
+	return = None
+*/
+async function gotoRoom(str) {
+	//Slice of the goto of the command
+	inputStringLower = String(inputStringLower).slice(5);
+
+	//Attempt to resolve room ref
+	if (/ false$/.test(inputStringLower)) {
+		//Slice off false
+		inputStringLower = String(inputStringLower).slice(0, -6);
+		console.log("Room Input: " + inputStringLower);
+		requestRoom(inputStringLower, true);
+	} else {
+		console.log("Room Input: " + inputStringLower);
+		requestRoom(inputStringLower);
+	}
 }
