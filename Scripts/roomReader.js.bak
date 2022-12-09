@@ -215,6 +215,7 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 				for (let n = 0; n < textString.length; n++) {
 					//Pull whats already in the div
 					tempString = div.innerHTML;
+					//See Issue #23, this is where that check will need to go
 					//add the next char
 					div.innerHTML = tempString + textString.charAt(n);
 					//Keep the bottom of the typer in view

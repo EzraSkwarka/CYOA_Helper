@@ -13,7 +13,7 @@ function readPlayerInput (inputString) {
 	var inputBox = document.getElementById("roomNumber");
 	inputBox.value = '';
 	//Echo input
-	logToPlayerConsole(inputString);
+	renderConsoleEntry([false, inputString], false, true);
 	//Simplify input
 	inputStringLower = inputString.toLowerCase();
 	
@@ -32,7 +32,7 @@ function readPlayerInput (inputString) {
 	} else if (/^fontsize \d{1,}(px|em)$/.test(inputStringLower)) {
 		setFont(inputStringLower);
 	} else {
-		logToPlayerConsole("ERROR: INVALID INPUT", false);
+		renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
 	}
 	//will need to make sure room ID 'x' exists and if not output something to the user so they know why it failed
 }
@@ -79,16 +79,15 @@ function loadBook(str) {
 	//Slice of the load of the command
 	var bookString = String(str).slice(5);
 	//Update user
-	// logToPlayerConsole("Attempting to load '" + bookString + "'", false);
 	console.log("Looking for '" + bookString + "'");
 	fetch(bookString,
 			  { method: "HEAD" }
 		).then((res) => {
 		  if (res.ok) {
 			loadedBook = String(bookString);
-			logToPlayerConsole("Load '" + bookString + "' success.", false);
+			renderConsoleEntry([false, "Load '" + bookString + "' success."]);
 		  } else {
-			logToPlayerConsole("Load '" + bookString + "' failed; File not found.", false);
+			renderConsoleEntry([false, "Load '" + bookString + "' failed; File not found."]);
 		  }
 		});
 }
@@ -106,8 +105,7 @@ function rollDice(str) {
 	//Slice of the load of the command
 		inputString = String(str).slice(6)
 		result = Math.floor(Math.random() * inputString);
-		logToPlayerConsole("Rolling a d" + inputString + ": " + result);
-	
+		renderConsoleEntry([true, "Rolling a d" + inputString + ": ", false, '</br>', true, result]);	
 }
 
 /*

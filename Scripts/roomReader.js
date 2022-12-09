@@ -244,7 +244,7 @@ Arguments:
 	return = None
 */
 function clickRoom(roomID) {
-	logToPlayerConsole('goto ' + String(roomID));
+	renderConsoleEntry([false, 'goto ' + String(roomID)], false, true)
 	requestRoom(roomID);
 }
 

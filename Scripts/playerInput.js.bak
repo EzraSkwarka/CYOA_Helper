@@ -13,27 +13,14 @@ function readPlayerInput (inputString) {
 	var inputBox = document.getElementById("roomNumber");
 	inputBox.value = '';
 	//Echo input
-	logToPlayerConsole(inputString);
+	renderConsoleEntry([false, inputString], false, true);
 	//Simplify input
 	inputStringLower = inputString.toLowerCase();
 	
 	//Test Cases
 	
 	if (/^goto /.test(inputStringLower)) {
-		//Slice of the goto of the command
-		inputStringLower = String(inputStringLower).slice(5);
-
-		//Attempt to resolve room ref
-		if (/ false$/.test(inputStringLower)) {
-			//Slice off false
-			inputStringLower = String(inputStringLower).slice(0, -6);
-			console.log("Room Input: " + inputStringLower);
-			requestRoom(inputStringLower, true);
-		} else {
-			console.log("Room Input: " + inputStringLower);
-			requestRoom(inputStringLower);
-		}
-
+		gotoRoom(inputString);
 	} else if (/help/.test(inputStringLower)) {
 		helpCommand(inputString);
 	} else if (/^load /.test(inputStringLower)) {
@@ -45,7 +32,7 @@ function readPlayerInput (inputString) {
 	} else if (/^fontsize \d{1,}(px|em)$/.test(inputStringLower)) {
 		setFont(inputStringLower);
 	} else {
-		logToPlayerConsole("ERROR: INVALID INPUT", false);
+		renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
 	}
 	//will need to make sure room ID 'x' exists and if not output something to the user so they know why it failed
 }
@@ -92,16 +79,15 @@ function loadBook(str) {
 	//Slice of the load of the command
 	var bookString = String(str).slice(5);
 	//Update user
-	// logToPlayerConsole("Attempting to load '" + bookString + "'", false);
 	console.log("Looking for '" + bookString + "'");
 	fetch(bookString,
 			  { method: "HEAD" }
 		).then((res) => {
 		  if (res.ok) {
 			loadedBook = String(bookString);
-			logToPlayerConsole("Load '" + bookString + "' success.", false);
+			renderConsoleEntry([false, "Load '" + bookString + "' success."]);
 		  } else {
-			logToPlayerConsole("Load '" + bookString + "' failed; File not found.", false);
+			renderConsoleEntry([false, "Load '" + bookString + "' failed; File not found."]);
 		  }
 		});
 }
