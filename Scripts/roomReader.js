@@ -1,7 +1,7 @@
 // This is the suite of functions that allows me to parse and render books and pages from a JSON file
 
 //Defaults
-var loadedBook = "Assets/small_example_adventure_text_array.json";
+var loadedBookPath = "Assets/small_example_adventure_text_array.json";
 var typeSpeed = 10;
 var consoleFontSize = '1em';
 
@@ -41,7 +41,7 @@ Arguments:
 */
 function requestRoom(ID_target, print = false) {
 	//Add a check here so see if a book has already been loaded
-	fetch(loadedBook)
+	fetch(loadedBookPath)
             .then(function (response) {
                 return response.json();
             })

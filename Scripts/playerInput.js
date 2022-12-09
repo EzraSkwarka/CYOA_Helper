@@ -84,7 +84,7 @@ function loadBook(str) {
 			  { method: "HEAD" }
 		).then((res) => {
 		  if (res.ok) {
-			loadedBook = String(bookString);
+			loadedBookPath = String(bookString);
 			renderConsoleEntry([false, "Load '" + bookString + "' success."]);
 		  } else {
 			renderConsoleEntry([false, "Load '" + bookString + "' failed; File not found."]);
