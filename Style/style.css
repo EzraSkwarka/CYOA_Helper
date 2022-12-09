@@ -1,9 +1,11 @@
+@font-face { font-family: terminal; src: url('Ac437_IBM_BIOS-2y.ttf')}
+
 body {
      background-color: black;
      background-image: radial-gradient( rgba(0, 50, 0, 0.75), black 120% );
      height: 100vh;
      color: green;
-     font-family: 'Cascadia Code', monospace;
+     font-family: 'terminal', monospace;
      overflow: hidden;
 }
 
@@ -24,3 +26,4 @@ body::after {
      height: 97%;
      width: 98%;
 }
+

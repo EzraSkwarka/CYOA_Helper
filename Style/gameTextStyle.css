@@ -36,25 +36,40 @@
 }
  
 #inputBox #roomNumber{
-     margin-right: 0;
-     width: calc(100% - 90px);
-     white-space: nowrap;
-     background-color: transparent;
-     color: green;
-     outline: none;
-     border: none;
+    margin-right: 0;
+    width: calc(100% - 90px);
+    white-space: nowrap;
+    background-color: transparent;
+    color: green;
+    outline: none;
+    border: none;
 }
 
-/* Classes within GameText */
-.roomNumber {
-     color: #FFBF00;
-}
+/* Classes within GameText 
+	Eventually I'd like to be able to specify this info in the book meta data, but thats a later problem
+*/
 
 .typedRoom {
+	/* This will applay to all new entries into the main console*/
 	margin-left: 2em;
 	text-indent: -2em;
 }
 
+
+.roomNumber {
+	/* This is specfically the clickable room numbers embeded in the text*/
+    color: #FFBF00; /*Amber*/
+}
+
+.gameStats {
+	/* This is used when books call out stats that would show up on the adventure sheet*/
+	color: white;
+	font-variant: small-caps;
+	
+}
+/* Specified in such a way as to only hit the a tags within the game text, in case I do a sidebar or overlay with a tags
+
+not happy with this color, but its fine*/
 #gameText a:link, #gameText a:visited {
   color: pink;
   text-decoration: underline;
