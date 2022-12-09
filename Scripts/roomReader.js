@@ -64,45 +64,6 @@ function requestRoom(ID_target, print = false) {
 		
 }
 
-/*
-Short Description:
-	This function renders a room if its name is valid in a single formated block
-	
-Arguments:
-	roomData: an array pulled from the JSON file containing all data about a given room
-	mainContianer: Element refrence, the refrence of where to render the text div, will be appended as a seperate child with no class or id
-	
-	return = None
-*/
-function printRoom(roomData, mainContainer) {
-	console.log("printRoom in roomReader.js called in error!")
-	//Create new container
-	var div = createConsoleEntry();
-	
-	//Formet Text
-	var textString = '';
-	var tempString = '';
-	for (let i = 0; i < roomData.text_array.length; i+=2) {
-		if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
-			textString = '>> ' + roomData.text_array[i + 1];
-		} else {
-			textString = roomData.text_array[i + 1];
-		}
-		if (roomData.text_array[i] == true) {
-			tempString = div.innerHTML;
-			div.innerHTML = tempString + textString;
-		} else {
-			tempString = div.innerHTML;
-			div.innerHTML = tempString + textString;	
-		}
-	}
-	// console.log("textString: " + textString)
-	//Keep the bottom of the typer in view
-	div.scrollIntoView(false)
-	
-	
-}
-
 
 /*
 Short Description:
