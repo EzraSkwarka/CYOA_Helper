@@ -153,31 +153,6 @@ async function typeRoom(roomData, mainContainer) {
 
 /*
 Short Description:
-Logs the player's input to the console
-
-Arguments:
-	logString = String, what to insert to the console
-	
-	return = None
-*/
-function logToPlayerConsole(logString, fromPlayer = true) {
-	console.log("logToPlayerConsole in roomReader.js called in error!")
-	//Create new container
-	var div = createConsoleEntry();
-
-	if (fromPlayer) {
-		var frontString = String(document.getElementById("consoleID").textContent);
-	} else {
-		var frontString = '>> ';
-	}	
-	div.innerHTML = frontString + logString;
-	//Keep the bottom of the typer in view
-	div.scrollIntoView(false);
-	
-}
-
-/*
-Short Description:
 	This function should handle all the rendering and typing to the console. Needs to be albe to type the tex or print it and it needs to be able to flag if its an echo or a response
 	
 Arguments:
@@ -191,7 +166,7 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 	//Create Container
 	var div = createConsoleEntry();
 
-	//Render Text
+	//Render Text 
 		//Grab frontString
 		if (fromPlayer) {
 			var frontString = String(document.getElementById("consoleID").textContent);
