@@ -1,7 +1,7 @@
 // This is the suite of functions that allows me to parse and render books and pages from a JSON file
 
 //Defaults
-var loadedBookPath = "Assets/small_example_adventure_text_array.json";
+var loadedBookPath = "Assets/Test Adventures/small_example_adventure_text_array.json";
 var typeSpeed = 10;
 var consoleFontSize = '1em';
 
