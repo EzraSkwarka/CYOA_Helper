@@ -47,6 +47,7 @@ Arguments:
 	return = Boolean
 */
 function helpCommand(str) {
+	//this will be the default help command, but I'll change it based on the book metadata
 	var helpArray = [
 		true, "Current commands:",
 		false, "</br>",

@@ -45,27 +45,46 @@
     border: none;
 }
 
+#inputContianer input {
+	font-family: 'terminal', monospace;
+}
+
 /* Classes within GameText 
 	Eventually I'd like to be able to specify this info in the book meta data, but thats a later problem
 */
 
 .typedRoom {
 	/* This will applay to all new entries into the main console*/
-	margin-left: 2em;
-	text-indent: -2em;
+	margin-left: 1.15em;
+	text-indent: -1.15em;
 }
 
 
 .roomNumber {
 	/* This is specfically the clickable room numbers embeded in the text*/
-    color: #FFBF00; /*Amber*/
+    color: #FFB000; /*Amber*/
 }
 
 .gameStats {
 	/* This is used when books call out stats that would show up on the adventure sheet*/
-	color: white;
-	font-variant: small-caps;
+	color: #F3E5AB;
+	font-size: .9em;
 	
+}
+.gameStatsInitial {
+	/* This is used when books call out stats that would show up on the adventure sheet*/
+	color: #F3E5AB;
+	font-size: .9em;
+	font-style: italic;
+	
+}
+
+.sectionHeader {
+	color: #E18335;
+}
+
+.subsectionHeader{
+	color: #E18C47;
 }
 /* Specified in such a way as to only hit the a tags within the game text, in case I do a sidebar or overlay with a tags
 

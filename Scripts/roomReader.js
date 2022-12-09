@@ -128,7 +128,7 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 					else if (inSpan && textString.slice(n, n + 7) == '</span>') {
 						// console.log('Closing <span>')
 						tempString += '</span>';
-						n += 7;
+						n += 6;
 						inSpan = false;
 						
 					}
