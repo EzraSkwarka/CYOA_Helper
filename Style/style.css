@@ -84,3 +84,13 @@ body {
 	margin-left: 2em;
 	text-indent: -2em;
 }
+
+a:link, a:visited {
+  color: pink;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  color: pink;
+}
