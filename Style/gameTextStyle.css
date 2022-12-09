@@ -2,12 +2,9 @@
 #gameText {
      display: flex;
      flex-direction: column;
-     /* justify-content: flex-end; */
      text-align: justify;
      position: absolute;
      bottom: 3vh;
-     display: flex;
-     flex-direction: column;
      overflow: auto;
      margin-top: 25px;
      max-height: 90vh;
@@ -19,26 +16,27 @@
      scrollbar-width: none;  /* Firefox */
 }
 
- #gameText::-webkit-scrollbar { 
+#gameText::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
 
 /* Console typing area */
- #inputContianer {
+#inputContianer {
      position:absolute;
-     left:0px;
-     bottom:0px;
+     left: 0;
+     bottom: 0;
      height:3vh;
      width: 96vw;
      margin-left: 2vw;
 }
- #inputBox {
+
+#inputBox {
      width: 100vw;
      white-space: nowrap;
- }
+}
  
- #inputBox #roomNumber{
-     margin-right: 0px;
+#inputBox #roomNumber{
+     margin-right: 0;
      width: calc(100% - 90px);
      white-space: nowrap;
      background-color: transparent;

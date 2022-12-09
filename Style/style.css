@@ -6,7 +6,8 @@ body {
      font-family: 'Cascadia Code', monospace;
      overflow: hidden;
 }
- body::after {
+
+body::after {
      content: "";
      z-index: -1;
      position: absolute;
@@ -18,20 +19,8 @@ body {
 }
 
 
-
- #Navbar {
-     position: fixed;
-     bottom: 0;
-     top: 0;
-     left: 0;
-     width: 300px;
-     border: 3px solid #73AD21;
-}
- #main{
+#main {
      position: relative;
      height: 97%;
      width: 98%;
 }
-
-
-
