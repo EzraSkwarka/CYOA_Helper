@@ -56,9 +56,7 @@ function printRoom(roomData, mainContainer) {
 	//Append to Parent
 	mainContainer.appendChild(div);
 	div.className = 'typedRoom';
-
 	consoleFontSize = setFont("fontsize " + consoleFontSize);
-
 	//Formet Text
 	var textString = '';
 	var tempString = '';
@@ -102,7 +100,6 @@ async function typeRoom(roomData, mainContainer) {
 	mainContainer.appendChild(div);
 	div.className = 'consoleEntry';
 	consoleFontSize = setFont("fontsize " + consoleFontSize);
-
 	// console.log("Child: " + String(div))
 
 	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
@@ -110,7 +107,8 @@ async function typeRoom(roomData, mainContainer) {
 	var tempString = '';
 	var i = 0;
 	for (let i = 0; i < roomData.text_array.length; i+=2) {
-		if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
+		// if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
+		if (i == 0) {
 			textString = '>> ' + roomData.text_array[i + 1];
 		} else {
 			textString = roomData.text_array[i + 1];

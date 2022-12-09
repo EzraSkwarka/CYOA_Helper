@@ -20,20 +20,7 @@ function readPlayerInput (inputString) {
 	//Test Cases
 	
 	if (/^goto /.test(inputStringLower)) {
-		//Slice of the goto of the command
-		inputStringLower = String(inputStringLower).slice(5);
-
-		//Attempt to resolve room ref
-		if (/ false$/.test(inputStringLower)) {
-			//Slice off false
-			inputStringLower = String(inputStringLower).slice(0, -6);
-			console.log("Room Input: " + inputStringLower);
-			requestRoom(inputStringLower, true);
-		} else {
-			console.log("Room Input: " + inputStringLower);
-			requestRoom(inputStringLower);
-		}
-
+		gotoRoom(inputString);
 	} else if (/help/.test(inputStringLower)) {
 		helpCommand(inputString);
 	} else if (/^load /.test(inputStringLower)) {
