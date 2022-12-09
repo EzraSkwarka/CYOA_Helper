@@ -1,0 +1,68 @@
+/* Style of main body */
+#gameText {
+     display: flex;
+     flex-direction: column;
+     /* justify-content: flex-end; */
+     text-align: justify;
+     position: absolute;
+     bottom: 3vh;
+     display: flex;
+     flex-direction: column;
+     overflow: auto;
+     margin-top: 25px;
+     max-height: 90vh;
+     width: 96vw;
+     margin-left: 2vw;
+     margin-right: 2.5vw;
+	 /* Hidding Scrollbar */
+	 -ms-overflow-style: none;  /* Internet Explorer 10+ */
+     scrollbar-width: none;  /* Firefox */
+}
+
+ #gameText::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+/* Console typing area */
+ #inputContianer {
+     position:absolute;
+     left:0px;
+     bottom:0px;
+     height:3vh;
+     width: 96vw;
+     margin-left: 2vw;
+}
+ #inputBox {
+     width: 100vw;
+     white-space: nowrap;
+ }
+ 
+ #inputBox #roomNumber{
+     margin-right: 0px;
+     width: calc(100% - 90px);
+     white-space: nowrap;
+     background-color: transparent;
+     color: green;
+     outline: none;
+     border: none;
+}
+
+/* Classes within GameText */
+.roomNumber {
+     color: #FFBF00;
+}
+
+.typedRoom {
+	margin-left: 2em;
+	text-indent: -2em;
+}
+
+#gameText a:link, #gameText a:visited {
+  color: pink;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+#gameText a:link:active, #gameText a:visited:active {
+  color: pink;
+}

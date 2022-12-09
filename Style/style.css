@@ -16,56 +16,9 @@ body {
      height: 100vh;
      background: repeating-linear-gradient(0deg, rgba(black, 0.15), rgba(black, 0.15) 1px, transparent 1px, transparent 2px);
 }
- #gameText {
-     display: flex;
-     flex-direction: column;
-     /* justify-content: flex-end; */
-     text-align: justify;
-     position: absolute;
-     bottom: 3vh;
-     display: flex;
-     flex-direction: column;
-     overflow: auto;
-     margin-top: 25px;
-     max-height: 90vh;
-     width: 96vw;
-     margin-left: 2vw;
-     margin-right: 2.5vw;
-	 /* Hidding Scrollbar */
-	 -ms-overflow-style: none;  /* Internet Explorer 10+ */
-     scrollbar-width: none;  /* Firefox */
-}
-
- #gameText::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
 
 
- .roomNumber {
-     color: #FFBF00;
-}
- #inputContianer {
-     position:absolute;
-     left:0px;
-     bottom:0px;
-     height:3vh;
-     width: 96vw;
-     margin-left: 2vw;
-}
- #inputBox {
-     width: 100vw;
-     white-space: nowrap;
- }
- 
- #inputBox #roomNumber{
-     margin-right: 0px;
-     width: calc(100% - 90px);
-     white-space: nowrap;
-     background-color: transparent;
-     color: green;
-     outline: none;
-     border: none;
-}
+
  #Navbar {
      position: fixed;
      bottom: 0;
@@ -80,17 +33,5 @@ body {
      width: 98%;
 }
 
-.typedRoom {
-	margin-left: 2em;
-	text-indent: -2em;
-}
 
-a:link, a:visited {
-  color: pink;
-  text-decoration: underline;
-  cursor: auto;
-}
 
-a:link:active, a:visited:active {
-  color: pink;
-}
