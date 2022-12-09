@@ -1,3 +1,4 @@
-false, "</br>",
+		false, "</br>",
+		true, "",
 
 false, "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>",
