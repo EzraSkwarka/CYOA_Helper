@@ -40,6 +40,7 @@ Arguments:
 	return = None
 */
 function requestRoom(ID_target, print = false) {
+	//Add a check here so see if a book has already been loaded
 	fetch(loadedBook)
             .then(function (response) {
                 return response.json();
@@ -50,19 +51,17 @@ function requestRoom(ID_target, print = false) {
             .catch(function (err) {
                 console.log('error: ' + err);
             });
+		//called by second .then statment
         function appendData(data) {
-            var mainContainer = document.getElementById("gameText");
             for (var i = 0; i < data.length; i++) {
 				if(data[i].ID == ID_target) {
-					// console.log("Typing Room " + String(data[i]) + "in element " + String(mainContainer))
-					if (print) {
-						renderConsoleEntry(data[i].text_array);
-					} else {
-						renderConsoleEntry(data[i].text_array, true);
-					}
+					renderConsoleEntry(data[i].text_array, !print);
+					break;
 				}
             }
         }
+		
+		
 }
 
 /*
@@ -191,7 +190,7 @@ Arguments:
 async function renderConsoleEntry(textArray, animate = false, fromPlayer = false) {
 	//Create Container
 	var div = createConsoleEntry();
-	console.log("textArray: " + textArray);
+
 	//Render Text
 		//Grab frontString
 		if (fromPlayer) {
@@ -216,6 +215,7 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 				for (let n = 0; n < textString.length; n++) {
 					//Pull whats already in the div
 					tempString = div.innerHTML;
+					//See Issue #23, this is where that check will need to go
 					//add the next char
 					div.innerHTML = tempString + textString.charAt(n);
 					//Keep the bottom of the typer in view

@@ -22,7 +22,7 @@ body {
      /* justify-content: flex-end; */
      text-align: justify;
      position: absolute;
-     /* bottom: 35px; */
+     bottom: 3vh;
      display: flex;
      flex-direction: column;
      overflow: auto;
