@@ -105,6 +105,9 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 					//Pull whats already in the div
 					tempString = div.innerHTML;
 					//See Issue #23, this is where that check will need to go
+					if (textString.charAt(n) == '<') {
+						console.log('Found "<" tag')
+					}
 					//add the next char
 					div.innerHTML = tempString + textString.charAt(n);
 					//Keep the bottom of the typer in view
