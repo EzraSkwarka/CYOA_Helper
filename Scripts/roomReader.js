@@ -106,53 +106,6 @@ function printRoom(roomData, mainContainer) {
 
 /*
 Short Description:
-	This function renders a room if its name is valid in a formated block one char at a time at a fixed speed
-	
-Arguments:
-	roomData: an array pulled from the JSON file containing all data about a given room
-	mainContianer: Element refrence, the refrence of where to render the text div, will be appended as a seperate child with no class or id
-	
-	return = None
-*/
-async function typeRoom(roomData, mainContainer) {
-	console.log("typeRoom in roomReader.js called in error!")
-	//Create new container
-	var div = createConsoleEntry();
-
-	//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
-	var textString = '';
-	var tempString = '';
-	var i = 0;
-	for (let i = 0; i < roomData.text_array.length; i+=2) {
-		// if (i == 0 || roomData.text_array[i - 1].includes('</br>')) {
-		if (i == 0) {
-			textString = '>> ' + roomData.text_array[i + 1];
-		} else {
-			textString = roomData.text_array[i + 1];
-		}
-		if (roomData.text_array[i] == true) { //if we are to type
-			for (let n = 0; n < textString.length; n++) {
-				//Pull whats already in the div
-				tempString = div.innerHTML;
-				//add the next char
-				div.innerHTML = tempString + textString.charAt(n);
-				//Keep the bottom of the typer in view
-				div.scrollIntoView(false);
-				//Sleep so we get the animation effect
-				const result = await sleep();
-			}
-		} else { //if we are to print, mostly for html tags like span
-			tempString = div.innerHTML;
-			div.innerHTML = tempString + textString;
-			div.scrollIntoView(false);			
-		}
-		
-	}
-}
-
-
-/*
-Short Description:
 	This function should handle all the rendering and typing to the console. Needs to be albe to type the tex or print it and it needs to be able to flag if its an echo or a response
 	
 Arguments:
