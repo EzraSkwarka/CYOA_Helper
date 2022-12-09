@@ -101,15 +101,48 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 			
 			//Type this block or print it
 			if (textArray[i] == true && animate) { //if we are to type
-				for (let n = 0; n < textString.length; n++) {
+				var n = 0;
+				var inSpan = false;
+				for (n; n < textString.length; n++) {
 					//Pull whats already in the div
 					tempString = div.innerHTML;
 					//See Issue #23, this is where that check will need to go
-					if (textString.charAt(n) == '<') {
-						console.log('Found "<" tag')
+
+					//Enter a span tag
+					if (textString.slice(n, n + 5) == '<span') {
+						inSpan = true;
+						// console.log('Found "<" tag at n: ' + n)
+						//find closing '>' tag
+						var x = distanceToClosingTag(textString, n);
+						// console.log('Found ">" ' + x + 'chars away');
+						//capture tag
+						var tagText = textString.slice(n, x + 1);
+						//add the tag onto tempString
+						tempString += tagText;
+						//update n
+						n = x + 1;
+						div.innerHTML = tempString + textString.charAt(n) + '</span>';
+						
 					}
+					//if ready to leave the span tag
+					else if (inSpan && textString.slice(n, n + 7) == '</span>') {
+						// console.log('Closing <span>')
+						tempString += '</span>';
+						n += 7;
+						inSpan = false;
+						
+					}
+					//if in a span tag abut not ready to leave
+					else if (inSpan) {
+						//Slice off the '</span>'
+						tempString = tempString.slice(0,-7)
+						div.innerHTML = tempString + textString.charAt(n);
+						
+					}
+					else {
 					//add the next char
 					div.innerHTML = tempString + textString.charAt(n);
+					}
 					//Keep the bottom of the typer in view
 					div.scrollIntoView(false);
 					//Sleep so we get the animation effect
@@ -124,6 +157,17 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 		}
 	//Keep bottom of gameText in view
 	div.scrollIntoView(false);
+}
+
+function distanceToClosingTag(str, base) {
+	var x = base;
+	for (x; x < str.length; x++) {
+		if (str.charAt(x) == '>') {
+			return x;
+		}
+	}
+	
+	
 }
 
 /*

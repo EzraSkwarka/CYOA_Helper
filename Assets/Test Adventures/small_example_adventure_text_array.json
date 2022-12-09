@@ -6,7 +6,7 @@
 		true, "The text to display as the player enters the room.", 
 		false, "</br>",
 		true, "The text to display as the player gets ready to leave the room and lists where they can go. For instance, I'd recomend room ",
-		false, "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>",
+		true, "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>",
 		true, "."
 		],
       "visited?":"Boolean to see if the room has already been visited, I may just keep a record in the players save file of the rooms they have visited so I dont need to clutter up the JSON file"
