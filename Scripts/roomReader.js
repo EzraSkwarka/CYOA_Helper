@@ -79,7 +79,10 @@ Arguments:
 async function renderConsoleEntry(textArray, animate = false, fromPlayer = false) {
 	//Create Container
 	var div = createConsoleEntry();
-
+	if (textArray == []) {
+		console.log("Empty textArray given to renderConsoleEntry");
+		return false;
+	}
 	//Render Text 
 		//Grab frontString
 		if (fromPlayer) {

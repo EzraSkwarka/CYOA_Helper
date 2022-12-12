@@ -31,6 +31,8 @@ function readPlayerInput (inputString) {
 		setSpeed(inputStringLower);
 	} else if (/^fontsize \d{1,}(px|em)$/.test(inputStringLower)) {
 		setFont(inputStringLower);
+	} else if (/^ls -book/.test(inputStringLower)) {
+		listBooks();
 	} else {
 		renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
 	}
@@ -152,4 +154,28 @@ async function gotoRoom(str) {
 		console.log("Room Input: " + inputStringLower);
 		requestRoom(inputStringLower);
 	}
+}
+
+/*
+Short Description:
+	This function outputs a list of all current books to the console, built manually
+	
+Arguments:
+	None
+	
+	return = None
+*/
+function listBooks() {
+	bookList = [
+		true, "Currently known books:",
+		false, "</br>",
+		true, "Assets/Test Adventures/small_example_adventure.json",
+		false, "</br>",
+		true, "Assets/Test Adventures/small_example_adventure_text_array.json",
+		false, "</br>",
+		true, "Assets/Test Adventures/small_example_adventure_text_array_two.json",
+		false, "</br>",
+		true, "Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json"
+		];
+	renderConsoleEntry(bookList);
 }
