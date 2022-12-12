@@ -10,6 +10,7 @@
 	<!-- Style Sheets -->
 	<!-- <link rel="stylesheet" type="text/css" href="Style/sidebar.css"> -->
 	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="stylesheet" type="text/css" href="Style/gameTextStyle.css">
 	
 </head>
 
@@ -26,7 +27,7 @@
 			<!-- Display Text -->
 			<span id="consoleID">[home ~/]> </span>
 			<!-- Input Box -->
-			<input type="text" spellcheck="false" id="roomNumber">
+			<input type="text" spellcheck="false" id="roomNumber" autofocus>
 			<!-- Go Box -->
 			<input id="inputTriggerButton" type="button" value="Go" onclick="readPlayerInput(document.getElementById('roomNumber').value);
 			document.getElementById('roomNumber').value=''" hidden>
@@ -48,8 +49,10 @@
 	});
 	
 	//Display code for console on load
-	var welcomeString = "Welcome to COYA_helper, type 'help' for options";
-	logToPlayerConsole(welcomeString, false);
+	var welcomeArray = [false, "Welcome to COYA_helper, type 'help' for options"];
+	renderConsoleEntry(welcomeArray);
+	
+	loadBook('load Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json')
 </script>
 </body>
 </html> 	
