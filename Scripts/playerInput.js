@@ -28,7 +28,9 @@ function readPlayerInput (inputString) {
 	} else if (/^roll /.test(inputStringLower)) {
 		rollDice(inputString);
 	} else if (/^setspeed \d+$/.test(inputStringLower)) {
-		setSpeed(inputStringLower);
+		setSpeed(inputStringLower);	
+	} else if (/^reload$/.test(inputStringLower)) {
+		window.location.reload();
 	// } else if (/^fontsize \d{1,}(px|em)$/.test(inputStringLower)) {
 		// setFont(inputStringLower);
 	} else if (/^ls -book/.test(inputStringLower)) {
@@ -55,6 +57,8 @@ function helpCommand(str) {
 		false, "</br>",
 		true, "&nbsp help &nbsp displays a list of commands",
 		false, "</br>",
+		true, "&nbsp ls -book &nbsp displays a list of books",
+		false, "</br>",
 		true, "&nbsp goto [x] &nbsp turns to page x",
 		false, "</br>",
 		true, "&nbsp load [path] &nbsp loads a specfic book at [path] into memory",
@@ -63,7 +67,9 @@ function helpCommand(str) {
 		false, "</br>",
 		true, "&nbsp setspeed [x] &nbsp sets the time in ms between each char type",
 		false, "</br>",
-		true, "&nbsp fontSize [x] &nbsp sets the deafult font size in px"
+		true, "&nbsp reload &nbsp refreshes the page",
+		false, "</br>",
+		// true, "&nbsp fontSize [x] &nbsp sets the deafult font size in px"
 	
 	];
 	renderConsoleEntry(helpArray);
