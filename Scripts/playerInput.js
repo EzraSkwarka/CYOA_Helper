@@ -29,8 +29,8 @@ function readPlayerInput (inputString) {
 		rollDice(inputString);
 	} else if (/^setspeed \d+$/.test(inputStringLower)) {
 		setSpeed(inputStringLower);
-	} else if (/^fontsize \d{1,}(px|em)$/.test(inputStringLower)) {
-		setFont(inputStringLower);
+	// } else if (/^fontsize \d{1,}(px|em)$/.test(inputStringLower)) {
+		// setFont(inputStringLower);
 	} else if (/^ls -book/.test(inputStringLower)) {
 		listBooks();
 	} else {
