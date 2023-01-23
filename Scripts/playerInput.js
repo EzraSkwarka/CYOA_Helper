@@ -25,7 +25,7 @@ function readPlayerInput (inputString) {
 		helpCommand(inputString);
 	} else if (/^load /.test(inputStringLower)) {
 		loadBook(inputString);
-	} else if (/^roll /.test(inputStringLower)) {
+	} else if (/^roll/.test(inputStringLower)) {
 		rollDice(inputString);
 	} else if (/^setspeed \d+$/.test(inputStringLower)) {
 		setSpeed(inputStringLower);	
@@ -111,10 +111,53 @@ Arguments:
 	return = None
 */
 function rollDice(str) {
-	//Slice of the load of the command
-		inputString = String(str).slice(6)
-		result = Math.floor(Math.random() * inputString);
-		renderConsoleEntry([true, "Rolling a d" + inputString + ": ", false, '</br>', true, result]);	
+	var strCopy = str;
+	//Clean input, i.e. make it lower case
+	str = str.toLowerCase().replaceAll(' ', '');
+	if (/^roll\d*[d](\d*|\d*[+-]\d*)$/i.test(str)) { //Good input
+		//Parse input
+		//Slice roll and space
+		str = str.slice(4);
+		//Find amount
+		var amount = str.slice(0, str.indexOf('d'));
+		console.log('Amount: ' + amount);
+			//Clean str
+			str = str.slice(str.indexOf('d') + 1);
+			console.log('STR: ' + str);
+		//Find modifier
+		var findMod = 0;
+		if (str.includes('+')) {
+			findMod = str.slice(str.indexOf('+') + 1);
+			//Clean str
+			str = str.slice(0, str.indexOf('+'));
+			console.log('STR: ' + str);
+		};
+		if (str.includes('-')) {
+			findMod = str.slice(str.indexOf('-'));
+			//Clean str
+			str = str.slice(0, str.indexOf('-'));
+			console.log('STR: ' + str);
+		};
+		//find number of sides
+		var numSides = str;
+	//Preform roll
+	var rollArray = []
+	var total = 0 + parseInt(findMod);
+	for (let i = 0; i < amount; i++) {
+		var randomNumber = Math.floor(Math.random() * numSides) + 1;
+		rollArray.push(randomNumber);
+		total += randomNumber;
+	}
+	//report
+	renderConsoleEntry([true, strCopy + ': ' + rollArray + ' => ' + total])
+	//check output
+		//renderConsoleEntry([true, "You asked me to roll a die with " + numSides + " sides. I will roll it " + amount + " time(s). Then I will add " + findMod + " to it."]);
+	} else { //bad Input
+		renderConsoleEntry([true, "It seems you tried to roll some dice but I didn't quite understand you. Remember, to roll dice it needs tyo be in the [n]d[x]+/-[m] form. (including the spaces)"]);
+	}
+	
+	
+	
 }
 
 /*

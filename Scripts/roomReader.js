@@ -4,6 +4,7 @@
 var loadedBookPath = "Assets/Test Adventures/small_example_adventure_text_array.json";
 var typeSpeed = 10;
 var consoleFontSize = '1em';
+var styleTagText = "";
 
 
 /*
