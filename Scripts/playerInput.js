@@ -54,42 +54,24 @@ Arguments:
 */
 function helpCommand(str) {
   //this will be the default help command, but I'll change it based on the book metadata
-  var helpArray = [
-    true,
-    "Current commands:",
-    false,
-    "</br>",
-    true,
-    "&nbsp help &nbsp displays a list of commands",
-    false,
-    "</br>",
-    true,
-    "&nbsp ls -book &nbsp displays a list of books",
-    false,
-    "</br>",
-    true,
-    "&nbsp goto [x] &nbsp turns to page x",
-    false,
-    "</br>",
-    true,
-    "&nbsp load [path] &nbsp loads a specfic book at [path] into memory",
-    false,
-    "</br>",
-    true,
-    "&nbsp roll [n]d[x] &nbsp rolls n amount of x sided dice",
-    false,
-    "</br>",
-    true,
-    "&nbsp setspeed [x] &nbsp sets the time in ms between each char type",
-    false,
-    "</br>",
-    true,
-    "&nbsp reload &nbsp refreshes the page",
-    false,
-    "</br>",
-    // true, "&nbsp fontSize [x] &nbsp sets the deafult font size in px"
-  ];
-  renderConsoleEntry(helpArray);
+  var helpArray = [];
+  fetch("Assets/helpCommands.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      appendData(data);
+    })
+    .catch(function (err) {
+      console.log("error: " + err);
+    });
+  //called by second .then statment
+  function appendData(data) {
+    for (var i = 0; i < data.length; i++) {
+      helpArray.push(data[i]);
+    }
+    renderConsoleEntry(helpArray);
+  }
 }
 
 /*
@@ -235,25 +217,22 @@ Arguments:
 	return = None
 */
 function listBooks() {
-  bookList = [
-    true,
-    "Currently known books:",
-    false,
-    "</br>",
-    true,
-    "Assets/Test Adventures/small_example_adventure.json",
-    false,
-    "</br>",
-    true,
-    "Assets/Test Adventures/small_example_adventure_text_array.json",
-    false,
-    "</br>",
-    true,
-    "Assets/Test Adventures/small_example_adventure_text_array_two.json",
-    false,
-    "</br>",
-    true,
-    "Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json",
-  ];
-  renderConsoleEntry(bookList);
+  bookList = [];
+  fetch("Assets/bookList.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      appendData(data);
+    })
+    .catch(function (err) {
+      console.log("error: " + err);
+    });
+  //called by second .then statment
+  function appendData(data) {
+    for (var i = 0; i < data.length; i++) {
+		bookList.push(data[i]);
+    }
+    renderConsoleEntry(bookList);
+  }
 }
