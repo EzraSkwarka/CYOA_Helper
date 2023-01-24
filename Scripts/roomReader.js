@@ -206,22 +206,6 @@ function setInterupt() {
 
 /*
 Short Description:
-	Shorted early exit function, also allows for exit codes if wanted
-	
-Arguments:
-	None
-	
-	return = None
-*/
-function earlyExit() {
-	if (interuptRender) {
-		interuptRender = false;
-		return;
-	}
-}
-
-/*
-Short Description:
 	Used to handle room clicks from the text log smoothly by calling the approbrate log and print functions
 	
 Arguments:
