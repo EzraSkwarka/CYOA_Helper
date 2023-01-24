@@ -5,6 +5,7 @@ var loadedBookPath = "Assets/Test Adventures/small_example_adventure_text_array.
 var typeSpeed = 10;
 var consoleFontSize = '1em';
 var styleTagText = "";
+var interuptRender = false;
 
 
 /*
@@ -96,6 +97,11 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 		var tempString = '';
 		var i = 0;
 		for (let i = 0; i < textArray.length; i+=2) {
+			//Early exit check
+			if (interuptRender) {
+				interuptRender = false;
+				return;
+			}
 			//Apply identifier on first pass
 			if (i == 0) {
 				textString = frontString + textArray[i + 1];
@@ -108,6 +114,11 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 				var n = 0;
 				var inSpan = false;
 				for (n; n < textString.length; n++) {
+					//Early exit check
+					if (interuptRender) {
+						interuptRender = false;
+						return;
+					}
 					//Pull whats already in the div
 					tempString = div.innerHTML;
 					//See Issue #23, this is where that check will need to go
@@ -153,6 +164,11 @@ async function renderConsoleEntry(textArray, animate = false, fromPlayer = false
 					const result = await sleep();
 				}
 			} else { //if we are to print, mostly for html tags like span
+				//Early Exit Check
+				if (interuptRender) {
+					interuptRender = false;
+					return;
+				}
 				tempString = div.innerHTML;
 				div.innerHTML = tempString + textString;
 				div.scrollIntoView(false);			
@@ -172,6 +188,36 @@ function distanceToClosingTag(str, base) {
 	}
 	
 	
+}
+
+/*
+Short Description:
+	Called from playerInput.js to stop a room render
+	
+Arguments:
+	None
+	
+	return = None
+*/
+function setInterupt() {
+	console.log('Calling for early exit.')
+	interuptRender = true;
+}
+
+/*
+Short Description:
+	Shorted early exit function, also allows for exit codes if wanted
+	
+Arguments:
+	None
+	
+	return = None
+*/
+function earlyExit() {
+	if (interuptRender) {
+		interuptRender = false;
+		return;
+	}
 }
 
 /*

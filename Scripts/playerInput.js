@@ -35,6 +35,8 @@ function readPlayerInput (inputString) {
 		// setFont(inputStringLower);
 	} else if (/^ls -book/.test(inputStringLower)) {
 		listBooks();
+	} else if (/^stop$/) {
+		setInterupt();
 	} else {
 		renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
 	}
