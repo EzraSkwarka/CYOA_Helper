@@ -1,10 +1,12 @@
 // This is the suite of functions that allows me to parse and render books and pages from a JSON file
 
 //Defaults
-var loadedBookPath = "Assets/Test Adventures/small_example_adventure_text_array.json";
+var loadedBookPath =
+  "Assets/Test Adventures/small_example_adventure_text_array.json";
 var typeSpeed = 10;
-var consoleFontSize = '1em';
-
+var consoleFontSize = "1em";
+var styleTagText = "";
+var interuptRender = false;
 
 /*
 Short Description:
@@ -17,17 +19,17 @@ Arguments:
 */
 
 function createConsoleEntry() {
-	//Create new container
-	var div = document.createElement("div");
-	//Append to Parent
-	var mainContainer = document.getElementById('gameText')
-	mainContainer.appendChild(div);
-	//Set Class
-	div.className = 'typedRoom';
-	//Update DOM
-	consoleFontSize = setFont("fontsize " + consoleFontSize);
-	
-	return div
+  //Create new container
+  var div = document.createElement("div");
+  //Append to Parent
+  var mainContainer = document.getElementById("gameText");
+  mainContainer.appendChild(div);
+  //Set Class
+  div.className = "typedRoom";
+  //Update DOM
+  consoleFontSize = setFont("fontsize " + consoleFontSize);
+
+  return div;
 }
 
 /*
@@ -40,30 +42,27 @@ Arguments:
 	return = None
 */
 function requestRoom(ID_target, print = false) {
-	//Add a check here so see if a book has already been loaded
-	fetch(loadedBookPath)
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-		//called by second .then statment
-        function appendData(data) {
-            for (var i = 0; i < data.length; i++) {
-				if(data[i].ID == ID_target) {
-					renderConsoleEntry(data[i].text_array, !print);
-					break;
-				}
-            }
-        }
-		
-		
+  //Add a check here so see if a book has already been loaded
+  fetch(loadedBookPath)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      appendData(data);
+    })
+    .catch(function (err) {
+      console.log("error: " + err);
+    });
+  //called by second .then statment
+  function appendData(data) {
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].ID == ID_target) {
+        renderConsoleEntry(data[i].text_array, !print);
+        break;
+      }
+    }
+  }
 }
-
 
 /*
 Short Description:
@@ -76,101 +75,129 @@ Arguments:
 	
 	return = None
 */
-async function renderConsoleEntry(textArray, animate = false, fromPlayer = false) {
-	//Create Container
-	var div = createConsoleEntry();
-	if (textArray == []) {
-		console.log("Empty textArray given to renderConsoleEntry");
-		return false;
-	}
-	//Render Text 
-		//Grab frontString
-		if (fromPlayer) {
-			var frontString = String(document.getElementById("consoleID").textContent);
-		} else {
-			var frontString = '>> ';
-		}
-		//Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
-		var textString = '';
-		var tempString = '';
-		var i = 0;
-		for (let i = 0; i < textArray.length; i+=2) {
-			//Apply identifier on first pass
-			if (i == 0) {
-				textString = frontString + textArray[i + 1];
-			} else {
-				textString = textArray[i + 1];
-			}
-			
-			//Type this block or print it
-			if (textArray[i] == true && animate) { //if we are to type
-				var n = 0;
-				var inSpan = false;
-				for (n; n < textString.length; n++) {
-					//Pull whats already in the div
-					tempString = div.innerHTML;
-					//See Issue #23, this is where that check will need to go
+async function renderConsoleEntry(
+  textArray,
+  animate = false,
+  fromPlayer = false
+) {
+  //Create Container
+  var div = createConsoleEntry();
+  if (textArray == []) {
+    console.log("Empty textArray given to renderConsoleEntry");
+    return false;
+  }
+  //Render Text
+  //Grab frontString
+  if (fromPlayer) {
+    var frontString = String(document.getElementById("consoleID").textContent);
+  } else {
+    var frontString = ">> ";
+  }
+  //Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
+  var textString = "";
+  var tempString = "";
+  var i = 0;
+  for (let i = 0; i < textArray.length; i += 2) {
+    //Early exit check
+    if (interuptRender) {
+      interuptRender = false;
+      return;
+    }
+    //Apply identifier on first pass
+    if (i == 0) {
+      textString = frontString + textArray[i + 1];
+    } else {
+      textString = textArray[i + 1];
+    }
 
-					//Enter a span tag
-					if (textString.slice(n, n + 5) == '<span') {
-						inSpan = true;
-						// console.log('Found "<" tag at n: ' + n)
-						//find closing '>' tag
-						var x = distanceToClosingTag(textString, n);
-						// console.log('Found ">" ' + x + 'chars away');
-						//capture tag
-						var tagText = textString.slice(n, x + 1);
-						//add the tag onto tempString
-						tempString += tagText;
-						//update n
-						n = x + 1;
-						div.innerHTML = tempString + textString.charAt(n) + '</span>';
-						
-					}
-					//if ready to leave the span tag
-					else if (inSpan && textString.slice(n, n + 7) == '</span>') {
-						// console.log('Closing <span>')
-						tempString += '</span>';
-						n += 6;
-						inSpan = false;
-						
-					}
-					//if in a span tag abut not ready to leave
-					else if (inSpan) {
-						//Slice off the '</span>'
-						tempString = tempString.slice(0,-7)
-						div.innerHTML = tempString + textString.charAt(n);
-						
-					}
-					else {
-					//add the next char
-					div.innerHTML = tempString + textString.charAt(n);
-					}
-					//Keep the bottom of the typer in view
-					div.scrollIntoView(false);
-					//Sleep so we get the animation effect
-					const result = await sleep();
-				}
-			} else { //if we are to print, mostly for html tags like span
-				tempString = div.innerHTML;
-				div.innerHTML = tempString + textString;
-				div.scrollIntoView(false);			
-			}
-			
-		}
-	//Keep bottom of gameText in view
-	div.scrollIntoView(false);
+    //Type this block or print it
+    if (textArray[i] == true && animate) {
+      //if we are to type
+      var n = 0;
+      var inSpan = false;
+      for (n; n < textString.length; n++) {
+        //Early exit check
+        if (interuptRender) {
+          interuptRender = false;
+          return;
+        }
+        //Pull whats already in the div
+        tempString = div.innerHTML;
+        //See Issue #23, this is where that check will need to go
+
+        //Enter a span tag
+        if (textString.slice(n, n + 5) == "<span") {
+          inSpan = true;
+          // console.log('Found "<" tag at n: ' + n)
+          //find closing '>' tag
+          var x = distanceToClosingTag(textString, n);
+          // console.log('Found ">" ' + x + 'chars away');
+          //capture tag
+          var tagText = textString.slice(n, x + 1);
+          //add the tag onto tempString
+          tempString += tagText;
+          //update n
+          n = x + 1;
+          div.innerHTML = tempString + textString.charAt(n) + "</span>";
+        }
+        //if ready to leave the span tag
+        else if (inSpan && textString.slice(n, n + 7) == "</span>") {
+          // console.log('Closing <span>')
+          tempString += "</span>";
+          n += 6;
+          inSpan = false;
+        }
+        //if in a span tag abut not ready to leave
+        else if (inSpan) {
+          //Slice off the '</span>'
+          tempString = tempString.slice(0, -7);
+          div.innerHTML = tempString + textString.charAt(n);
+        } else {
+          //add the next char
+          div.innerHTML = tempString + textString.charAt(n);
+        }
+        //Keep the bottom of the typer in view
+        div.scrollIntoView(false);
+        //Sleep so we get the animation effect
+        const result = await sleep();
+      }
+    } else {
+      //if we are to print, mostly for html tags like span
+      //Early Exit Check
+      if (interuptRender) {
+        interuptRender = false;
+        return;
+      }
+      tempString = div.innerHTML;
+      div.innerHTML = tempString + textString;
+      div.scrollIntoView(false);
+    }
+  }
+  //Keep bottom of gameText in view
+  div.scrollIntoView(false);
 }
 
 function distanceToClosingTag(str, base) {
-	var x = base;
-	for (x; x < str.length; x++) {
-		if (str.charAt(x) == '>') {
-			return x;
-		}
-	}
+  var x = base;
+  for (x; x < str.length; x++) {
+    if (str.charAt(x) == ">") {
+      return x;
+    }
+  }
+}
+
+/*
+Short Description:
+	Called from playerInput.js to stop a room render
 	
+Arguments:
+	None
 	
+	return = None
+*/
+function setInterupt() {
+  console.log("Calling for early exit.");
+  interuptRender = true;
 }
 
 /*
@@ -183,8 +210,8 @@ Arguments:
 	return = None
 */
 function clickRoom(roomID) {
-	renderConsoleEntry([false, 'goto ' + String(roomID)], false, true)
-	requestRoom(roomID);
+  renderConsoleEntry([false, "goto " + String(roomID)], false, true);
+  requestRoom(roomID);
 }
 
 /*
@@ -196,10 +223,10 @@ Arguments:
 	
 	return = None
 */
-function sleep(ms=typeSpeed) {
-  return new Promise(resolve => {
+function sleep(ms = typeSpeed) {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      resolve('resolved');
+      resolve("resolved");
     }, ms);
   });
 }
@@ -214,7 +241,7 @@ Arguments:
 	return = None
 */
 function setSpeed(str) {
-	// console.log("Old: " + typeSpeed);
-	typeSpeed = inputStringLower.slice(9);
-	// console.log(typeSpeed);
+  // console.log("Old: " + typeSpeed);
+  typeSpeed = inputStringLower.slice(9);
+  // console.log(typeSpeed);
 }

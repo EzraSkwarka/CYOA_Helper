@@ -1,0 +1,20 @@
+[
+    true,
+    "Currently known books:",
+    false,
+    "</br>",
+    true,
+    "Assets/Test Adventures/small_example_adventure.json",
+    false,
+    "</br>",
+    true,
+    "Assets/Test Adventures/small_example_adventure_text_array.json",
+    false,
+    "</br>",
+    true,
+    "Assets/Test Adventures/small_example_adventure_text_array_two.json",
+    false,
+    "</br>",
+    true,
+    "Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json"
+  ]

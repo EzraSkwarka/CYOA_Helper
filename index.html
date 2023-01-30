@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-	<!-- Scripts -->
-	<script type="text/javascript" src="Scripts/roomReader.js" ></script>
-	<script type="text/javascript" src="Scripts/playerInput.js" ></script>
-	<!-- <script type="text/javascript" src="Scripts/sidebar.js"></script> -->
-	
-	<!-- Style Sheets -->
-	<!-- <link rel="stylesheet" type="text/css" href="Style/sidebar.css"> -->
-	<link rel="stylesheet" type="text/css" href="Style/style.css">
-	<link rel="stylesheet" type="text/css" href="Style/gameTextStyle.css">
-	
-</head>
+  <head>
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <!-- Scripts -->
+    <script type="text/javascript" src="Scripts/roomReader.js"></script>
+    <script type="text/javascript" src="Scripts/playerInputParser.js"></script>
+    <script type="text/javascript" src="Scripts/playerInputFunctions.js"></script>
+    <!-- <script type="text/javascript" src="Scripts/sidebar.js"></script> -->
 
-<body>
-<!-- Main Boday -->
-<div id='main'> 
-	<div id="gameText"></div>
+    <!-- Style Sheets -->
+    <!-- <link rel="stylesheet" type="text/css" href="Style/sidebar.css"> -->
+    <link rel="stylesheet" type="text/css" href="Style/style.css" />
+    <link rel="stylesheet" type="text/css" href="Style/gameTextStyle.css" />
+  </head>
 
+  <body>
+    <!-- Main Boday -->
+    <div id="main">
+      <div id="gameText"></div>
 
-	<!-- This is the players input box, the main way for them to interact -->
-	<div id='inputContianer'>
-	<div id="inputBox" class="consoleEntry">
-		<div >
-			<!-- Display Text -->
-			<span id="consoleID">[home ~/]> </span>
-			<!-- Input Box -->
-			<input type="text" spellcheck="false" id="roomNumber" autofocus>
-			<!-- Go Box -->
-			<input id="inputTriggerButton" type="button" value="Go" onclick="readPlayerInput(document.getElementById('roomNumber').value);
-			document.getElementById('roomNumber').value=''" hidden>
-		</div> 
-	</div>
+      <!-- This is the players input box, the main way for them to interact -->
+      <div id="inputContianer">
+        <div id="inputBox" class="consoleEntry">
+          <div>
+            <!-- Display Text -->
+            <span id="consoleID">[home ~/]> </span>
+            <!-- Input Box -->
+            <input type="text" spellcheck="false" id="roomNumber" autofocus />
+            <!-- Go Box -->
+            <input
+              id="inputTriggerButton"
+              type="button"
+              value="Go"
+              onclick="readPlayerInput(document.getElementById('roomNumber').value);
+			document.getElementById('roomNumber').value=''"
+              hidden
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      <!-- via: https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp -->
 
-	</div>
-</div>
-<script>
-	<!-- via: https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp -->
-	
-	//Listener events for input box
-	var input = document.getElementById("roomNumber");
-		input.addEventListener("keypress", function(event) {
-		if (event.key === "Enter") {
-			event.preventDefault();
-			document.getElementById("inputTriggerButton").click();
-		}
-	});
-	
-	//Display code for console on load
-	var welcomeArray = [false, "Welcome to COYA_helper, type 'help' for options"];
-	renderConsoleEntry(welcomeArray);
-	
-	loadBook('load Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json')
-</script>
-</body>
-</html> 	
+      //Listener events for input box
+      var input = document.getElementById("roomNumber");
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("inputTriggerButton").click();
+        }
+      });
+
+      //Display code for console on load
+      var welcomeArray = [
+        false,
+        "Welcome to COYA_helper, type 'help' for options",
+      ];
+      renderConsoleEntry(welcomeArray);
+
+      loadBook("load Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json");
+    </script>
+  </body>
+</html>
