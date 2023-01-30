@@ -130,7 +130,7 @@ Arguments:
 */
 function setFont(str) {
   str = String(str).slice(9);
-  console.log("fontsize: " + str);
+  // console.log("fontsize: " + str);
   var rooms = document.querySelectorAll(".consoleEntry");
   rooms.forEach((room) => {
     room.style.fontSize = str;

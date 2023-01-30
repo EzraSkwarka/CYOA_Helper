@@ -3,7 +3,7 @@
 //Defaults
 var loadedBookPath =
   "Assets/Test Adventures/small_example_adventure_text_array.json";
-var typeSpeed = 10;
+var typeSpeed = 2;
 var consoleFontSize = "1em";
 var styleTagText = "";
 var interuptRender = false;
@@ -57,7 +57,10 @@ function requestRoom(ID_target, print = false) {
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       if (data[i].ID == ID_target) {
-        renderConsoleEntry(data[i].text_array, !print);
+        roomPackage = [true, "<span class='subsectionHeader'>" + data[i].ID + " " + data[i].short_name + "</span>", false,
+        "</br>"].concat(data[i].text_array);
+        // console.log(roomPackage);
+        renderConsoleEntry(roomPackage, !print);
         break;
       }
     }
