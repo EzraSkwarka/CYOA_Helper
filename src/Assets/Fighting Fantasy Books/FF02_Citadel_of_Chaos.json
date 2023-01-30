@@ -542,7 +542,7 @@
 
     "text_array": [
       true,
-      "Under your Illusion Spell, the crowd of onlookers see you start playing the game. You watch for a couple of rounds and the tension mounts. You decide it prudent to leave the room without wasting more time. Turn to 31.",
+      "Under your Illusion Spell, the crowd of onlookers see you start playing the game. You watch for a couple of rounds and the tension mounts. You decide it prudent to leave the room without wasting more time. <span class='roomNumber' onclick='clickRoom(31)'>Turn to 31</span>.",
       false,
       "</br>"
     ]
@@ -834,82 +834,177 @@
     ]
   },
   {
-    "short_name": "",
+    "short_name": " - Battle",
     "ID": 30,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The beast is immensely powerful. You draw your Sword and the battle starts:",
+      false,
+      "</br>",
+      true,
+      "CLAWBEAST - - - - - SKILL 9 - - - - - STAMINA 14",
+      false,
+      "</br>",
+      true,
+      "When you have inflicted your fourth hit on the creature, turn to 241.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 31,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You leave the room through the door at the far end, which opens into a short passageway ending at a large wooden door. The handle on this door turns, letting you into a large chamber. Turn to 169.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 32,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "Stepping over the bodies, you approach the gate and call for the gatekeeper, hiding in the shadows as he approaches. He sees the bodies and comes out to investigate, whereupon you nip inside the gate and lock him out. Turn to 251.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 33,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "As you try to rise, the Orc and the Goblin grab you and hold you down, while the Dwari advances with his club. Turn to 213.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 34,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The key turns and, removing the lock, you open the box to find another key, this time cut in a glowing green metal. Will you try this new key on the third box (turn to 89) or leave the room with the two keys (turn to 237)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 35,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You concentrate on your Illusion. You can either convince him that he is being attacked by an enemy (turn to 364), or make yourself disappear in the hope that he will come looking for you (turn to 246).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 36,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "'Pah!' says the Gark, 'I do not fool that easily. Throw your lumps of brass away.' It dawns on the creature that, if you are offering a bribe, you must be an intruder which for a Gark - is quite a stunning - piece of logical thinking! It slaps you hard with its great hand, knocking you unconscious onto the floor. The last words you hear before you pass out are the proud Gark's: 'Into the jail for this one! Turn to 234. And don't forget to deduct your wasted Fool's Gold Spell.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 37,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You draw out the skin and the creature hisses loudly. All its heads retreat and it remains still, watching you. There is a door on the far side of the room and you slowly make your way towards it. Halfway across the room, a head darts out and snatches the fleece from your hands. But instead of attacking you, the Hydra slinks back into a corner. You move on to the door cautiously. Turn to 229.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 38,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The door opens into a short passageway which is paved with small stones. A short distance further on, an ornately carved door marks the end of the passageway. But just before the door, a side passage leads off to the left. You approach the door, listening for any signs of life inside. As your hand touches the handle, a voice says: 'Do not knock; just enter!' from inside. Will you enter the room as instructed (turn to 132) or will you decide against this room and take the passage leading off to the left (turn to 306)?",
+      false,
+      "</br>"
+    ]
   },
   {
-    "short_name": "",
+    "short_name": " - Battle",
     "ID": 39,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You take out the Jar and, as you do so, the Ganjees gasp. 'Racknee!' says a voice. 'You have returned!' And with those words, an invisible hand snatches the jar from you, lays it onto the ground and opens the lid. The Spider-Man turns towards you and growls a little growl. You draw your sword as the beast scuttles towards you angrily. You must fight the creature:",
+      false,
+      "</br>",
+      true,
+      "SPIDER-MAN SKILL 7 STAMINA 5",
+      false,
+      "</br>",
+      true,
+      "As soon as the Spider-Man gets its first hit on you, turn to 208. If you win without it wounding you, you must now face the Ganjees with your sword. Tum to 248."
+    ]
   },
   {
     "short_name": "",
     "ID": 40,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "After several moments the door opens slowly and a hunchbacked, misshapen creature with rotten teeth, ragged hair and tattered clothes stands in front of you. 'Yes, sir (heh, heh) - what can I do for you? growls the half-human creature. 'I am expected, you reply, and walk past him through the door with confidence. He is a little bewildered by your manner and stammers, not knowing whether to challenge you or not. Which way to the reception room? you demand. He squints at you through one eye and motions towards a left fork in the passage- way a short distance ahead. Will you believe him and take the left fork (turn to 243), or do you distrust this shifty creature and take the right fork (turn to 2)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 41,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The three women shuffle together in a huddle and mutter under their breath to one another. With a little chuckle, one of them turns to you and says, 'Yes, stranger, we'll help you on your way.' She fixes you with ice-cold eyes, and points her finger first at you, then at the wall behind her. The room goes dark, you feel a rushing sensation and, when the darkness clears, you are in another room. Turn to 257-",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 42,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "She blinks and the jets of fire disappear. What will you offer her?:",
+      false,
+      "</br>",
+      true,
+      "A Silver Mirror? Turn to 138",
+      false,
+      "</br>",
+      true,
+      "A Hairbrush? Turn to 91",
+      false,
+      "</br>",
+      true,
+      "A Jar containing a Spider-Man? Turn to 223",
+      false,
+      "</br>",
+      true,
+      "If you have none of these, you must make some excuse about losing your gift and go back onto the balcony where you may take either the middle door (turn to 64) or the far door (turn to 304).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
