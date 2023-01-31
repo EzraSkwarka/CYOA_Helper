@@ -1507,163 +1507,366 @@
     "short_name": "",
     "ID": 77,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "Balthus Dire is surprised at your success. 'So!' he exclaims. 'You think yourself stronger than the rest, eh?' You may act quickly and cast a Spell at him. Which will you choose:",
+      false,
+      "</br>",
+      true,
+      "An E.S.P. Spell? Turn to 187",
+      false,
+      "</br>",
+      true,
+      "A Fire Spell? Turn to 46",
+      false,
+      "</br>",
+      true,
+      "A Creature Copy Spell? Turn to 349",
+      false,
+      "</br>",
+      true,
+      "If you have none of these, or would prefer not to cast a spell, turn to 355.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 78,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "His eyes follow you to the window. His pupils have turned milky white. He leans his head back, blinks once and moans. Snapping his head forwards, he now glares at you with eyes that have turned to shining silver! His gaze is hypnotic, and you will have to act quickly. Will you:",
+      true,
+      "Hide yourself behind one of the drapes? Turn to 324",
+      false,
+      "</br>",
+      true,
+      "Pull one of the drapes down and throw it over his head? Turn to 124",
+      false,
+      "</br>",
+      true,
+      "Look through your backpack for something to use? Turn to 277",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 79,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "In the far corner of the courtyard, you come across a peculiar bush with branches twisting out from the central stalk, as if in agony. The leaves are diamond- shaped, with small berries underneath, flat and tablet-like. You may take some berries with you on your adventure and creep further along the wall to the main entrance to the Citadel. Turn to 218.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 80,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "As you leap across the table, the sorcerer spins round. You stumble and crash to the ground as you see that he has changed into a creature much more dangerous than you. I lis face is now that of a witch, and his hair is now a mass of snakes, writhing and hissing at you. Will you continue your attack (turn to 199) or retreat from him (turn to 232)?F",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 81,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The Ape-Dog laughs and tells you that Kylltrog is a lazy good-for-nothing and is not worth saving. You breathe a sigh of relief as he walks back and shouts for the gatekeeper. Moments later, the gatekeeper appears and opens a small doorway to let you in. Turn to 251.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 82,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You fall into the trench. Frantically, you try to grasp the edge as you tumble over, but without success. Head over heels you tumble down the pit, and your last memory is your final crash as you hit the ground below, which kills you instantly.",
+      false,
+      "</br>",
+      true,
+      "You have failed in your mission.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 83,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The man is a merchant. You tell him you are of the same profession and you chat for some time about prices and profits within the Black Tower. He says he has never been allowed above the ground floor of the Citadel, as merchants are rather despised in side. You bid him farewell and press onwards. Turn to 245.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 84,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "As you study the shelves, you hear a commotion behind you. You wheel round in time to see Orc-like creatures, armed and on guard, materializing one after the other behind you. They advance and sur- round you. The tallest one moves his face close to yours and blows a puff of breath straight into your eyes. The room spins and you slump to the ground, unconscious. Turn to 234.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 85,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You cast your Spell and wait for a fireball to appear on the end of your torch. The torch flickers, just enough for you to see that there is a door on the far side of the room, but then goes out again. The Ganjees laugh once more at your efforts to thwart them. You feel a blow on the head which knocks you to the ground again. Lose 2 STAMINA points. Will you:",
+      false,
+      "</br>",
+      true,
+      "Try an Illusion Spell? Turn to 395",
+      false,
+      "</br>",
+      true,
+      "Take something from your backpack? Turn to 322",
+      false,
+      "</br>",
+      true,
+      "Draw your sword? Turn to 248"
+    ]
   },
   {
     "short_name": "",
     "ID": 86,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "As you cast the spell, the two creatures watch in amazement as you rise in the air, float over their heads towards the gate, over the wall and into the Citadel. You land on your feet inside the gate and look around. Turn to 251. But beware! They will be sure to alert the Citadel guards. Cross the Levitation Spell you have just used off your Adventure Sheet.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 87,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You create a large fireball in your hands and throw it at the creature. It has no effect. The Gargoyle swipes at you and the blow knocks you off your feet.",
+      false,
+      "</br>",
+      true,
+      "Lose 2 STAMINA points. You had better avoid this beast by leaving the room and trying the middle door on the balcony. Turn to 64."
+    ]
   },
   {
     "short_name": "",
     "ID": 88,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The door is extremely strong, but cracks a little under your charge. You may try charging it as often as you wish until you break it. Roll a die for cach attempt. If you roll a six, you succeed (turn to 292). For each unsuccessful attempt, you must lose 1 STAMINA point. If you decide against this course of action, you may use a Strength Spell (turn to 170), or try either the middle door (turn to 64) or the door at the far end of the balcony (turn to 304) instead.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 89,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The key turns, the lock clicks open and you look inside the box. Inside the box is a glass jar, and in this jar is a spider. But not a normal spider; this creature has the face of an old man. He is talking to you, but you cannot make out what he is saying. A noise startles you and you spin round to see that the door, the one you came through, is beginning to open. You put the jar in your bag and make for the other door. Turn to 237.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 90,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The passageway widens and you are now walking alongside a flowing river. Just ahead, a woman seems to be washing clothes. She has a basket of these clothes beside her, and several sets of long johns are hanging on a line behind her. Will you:",
+      false,
+      "</br>",
+      true,
+      "Draw out your sword and advance ready for a fight? Turn to 176",
+      false,
+      "</br>",
+      true,
+      "Hail her and try to make conversation? Turn to 21",
+      false,
+      "</br>",
+      true,
+      "Use an E.S.P. Spell to find out who she is? Turn to 329",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 91,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "She looks at your offering and her eyes widen. Let me see that,' she commands. You carefully advance towards her and hold out the brush. She snatches it and spends several moments admiring it. This is indeed a work of art,' she says, and she gets out of bed to try it in front of her mirror. As she brushes her hair with it, her hair takes on an unusual sheen, glimmering softly. She is fascinated with your gift and now is your chance to leave unnoticed through a door in the far corner. You may try to take with you a Golden Fleece which is lying on the bed. Test your luck. If you are Lucky, you manage to snatch it quickly and can leave through the other door (tum to 140). If you are Unlucky, you may Test your luck again until you are finally Lucky. Or, if I uck is not with you, you may ignore the cumbersome thing and leave anyway (turn to 140).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 92,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The milky liquid smells sweet. You take a sip and start to giggle! You take a gulp and burst out laughing-for no reason at all! No wonder the little Gremlins were enjoying it so much. Light-headed, and in fine spirits, you leave the chamber to make your way onwards towards the Citadel. Turn to 156 and add 2 STAMINA points for this refreshing incident.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 93,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "Outside the door you look at your bottle. It is a bottle of Hogweed Essence, apparently useful for repel ling stone-based creatures. This may be useful and you put it carefully into your backpack. Heading on up the corridor, you come to another door, which opens, letting you pass into a large room. Turn to 169.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 94,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You feel your own growing power. Running at the door you hit it hard with your shoulder... but it does not budge! Lose 1 STAMINA point for your bruise and knock loudly to summon the guard. Turn to 118.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 95,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "At the far end of the Wine Cellar is a wooden door, which you try. It opens out into a passageway which leads onwards for several metres. Turn to 367.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 96,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "They accept your offering and summon the gatekeeper, who opens a small doorway in the portcullis to let you in. You leave them squabbling over the gold nugget. Turn to 251.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 97,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The bread is rather tasteless and dry. In fact it is very dry-so dry that you are soon desperate for a drink! Your mouth is parched and you frantically search through the food in the room for something to drink. But there is nothing to quench your thirst. You must deduct 1 SKILL point until you find liquid of some sort which you may drink (drinking this liquid need not necessarily be given as an option-it may just be described as being present in a room). You may now leave the room, either through the door in the left-hand wall (turn to 13) or through the one opposite the door you entered through (turn to 281).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 98,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The GOLEM advancing towards you is a slow- moving creature, and you reach the boxes easily. You curse as you find they are all locked. As you struggle with the locks, the Golem closes on you. You may:",
+      false,
+      "</br>",
+      true,
+      "Draw your sword and fight the creature Turn to 303",
+      false,
+      "</br>",
+      true,
+      "Cast a Fire Spell Turn to 4",
+      false,
+      "</br>",
+      true,
+      "Cast a Creature Copy Spell Turn to 190",
+      false,
+      "</br>",
+      true,
+      "Forget the boxes and race for the door Turn to 237",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 99,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "Will you take either the left-hand door (turn to 52) or the right-hand door (turn to 38)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 100,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "Do you have a Levitation Spell? If so, you had better use it now to float out of the pit. If you levitate yourself, you can continue down the wall towards the comer of the courtyard (turn to 79). If not, turn to 276.",
+      false,
+      "</br>"
+    ]
   },
   {
-    "short_name": "",
+    "short_name": "- Battle",
     "ID": 101,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "A duplicate of the creature materializes between the two of you. At your command, the battle commences:",
+      false,
+      "</br>",
+      true,
+      "GARGOYLE SKILL 9 STAMINA 10",
+      false,
+      "</br>",
+      true,
+      "If your creation wins, turn to 62. If your created Gargoyle loses, you decide against facing the Gargoyle on your own and leave the room, trying the door in the middle of the balcony. Turn to 64.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 102,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [true, "They sympathize with your request. Three of them turn towards the other one and, with obvious reluctance, this one takes an amulet from around his neck. This,' he says, 'is a Charmed Amulet. It is made of metal but a Jewel of Light is set into it. Ganjees fear this talisman, but they will no doubt try to trick you into losing it. This has been my own proud possession for some time but we Scouts are obliged by our gods to offer help, so I give it to you.'", false, "</br>", true, "You thank him and place the Charmed Amulet around your neck. You may now leave the room, but you may feel obliged, because of his great gift, to give him something in return. If you have any Gold Pieces, decide how many you will give him, cross these off your list, and turn to 183. If you have no gold but will give him an artefact you have picked up, cross this off your list and turn to 396. If you cannot, or will not, give him a gift in return, turn to 270.", false, "</br>"]
   },
   {
     "short_name": "",
     "ID": 103,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [true, "You cast your Spell - but nothing happens! You fall down and down from the tower, finally landing with a fatal crash on the floor below. The fearsome creatures have robbed you of your magic, and now of your life.", false, "</br>", true, "You have failed in your mission.", false, "</br>"]
   },
   {
     "short_name": "",
