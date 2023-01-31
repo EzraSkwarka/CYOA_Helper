@@ -1010,205 +1010,498 @@
     "short_name": "",
     "ID": 43,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "As you cast the spell, his grip loosens. Gradually his strength ebbs until eventually he releases his grip and slumps back, panting, on the ground. Lose 1 more STAMINA point as you nurse your wounded arm, and cross the Weakness Spell off your list. You can continue on your way. Turn to 14.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 44,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The room stops shaking and you drop to the ground. The armoury cupboard is locked, but you may smash the lock. Or you may take off your backpack and look for a weapon to use. Which will you do:",
+      false,
+      "</br>",
+      true,
+      "Choose a weapon from the cupboard? Turn to 353",
+      false,
+      "</br>",
+      true,
+      "Take an artefact from your backpack? Turn to 277",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 45,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "If your stomach will bear it, you may try:",
+      false,
+      "</br>",
+      true,
+      "Some of the meat hanging up Turn to 166 ",
+      false,
+      "</br>",
+      true,
+      "A piece of fruit Turn to 313",
+      false,
+      "</br>",
+      true,
+      "A slice of cheese Turn to 253",
+      false,
+      "</br>",
+      true,
+      "A loaf of bread Turn to 97",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 46,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "With a motion, you fling your hand forward and point to the floor beneath the sorcerer. Smoke and flames burst from the ground. Balthus Dire jumps back a little, startled, then closes his eyes to concen- trate. As they open, you can see a fire burning within the pupils themselves, and he steps forward into the flame you created. Taking a handful of flaming rubble, he throws this at you. Will you duck to avoid it (turn to 195), or jump out of the way (turn to 74)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 47,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "What Spell will you use:",
+      false,
+      "</br>",
+      true,
+      "Creature Copy Spell? Turn to 8",
+      false,
+      "</br>",
+      true,
+      "Illusion Spell? Turn to 173",
+      false,
+      "</br>",
+      true,
+      "Levitation Spell?Turn to 259",
+      false,
+      "</br>",
+      true,
+      "If you have none of these spells, you will have to retreat towards the monument in the centre of the courtyard and hide from her (turn to 209).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 48,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "'Never!' screams the sorcerer, spinning round from the shadows to face you. This time it is you who feels the quake of fear as you see that he has also changed himself - but into a creature which may cause a Fire Demon to stop in its tracks. Balthus Dire's face has become ugly and witch-like and his hair now seethes and squirms with small, hissing snakes. Will you retreat from this creature (turn to 232) or leap forward with your Trident (turn to 199)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 49,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The creature gazes at you quizzically as if it is uncertain about you. Turn to 255.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 50,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [true, "Turn to 164.", false, "</br>"]
   },
   {
     "short_name": "",
     "ID": 51,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You slash about madly with your sword but cannot hit the creature. Either it is extremely quick, or it has no solid body for you to hit! Its teeth are now tearing at your flesh and you can feel blood on your leg. You will have to protect yourself with your magic, or face certain death from this unseen creature. Will you cast a Strength Spell (turn to 301), a Weakness Spell (turn to 159), or, if you cannot or will not cast either. turn to 280.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 52,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The door opens and you stride onwards, slamming it shut behind you. A short distance ahead, you reach a three-way junction, where you take the northwards passage. This continues for several metres leading to another door. You can hear laugh- ter and merriment on the other side. Cautiously you open the door into a large room where a party of a dozen or so creatures, of all shapes, sizes and colours, are playing games. As you step into the room, a voice shouts, Look, this must be Glaz-Doz- Fut!' whereupon they all welcome you, inviting you to join the fun. Evidently they are expecting some one and have mistaken you for their missing guest. Will you play along and join them (turn to 385), or will you tell them they are mistaken and try to make your way over to the door on the other side of the room (turn to 227)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 53,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "What do I want with your berries?' she laughs. 'My appetite died with my body! And as you look closer you can see that she too is nothing but a Chost. She floats across in the air towards you. Turn to 194.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 54,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You search through your backpack. What will you pull out:",
+      false,
+      "</br>",
+      true,
+      "A Jar of Ointment? Turn to 287",
+      false,
+      "</br>",
+      true,
+      "A Pocket Myriad? Turn to 160",
+      false,
+      "</br>",
+      true,
+      "Gold Pieces? Turn to 27",
+      false,
+      "</br>",
+      true,
+      "If you have none of these, you will have to return to 104 and choose again."
+    ]
   },
   {
     "short_name": "",
     "ID": 55,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You follow the passageway for some time. It turns to the right and eventually reaches a dead end. You may either return to the fork and take the other passage (turn to 249) or you may look for secret passages (turn to 10).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 56,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The BLACK ELF approaching you is skinny and ragged. He asks whether you are aguest or an adventurer. You tell him you are a guest, come down to sample the wine he keeps in his famous Wine Cellar. With a certain pride, he shows you the vintage bottles he keeps for his Lord, the Demi- Sorcerer. Some of them, he claims, have magical powers. He offers to let you sample the wine. Will you try a sample of:",
+      false,
+      "</br>",
+      true,
+      "The Red Wine? Turn to 120",
+      false,
+      "</br>",
+      true,
+      "The White Wine? Turn to 163",
+      false,
+      "</br>",
+      true,
+      "The Rosé Wine? Turn to 334",
+      false,
+      "</br>",
+      true,
+      "Decline his offer and make your way onwards? Turn to 95"
+    ]
   },
   {
     "short_name": "",
     "ID": 57,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "Test your Luck. If you are Lucky, turn to 150. If you are Unlucky, hurn to 233.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 58,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "As you enter, the Gremlins flutter and squeak excitedly, then fly past you,through the door and out into the night. You are now alone with the chalices. Will you risk taking a drink? If so, will you choose:",
+      false,
+      "</br>",
+      true,
+      "The clear liquid? Turn to 298",
+      false,
+      "</br>",
+      true,
+      "The red liquid? Turn to 267",
+      false,
+      "</br>",
+      true,
+      "The milky liquid? Turn to 92",
+      false,
+      "</br>",
+      true,
+      "Or will you leave and head for the Citadel (turn to 156)?"
+    ]
   },
   {
     "short_name": "",
     "ID": 59,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "They are revolted by your gift and run over to the corner of the room, hiding under the beds. Some what puzzled by their behaviour, you leave the Jar on the floor and make for the door on the far side of the room. Turn to 140.",
+      true,
+      "Levitation Spell  Turn to 33",
+      false,
+      "</br>",
+      true,
+      "Illusion Spell Turn to 295",
+      false,
+      "</br>",
+      true,
+      "Or you may draw your sword and fight (turn to 213)."
+    ]
   },
   {
     "short_name": "",
     "ID": 60,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The creatures become suspicious as you press them for information. The Dwarf springs to his feet bran- dishing a wooden club, while the Goblin and the Orc grab swords and glare at you. The Goblin's mistress shrieks and steps back several paces as the others advance towards you. You will have to fight them. You may use a Magic Spell:",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 61,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You advance with your sword. The Devlin stops ...then springs at you! You slash with your sword but cannot harm the creature, which is now on top of you. Its flaming body is burning your flesh and you are in agony. Still it holds on and you pass out in shock. You fall to the ground never to wake again as the Devlin makes sure that your body is scorched beyond recovery. You will, after all, be the next meal for the creatures of the Black Tower . . .",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 62,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "With the Gargoyle out of action, you decide to investigate the box in the creature's pedestal. Test your Luck. If you are Lucky, you may take the pouch of 10 Gold Pieces locked inside. If you are Unlucky, you do not manage to open the box. Leave the room by turning to 140.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 63,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You turn to the index and look up the reference. Turning to the correct page, you are dismayed to find that the section has been ripped out of the book! You may either turn to the Calacorns (turn to 263), or look up the Miks (turn to 135).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 64,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You listen at the door and can hear squeaky voices laughing and squabbling. You try the handle and the door opens. Inside is a brightly coloured room. A few small beds are in one corner, and strewn about the floor are small mannequins of various brutish creatures. Along the right-hand wall is a large box and just beyond the box is a door. In the centre of the floor, and looking up at you quizzical- ly, are three small creatures. They are human-like but have green skin, pointed ears and slit-like eyes. What will your approach be? Will you:",
+      true,
+      "Draw your sword and prepare to fight them? Turn to 286",
+      false,
+      "</br>",
+      true,
+      "Look in your pack for something to offer them? Turn to 3",
+      false,
+      "</br>",
+      true,
+      "Walk confidently across the room to the far door? Turn to 366"
+    ]
   },
   {
     "short_name": "",
     "ID": 65,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You kneel before him and bow. He is indeed your master now. You have failed in your mission.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 66,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "They look at each other and chatter. One steps forward and holds out a small cube which looks as though it has been made of some kind of bread or cake. At his request, you pop it into your mouth and chew it. As you swallow it, you feel suddenly strong again. Restore your SKILL. and STAMINA Scores to their Initial levels and add 1 LUCK point. You thank him for the food, thank them all for their company and head for the doors. Turn to 270.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 67,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You begin your fight with the creature. Your first blow is lucky and severs one of its six heads. The other five strike at you and, to your horror, two more heads grow where the other one died! One of the heads bites deep into your arm. Lose 4 STAMINA points. Your sword is obviously going to be of little use. Will you use a Creature Copy Spell (turn to 143) or something from your backpack (turn to 226)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 68,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "'Which would I take, eh?' he muses. Let's see...I would not take the one two doors to the left of the copper-handled one, nor the door to the right of the bronze-handled one.' Which one will you choose:",
+      true,
+      "The brass-handled door? Turn to 207",
+      false,
+      "</br>",
+      true,
+      "The copper-handled door? Turn to 22",
+      false,
+      "</br>",
+      true,
+      "The bronze-handled one? Turn to 354"
+    ]
   },
   {
     "short_name": "",
     "ID": 69,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "The creature is not very talkative, but you do dis- cover that you are in the dungeons beneath the Black Tower and you will probably never be re- leased, unless you are given to the Ganjees for sport. When you question him about Balthus Dire, he goes silent. You had better try a Spell to get you out of this prison. Turn to 193.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 70,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You fly up and away from his lunges but he stands his ground and there is no way for you to fly around him to the door. Eventually the Spell wears off and you must face him once again. Will you:",
+      true,
+      "Use a Weakness Spell? Turn to 307",
+      false,
+      "</br>",
+      true,
+      "Use a Strength Spell? Turn to 264",
+      false,
+      "</br>",
+      true,
+      "Draw your sword? Turn to 325",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 71,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You draw your sword and hack at the tentacle. The tentacle will not fight back as will a normal creature, but instead is trying to drag you into a large hole in the ground which is opening around its base. You do not need to roll for the tentacle, as it has an Attack Strength of 15 and a STAMINA Score of 2. Throw for combat in the normal way, but if your own Attack Strength comes to less than 15, do not subtract any points from your own STAMINA. However, if you do not defeat the creature within 3 Attack Rounds, it succeeds in dragging you into its lair and your adventure is over. If you do defeat it, you can peel the tentacle off your leg and proceed to the main entrance to the Black Tower. Turn to 218.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 72,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "Luck is not with you. Your first glance at the ser- pent-headed creature was enough to scal your fate. You cry out in anguish as you feel your joints begin to seize and your limbs become heavy and uncontrollable. As the Gorgon's stony stare takes effect, you fight for balance - but lose it and crash to the floor. Your petrified body cracks on impact and you now lie in several pieces before Balthus Dire. You have failed in your mission.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 73,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "Either you may try to cut yourself free from the Sewer Snake, or you may wardit off with a Spell. If has you will fight the creature, resolve this battle:",
+      false,
+      "</br>",
+      true,
+      "SEWER SNAKE SKILL 6 STAMINA 7",
+      false,
+      "</br>",
+      true,
+      "If you win, turn to 112.",
+      false,
+      "</br>",
+      true,
+      "If you wish to cast a Strength Spell, add 3 to your dice roll on your AttackStrength. If you wish to cast a Fire Spell, turn to 282.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 74,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "As you jump to the side, the sorcerer's eyes follow you and so does his fireball! It hits you in the chest, knocking you over. The scorching will cost you STAMINA points. If you are still alive, you may prepare another Spell for your counter-attack. Turn to 377-",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 75,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "You step through the doorway, close the door be hind you and wait for some time. You hear the footsteps run closer and reach the door. Incomprehensible chatterings on the other side of the door eventually die down and again you hear footsteps, this time moving away from you. You ring for the butler. Turn to 40.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 76,
 
-    "text_array": [true, "", false, "</br>"]
+    "text_array": [
+      true,
+      "While you were pulling out your Berries, Balthus Dire has been concentrating on a Spell. He looks up and bursts out laughing. Slumberberries!' he cries. 'And what are you expecting me to do? Pop them into my mouth?' He snaps his fingers and his Spell materializes. Turn to 191.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
