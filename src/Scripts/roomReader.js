@@ -41,7 +41,7 @@ Arguments:
 	
 	return = None
 */
-function requestRoom(ID_target, print = false) {
+function requestRoom(ID_target, print = false, print_subheading = true) {
   //Add a check here so see if a book has already been loaded
   fetch(loadedBookPath)
     .then(function (response) {
@@ -57,8 +57,12 @@ function requestRoom(ID_target, print = false) {
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       if (data[i].ID == ID_target) {
-        roomPackage = [true, "<span class='subsectionHeader'>" + data[i].ID + " " + data[i].short_name + "</span>", false,
+        if (print_subheading) {        
+          roomPackage = [true, "<span class='subsectionHeader'>" + data[i].ID + " " + data[i].short_name + "</span>", false,
         "</br>"].concat(data[i].text_array);
+        } else {
+          roomPackage = data[i].text_array;
+        }
         // console.log(roomPackage);
         renderConsoleEntry(roomPackage, !print);
         break;

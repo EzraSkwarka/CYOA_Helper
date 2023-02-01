@@ -48,7 +48,10 @@ function loadBook(str) {
   fetch(bookString, { method: "HEAD" }).then((res) => {
     if (res.ok) {
       loadedBookPath = String(bookString);
+      //Update player that book load worked
       renderConsoleEntry([false, "Load '" + bookString + "' success."]);
+      //If book has an 'on-load' room, print it, if on-load not found fails silently
+      requestRoom("on-load", false, false)
     } else {
       renderConsoleEntry([
         false,
