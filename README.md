@@ -2,19 +2,19 @@
 
 # Project Overview
 
-​	## Description
+## Description
 
 ​		The goal of this project is to create a stand alone engine for experiencing old Choose Your Own Adventure style books as though they are a text adventure game played on an older terminal style computer. If you're wondering why I'm doing this, I just thought it would be cool. And I'm right.
 
-​	## Current Features
+## Current Features
 
-	- Book loading and parsing
-	- Terminal interaction
-	- Style-able text
-	- 
-	- [TODO, finish this list]
+- Book loading and parsing
+- Terminal interaction
+- Style-able text
+- 
+- [TODO, finish this list]
 
-​	## Planned features
+## Planned features
 
 - Pop-out note tracker
 - Imbedded note tracker?
@@ -26,18 +26,18 @@
 
 # How to Build a local version
 
-​	## Pre-Requisites
+## Pre-Requisites
 
-		- Git bash
-		- Electron
+- Git bash
+- Electron
 
-​	## Steps
+## Steps
 
 ​		Once you have those just open a git window in the download directory and run the command 'npm run start'. This Will open a new chromium window with the game ready to play.
 
 # Contributing
 
-​	## Creating Issues
+## Creating Issues
 
-​	## Formatting Books
+## Formatting Books
 
