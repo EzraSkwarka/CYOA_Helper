@@ -17,7 +17,6 @@ Arguments:
 	
 	return = div, a refrence
 */
-
 function createConsoleEntry() {
   //Create new container
   var div = document.createElement("div");
@@ -30,6 +29,46 @@ function createConsoleEntry() {
   consoleFontSize = setFont("fontsize " + consoleFontSize);
 
   return div;
+}
+
+/*
+Short Description:
+	Setup commands on new book load
+	
+Arguments:
+	None
+	
+	return = None
+*/
+function onBookLoad(bookString) {
+  //Update player that book load worked
+  renderConsoleEntry([false, "Load '" + bookString + "' success."]);
+  //load book specific style
+  var cssString = "";
+  fetch(loadedBookPath)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      roomCheck(data);
+    });
+  function roomCheck(data) {
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].ID == "Meta") {
+        if (data[i].hasOwnProperty("css")) {
+          console.log(data[i].css);
+          cssString = data[i].css.toString();
+        }
+      }
+    }
+    if (cssString == "") {
+      console.log("err: No CSS Metadata found for currently loaded book.");
+    } else {
+      setBookStyle(cssString);
+    }
+    //If book has an 'on-load' room, print it, if on-load not found fails silently
+    requestRoom("on-load", false, false);
+  }
 }
 
 /*
@@ -57,9 +96,17 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       if (data[i].ID == ID_target) {
-        if (print_subheading) {        
-          roomPackage = [true, "<span class='subsectionHeader'>" + data[i].ID + " " + data[i].short_name + "</span>", false,
-        "</br>"].concat(data[i].text_array);
+        if (print_subheading) {
+          roomPackage = [
+            true,
+            "<span class='subsectionHeader'>" +
+              data[i].ID +
+              " " +
+              data[i].short_name +
+              "</span>",
+            false,
+            "</br>",
+          ].concat(data[i].text_array);
         } else {
           roomPackage = data[i].text_array;
         }

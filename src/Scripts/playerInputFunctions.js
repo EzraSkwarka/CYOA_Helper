@@ -33,7 +33,7 @@ function helpCommand(str) {
 
 /*
 Short Description:
-	This function outputs the help menu, later it will check to see if a specfic command is reffrenced for a more detailed help command
+	This function outputs the help menu, later it will check to see if a specific command is referenced for a more detailed help command
 	
 Arguments:
 	str =  Str, command to follow up on
@@ -48,10 +48,7 @@ function loadBook(str) {
   fetch(bookString, { method: "HEAD" }).then((res) => {
     if (res.ok) {
       loadedBookPath = String(bookString);
-      //Update player that book load worked
-      renderConsoleEntry([false, "Load '" + bookString + "' success."]);
-      //If book has an 'on-load' room, print it, if on-load not found fails silently
-      requestRoom("on-load", false, false)
+      onBookLoad(bookString);
     } else {
       renderConsoleEntry([
         false,
@@ -211,5 +208,20 @@ function accessTerminalLog (inputLogIndex) {
 
 }
 
+/*
+Short Description:
+	loads the book specific css code and applies is
+	
+Arguments:
+	cssText; the string to parse
+	
+	return = None
+*/
+function setBookStyle(cssText) {
+  var style = document.createElement("style");
+  style.type = "text/css";
+  style.innerHTML = cssText;
+  document.getElementsByTagName("head")[0].appendChild(style);
+}
 
 
