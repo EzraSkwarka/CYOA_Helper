@@ -24,7 +24,11 @@
       "license": "license.txt",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
-    }
+    },
+    "linux": {
+      "target": "deb"
+    },
+    "deb": {}
   },
   "keywords": [],
   "author": {
