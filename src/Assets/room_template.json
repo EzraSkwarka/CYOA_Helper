@@ -1,0 +1,7 @@
+{	"short_name": "Example Room Object", 
+	"ID": "-1", 
+	"entry_text": "The text to display as the player enters the room", 
+	"visited_text": "The text to display as the player enters the room after the first time",
+	"exit_text":"The text to display as the player gets ready to leave the room and lists where they can go",
+	"visited?":"Boolean to see if the room has already been visited, I may just keep a record in the players save file of the rooms they have visited so I dont beed to clutter up the JSON file",
+}
