@@ -9,9 +9,7 @@ Arguments:
 	return = Boolean
 */
 function readPlayerInput(inputString) {
-  //Clear input box
-  var inputBox = document.getElementById("roomNumber");
-  inputBox.value = "";
+  //Clearing input box handled by the call
   //Echo input
   renderConsoleEntry([false, inputString], false, true);
   //Simplify input
@@ -41,7 +39,7 @@ function readPlayerInput(inputString) {
     // setFont(inputStringLower);
   } else if (/^ls -book/.test(inputStringLower)) {
     listBooks();
-  } else if (/^stop$/) {
+  } else if (/^stop$/.test(inputStringLower)) {
     setInterupt();
   } else {
     renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);

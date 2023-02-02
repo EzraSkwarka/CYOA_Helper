@@ -193,3 +193,23 @@ function listBooks() {
     renderConsoleEntry(bookList);
   }
 }
+
+/*
+Short Description:
+	This function adds a listener to the input box so the user can press the up arrow key to load their previous command(s)
+	
+Arguments:
+	None
+	
+	return = None
+*/
+function accessTerminalLog (inputLogIndex) {
+  //inputBox
+  console.log('ArrowUp');
+  console.log(inputLog);
+  document.getElementById('roomNumber').value=inputLog.at(inputLogIndex);
+
+}
+
+
+

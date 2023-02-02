@@ -5,7 +5,10 @@
     <!-- Scripts -->
     <script type="text/javascript" src="Scripts/roomReader.js"></script>
     <script type="text/javascript" src="Scripts/playerInputParser.js"></script>
-    <script type="text/javascript" src="Scripts/playerInputFunctions.js"></script>
+    <script
+      type="text/javascript"
+      src="Scripts/playerInputFunctions.js"
+    ></script>
     <!-- <script type="text/javascript" src="Scripts/sidebar.js"></script> -->
 
     <!-- Style Sheets -->
@@ -33,7 +36,8 @@
               type="button"
               value="Go"
               onclick="readPlayerInput(document.getElementById('roomNumber').value);
-			document.getElementById('roomNumber').value=''"
+                  inputLog.push(document.getElementById('roomNumber').value);
+                  document.getElementById('roomNumber').value=''"
               hidden
             />
           </div>
@@ -45,10 +49,23 @@
 
       //Listener events for input box
       var input = document.getElementById("roomNumber");
-      input.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
+      var inputLog = ["", 'goto 1', 'goto 4', 'stop'];
+      var inputLogIndex = 0;
+      input.addEventListener("keyup", function (event) {
+        if (event.key == "Enter") {
           event.preventDefault();
           document.getElementById("inputTriggerButton").click();
+          inputLogIndex = 0
+        } else if (event.key == "ArrowUp") {
+          inputLogIndex += 1;
+          inputLogIndex = Math.min(inputLog.length, inputLogIndex);
+          console.log(inputLogIndex);
+          accessTerminalLog(0 - inputLogIndex);
+        } else if (event.key == "ArrowDown") {
+          inputLogIndex -= 1;
+          inputLogIndex = Math.max(0, inputLogIndex);
+          console.log(inputLogIndex);
+          accessTerminalLog(0 - inputLogIndex);
         }
       });
 
