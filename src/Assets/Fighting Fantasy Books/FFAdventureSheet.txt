@@ -1,6 +1,6 @@
 ______________________________________________________________
 |SKILL              |STAMINA            |LUCK                |
-|Initial Skill=     |Initial Stamina=   | Initial Luck=      |
+|Initial Skill=     |Initial Stamina=   |Initial Luck=       |
 |                   |                   |                    |
 |                   |                   |                    |
 |                   |                   |                    |
