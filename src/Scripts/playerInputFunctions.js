@@ -152,9 +152,6 @@ Arguments:
 	return = None
 */
 async function gotoRoom(str) {
-  //Slice of the goto of the command
-  inputStringLower = String(inputStringLower).slice(5);
-
   //Attempt to resolve room ref
   if (/ false$/.test(inputStringLower)) {
     //Slice off false
