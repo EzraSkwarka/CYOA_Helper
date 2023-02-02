@@ -1,50 +1,43 @@
 # COYA_Helper
 
+# Project Overview
 
+## Description
 
+​		The goal of this project is to create a stand alone engine for experiencing old Choose Your Own Adventure style books as though they are a text adventure game played on an older terminal style computer. If you're wondering why I'm doing this, I just thought it would be cool. And I'm right.
 
+## Current Features
 
-TODO:
+- Book loading and parsing
+- Terminal interaction
+- Style-able text
+- 
+- [TODO, finish this list]
 
-> ~ make input commands list
->
-> ~ make console scrollable
->
-> ~ prevent typeing into input field till current room is finished typing?
->
-> ~ change '[home ~/]' to be the name of the currently loaded book
->
-> ~ make room numbers clickable
->
-> ~ move the 'open Sidebar' button into the side bar and make it an arrow https://codepen.io/aydin4ik/pen/QqEKmq
+## Planned features
 
-Strech goals:
+- Pop-out note tracker
+- Imbedded note tracker?
+- Load custom books after building the program
+- Custom Style packs
+  - Stored in the books meta-data pages
+- A better experience for creating new books
+  - There may be an external tool for this, it is just a JSON file after all
 
-> ~ popup tracker for tracking stats relevent to book
-> https://www.w3schools.com/howto/howto_js_draggable.asp
->
-> ~ Way to specify popup tracker fields in book json file
->
-> ~ populate navbar (eventually want to be able to load books and change settings from there, maybe also a notes section)
+# How to Build a local version
 
+## Pre-Requisites
 
+- Git bash
+- Electron
 
-### Usefull links:
+## Steps
 
-Local Python Server:
-https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
+​		Once you have those just open a git window in the download directory and run the command 'npm run start'. This Will open a new chromium window with the game ready to play.
 
-Understanding Fetch:
-https://howtocreateapps.com/fetch-and-display-json-html-javascript/
+# Contributing
 
-Terminal Looklike:
-https://itnext.io/how-to-create-interactive-terminal-like-website-888bb0972288
+## Creating Issues
 
-Page Background:
-https://lostandtaken.com/downloads/20th-century-deconstructed-vintage-book-texture-5/
+## Formatting Books
 
-Typewriter:
-https://www.w3schools.com/howto/howto_js_typewriter.asp
-
-Old school look:
-https://css-tricks.com/old-timey-terminal-styling/
