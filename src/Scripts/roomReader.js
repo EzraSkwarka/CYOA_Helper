@@ -7,6 +7,7 @@ var typeSpeed = 2;
 var consoleFontSize = "1em";
 var styleTagText = "";
 var interuptRender = false;
+var loadedBookStyle = "";
 
 /*
 Short Description:
@@ -63,6 +64,7 @@ function onBookLoad(bookString) {
     }
     if (cssString == "") {
       console.log("err: No CSS Metadata found for currently loaded book.");
+      loadedBookStyle = "";
     } else {
       setBookStyle(cssString);
     }
@@ -298,4 +300,26 @@ function setSpeed(str) {
   // console.log("Old: " + typeSpeed);
   typeSpeed = inputStringLower.slice(9);
   // console.log(typeSpeed);
+}
+
+/*
+Short Description:
+	loads the book specific css code and applies is
+	
+Arguments:
+	cssText; the string to parse
+	
+	return = None
+*/
+function setBookStyle(cssText) {
+  if (loadedBookStyle != "") {
+    document.getElementsByTagName("head")[0].removeChild(loadedBookStyle);
+    loadedBookStyle = "";
+  } //does not work, but is the idea of what I'm going for
+  var style = document.createElement("style");
+  style.type = "text/css";
+  style.id = "bookStyle";
+  style.innerHTML = cssText;
+  loadedBookStyle = style;
+  document.getElementsByTagName("head")[0].appendChild(style);
 }
