@@ -208,6 +208,9 @@ async function renderConsoleEntry(
           //Slice off the '</span>'
           tempString = tempString.slice(0, -7);
           div.innerHTML = tempString + textString.charAt(n);
+        } else if (textString.slice(n, n + 5) == "&nbsp") {
+          n+=4;
+          div.innerHTML = div.innerHTML + "&nbsp";
         } else {
           //add the next char
           div.innerHTML = tempString + textString.charAt(n);
