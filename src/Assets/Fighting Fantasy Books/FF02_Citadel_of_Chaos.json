@@ -43,7 +43,9 @@
       true,
       "Steve Jackson is the co-founder (with Ian Livingstone) of the hugely successful Games Workshop chain.",
       false,
-      "</br>"
+      "</br>",
+      true,
+      "<span class='roomNumber' onclick='clickRoom(0)'>Begin your adventure!</span>"
     ]
   },
   {
