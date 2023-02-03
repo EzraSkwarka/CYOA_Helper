@@ -39,3 +39,20 @@ body::after {
   height: 97%;
   width: 98%;
 }
+
+/* Styles that are book independent */
+#helpTable td{
+  overflow: hidden;
+  position: relative;
+}
+
+#helpTable td:not(:last-child){
+  padding-right: 30px;
+}
+
+#helpTable td:not(:last-child) > div:after{
+  content: '............................................................................................';
+  position: absolute;
+}
+
+
