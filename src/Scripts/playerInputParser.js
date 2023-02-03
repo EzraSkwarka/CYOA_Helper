@@ -43,6 +43,8 @@ function readPlayerInput(inputString) {
     setInterupt();
   } else if (/^cls$/.test(inputStringLower)) {
     clearLogScreen();
+  } else if (/^setfont/.test(inputStringLower)) {
+    changeDefaultFont(inputString);
   } else {
     renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
   }
@@ -234,7 +236,7 @@ function listBooks() {
   //called by second .then statment
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
-		bookList.push(data[i]);
+      bookList.push(data[i]);
     }
     renderConsoleEntry(bookList);
   }

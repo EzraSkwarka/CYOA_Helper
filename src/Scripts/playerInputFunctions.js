@@ -217,8 +217,45 @@ Arguments:
 function clearLogScreen() {
   console.log("Clear screen request received");
   var target = document.getElementById("gameText");
-  while(target.lastChild) {
+  while (target.lastChild) {
     target.removeChild(target.lastChild);
+  }
+  return;
+}
+
+/*
+Short Description:
+	Clears all previous entrees by deleting the 'typedroom' children of 'gameText' 
+	
+Arguments:
+	None
+	
+	return = None
+*/
+function changeDefaultFont(choice) {
+  //Text array for know fonts and error explanation. Not spinning this one off as changing it also means the font setter below also changed
+  var knownFontTextArray = [
+    true,
+    "The font you requested was: ",
+    true,
+    choice.slice(8),
+    true,
+    ". Remember, font choices are case sensitive. ibmbios =/= IBMBios. The fonts currently supported are:",
+    false,
+    "</br>",
+    true,
+    "IBMBios; OpenDyslexic",
+  ];
+
+  //Font setting logic
+  if (/ IBMBios/.test(choice)) {
+    document.getElementById("main").style.fontFamily = "IBMBios, monospace";
+  } else if (/OpenDyslexic$/.test(choice)) {
+    document.getElementById("main").style.fontFamily =
+      "OpenDyslexic, monospace";
+  } else {
+    //Font not supported or mistyped
+    renderConsoleEntry(knownFontTextArray, true, false);
   }
   return;
 }
