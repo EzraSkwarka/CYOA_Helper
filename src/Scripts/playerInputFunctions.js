@@ -202,26 +202,10 @@ Arguments:
 */
 function accessTerminalLog (inputLogIndex) {
   //inputBox
-  console.log('ArrowUp');
-  console.log(inputLog);
   document.getElementById('roomNumber').value=inputLog.at(inputLogIndex);
 
 }
 
-/*
-Short Description:
-	loads the book specific css code and applies is
-	
-Arguments:
-	cssText; the string to parse
-	
-	return = None
-*/
-function setBookStyle(cssText) {
-  var style = document.createElement("style");
-  style.type = "text/css";
-  style.innerHTML = cssText;
-  document.getElementsByTagName("head")[0].appendChild(style);
-}
+
 
 

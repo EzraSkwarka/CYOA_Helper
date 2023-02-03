@@ -270,7 +270,7 @@ Arguments:
 */
 function clickRoom(roomID) {
   renderConsoleEntry([false, "goto " + String(roomID)], false, true);
-  requestRoom(roomID);
+  requestRoom(roomID, ctrlDepressed);
 }
 
 /*
