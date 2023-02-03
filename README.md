@@ -28,8 +28,9 @@
 
 ## Pre-Requisites
 
-- Git bash
-- Electron
+- [Git bash](https://git-scm.com/download/win)
+- [NodeJS 14.x or higher](https://github.com/nodejs/Release)
+- [Electron](https://www.electronjs.org/)
 
 ## Steps
 
