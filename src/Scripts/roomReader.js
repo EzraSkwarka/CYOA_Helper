@@ -57,7 +57,7 @@ function onBookLoad(bookString) {
     for (var i = 0; i < data.length; i++) {
       if (data[i].ID == "Meta") {
         if (data[i].hasOwnProperty("css")) {
-          console.log(data[i].css);
+          // console.log(data[i].css);
           cssString = data[i].css.toString();
         }
       }

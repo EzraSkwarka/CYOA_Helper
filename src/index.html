@@ -69,6 +69,14 @@
         }
       });
 
+      //When the user starts typing, autofocus on the input box, will not trigger if the user is holding the ctrl key
+          //There reason this code isn't part of the event listener chain above is because it is outside the scope of the input box
+      onkeydown = (event) => {
+        if (!event.ctrlKey) {
+        document.getElementById("roomNumber").focus();
+        }
+      }
+
       //Display code for console on load
       var welcomeArray = [
         false,
