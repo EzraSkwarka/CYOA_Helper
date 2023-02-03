@@ -3314,7 +3314,7 @@
 
     "text_array": [
       true,
-      "As you step out of the shadows towards the centre of the courtyard, a voice in the wind cries, 'Talt! Stand your ground! You whirl about but can see no-one addressing you. You take another couple of steps. Again, the eerie voice orders you to stop, and this time an arrow zings through the air and lands close to your left foot. You jump back. Still you can see no-one. But now you are stuck. Will you:",
+      "As you step out of the shadows towards the centre of the courtyard, a voice in the wind cries, 'Halt! Stand your ground!' You whirl about but can see no-one addressing you. You take another couple of steps. Again, the eerie voice orders you to stop, and this time an arrow zings through the air and lands close to your left foot. You jump back. Still you can see no-one. But now you are stuck. Will you:",
       false,
       "</br>",
       true,
@@ -3779,7 +3779,7 @@
 
     "text_array": [
       true,
-      "You now stand in a large, round room. It is lit by a single torch, fixed into one wall. There is no fumi- ture in the room, save for a rough wooden table and chair in the centre. Hovering above the table - fast asleep-is a very small man dressed in a green shirt and pantaloons. He cannot be more than a metre tall and you cannot believe that he is still asleep after your noisy entrance! You hear a creak and turn to your right in time to see a small catapult fire a missile of some sort straight at you. It is going to hit you unless you use a Shielding Spell! If you use this Spell, turn to 192. If you cannot (or will not), <span class='roomNumber' onclick='clickRoom(359)'>turn to 359</span>",
+      "You now stand in a large, round room. It is lit by a single torch, fixed into one wall. There is no furniture in the room, save for a rough wooden table and chair in the centre. Hovering above the table - fast asleep-is a very small man dressed in a green shirt and pantaloons. He cannot be more than a metre tall and you cannot believe that he is still asleep after your noisy entrance! You hear a creak and turn to your right in time to see a small catapult fire a missile of some sort straight at you. It is going to hit you unless you use a Shielding Spell! If you use this Spell, <span class='roomNumber' onclick='clickRoom(192)'>turn to 192</span>. If you cannot (or will not), <span class='roomNumber' onclick='clickRoom(359)'>turn to 359</span>",
       false,
       "</br>"
     ]
