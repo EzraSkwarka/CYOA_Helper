@@ -46,6 +46,7 @@
 }
 
 #inputContianer input {
-  font-family: "terminal", monospace;
+  font-family: IBMBios, monospace;
+  font-size: 1em;
 }
 

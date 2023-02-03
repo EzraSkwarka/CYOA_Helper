@@ -13,7 +13,7 @@ body {
   background-image: radial-gradient(rgba(0, 50, 0, 0.75), black 120%);
   height: 100vh;
   color: #008000;
-  font-family: "IBMBios", monospace;
+  font-family: IBMBios, monospace;
   overflow: hidden;
 }
 
