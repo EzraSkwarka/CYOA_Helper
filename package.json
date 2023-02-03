@@ -1,7 +1,7 @@
 {
   "name": "coya_helper",
   "productName": "coya_helper",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "coya_helper",
   "main": "src/index.js",
   "scripts": {
