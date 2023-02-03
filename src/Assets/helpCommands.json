@@ -28,7 +28,13 @@
   false,
   "</br>",
   true,
-  "&nbsp reload &nbsp refreshes the page",
+  "setfont [name] &nbsp sets default font to selection, if not recognized prints supported fonts",
   false,
-  "</br>"
+  "</br",
+  true,
+  "&nbsp reload &nbsp refreshes the page and clears all data",
+  false,
+  "</br>",
+  true,
+  "&nbsp cls &nbsp clears all commands and stops all prints, does not reload page"
 ]

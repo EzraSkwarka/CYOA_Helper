@@ -33,7 +33,7 @@ function helpCommand(str) {
 
 /*
 Short Description:
-	This function outputs the help menu, later it will check to see if a specfic command is reffrenced for a more detailed help command
+	This function outputs the help menu, later it will check to see if a specific command is referenced for a more detailed help command
 	
 Arguments:
 	str =  Str, command to follow up on
@@ -48,10 +48,7 @@ function loadBook(str) {
   fetch(bookString, { method: "HEAD" }).then((res) => {
     if (res.ok) {
       loadedBookPath = String(bookString);
-      //Update player that book load worked
-      renderConsoleEntry([false, "Load '" + bookString + "' success."]);
-      //If book has an 'on-load' room, print it, if on-load not found fails silently
-      requestRoom("on-load", false, false)
+      onBookLoad(bookString);
     } else {
       renderConsoleEntry([
         false,
@@ -188,7 +185,7 @@ function listBooks() {
   //called by second .then statment
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
-		bookList.push(data[i]);
+      bookList.push(data[i]);
     }
     renderConsoleEntry(bookList);
   }
@@ -196,20 +193,69 @@ function listBooks() {
 
 /*
 Short Description:
-	This function adds a listener to the input box so the user can press the up arrow key to load their previous command(s)
+	This function responds to a listener to the input box so the user can press the up arrow key to load their previous command(s)
+	
+Arguments:
+	inputLogIndex; int, the target entry to load
+	
+	return = None
+*/
+function accessTerminalLog(inputLogIndex) {
+  //inputBox
+  document.getElementById("roomNumber").value = inputLog.at(inputLogIndex);
+}
+
+/*
+Short Description:
+	Clears all previous entrees by deleting the 'typedroom' children of 'gameText' 
 	
 Arguments:
 	None
 	
 	return = None
 */
-function accessTerminalLog (inputLogIndex) {
-  //inputBox
-  console.log('ArrowUp');
-  console.log(inputLog);
-  document.getElementById('roomNumber').value=inputLog.at(inputLogIndex);
-
+function clearLogScreen() {
+  console.log("Clear screen request received");
+  var target = document.getElementById("gameText");
+  while (target.lastChild) {
+    target.removeChild(target.lastChild);
+  }
+  return;
 }
 
+/*
+Short Description:
+	Clears all previous entrees by deleting the 'typedroom' children of 'gameText' 
+	
+Arguments:
+	None
+	
+	return = None
+*/
+function changeDefaultFont(choice) {
+  //Text array for know fonts and error explanation. Not spinning this one off as changing it also means the font setter below also changed
+  var knownFontTextArray = [
+    true,
+    "The font you requested was: ",
+    true,
+    choice.slice(8),
+    true,
+    ". Remember, font choices are case sensitive. ibmbios =/= IBMBios. The fonts currently supported are:",
+    false,
+    "</br>",
+    true,
+    "IBMBios; OpenDyslexic",
+  ];
 
-
+  //Font setting logic
+  if (/ IBMBios/.test(choice)) {
+    document.getElementById("main").style.fontFamily = "IBMBios, monospace";
+  } else if (/OpenDyslexic$/.test(choice)) {
+    document.getElementById("main").style.fontFamily =
+      "OpenDyslexic, monospace";
+  } else {
+    //Font not supported or mistyped
+    renderConsoleEntry(knownFontTextArray, true, false);
+  }
+  return;
+}

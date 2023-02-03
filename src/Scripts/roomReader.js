@@ -7,6 +7,7 @@ var typeSpeed = 2;
 var consoleFontSize = "1em";
 var styleTagText = "";
 var interuptRender = false;
+var loadedBookStyle = "";
 
 /*
 Short Description:
@@ -17,7 +18,6 @@ Arguments:
 	
 	return = div, a refrence
 */
-
 function createConsoleEntry() {
   //Create new container
   var div = document.createElement("div");
@@ -30,6 +30,47 @@ function createConsoleEntry() {
   consoleFontSize = setFont("fontsize " + consoleFontSize);
 
   return div;
+}
+
+/*
+Short Description:
+	Setup commands on new book load
+	
+Arguments:
+	None
+	
+	return = None
+*/
+function onBookLoad(bookString) {
+  //Update player that book load worked
+  renderConsoleEntry([false, "Load '" + bookString + "' success."]);
+  //load book specific style
+  var cssString = "";
+  fetch(loadedBookPath)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      roomCheck(data);
+    });
+  function roomCheck(data) {
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].ID == "Meta") {
+        if (data[i].hasOwnProperty("css")) {
+          // console.log(data[i].css);
+          cssString = data[i].css.toString();
+        }
+      }
+    }
+    if (cssString == "") {
+      console.log("err: No CSS Metadata found for currently loaded book.");
+      loadedBookStyle = "";
+    } else {
+      setBookStyle(cssString);
+    }
+    //If book has an 'on-load' room, print it, if on-load not found fails silently
+    requestRoom("on-load", false, false);
+  }
 }
 
 /*
@@ -57,9 +98,17 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       if (data[i].ID == ID_target) {
-        if (print_subheading) {        
-          roomPackage = [true, "<span class='subsectionHeader'>" + data[i].ID + " " + data[i].short_name + "</span>", false,
-        "</br>"].concat(data[i].text_array);
+        if (print_subheading) {
+          roomPackage = [
+            true,
+            "<span class='subsectionHeader'>" +
+              data[i].ID +
+              " " +
+              data[i].short_name +
+              "</span>",
+            false,
+            "</br>",
+          ].concat(data[i].text_array);
         } else {
           roomPackage = data[i].text_array;
         }
@@ -159,6 +208,9 @@ async function renderConsoleEntry(
           //Slice off the '</span>'
           tempString = tempString.slice(0, -7);
           div.innerHTML = tempString + textString.charAt(n);
+        } else if (textString.slice(n, n + 5) == "&nbsp") {
+          n+=4;
+          div.innerHTML = div.innerHTML + "&nbsp";
         } else {
           //add the next char
           div.innerHTML = tempString + textString.charAt(n);
@@ -218,7 +270,7 @@ Arguments:
 */
 function clickRoom(roomID) {
   renderConsoleEntry([false, "goto " + String(roomID)], false, true);
-  requestRoom(roomID);
+  requestRoom(roomID, ctrlDepressed);
 }
 
 /*
@@ -251,4 +303,26 @@ function setSpeed(str) {
   // console.log("Old: " + typeSpeed);
   typeSpeed = inputStringLower.slice(9);
   // console.log(typeSpeed);
+}
+
+/*
+Short Description:
+	loads the book specific css code and applies is
+	
+Arguments:
+	cssText; the string to parse
+	
+	return = None
+*/
+function setBookStyle(cssText) {
+  if (loadedBookStyle != "") {
+    document.getElementsByTagName("head")[0].removeChild(loadedBookStyle);
+    loadedBookStyle = "";
+  } //does not work, but is the idea of what I'm going for
+  var style = document.createElement("style");
+  style.type = "text/css";
+  style.id = "bookStyle";
+  style.innerHTML = cssText;
+  loadedBookStyle = style;
+  document.getElementsByTagName("head")[0].appendChild(style);
 }

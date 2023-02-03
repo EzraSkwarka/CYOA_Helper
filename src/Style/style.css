@@ -1,14 +1,19 @@
 @font-face {
-  font-family: terminal;
+  font-family: IBMBios;
   src: url("Ac437_IBM_BIOS-2y.ttf");
 } /*found at https://int10h.org/oldschool-pc-fonts/fontlist/ */
+
+@font-face {
+  font-family: OpenDyslexic;
+  src: url("OpenDyslexic-Bold.otf");
+} /* https://antijingoist.gumroad.com/l/OpenDyslexic */
 
 body {
   background-color: black;
   background-image: radial-gradient(rgba(0, 50, 0, 0.75), black 120%);
   height: 100vh;
   color: #008000;
-  font-family: "terminal", monospace;
+  font-family: "IBMBios", monospace;
   overflow: hidden;
 }
 
