@@ -28,7 +28,9 @@
   false,
   "</br>",
   true,
-  "&nbsp reload &nbsp refreshes the page",
+  "&nbsp reload &nbsp refreshes the page and clears all data",
   false,
-  "</br>"
+  "</br>",
+  true,
+  "&nbsp cls &nbsp clears all commands and stops all prints, does not reload page"
 ]

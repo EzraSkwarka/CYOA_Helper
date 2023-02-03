@@ -185,7 +185,7 @@ function listBooks() {
   //called by second .then statment
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
-		bookList.push(data[i]);
+      bookList.push(data[i]);
     }
     renderConsoleEntry(bookList);
   }
@@ -193,19 +193,32 @@ function listBooks() {
 
 /*
 Short Description:
-	This function adds a listener to the input box so the user can press the up arrow key to load their previous command(s)
+	This function responds to a listener to the input box so the user can press the up arrow key to load their previous command(s)
+	
+Arguments:
+	inputLogIndex; int, the target entry to load
+	
+	return = None
+*/
+function accessTerminalLog(inputLogIndex) {
+  //inputBox
+  document.getElementById("roomNumber").value = inputLog.at(inputLogIndex);
+}
+
+/*
+Short Description:
+	Clears all previous entrees by deleting the 'typedroom' children of 'gameText' 
 	
 Arguments:
 	None
 	
 	return = None
 */
-function accessTerminalLog (inputLogIndex) {
-  //inputBox
-  document.getElementById('roomNumber').value=inputLog.at(inputLogIndex);
-
+function clearLogScreen() {
+  console.log("Clear screen request received");
+  var target = document.getElementById("gameText");
+  while(target.lastChild) {
+    target.removeChild(target.lastChild);
+  }
+  return;
 }
-
-
-
-

@@ -41,6 +41,8 @@ function readPlayerInput(inputString) {
     listBooks();
   } else if (/^stop$/.test(inputStringLower)) {
     setInterupt();
+  } else if (/^cls$/.test(inputStringLower)) {
+    clearLogScreen();
   } else {
     renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
   }
