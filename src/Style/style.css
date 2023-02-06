@@ -11,18 +11,19 @@
 body {
   background-color: black;
   background-image: radial-gradient(rgba(0, 50, 0, 0.75), black 120%);
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   color: #008000;
   font-family: IBMBios, monospace;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body::after {
   content: "";
   z-index: -1;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   background: repeating-linear-gradient(
@@ -35,24 +36,23 @@ body::after {
 }
 
 #main {
-  position: relative;
-  height: 97%;
-  width: 98%;
+  position: absolute;
+  left: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 /* Styles that are book independent */
-#helpTable td{
+#helpTable td {
   overflow: hidden;
   position: relative;
 }
 
-#helpTable td:not(:last-child){
+#helpTable td:not(:last-child) {
   padding-right: 30px;
 }
 
-#helpTable td:not(:last-child) > div:after{
-  content: '............................................................................................';
+#helpTable td:not(:last-child) > div:after {
+  content: "............................................................................................";
   position: absolute;
 }
-
-

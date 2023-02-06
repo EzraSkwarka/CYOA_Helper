@@ -15,13 +15,22 @@
     <!-- <link rel="stylesheet" type="text/css" href="Style/sidebar.css"> -->
     <link rel="stylesheet" type="text/css" href="Style/style.css" />
     <link rel="stylesheet" type="text/css" href="Style/gameTextStyle.css" />
+    <link rel="stylesheet" type="text/css" href="Style/collapsableNotes.css" />
   </head>
 
   <body>
-    <!-- Main Boday -->
+    <!-- Main Body -->
     <div id="main">
+      <!-- Notes box -->
+      <div id="notesBox">
+        <button type="button" class="collapsible">Notes</button>
+        <div id="notesBoxContent" class="content">
+          <textarea id="notesBoxtextarea" name="notesBoxtextarea">
+        An excellent place to keep notes while you play, does not save between sessions (yet)</textarea
+          >
+        </div>
+      </div>
       <div id="gameText"></div>
-
       <!-- This is the players input box, the main way for them to interact -->
       <div id="inputContianer">
         <div id="inputBox" class="consoleEntry">
@@ -45,16 +54,59 @@
       </div>
     </div>
     <script>
+      //Collapsable Notes
+      var coll = document.getElementsByClassName("collapsible");
+      var i, w, h;
+      var notesBoxtextarea = document.getElementById("notesBoxtextarea");
+      var notesBoxContent = document.getElementById("notesBoxContent");
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = document.getElementById("notesBoxContent");
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            content.style.height = null;
+            content.style.width = null;
+            content.style.border = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+
+            content.style.border = "2px solid #008000;";
+          }
+        });
+      }
+
+      function notesBoxtestareresize() {
+        //Cap size based on Window
+        w = Math.floor(window.innerWidth / 2);
+        h = Math.floor(window.innerHeight * 0.8);
+        notesBoxContent.style.maxHeight = h + "px";
+        notesBoxContent.style.maxWidth = w + "px";
+      }
+
+      notesBoxtestareresize();
+
+      new ResizeObserver(notesBoxtestareresize).observe(notesBoxtextarea);
+
       //Listener Events for page
       //Tracking vars
       var ctrlDepressed = false;
 
       //Global Listener Events
+      addEventListener("resize", (event) => {
+        notesBoxtestareresize();
+      });
+
       onkeydown = (event) => {
         ctrlDepressed = event.ctrlKey;
+        var activeElement = document.activeElement;
 
         //When the user starts typing, autofocus on the input box, will not trigger if the user is holding the ctrl key
-        if (!ctrlDepressed) {
+        if (
+          !ctrlDepressed &&
+          activeElement != document.getElementById("notesBoxtextarea")
+        ) {
           document.getElementById("roomNumber").focus();
         }
       };
