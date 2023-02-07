@@ -23,10 +23,11 @@
     <div id="main">
       <!-- Notes box -->
       <div id="notesBox">
-        <button type="button" class="collapsible">Notes</button>
+        <button type="button" id="collapsibleButton" class="collapsible">
+          Notes
+        </button>
         <div id="notesBoxContent" class="content">
-          <textarea id="notesBoxtextarea" name="notesBoxtextarea">
-        An excellent place to keep notes while you play, does not save between sessions (yet)</textarea
+          <textarea id="notesBoxtextarea" name="notesBoxtextarea">An excellent place to keep notes while you play, does not save between sessions (yet)</textarea
           >
         </div>
       </div>
@@ -60,8 +61,9 @@
       var notesBoxtextarea = document.getElementById("notesBoxtextarea");
       var notesBoxContent = document.getElementById("notesBoxContent");
 
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
+      document
+        .getElementById("collapsibleButton")
+        .addEventListener("click", function () {
           this.classList.toggle("active");
           var content = document.getElementById("notesBoxContent");
           if (content.style.maxHeight) {
@@ -71,15 +73,12 @@
           } else {
             content.style.maxHeight = content.scrollHeight + "px";
             content.style.border = "3px solid #008000";
-
           }
         });
-      }
 
       function notesBoxtestareresize() {
         //Cap size based on Window
         if (notesBoxContent.style.maxHeight) {
-          console.log("Trigger resize event");
           w = Math.floor(window.innerWidth / 2);
           h = Math.floor(window.innerHeight * 0.8);
           notesBoxContent.style.maxHeight = h + "px";
@@ -87,17 +86,14 @@
         }
       }
 
-      notesBoxtestareresize();
-
-      const resizeObserver = new ResizeObserver(notesBoxtestareresize).observe(
-        notesBoxtextarea
-      );
-
       //Listener Events for page
       //Tracking vars
       var ctrlDepressed = false;
 
       //Global Listener Events
+      const resizeObserver = new ResizeObserver(notesBoxtestareresize).observe(
+        notesBoxtextarea
+      );
 
       onkeydown = (event) => {
         ctrlDepressed = event.ctrlKey;
