@@ -139,7 +139,7 @@ async function renderConsoleEntry(
   //Create Container
   var div = createConsoleEntry();
   if (textArray == []) {
-    console.log("Empty textArray given to renderConsoleEntry");
+    console.log("err: Empty textArray given to renderConsoleEntry");
     return false;
   }
   //Render Text

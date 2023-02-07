@@ -250,9 +250,11 @@ function changeDefaultFont(choice) {
   //Font setting logic
   if (/ IBMBios/.test(choice)) {
     document.getElementById("main").style.fontFamily = "IBMBios, monospace";
+    document.getElementById("notesBox").style.font = "IBMBios, monospace";
   } else if (/OpenDyslexic$/.test(choice)) {
     document.getElementById("main").style.fontFamily =
       "OpenDyslexic, monospace";
+    document.getElementById("notesBox").style.font = "OpenDyslexic, monospace";
   } else {
     //Font not supported or mistyped
     renderConsoleEntry(knownFontTextArray, true, false);
