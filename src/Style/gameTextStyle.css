@@ -14,7 +14,6 @@ html {
   overflow: auto;
   max-height: 94.5vh;
   width: 100%;
-  margin-left: 2vw;
   z-index: 2;
 }
 
