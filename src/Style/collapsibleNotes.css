@@ -5,13 +5,13 @@
   float: right;
   z-index: 6;
   color: #008000;
-  font-family: IBMBios, monospace;
+  font-family: inherit;
 }
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   background-color: black;
-  font-family: IBMBios, monospace;
+  font-family: inherit;
   color: #008000;
   cursor: pointer;
   padding: 18px;
@@ -48,6 +48,10 @@
   direction: rtl;
 }
 
+#notesBox {
+  font-family: inherit;
+}
+
 #notesBox textarea {
   resize: none;
   direction: ltr;
@@ -55,7 +59,7 @@
   border: none;
   text-align: left;
   color: #008000;
-  font-family: IBMBios, monospace;
+  font-family: inherit;
   font-size: 1em;
   overflow: hidden;
   width: 100%;
