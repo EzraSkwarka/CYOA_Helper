@@ -248,13 +248,21 @@ function changeDefaultFont(choice) {
   ];
 
   //Font setting logic
+  var targetArray = [
+    document.getElementById("main"),
+    document.getElementById("notesBox"),
+    document.getElementById("roomNumber"),
+  ];
+  var fontstring = "";
   if (/ IBMBios/.test(choice)) {
-    document.getElementById("main").style.fontFamily = "IBMBios, monospace";
-    document.getElementById("notesBox").style.font = "IBMBios, monospace";
+    fontstring = "IBMBios, monospace";
   } else if (/OpenDyslexic$/.test(choice)) {
-    document.getElementById("main").style.fontFamily =
-      "OpenDyslexic, monospace";
-    document.getElementById("notesBox").style.font = "OpenDyslexic, monospace";
+    fontstring = "OpenDyslexic, monospace";
+  }
+  if (fontstring != "") {
+    for (i in targetArray) {
+      targetArray[i].style.fontFamily = fontstring;
+    }
   } else {
     //Font not supported or mistyped
     renderConsoleEntry(knownFontTextArray, true, false);
