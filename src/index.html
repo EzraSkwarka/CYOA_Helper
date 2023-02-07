@@ -27,7 +27,12 @@
           Notes
         </button>
         <div id="notesBoxContent" class="content">
-          <textarea id="notesBoxtextarea" spellcheck="false" name="notesBoxtextarea">An excellent place to keep notes while you play, does not save between sessions (yet)</textarea
+          <textarea
+            id="notesBoxtextarea"
+            spellcheck="false"
+            name="notesBoxtextarea"
+          >
+An excellent place to keep notes while you play, does not save between sessions (yet)</textarea
           >
         </div>
       </div>
@@ -35,7 +40,6 @@
       <!-- This is the players input box, the main way for them to interact -->
       <div id="inputContianer">
         <div id="inputBox" class="consoleEntry">
-          <div>
             <!-- Display Text -->
             <span id="consoleID">[home ~/]> </span>
             <!-- Input Box -->
@@ -50,7 +54,6 @@
                   document.getElementById('roomNumber').value=''"
               hidden
             />
-          </div>
         </div>
       </div>
     </div>
@@ -77,6 +80,10 @@
         });
 
       function notesBoxtestareresize() {
+        notesBoxContent.style.width = console.log(Math.min(
+          notesBoxContent.style.maxWidth.slice(0,-2),
+          notesBoxContent.style.width.slice(0,-2)
+        ) + "px"); // doesn't do anything???
         //Cap size based on Window
         if (notesBoxContent.style.maxHeight) {
           w = Math.floor(window.innerWidth / 2);
