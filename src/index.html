@@ -67,14 +67,11 @@
           if (content.style.maxHeight) {
             content.style.maxHeight = null;
             content.style.maxWidth = null;
-            // content.style.height = null;
-            // content.style.width = null;
             content.style.border = "none";
-            // content.style.resize = "none";
           } else {
             content.style.maxHeight = content.scrollHeight + "px";
-            content.style.border = "2px solid #008000";
-            // content.style.resize = "both";
+            content.style.border = "3px solid #008000";
+
           }
         });
       }

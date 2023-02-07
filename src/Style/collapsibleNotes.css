@@ -33,15 +33,14 @@
 }
 
 .collapsible:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 #notesBoxContent {
@@ -51,6 +50,7 @@
 
 #notesBox textarea {
   resize: none;
+  direction: ltr;
   background-color: black;
   border: none;
   text-align: left;
@@ -60,4 +60,10 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
+}
+
+#notesBox textarea:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
