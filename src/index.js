@@ -18,10 +18,15 @@ const createWindow = () => {
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
-  mainWindow.setMenuBarVisibility(false)
+  
+  //Hide Menu Bar
+  mainWindow.setMenuBarVisibility(false);
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
+
+  //Open Maximized, but not full screen
+  mainWindow.maximize();
 };
 
 // This method will be called when Electron has finished
