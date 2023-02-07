@@ -42,17 +42,9 @@ body::after {
   width: 100%;
 }
 
-/* Styles that are book independent */
-#helpTable td {
-  overflow: hidden;
-  position: relative;
-}
-
-#helpTable td:not(:last-child) {
-  padding-right: 30px;
-}
-
-#helpTable td:not(:last-child) > div:after {
-  content: "............................................................................................";
-  position: absolute;
+/* Clickable book links under 'ls -book'*/
+.clickablebook {
+  color: #d0ff00c7; /*Amber*/
+  cursor: pointer;
+  text-decoration: underline;
 }
