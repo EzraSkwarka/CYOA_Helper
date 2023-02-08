@@ -71,7 +71,7 @@ An excellent place to keep notes while you play, does not save between sessions 
           var content = document.getElementById("notesBoxContent");
           if (content.style.maxHeight) {
             content.style.maxHeight = null;
-            content.style.maxWidth = null;
+            // content.style.maxWidth = null;
             content.style.border = "none";
           } else {
             content.style.maxHeight = content.scrollHeight + "px";
@@ -80,10 +80,6 @@ An excellent place to keep notes while you play, does not save between sessions 
         });
 
       function notesBoxtestareresize() {
-        notesBoxContent.style.width = console.log(Math.min(
-          notesBoxContent.style.maxWidth.slice(0,-2),
-          notesBoxContent.style.width.slice(0,-2)
-        ) + "px"); // doesn't do anything???
         //Cap size based on Window
         if (notesBoxContent.style.maxHeight) {
           w = Math.floor(window.innerWidth / 2);
