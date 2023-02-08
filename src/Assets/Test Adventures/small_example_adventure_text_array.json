@@ -8,7 +8,7 @@
       false,
       "</br>",
       true,
-      "The text to display as the player gets ready to leave the room and lists where they can go. For instance, I'd recomend room ",
+      "The text to display as the player gets ready to leave the room and lists where they can go. For instance, I'd recommend room ",
       true,
       "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>",
       true,
@@ -123,7 +123,7 @@
     "ID": 9,
     "text_array": [
       true,
-      "Congratulations, you've made it through this exceedingly simple example of a choose-your-own-adventure that I've thrown together in about 15 minutes so that I can make the structure for the other more difficult one testable stop. Your prize is intangible and the pride imeasurable.",
+      "Congratulations, you've made it through this exceedingly simple example of a choose-your-own-adventure that I've thrown together in about 15 minutes so that I can make the structure for the other more difficult one testable stop. Your prize is intangible and the pride immeasurable.",
       true,
       "Welcome back to the final room, go do something else.",
       true,
@@ -135,7 +135,7 @@
     "ID": 10,
     "text_array": [
       true,
-      "If you're in this room, it means you died or youre debugging. I hope it meets your expectations.",
+      "If you're in this room, it means you died or you're debugging. I hope it meets your expectations.",
       true,
       "If you are back in this room, it means you died again or you're still debugging. I hope it meets your expectations again.",
       true,
