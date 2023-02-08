@@ -8,7 +8,7 @@
     false,
     "</br>",
     true,
-    "Assets/Test Adventures/small_example_adventure_text_array.json",
+    "<span class='clickablebook' onclick='loadBook(\"load Assets/Test Adventures/small_example_adventure_text_array.json\")'>Assets/Test Adventures/small_example_adventure_text_array.json</span>",
     false,
     "</br>",
     true,
