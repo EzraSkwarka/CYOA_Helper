@@ -43,6 +43,7 @@ html {
   color: green;
   outline: none;
   border: none;
+  width: 90%;
 }
 
 #inputContianer input {

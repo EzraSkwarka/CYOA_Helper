@@ -3,12 +3,11 @@
 var ctrlDepressed = false;
 
 //Global Listener Events
-
 onkeydown = (event) => {
-  ctrlDepressed = event.ctrlKey;
+  ctrlDepressed = event.ctrlKey; //fires when the ctrl key is held
   var activeElement = document.activeElement;
 
-  //When the user starts typing, autofocus on the input box, will not trigger if the user is holding the ctrl key
+  //When the user starts typing, autofocus on the input box, will not trigger if the user is holding the ctrl key or if the user is in the notes box
   if (
     !ctrlDepressed &&
     activeElement != document.getElementById("notesBoxtextarea")
@@ -18,7 +17,7 @@ onkeydown = (event) => {
 };
 
 onkeyup = (event) => {
-  ctrlDepressed = event.ctrlKey;
+  ctrlDepressed = event.ctrlKey; //fires when the ctrl key is released
 };
 
 //Listener events for input box
