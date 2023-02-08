@@ -5,10 +5,9 @@
     <!-- Scripts -->
     <script type="text/javascript" src="Scripts/roomReader.js"></script>
     <script type="text/javascript" src="Scripts/playerInputParser.js"></script>
-    <script
-      type="text/javascript"
-      src="Scripts/playerInputFunctions.js"
-    ></script>
+    <script type="text/javascript" src="Scripts/playerInputFunctions.js"></script>
+    <script type="text/javascript" src="Scripts/collapsibleNotes.js" defer></script>
+    <script type="text/javascript" src="Scripts/typeControl.js" defer></script>
     <!-- <script type="text/javascript" src="Scripts/sidebar.js"></script> -->
 
     <!-- Style Sheets -->
@@ -40,103 +39,26 @@ An excellent place to keep notes while you play, does not save between sessions 
       <!-- This is the players input box, the main way for them to interact -->
       <div id="inputContianer">
         <div id="inputBox" class="consoleEntry">
-            <!-- Display Text -->
-            <span id="consoleID">[home ~/]> </span>
-            <!-- Input Box -->
-            <input type="text" spellcheck="false" id="roomNumber" autofocus />
-            <!-- Go Box -->
-            <input
-              id="inputTriggerButton"
-              type="button"
-              value="Go"
-              onclick="readPlayerInput(document.getElementById('roomNumber').value);
+          <!-- Display Text -->
+          <span id="consoleID">[home ~/]> </span>
+          <!-- Input Box -->
+          <input type="text" spellcheck="false" id="roomNumber" autofocus />
+          <!-- Go Box -->
+          <input
+            id="inputTriggerButton"
+            type="button"
+            value="Go"
+            onclick="readPlayerInput(document.getElementById('roomNumber').value);
                   inputLog.push(document.getElementById('roomNumber').value);
                   document.getElementById('roomNumber').value=''"
-              hidden
-            />
+            hidden
+          />
         </div>
       </div>
     </div>
+    <!-- <script type="text/javascript" src="Scripts/collapsibleNotes.js"></script>
+    <script type="text/javascript" src="Scripts/typeControl.js"></script> -->
     <script>
-      //Collapsable Notes
-      var coll = document.getElementsByClassName("collapsible");
-      var i, w, h;
-      var notesBoxtextarea = document.getElementById("notesBoxtextarea");
-      var notesBoxContent = document.getElementById("notesBoxContent");
-
-      document
-        .getElementById("collapsibleButton")
-        .addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = document.getElementById("notesBoxContent");
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            // content.style.maxWidth = null;
-            content.style.border = "none";
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            content.style.border = "3px solid #008000";
-          }
-        });
-
-      function notesBoxtestareresize() {
-        //Cap size based on Window
-        if (notesBoxContent.style.maxHeight) {
-          w = Math.floor(window.innerWidth / 2);
-          h = Math.floor(window.innerHeight * 0.8);
-          notesBoxContent.style.maxHeight = h + "px";
-          notesBoxContent.style.maxWidth = w + "px";
-        }
-      }
-
-      //Listener Events for page
-      //Tracking vars
-      var ctrlDepressed = false;
-
-      //Global Listener Events
-      const resizeObserver = new ResizeObserver(notesBoxtestareresize).observe(
-        notesBoxtextarea
-      );
-
-      onkeydown = (event) => {
-        ctrlDepressed = event.ctrlKey;
-        var activeElement = document.activeElement;
-
-        //When the user starts typing, autofocus on the input box, will not trigger if the user is holding the ctrl key
-        if (
-          !ctrlDepressed &&
-          activeElement != document.getElementById("notesBoxtextarea")
-        ) {
-          document.getElementById("roomNumber").focus();
-        }
-      };
-
-      onkeyup = (event) => {
-        ctrlDepressed = event.ctrlKey;
-      };
-
-      //Listener events for input box
-      var input = document.getElementById("roomNumber");
-      var inputLog = [""];
-      var inputLogIndex = 0;
-      input.addEventListener("keyup", function (event) {
-        if (event.key == "Enter") {
-          event.preventDefault();
-          document.getElementById("inputTriggerButton").click();
-          inputLogIndex = 0;
-        } else if (event.key == "ArrowUp") {
-          inputLogIndex += 1;
-          inputLogIndex = Math.min(inputLog.length, inputLogIndex);
-          // console.log(inputLogIndex);
-          accessTerminalLog(0 - inputLogIndex);
-        } else if (event.key == "ArrowDown") {
-          inputLogIndex -= 1;
-          inputLogIndex = Math.max(0, inputLogIndex);
-          // console.log(inputLogIndex);
-          accessTerminalLog(0 - inputLogIndex);
-        }
-      });
-
       //Display code for console on load
       var welcomeArray = [
         false,
