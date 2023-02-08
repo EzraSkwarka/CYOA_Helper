@@ -10,17 +10,15 @@
 
 - Book loading and parsing
 - Terminal interaction
-- Style-able text
-- 
+- Book-specific Custom Style packs
+- A Collapsible Notes Section
 - [TODO, finish this list]
 
 ## Planned features
 
-- Pop-out note tracker
-- Imbedded note tracker?
-- Load custom books after building the program
-- Custom Style packs
-  - Stored in the books meta-data pages
+- Tab-completion in the terminal interface
+- A way to save the current notes
+- A write-up on how to build custom books
 - A better experience for creating new books
   - There may be an external tool for this, it is just a JSON file after all
 
@@ -34,7 +32,7 @@
 
 ## Steps
 
-​		Once you have those just open a git window in the download directory and run the command 'npm run start'. This Will open a new chromium window with the game ready to play.
+​		Once you have those just open a git window in the download directory and run the command 'npm run start'. This Will open a new chromium window with the game ready to play. For the most up-to-date version check-out the dev branch, for a more stable experience download the main branch.
 
 # Contributing
 
