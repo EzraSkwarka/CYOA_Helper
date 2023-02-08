@@ -24,6 +24,8 @@
 
 # How to Build a local version
 
+I would recommend using the most recent stable release, otherwise follow the steps below
+
 ## Pre-Requisites
 
 - [Git bash](https://git-scm.com/download/win)
@@ -32,7 +34,7 @@
 
 ## Steps
 
-​		Once you have those just open a git window in the download directory and run the command 'npm run start'. This Will open a new chromium window with the game ready to play. For the most up-to-date version check-out the dev branch, for a more stable experience download the main branch.
+​		Once you have those just open a git window in the download directory and run the command 'npm run start'. This Will open a new chromium window with the game ready to play. For the most up-to-date version check-out the dev branch; for a more stable experience download the main branch; for the most stable experience download the most recently published release.
 
 # Contributing
 
