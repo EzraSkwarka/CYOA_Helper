@@ -72,6 +72,99 @@ When the player gives a `goto [x]` or a `turn to [x]` command, the system will l
 
 
 #### What is `text_array`?
+`text_array` is the bulk of the text that will be displayed as a page is loaded. Every line of text you wish to include must be part of a pair. A boolean indicating if you want the text printed or typed, and then the text you wish to display as a string. If you want it printed character by character, tag it as `true`. If instead you want it printed, i.e. it all shows up at the same time, tag it as `false`.
 
+
+Let's say you want to make a page that would display:
+```
+>> 92
+   This is the 92nd room. I feel as though I am being
+   .
+   .
+   watched.
+
+   Turn to page 11.
+```
+The first thing to do is consider it line by line. The first thing is the `>> 92` line. This is just the `ID` and `short_name` properties, so we'll skip it for now. The other lines we want are, in order, `This is the 92nd room. I feel as though I am being`, `.`, `.`, `watched.`, an empty line, and `Turn to page 11`.
+
+Let's start by putting those into an array like so:
+```
+"text_array" = [
+    "This is the 92nd room. I feel as though I am being",
+    ".",
+    ".",
+    "watched.",
+    "",
+    "Turn to page 11"
+]
+```
+
+Then we need to indicate if we want each line printed or typed. We'll type each line except for `watched`. We'll print that one to give it more emphasis. This gives us:
+```
+"text_array" = [
+    true, "This is the 92nd room. I feel as though I am being",
+    true, ".",
+    true, ".",
+    false, "watched.",
+    true, "",
+    true, "Turn to page 11"
+]
+```
+
+If we were to try and use this we would get:
+```
+>> 92
+   This is the 92nd room. I feel as though I am being..watched.Turn to page 11
+```
+This is, of course, not what we are after. This is because we didn't add any line breaks. Lets add those now.
+```
+"text_array" = [
+    true, "This is the 92nd room. I feel as though I am being",
+    true, "</br>",
+    true, ".",
+    true, "</br>",
+    true, ".",
+    true, "</br>",
+    false, "watched.",
+    true, "</br>",
+    true, "",
+    true, "</br>",
+    true, "Turn to page 11"
+]
+```
+If we run this we get:
+```
+>> 92
+   This is the 92nd room. I feel as though I am being</br>.</br>.</br>watched.</br></br>Turn to page 11
+```
+This happens because `</br>` is a special HTML tag. If we add it one character at a time, we wont have a `</br>` added, instead we get a `<`, then a `/` and so on. Lets edit those tags to print them instead of typing them:
+```
+"text_array" = [
+    true, "This is the 92nd room. I feel as though I am being",
+    false, "</br>",
+    true, ".",
+    false, "</br>",
+    true, ".",
+    false, "</br>",
+    false, "watched.",
+    false, "</br>",
+    true, "",
+    false, "</br>",
+    true, "Turn to page 11"
+]
+```
+
+This finally give us what we want:
+```
+>> 92
+   This is the 92nd room. I feel as though I am being
+   .
+   .
+   watched.
+
+   Turn to page 11.
+```
+
+There are other special tags you can use in the `text_array`s, see below.
 
 #### How to I use special html tags in `text_array`?
