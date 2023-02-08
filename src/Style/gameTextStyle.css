@@ -1,3 +1,9 @@
+html {
+  min-width: 100%;
+  position: absolute;
+  right: 0;
+}
+
 /* Style of main body */
 #gameText {
   display: flex;
@@ -6,10 +12,8 @@
   position: absolute;
   bottom: 3vh;
   overflow: auto;
-  margin-top: 25px;
   max-height: 94.5vh;
-  width: 96vw;
-  margin-left: 2vw;
+  width: 98%;
   z-index: 2;
 }
 
@@ -21,7 +25,6 @@
 /* Console typing area */
 #inputContianer {
   position: absolute;
-  left: 0;
   bottom: 0;
   height: 3vh;
   width: 100%;
@@ -33,8 +36,8 @@
 }
 
 #inputBox #roomNumber {
-  margin-right: 0;
-  width: calc(100% - 90px);
+  /* width: 100%; */
+  padding: 0;
   white-space: nowrap;
   background-color: transparent;
   color: green;
