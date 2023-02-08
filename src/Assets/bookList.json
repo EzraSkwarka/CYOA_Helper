@@ -16,5 +16,5 @@
     false,
     "</br>",
     true,
-    "Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json"
+    "<span class='clickablebook' onclick='loadBook(\"load Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json\")'>Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json</span>"
   ]
