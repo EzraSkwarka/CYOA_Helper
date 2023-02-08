@@ -168,3 +168,6 @@ This finally give us what we want:
 There are other special tags you can use in the `text_array`s, see below.
 
 #### How to I use special html tags in `text_array`?
+
+[TODO]
+Here I want to restate the `</br>` method from above, talk about spans and how they can be used to style and keep the typing effect, and then talk about making tables like I did with the `help` command
