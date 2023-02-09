@@ -13,7 +13,15 @@ onkeydown = (event) => {
     activeElement != document.getElementById("notesBoxtextarea")
   ) {
     document.getElementById("roomNumber").focus();
+
   }
+
+  if (ctrlDepressed && event.key == 'c' && activeElement != document.getElementById("notesBoxtextarea")) {
+    setInterupt();
+    renderConsoleEntry([false, "^C"])
+  }
+
+
 };
 
 onkeyup = (event) => {

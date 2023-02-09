@@ -8,6 +8,7 @@ var consoleFontSize = "1em";
 var styleTagText = "";
 var interuptRender = false;
 var loadedBookStyle = "";
+var renderingConsoleEntry = false;
 
 /*
 Short Description:
@@ -94,7 +95,7 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
     .catch(function (err) {
       console.log("error: " + err);
     });
-  //called by second .then statment
+  //called by second .then statement
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       if (data[i].ID == ID_target) {
@@ -114,6 +115,7 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
         }
         // console.log(roomPackage);
         renderConsoleEntry(roomPackage, !print);
+
         break;
       }
     }
@@ -122,7 +124,7 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
 
 /*
 Short Description:
-	This function should handle all the rendering and typing to the console. Needs to be albe to type the tex or print it and it needs to be able to flag if its an echo or a response
+	This function should handle all the rendering and typing to the console. Needs to be able to type the text or print it and it needs to be able to flag if its an echo or a response
 	
 Arguments:
 	textArray = Array, in the same format as the rooms
@@ -136,10 +138,16 @@ async function renderConsoleEntry(
   animate = false,
   fromPlayer = false
 ) {
+  if (renderingConsoleEntry == true) {
+    console.log("err: Already running renderConsoleEntry")
+    return;
+  }
+  renderingConsoleEntry = true;
   //Create Container
   var div = createConsoleEntry();
   if (textArray == []) {
     console.log("err: Empty textArray given to renderConsoleEntry");
+    renderingConsoleEntry = false;
     return false;
   }
   //Render Text
@@ -157,7 +165,8 @@ async function renderConsoleEntry(
     //Early exit check
     if (interuptRender) {
       interuptRender = false;
-      return;
+      renderingConsoleEntry = false;
+      return false;
     }
     //Apply identifier on first pass
     if (i == 0) {
@@ -175,7 +184,8 @@ async function renderConsoleEntry(
         //Early exit check
         if (interuptRender) {
           interuptRender = false;
-          return;
+          renderingConsoleEntry = false;
+          return false;
         }
         //Pull whats already in the div
         tempString = div.innerHTML;
@@ -209,7 +219,7 @@ async function renderConsoleEntry(
           tempString = tempString.slice(0, -7);
           div.innerHTML = tempString + textString.charAt(n);
         } else if (textString.slice(n, n + 5) == "&nbsp") {
-          n+=4;
+          n += 4;
           div.innerHTML = div.innerHTML + "&nbsp";
         } else {
           //add the next char
@@ -225,7 +235,8 @@ async function renderConsoleEntry(
       //Early Exit Check
       if (interuptRender) {
         interuptRender = false;
-        return;
+        renderingConsoleEntry = false;
+        return false;
       }
       tempString = div.innerHTML;
       div.innerHTML = tempString + textString;
@@ -234,6 +245,8 @@ async function renderConsoleEntry(
   }
   //Keep bottom of gameText in view
   div.scrollIntoView(false);
+  renderingConsoleEntry = false;
+  return false;
 }
 
 function distanceToClosingTag(str, base) {
@@ -257,6 +270,8 @@ Arguments:
 function setInterupt() {
   console.log("Calling for early exit.");
   interuptRender = true;
+  
+  return true;
 }
 
 /*
