@@ -4,6 +4,8 @@ I've tried to make the book building process both straightforward and highly cus
 
 ## Making a Book
 
+Making a book is the easy part. Make a new JSON file and give it a unique title. When you create the file, the only thing it should hve in it to start is a single pair of brackets.
+
 ## Making Pages
 
 I find it helpful to conceptualize the json files as books and sections of the json files as pages. That is to say I would consider `small_example_adventure_text_array.json` to be a book, and would consider a page in that book to look like this:
