@@ -27,7 +27,7 @@ To get started just download the latest release and boot it up. If you're unsure
 
 # How to Build a local version
 
-I would recommend using the most recent stable release, otherwise follow the steps below
+I would recommend using the most recent stable release [(found here)](https://github.com/EzraSkwarka/COYA_Helper/releases/), otherwise follow the steps below
 
 ## Pre-Requisites
 
