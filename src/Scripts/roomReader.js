@@ -270,6 +270,7 @@ Arguments:
 function setInterupt() {
   console.log("Calling for early exit.");
   interuptRender = true;
+  
   return true;
 }
 
