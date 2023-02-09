@@ -182,5 +182,11 @@ There are other special tags you can use in the `text_array`s, see below.
 
 #### How to I use special html tags in `text_array`?
 
+The most common method for including special tags is the method outlined above for `</br>` tags. Generally speaking, to include any kind of special tag just include it in a single line of `text_array` and set that line to print. Doing so will insert the HTML *exactly* as you typed it, so as long as you inclose it properly you can do just about anything you want.
+
+That said, there is one method I want to call out specifically, `<span>` tags. 
+
+If you look at room 1 in `small_example_adventure_text_array.json`, you'll notice the last line of the `text_array` has a special tag and is set to true. Furthermore, if you render that room as is, you'll notice that the '(2)' is a different color, is clickable, *and* is printed one character at a time. This is because I built the room renderer to be able to handle `<span></span>` tags in a way that gives them (almost) complete functionality while also allowing the text inside to be typeable.
+
 [TODO]
-Here I want to restate the `</br>` method from above, talk about spans and how they can be used to style and keep the typing effect, and then talk about making tables like I did with the `help` command
+I may talk about dot leaders, but the way to do them is technically covered here, so thats a later task.

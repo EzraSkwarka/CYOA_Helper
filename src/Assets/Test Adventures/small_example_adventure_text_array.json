@@ -45,7 +45,7 @@
       "</br>",
       true,
       "From the entrance way you can go south to the t-junction ",
-      false,
+      true,
       "<span class='roomNumber'>(#2)</span>."
     ]
   },
