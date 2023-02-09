@@ -204,10 +204,10 @@ async function gotoRoom(str) {
   if (/ false$/.test(inputStringLower)) {
     //Slice off false
     inputStringLower = String(inputStringLower).slice(0, -6);
-    console.log("Room Input: " + inputStringLower);
+    // console.log("Room Input: " + inputStringLower);
     requestRoom(inputStringLower, true);
   } else {
-    console.log("Room Input: " + inputStringLower);
+    // console.log("Room Input: " + inputStringLower);
     requestRoom(inputStringLower);
   }
 }

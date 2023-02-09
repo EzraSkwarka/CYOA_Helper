@@ -8,7 +8,7 @@ var consoleFontSize = "1em";
 var styleTagText = "";
 var interuptRender = false;
 var loadedBookStyle = "";
-var renderingRoom = false;
+var renderingConsoleEntry = false;
 
 /*
 Short Description:
@@ -84,11 +84,6 @@ Arguments:
 	return = None
 */
 function requestRoom(ID_target, print = false, print_subheading = true) {
-  // setInterupt();
-  console.log("Room requested. Rendering Room?: " + renderingRoom);
-  if (renderingRoom != false) {
-    setInterupt();
-  }
   //Add a check here so see if a book has already been loaded
   fetch(loadedBookPath)
     .then(function (response) {
@@ -104,8 +99,6 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       if (data[i].ID == ID_target) {
-        renderingRoom = true;
-        console.log("renderingRoom: " + renderingRoom);
         if (print_subheading) {
           roomPackage = [
             true,
@@ -121,12 +114,8 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
           roomPackage = data[i].text_array;
         }
         // console.log(roomPackage);
-        renderingRoom = renderConsoleEntry(roomPackage, !print)
-          .then((response) => {
-            response.json();
-            console.log(response);
-          });
-        console.log("renderingRoom: " + renderingRoom);
+        renderConsoleEntry(roomPackage, !print);
+
         break;
       }
     }
@@ -135,7 +124,7 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
 
 /*
 Short Description:
-	This function should handle all the rendering and typing to the console. Needs to be albe to type the tex or print it and it needs to be able to flag if its an echo or a response
+	This function should handle all the rendering and typing to the console. Needs to be able to type the text or print it and it needs to be able to flag if its an echo or a response
 	
 Arguments:
 	textArray = Array, in the same format as the rooms
@@ -149,10 +138,16 @@ async function renderConsoleEntry(
   animate = false,
   fromPlayer = false
 ) {
+  if (renderingConsoleEntry == true) {
+    console.log("err: Already running renderConsoleEntry")
+    return;
+  }
+  renderingConsoleEntry = true;
   //Create Container
   var div = createConsoleEntry();
   if (textArray == []) {
     console.log("err: Empty textArray given to renderConsoleEntry");
+    renderingConsoleEntry = false;
     return false;
   }
   //Render Text
@@ -170,6 +165,7 @@ async function renderConsoleEntry(
     //Early exit check
     if (interuptRender) {
       interuptRender = false;
+      renderingConsoleEntry = false;
       return false;
     }
     //Apply identifier on first pass
@@ -188,6 +184,7 @@ async function renderConsoleEntry(
         //Early exit check
         if (interuptRender) {
           interuptRender = false;
+          renderingConsoleEntry = false;
           return false;
         }
         //Pull whats already in the div
@@ -238,6 +235,7 @@ async function renderConsoleEntry(
       //Early Exit Check
       if (interuptRender) {
         interuptRender = false;
+        renderingConsoleEntry = false;
         return false;
       }
       tempString = div.innerHTML;
@@ -247,6 +245,7 @@ async function renderConsoleEntry(
   }
   //Keep bottom of gameText in view
   div.scrollIntoView(false);
+  renderingConsoleEntry = false;
   return false;
 }
 
