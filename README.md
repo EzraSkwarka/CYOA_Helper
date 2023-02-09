@@ -48,4 +48,4 @@ If you find an issue or have an idea for a new feature, please let me know! Just
 - If its a feature request start your issue title with 'FR: ' and provide as much detail as you can.
 
 ## Formatting Books
-a guide to formatting books is in progress, once its ready I'll link it here. Right now it is a .md file in the Assets folder.
+[A guide to formatting books can be found here](src/Assets/GuideToBuildingBooks.md). Note, this guide is still a WIP, but covers the basics needed to make a new book.
