@@ -1,0 +1,3106 @@
+[
+  {
+    "short_name": "Book Meta Data",
+    "ID": "Meta",
+    "author": "Steve Jackson, Ian Livingstone",
+    "publisher": "Puffin Books",
+    "publisher_info": "Puffin Books, Penguin Books Ltd, Harmondsworth, Middlesex, England Viking Penguin Inc., 40 West 23rd Street, New York, New York 10010. U.S.A. Penguin Books Australia Ltd, Ringwood, Victoria, Australia Penguin Books Canada Limited, 2801 John Street, Markham, Ontario, Canada L3R 1B4 Penguin Books (N.Z.) Ltd, 182-190 Wairau Road, Auckland 10, New Zealand First published 1982 Reprinted 1982 (five times), 1983 (thirteen times), 1984 (seven times). 1985 (twice) Copyright © Steve Jackson and Ian Livingstone, 1982 Illustrations copyright Russ Nicholson, 1982 All rights reserved Made and printed in Great Britain by Richard Clay (The Chaucer Press) Ltd. Bungay, Suffolk Set in VIP Palatino",
+    "dedication": "Dedicated to Joanna Ashton, a true Galadriel of the spirit... and to Anne and Neville, the real wizards.",
+
+    "text_array": [
+      true,
+      "This room holds the metadata for the book The Warlock Of Firetop Mountian.",
+      false,
+      "</br>"
+    ],
+    "css": ".typedRoom {\n  /* This will apply to all new entries into the main console*/\n   margin-left: 1.15em;\n   text-indent: -1.15em;\n}\n .roomNumber {\n  /* This is specifically the clickable room numbers embedded in the text*/\n   color: #ffb000;\n  /*Amber*/; cursor: pointer; text-decoration: underline;\n}\n .gameStats {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n}\n .gameStatsInitial {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n   font-style: italic;\n}\n .sectionHeader {\n   color: #e18335;\n}\n .subsectionHeader {\n   color: #e18c47;\n}\n/* Specified in such a way as to only hit the a tags within the game text, in case I do a sidebar or overlay with a tags not happy with this color, but its fine*/\n #gameText a:link, #gameText a:visited {\n   color: pink;\n   text-decoration: underline;\n   cursor: auto;\n}\n #gameText a:link:active, #gameText a:visited:active {\n   color: pink;\n}\n .testyourluck {color: #7dffc9; cursor: pointer; text-decoration: underline;} .magicspell {color: #3dd9eb}"
+  },
+  {
+    "short_name": "",
+    "ID": "on-load",
+
+    "text_array": [
+      true,
+      "<span class='bookTitle'>PUFFIN BOOKS</span>",
+      false,
+      "</br>",
+      true,
+      "THE WARLOCK OF FIRETOP MOUNTAIN",
+      false,
+      "</br>",
+      true,
+      "Part story, part game, this is a book in which YOU become the hero!",
+      false,
+      "</br>",
+      true,
+      "Armed with two dice, a pencil and an eraser, you can set off on a perilous quest to find the Warlock's treasure. YOU will need to decide which route to follow, and which monsters to fight in the elaborate combat system given in the book.",
+      false,
+      "</br>",
+      true,
+      "You may not survive your first journey. But with experience, skill and luck, each fresh attempt should bring you nearer to your great goal...",
+      false,
+      "</br>",
+      false,
+      "</br>",
+      true,
+      "FIGHTING FANTASY GAMEBOOKS",
+      false,
+      "</br>",
+      true,
+      "a world-wide sensation",
+      false,
+      "</br>",
+      false,
+      "</br>",
+      true,
+      "<span class='roomNumber' onclick='clickRoom(0)'>Begin your adventure!</span>"
+    ]
+  },
+  {
+    "short_name": "FF02 - THE WARLOCK OF FIRETOP MOUNTAIN",
+    "ID": 0,
+    "text_array": [
+      true,
+      "HOW TO FIGHT CREATURES OF THE UNDERWORLD",
+      false,
+      "</br>",
+      true,
+      "Before embarking on your adventure, you must first determine your own strengths and weaknesses. You have in your possession a sword and a shield together with a rucksack containing provisions (food and drink) for the trip. You have been preparing for your quest by training yourself in swordplay and exercising vigorously to build up your stamina.",
+      false,
+      "</br>",
+      true,
+      "To see how effective your preparations have been, you must use the dice to determine your initial SKILL and STAMINA Scores. On pages 18-19 there is an Adventure Sheet which you may use to record the details of an adventure. On it you will find boxes for recording your SKILL and STAMINA Scores.",
+      false,
+      "</br>",
+      true,
+      "You are advised to either record your scores on the Adventure Sheet in pencil, or make photocopies of the page to use in future adventures.",
+      false,
+      "</br>",
+      true,
+      "Skill, Stamina and Luck",
+      false,
+      "</br>",
+      true,
+      "Roll one die. Add 6 to this number and enter this total in the SKILL box on the Adventure Sheet.",
+      false,
+      "</br>",
+      true,
+      "Roll both dice. Add 12 to the number rolled and enter this total in the STAMINA box.",
+      false,
+      "</br>",
+      true,
+      "There is also a LUCK box. Roll one die, add 6 to this number and enter this total in the LUCK box.",
+      false,
+      "</br>",
+      true,
+      "For reasons that will be explained below, SKILL, STAMINA and LUCK Scores change constantly during an adventure. You must keep an accurate record of these scores and for this reason you are advised either to write small in the boxes or to keep an eraser handy. But never rub out your Initial scores. Although you may be awarded additional SKILL, STAMINA and LUCK points, these totals may never exceed your Initial scores, except on very rare occasions, when you will be instructed on a particular page.",
+      false,
+      "</br>",
+      true,
+      "Your SKILL score reflects your swordsmanship and general fighting expertise; the higher the better. Your STAMINA Score reflects your general constitution, your will to survive, your determination and overall fitness; the higher your STAMINA Score, the longer you will be able to survive. Your LUCK Score indicates how naturally lucky a person you are. Luck and magic - are facts of life in the fantasy kingdom you are about to explore.",
+      false,
+      "</br>",
+      true,
+      "Battles",
+      false,
+      "</br>",
+      true,
+      "You will often come across pages in the book which instruct you to fight a creature of some sort. An option to flee may be given, but if not - or if you choose to attack the creature anyway - you must resolve the battle as described below.",
+      false,
+      "</br>",
+      true,
+      "First record the creature's SKILL and STAMINA scores in the first vacant Monster Encounter Box on your Adventure Sheet. The scores for each creature are given in the book each time you have an encounter.",
+      false,
+      "</br>",
+      true,
+      "The sequence of combat is then:",
+      false,
+      "</br>",
+      true,
+      "1. Roll the two dice once for the creature. Add its SKILL Score. This total is the creature's Attack Strength.",
+      false,
+      "</br>",
+      true,
+      "2. Roll the two dice once for yourself. Add the number rolled to your current SKILL score. This total is your Attack Strength.",
+      false,
+      "</br>",
+      true,
+      "3. If your Attack Strength is higher than that of the creature, you have wounded it. Proceed to step 4. If the creature's Attack Strength is higher than yours, it has wounded you. Proceed to step 5. If both Attack Strength totals are the same, you have avoided each other's blows - start the next Attack Round from step 1 above.",
+      false,
+      "</br>",
+      true,
+      "4. You have wounded the creature, so subtract 2 points from its STAMINA Score. You may use your LUCK here to do additional damage (see over).",
+      false,
+      "</br>",
+      true,
+      "5. The creature has wounded you, so subtract 2 points from your own STAMINA Score. Again you may use LUCK at this stage (see over).",
+      false,
+      "</br>",
+      true,
+      "6. Make the appropriate adjustments to either the creature's or your own STAMINA scores (and your LUCK Score if you used LUCK - see over).",
+      false,
+      "</br>",
+      true,
+      "7. Begin the next Attack Round (repeat steps 1-6). This sequence continues until the STAMINA score of either you or the creature you are fight- ing has been reduced to zero (death).",
+      false,
+      "</br>",
+      true,
+      "Escaping",
+      false,
+      "</br>",
+      true,
+      "On some pages you may be given the option of running away from a battle should things be going badly for you. However, if you do run away, the creature automatically gets in one wound on you (subtract 2 STAMINA points) as you flee. Such is the price of cowardice. Note that you may use LUCK on this wound in the normal way (see below). You may only Escape if that option is specifically given to you on the page.",
+      false,
+      "</br>",
+      true,
+      "Fighting More Than One Creature",
+      false,
+      "</br>",
+      true,
+      "If you come across more than one creature in a particular encounter, the instructions on that page will tell you how to handle the battle. Sometimes you will treat them as a single monster; sometimes you will fight each one in turn.",
+      false,
+      "</br>",
+      true,
+      "Luck",
+      false,
+      "</br>",
+      true,
+      "At various times during your adventure, either in battles or when you come across situations in which you could either be lucky or unlucky (details of these are given on the pages themselves), you may call on your luck to make the outcome more favour- able. But beware! Using luck is a risky business and if you are unlucky, the results could be disastrous.",
+      false,
+      "</br>",
+      true,
+      "The procedure for using your luck is as follows: roll two dice. If the number rolled is equal to or less than your current LUCK score, you have been lucky and the result will go in your favour. If the number rolled is higher than your current LUCK Score, you have been unlucky and you will be penalized.",
+      false,
+      "</br>",
+      true,
+      "This procedure is known as Testing your Luck. Each time you 'Test your Luck', you must subtract one point from your current LUCK Score. Thus you will soon realize that the more you rely on your luck, the more risky this will become.",
+      false,
+      "</br>",
+      true,
+      "Using Luck in Battles",
+      false,
+      "</br>",
+      true,
+      "On certain pages of the book you will be told to Test your Luck and will be told the consequences of your being lucky or unlucky. However, in battles, you always have the option of using your luck either to inflict a more serious wound on a creature you have just wounded, or to minimize the effects of a wound the creature has just inflicted on you.",
+      false,
+      "</br>",
+      true,
+      "If you have just wounded the creature, you may Test your Luck as described above. If you are lucky, you have inflicted a severe wound and may subtract an extra 2 points from the creature's STAMINA Score. However, if you are unlucky, the wound was a mere graze and you must restore 1 point to the creature's STAMINA (i.e. instead of scoring the normal 2 points of damage, you have now scored only 1).",
+      false,
+      "</br>",
+      true,
+      "If the creature has just wounded you, you may Test your Luck to try to minimize the wound. If you are lucky, you have managed to avoid the full damage of the blow. Restore 1 point of STAMINA (i.e. instead of doing 2 points of damage it has done only 1). If you are unlucky, you have taken a more serious blow. Subtract 1 extra STAMINA point.",
+      false,
+      "</br>",
+      true,
+      "Remember that you must subtract 1 point from your Own LUCK score each time you Test your Luck.",
+      false,
+      "</br>",
+      true,
+      "Restoring Skill, Stamina and Luck",
+      false,
+      "</br>",
+      true,
+      "Skill",
+      false,
+      "</br>",
+      true,
+      "Your SKILL Score will not change much during your adventure. Occasionally, a page may give instructions to increase or decrease your SKILL Score. A Magic Weapon may increase your SKILL, but remember that only one weapon can be used at a time! You cannot claim 2 SKILL bonuses for carry- ing two Magic Swords. Your SKILL score can never exceed its Initial value unless specifically instructed. Drinking the Potion of Skill (see later) will restore your SKILL to its Initial level at any time.",
+      false,
+      "</br>",
+      true,
+      "Stamina and Provisions",
+      false,
+      "</br>",
+      true,
+      "Your STAMINA Score will change a lot during your adventure as you fight monsters and undertake arduous tasks. As you near your goal, your STAMINA level may be dangerously low and battles may be particularly risky, so be careful!",
+      false,
+      "</br>",
+      true,
+      "Your haversack contains enough Provisions for ten meals. You may rest and eat only when allowed by the instructions on a page, and you may eat only one meal at a time. Eating a meal restores 4 STAMINA points. When you eat a meal, add 4 points to your STAMINA Score and deduct 1 point from your Provisions. A separate Provisions Remain- ing box is provided on the Adventure Sheet for record- ing details of Provisions. Remember that you have a long way to go, so use your Provisions wisely!",
+      false,
+      "</br>",
+      true,
+      "Remember also that your STAMINA score may never exceed its Initial value unless specifically instructed on a page. Drinking the Potion of Strength (see later) will restore your STAMINA to its Initial level at any time.",
+      false,
+      "</br>",
+      true,
+      "Luck",
+      false,
+      "</br>",
+      true,
+      "Additions to your LUCK Score are awarded through the adventure when you have been particularly lucky. Details are given on the pages of the book. Remember that, as with SKILL and STAMINA, your LUCK Score may never exceed its Initial value unless specifically instructed on a page. Drinking the Potion of Fortune (see later) will restore your LUCK to its Initial level at any time, and increase your Initial LUCK by 1 point.",
+      false,
+      "</br>",
+      true,
+      "",
+      false,
+      "</br>",
+      true,
+      "EQUIPMENT AND POTIONS",
+      false,
+      "</br>",
+      true,
+      "You will start your adventure with a bare minimum of equipment, but you may find other items during your travels. You are armed with a sword and are dressed in leather armour. You have a rucksack (haversack, backpack) on your back to hold your Provisions and any treasures you may come across. You also carry a lantern which lights your way.",
+      false,
+      "</br>",
+      true,
+      "In addition, you may take one bottle of a magical potion which will aid you on your quest. You may choose to take a bottle of any of the following:",
+      false,
+      "</br>",
+      true,
+      "A Potion of Skill - restores SKILL points",
+      false,
+      "</br>",
+      true,
+      "A Potion of Strength-restores STAMINA points A Potion of Fortune - restores LUCK points and adds 1 to Initial LUCK",
+      false,
+      "</br>",
+      true,
+      "These potions may be taken at any time during your adventure. Taking a measure of potion will restore SKILL, STAMINA or LUCK Scores to their Initial level (and the Potion of Fortune will add 1 point to your Initial LUCK score before LUCK is restored).",
+      false,
+      "</br>",
+      true,
+      "Each bottle of potion contains enough for two measures i.e. the characteristic may be restored twice during an adventure. Each time it is used make a note on your Adventure Sheet.",
+      false,
+      "</br>",
+      true,
+      "Remember also that you may only choose one of the three potions to take on your trip, so choose wisely!",
+      false,
+      "</br>",
+      true,
+      "",
+      false,
+      "</br>",
+      true,
+      "HINTS ON PLAY",
+      false,
+      "</br>",
+      true,
+      "There is one true way through the Warlock's dungeon and it will take you several attempts to find it. Make notes and draw a map as you explore - this map will be invaluable in future adventures and enable you to progress rapidly through to unexplored sections.",
+      false,
+      "</br>",
+      true,
+      "Not all rooms contain treasure; many merely con- tain traps and creatures which you will no doubt fall foul of. There are many 'wild goose chase' passages and whilst you may indeed progress through the dungeon, you will not take the Warlock's treasure unless you have picked up certain specific items on the way.",
+      false,
+      "</br>",
+      true,
+      "Several keys will be found in dungeon rooms. Only by arriving at the Warlock's treasure with the correct keys to open his chest will you get to his treasure.. You can expect many frustrations in Firetop Mountain.",
+      false,
+      "</br>",
+      true,
+      "The one true way involves a minimum of risk and any player, no matter how weak on initial dice rolls, should be able to get through fairly easily.",
+      false,
+      "</br>",
+      true,
+      "May the luck of the gods go with you on the adventure ahead!",
+      false,
+      "</br>",
+      false,
+      "</br>",
+      true,
+      "ADVENTURE SHEET",
+      true,
+      "______________________________________________________________",
+      false,
+      "</br>",
+      true,
+      "|SKILL&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|STAMINA&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|LUCK&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|Initial&nbspSkill=&nbsp&nbsp&nbsp&nbsp&nbsp|Initial&nbspStamina=&nbsp&nbsp&nbsp|Initial&nbspLuck=&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|___________________|___________________|____________________|",
+      false,
+      "</br>",
+      true,
+      "|ITEMS&nbspOF&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|GOLD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|EQUIPMENT&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|CARRIED&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|___________________________________|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|JEWELS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|___________________________________|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|POTIONS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|___________________________________|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|PROVISIONS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|REMAINING&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|________________________|___________________________________|",
+      false,
+      "</br>",
+      false,
+      "<a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'> DOWNLOAD</a>",
+      false,
+      "</br>",
+      true,
+      "RUMOURS",
+      false,
+      "</br>",
+      true,
+      "Only a foolhardy adventurer would embark upon such a perilous quest without first finding out as much as possible about the mountain and its treasures. Before your arrival at the foot of Firetop Mountain, you spent several days with the townsfolk of a local village some two days' journey from the base. Being a likeable sort of person, you found it easy to get on with the local peasants. Although they told many stories about the mysterious Warlock's sanctuary, you could not feel sure that all-or indeed any - of these were based on fact. The villagers had seen many adventurers pass through on their way to the mountain, but very few ever returned. The journey ahead was extremely dangerous, that you knew for certain. Of those who returned to the village, none contemplated going back to Firetop Mountain.",
+      false,
+      "</br>",
+      true,
+      "There seemed to be some truth in the rumour that the Warlock's treasure was stored in a magnificent chest with two locks, and the keys to these locks were guarded by various creatures within the dungeons. The Warlock himself was a sorcerer of great power. Some described him as old, others as young. Some said his power came from an enchanted deck of cards, others from the silky black gloves that he wore.",
+      false,
+      "</br>",
+      true,
+      "The entrance to the mountain was guarded by a pack of warty-faced Goblins, stupid creatures, fond of their food and drink. Towards the inner chambers, the creatures became more fearsome. To reach the inner chambers you would have to cross a river. The ferry service was regular, but the ferryman enjoyed a good barter, so you should save a Gold Piece for the trip. The locals also encouraged you to keep a good map of your wanderings, for without a map you would end up hopelessly lost within the mountain.",
+      false,
+      "</br>",
+      true,
+      "When it finally came to your day of leaving, the whole village turned out to wish you a safe journey. Tears came to the eyes of many of the women, young and old alike. You couldn't help wondering whether they were tears of sorrow shed by eyes which would never see you alive again...",
+      false,
+      "</br>",
+      true,
+      "Now turn over.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 1,
+
+    "text_array": [
+      true,
+      "At last your two-day hike is over. You unsheathe your sword, lay it on the ground and sigh with relief as you lower yourself down on to the mossy rocks to sit for a moment's rest. You stretch, rub your eyes and finally look up at Firetop Mountain.",
+      false,
+      "</br>",
+      true,
+      "The very mountain itself looks menacing. The steep face in front of you looks to have been savaged by the claws of some gargantuan beast. Sharp rocky crags jut out at unnatural angles. At the top of the mountain you can see the eerie red colouring - probably some strange vegetation-which has given the mountain its name. Perhaps no one will ever know exactly what grows up there, as climbing the peak must surely be impossible.",
+      false,
+      "</br>",
+      true,
+      "Your quest lies ahead of you. Across the clearing is a dark cave entrance. You pick up your sword, get to your feet and consider what dangers may lie ahead of you. But with determination, you thrust the sword home into its scabbard and approach the cave.",
+      false,
+      "</br>",
+      true,
+      "You peer into the gloom to see dark, slimy walls with pools of water on the stone floor in front of you. The air is cold and dank. You light your lantern and step warily into the blackness. Cobwebs brush your face and you hear the scurrying of tiny feet: rats, most likely. You set off into the cave. After a few yards you arrive at a junction. Will you turn west <span class='roomNumber' onclick='clickRoom(71)'>(turn to 71)</span> or east <span class='roomNumber' onclick='clickRoom(278)'>(turn to 278)</span>?",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 2,
+    "text_array": [
+      true,
+      "Test your Luck. If you are Lucky, you escape without attracting the Ogre's attention. If you are Unlucky, you curse as you kick a small stone which goes skidding across the cavern floor. You draw your sword in case the Ogre has heard it -<span class='roomNumber' onclick='clickRoom(16)'> turn to 16.</span> If you were Lucky, you creep down the corridor back to the crossroads.<span class='roomNumber' onclick='clickRoom(269)'> Turn to 269</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 3,
+    "text_array": [
+      true,
+      "The bell gives a dull clang and after a few moments you see a withered old man climb into a small rowing boat moored on the north bank. He rows slowly across to you, moors the boat and limps towards you. He asks you for 3 Gold Pieces. When you protest at the price he mumbles some flimsy excuse about 'inflation'. He begins to get angry at your protestations. Do you pay him the 3 Gold Pieces <span class='roomNumber' onclick='clickRoom(272)'>(turn to 272)</span> or threaten him <span class='roomNumber' onclick='clickRoom(127)'>(turn to 127)</span>?",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 4,
+    "text_array": [
+      true,
+      "You find yourself in a north-south corridor. To the north the passage turns east some metres ahead. To investigate<span class='roomNumber' onclick='clickRoom(46)'>, turn to 46</span>. To the south, the passageway also turns east<span class='roomNumber' onclick='clickRoom(332)'>. Turn to 332 </span>to go south. ",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 5,
+    "text_array": [
+      true,
+      "A rough timber doorway is on the east wall of the passage. You listen at the door and can hear a jolly sort of humming sound. Do you want to knock on the door and go in <span class='roomNumber' onclick='clickRoom(97)'>(turn to 97)</span> or will you continue northwards <span class='roomNumber' onclick='clickRoom(292)'>(turn to 292)</span>?",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 6,
+    "text_array": [
+      true,
+      "The large solid door has no handle. You charge it, but to no avail. The door is not going to budge. You decide to give up and go through the opening you passed in the east-west passageway some way back<span class='roomNumber' onclick='clickRoom(89)'>. Turn to 89</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 7,
+    "text_array": [
+      true,
+      "You are on the north bank of a fast-flowing river in a large underground cavern<span class='roomNumber' onclick='clickRoom(214)'>. Turn to 214</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "- Battle",
+    "ID": 8,
+    "text_array": [
+      true,
+      "The passage ahead ends at a sturdy door. You listen but hear nothing. You try the handle, it turns, and you enter the room. As you look around you hear a loud cry from behind you and swing round to see a wild man leaping towards you wielding a large battle axe. He is a mad BARBARIAN and you must fight him!",
+      false,
+      "</br>",
+      true,
+      "BARBARIAN SKILL 7  STAMINA 6",
+      false,
+      "</br>",
+      true,
+      "There is a door in the north wall opposite, through which you may Escape during the battle <span class='roomNumber' onclick='clickRoom(189)'>(turn to 189)</span>. If you defeat the Barbarian<span class='roomNumber' onclick='clickRoom(273)'>, turn to 273</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 9,
+    "text_array": [
+      true,
+      "Amazed at the success of your bluff, you decide to push your luck a little further. You can either examine the Skeletons' tools or pretend you're looking for work-sheets and look through the drawers of the various benches. If you choose the tools<span class='roomNumber' onclick='clickRoom(34)'>, turn to 34</span>. If you search the drawers, <span class='roomNumber' onclick='clickRoom(322)'>turn to 322</span>. You hear a noise from behind the north door and realize you will have to hurry!",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 10,
+    "text_array": [
+      true,
+      "You arrive back at the junction and turn north- wards<span class='roomNumber' onclick='clickRoom(77)'>. Turn to 77</span>. ",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 11,
+    "text_array": [
+      true,
+      "You follow the passage westwards until it turns round a corner to the south. Just before the bend is a signpost which reads 'Under Construction'. In front of you is the beginning of a stairway leading downwards. Only three steps have been built so far. A number of shovels, picks and other tools were lying on the ground by the steps but, as you turned the corner, they suddenly flurried into action and began working on the steps. You are now watching various tools digging and hammering as if being handled by invisible workers. A humming chant becomes louder and you recognize it as: 'Heigh-ho, Heigh-ho, It's off to work we go...' As you stand watching you start to chuckle the scene is quite amusing. You sit and watch and even manage to chat to some of the magical tools. Gain 2 STAMINA points and 1 SKILL point whilst you relax. Then turn back up the passageway to the crossroads where you may go either northwards <span class='roomNumber' onclick='clickRoom(366)'>(turn to 366)</span> or southwards <span class='roomNumber' onclick='clickRoom(250)'>(turn to 250)</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 12,
+    "text_array": [
+      true,
+      "As you pull the knob, a deafening clanging noise rings through the passageways. You frantically push the knob back to stop the alarm, but it has already had its effect. You can hear footsteps coming closer down the corridor.<span class='roomNumber' onclick='clickRoom(161)'> Turn to 161 </span>to find what you have attracted. Note down the number 12 so that you may return to this section after fighting your battle.",
+      false,
+      "</br>",
+      true,
+      "When you have defeated this creature, you may either return to the junction <span class='roomNumber' onclick='clickRoom(256)'>(turn to 256)</span> or you may push the knob <span class='roomNumber' onclick='clickRoom(364)'>(turn to 364)</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 13,
+    "text_array": [
+      true,
+      "Your head hurts and you feel dizzy as you rise to your feet. The four men stir into action and move towards you in single file with their weapons ready. You grope your way down the wall for the south door but it will be touch and go whether you make it. Your foot slips on a loose pebble and you fall to the ground. Before you can regain your footing, the creatures are upon you. <span class='roomNumber' onclick='clickRoom(282)'>Turn to 282</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 14,
+    "text_array": [
+      true,
+      "There are no signs of any secret passages, but you suddenly hear footsteps coming towards you. To find out what is coming, <span class='roomNumber' onclick='clickRoom(161)'>turn to 161</span>. You must fight this creature.",
+      false,
+      "</br>",
+      true,
+      "If you defeat the monster, <span class='roomNumber' onclick='clickRoom(117)'>turn to 117</span>. Note this reference so you know where to return to.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 15,
+    "text_array": [
+      true,
+      "As you sit on the bench and eat your food, you begin to feel deeply relaxed and the aches from your body seem to be soothing themselves away. This resting place is enchanted. You may restore 2 additional STAMINA points as well as the normal amount (but only if this does not exceed your Initial STAMINA score) and restore 1 SKILL point if any have been lost. When you are ready to continue, move along the passage and <span class='roomNumber' onclick='clickRoom(367)'>turn to 367</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "- Battle",
+    "ID": 16,
+    "text_array": [
+      true,
+      "You draw your sword, and as you do so the Ogre hears you and prepares to attack:",
+      false,
+      "</br>",
+      true,
+      "OGRE SKILL 8 STAMINA 10",
+      false,
+      "</br>",
+      true,
+      "[ISI]",
+      false,
+      "</br>",
+      true,
+      "If you defeat him, <span class='roomNumber' onclick='clickRoom(50)'>turn to 50</span>. After the second Attack Round, you may Escape down the passage (<span class='roomNumber' onclick='clickRoom(269)'>turn to 269</span>).",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 17,
+    "text_array": [
+      true,
+      "Using the wooden stake and mallet (or makeshift mallet if you aren't carrying one), you form a cross and move towards the Vampire, backing it into a corner. It hisses and snatches at you but cannot come near you. However, it is going to be tricky getting the stake through its heart.",
+      false,
+      "</br>",
+      true,
+      "As you advance, you stumble and fall forwards. As luck would have it, the stake flies forward and plunges into the shrieking creature. Test your Luck. If you are Lucky, the stake pierces the Vampire's heart. If you are Unlucky, the Vampire is merely grazed by the wound (deduct 3 points from its STAMINA) and it flings you backwards across the room towards the west door. To Escape through it, <span class='roomNumber' onclick='clickRoom(380)'>turn to 380</span>. To keep on fighting, <span class='roomNumber' onclick='clickRoom(144)'>turn to 144</span>. If you were Lucky and killed the Vampire, you may look for its treasure- <span class='roomNumber' onclick='clickRoom(327)'>turn to 327</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 18,
+    "text_array": [
+      true,
+      "You walk westwards along the passageway. After fifty metres or so, the way turns northwards. Two or three paces up the passage, you hear a crumbling beneath your feet and you try to leap back as the ground gives way. Test your Luck. If you are Lucky, you manage to leap quickly backwards before a pit opens. If you are Unlucky, you are too slow and you fall over two metres down into a pit - lose 1 STAMINA point. If you were Lucky, you had better return to the junction (<span class='roomNumber' onclick='clickRoom(261)'>turn to 261</span>). If you were Unlucky, <span class='roomNumber' onclick='clickRoom(348)'>turn to 348</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "- Battle",
+    "ID": 19,
+    "text_array": [
+      true,
+      "These two evil creatures are GOBLINS. They attack you one at a time.",
+      false,
+      "</br>",
+      true,
+      "SKILL STAMINA",
+      false,
+      "</br>",
+      true,
+      "First GOBLIN 5 5",
+      false,
+      "</br>",
+      true,
+      "Second GOBLIN 5 6",
+      false,
+      "</br>",
+      true,
+      "If you kill the Goblins, <span class='roomNumber' onclick='clickRoom(317)'>turn to 317</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 20,
+    "text_array": [
+      true,
+      "The skirmish commences. You have your sword, they have their axes. They come at you one at a time:",
+      false,
+      "</br>",
+      true,
+      "SKILL STAMINA",
+      false,
+      "</br>",
+      true,
+      "First DWARF 7 4",
+      false,
+      "</br>",
+      true,
+      "Second DWARF 6 6",
+      false,
+      "</br>",
+      true,
+      "Third DWARF 7 5",
+      false,
+      "</br>",
+      true,
+      "Fourth DWARF 7 5",
+      false,
+      "</br>",
+      true,
+      "[ISI]",
+      false,
+      "</br>",
+      true,
+      "If you win, <span class='roomNumber' onclick='clickRoom(376)'>turn to 376</span>. If the battle is going badly, you may Escape through the door. <span class='roomNumber' onclick='clickRoom(291)'>Turn to 291</span> -- but don't forget your Escaping penalty.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 21,
+    "text_array": [
+      true,
+      "The green blood of the dead Orcs smells foul as it seeps from their bodies. You step around the corpses and investigate the chest. It is a sturdy affair, made of strong oak and iron, and it is firmly locked. You may try to smash the lock with your sword (<span class='roomNumber' onclick='clickRoom(339)'>turn to 339</span>) or leave it alone and go through the open door (<span class='roomNumber' onclick='clickRoom(293)'>turn to 293</span>).",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 22,
+    "text_array": [
+      true,
+      "You poke around looking for signs of secret doors but can find none. You pause to ponder your situation and a small jet of gas hisses from the ceiling. You cough and choke to clear your lungs, but collapse to your knees. Your head spins and you flop to the floor in an unconscious heap. When you come to, you look around in an unfamiliar place. <span class='roomNumber' onclick='clickRoom(4)'>Turn to 4</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 23,
+    "text_array": [
+      true,
+      "The passageway ends in a solid doorway and you are surprised to see a leather skirt tacked along the bottom of the door. You listen but hear nothing. Will you enter the room (<span class='roomNumber' onclick='clickRoom(326)'>turn to 326</span>) or return to the junction (<span class='roomNumber' onclick='clickRoom(229)'>turn to 229</span>)?",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 24,
+    "text_array": [
+      true,
+      "After you have suffered your third wound, you notice that your strength is ebbing. Lose 1 SKILL point. You deduce that this is yet another magical power of this foul creature and you feel a shiver of panic. Will you continue or run? If you want to Escape, pay the penalty and <span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span> to flee through the north door. Otherwise the fight goes on.",
+      false,
+      "</br>",
+      true,
+      "If you defeat the creature, <span class='roomNumber' onclick='clickRoom(135)'>turn to 135</span>. But from now on every third wound that the beast inflicts takes 1 point from your SKILL.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 25,
+    "text_array": [
+      true,
+      "The paintings are portraits of men. Your spine shivers as you read the nameplate under the one on the west wall it is that of Zagor, the Warlock whose treasure you are seeking. You look at his portrait and realize you are pitting yourself against an awesome adversary. You have the feeling that you are being watched and notice the piercing eyes following you as you move. You find yourself drawn towards his portrait and your fear rises. Lose 1 SKILL point. Do you have the courage to try to combat the Warlock? You may either leave through the north door straightaway (<span class='roomNumber' onclick='clickRoom(90)'>turn to 90</span>) -- but treat this as an Escape. Or you may look through your pack for a weapon to use against the Warlock's power <span class='roomNumber' onclick='clickRoom(340)'>turn to 340</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 26,
+    "text_array": [
+      true,
+      "You remember Di Maggio's small, leather-bound book, and silently mouth the spell contained within its pages.",
+      false,
+      "</br>",
+      true,
+      "You shout loudly at the Dragon and it stops in its tracks. It cocks its head to one side and eyes you suspiciously. You fling a stone at its head, and the rock bounces off its nose. The beast lets out an angry cry and breathes deeply, a roaring sound being created from within its throat. The Dragon exhales. and from between its teeth you can see another fireball building up. You prepare yourself, and as the ball of flame comes from its mouth, you cry:",
+      false,
+      "</br>",
+      true,
+      "'Ekil Erif",
+      false,
+      "</br>",
+      true,
+      " Ekam Erif ",
+      false,
+      "</br>",
+      true,
+      " Erif Erif ",
+      false,
+      "</br>",
+      true,
+      " Di Maggio'",
+      false,
+      "</br>",
+      true,
+      "The fireball continues no further. With an agonized scream, the Dragon tries to shake the flames from its snout. But there the burning continues.",
+      false,
+      "</br>",
+      true,
+      "Squealing in agony, the Dragon turns its back and leaps into the blackness, flailing its head from side to side. <span class='roomNumber' onclick='clickRoom(371)'>Turn to 371</span>",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 27,
+    "text_array": [
+      true,
+      "The sword is enchanted and will aid you in battle. As long as you use this sword, you may increase your Initial SKILL by 2 points. You may also add 2 points to your current SKILL value. Add 2 points to your LUCK for finding this sword. Throw your old sword away and <span class='roomNumber' onclick='clickRoom(319)'>turn to 319</span>. If you would rather keep your own sword, leave your SKILL as it is and just take the LUCK bonus.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 28,
+    "text_array": [
+      true,
+      "The mighty Giant lies dead! You search his cavern and find little of use, although a purse in his belt contains 8 Gold Pieces. You are a little concerned about the second chair; to whom does it belong? You decide to leave the cavern the way you came. <span class='roomNumber' onclick='clickRoom(351)'>Turn to 351</span>. But add 2 LUCK and 2 SKILL points for your victory.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 29,
+    "text_array": [
+      true,
+      "Apart from the boots, which you decide to ignore, there appears to be little of value in the cavern. You decide to head back the way you came. <span class='roomNumber' onclick='clickRoom(375)'>Turn to 375</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 30,
+    "text_array": [
+      true,
+      "A loose stone falls out to reveal a rope in the rock. If you wish to pull it, <span class='roomNumber' onclick='clickRoom(67)'>turn to 67</span>. If you feel it would be wiser to leave it alone, you can return to the cross- roads (<span class='roomNumber' onclick='clickRoom(267)'>turn to 267</span>).",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 31,
+    "text_array": [
+      true,
+      "If you have the jewel from the Eye of the Cyclops, you hold it in front of the Warlock. His intimidating stare turns to an expression of pain. He obviously feels the jewel's power. Suddenly his eyes turn white and his expression goes limp. Your confidence gains as you realize you have won your first real battle. Gain 2 SKILL points. Put the jewel into your pack and leave through the north door. <span class='roomNumber' onclick='clickRoom(90)'>Turn to 90</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 32,
+    "text_array": [
+      true,
+      "You toss the Cheese across the room at the Rats and they scramble for it, nipping and scratching each other as they fight for it. Having distracted them, you pass through the room and leave by the door in the north wall. <span class='roomNumber' onclick='clickRoom(124)'>Turn to 124</span>. Add 2 LUCK points for your good fortune.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 33,
+    "text_array": [
+      true,
+      "The sleeping creature awakens startled. He jumps up and rushes at you, unarmed. With your sword you should be able to defeat him, but his sharp teeth look rather vicious. You may Escape through the door (<span class='roomNumber' onclick='clickRoom(320)'>turn to 320</span>) or stand and fight the ORC who is attacking you.",
+      false,
+      "</br>",
+      true,
+      "ORC SKILL 6 STAMINA 4 ",
+      false,
+      "</br>",
+      true,
+      "If you defeat the creature, you may take the box. <span class='roomNumber' onclick='clickRoom(147)'>Turn to 147</span>.",
+      false,
+      "</br>",
+      true,
+      "[ISI]",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 34,
+    "text_array": [
+      true,
+      "Looking through the tools you come across a mallet with a hardwood head and a chisel with a solid silver blade. You may keep either of these if you are prepared to forfeit one of the items of equipment you are carrying. If you wish to do so, make the appropriate adjustments to your Equipment List. The noise from the north door gets louder and you move up to investigate. <span class='roomNumber' onclick='clickRoom(96)'>Turn to 96</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 35,
+    "text_array": [
+      true,
+      "As you step into the room, the door swings shut behind you. As it closes, there is a click and a hiss. From the centre of the ceiling, a jet of gas is filling the room with an acrid vapour. You breathe and cough deeply. You look at the door and then the key. Will you return to the door and escape quickly (<span class='roomNumber' onclick='clickRoom(136)'>turn to 136</span>) or hold your breath and dash for the key first (<span class='roomNumber' onclick='clickRoom(361)'>turn to 361</span>)?",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 36,
+    "text_array": [
+      true,
+      "The locked door bursts open and a nauseating stench hits your nostrils. Inside the room the floor is covered with bones, rotting vegetation and slime. A wild-haired old man, clothed in rags, rushes at you screaming. His beard is long and grey, and he is waving an old wooden chair-leg. Is he simply insane as he appears, or has this been some kind of trap? You may either shout at him to try to calm him down (<span class='roomNumber' onclick='clickRoom(263)'>turn to 263</span>) or draw your sword and attack him (<span class='roomNumber' onclick='clickRoom(353)'>turn to 353</span>).",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 37,
+    "text_array": [
+      true,
+      "Standing at the crossroads you may go either north (turn to 366), west (<span class='roomNumber' onclick='clickRoom(11)'>turn to 11</span>) or south (<span class='roomNumber' onclick='clickRoom(277)'>turn to 277</span>).",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 38,
+    "text_array": [
+      true,
+      "You open the door to find the Werewolf's larder, a miscellaneous collection of bones and decaying meats. The smell is nauseating, although a jar of pickled eggs seems to offer fairly palatable food. If you wish to take these, there will be enough for two meals; add 2 points to your Provisions.",
+      false,
+      "</br>",
+      true,
+      "Back in the room you may now go out through the south door. <span class='roomNumber' onclick='clickRoom(66)'>Turn to 66</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "- Battle",
+    "ID": 39,
+    "text_array": [
+      true,
+      "Your opponent is surprised as you disappear in front of him, but he raises his hands as if to cover his eyes and he scans the room with an intense glare. He can sense your presence but cannot make out exactly where you are. You draw your sword and advance. He tilts his head and sniffs the air. You will have to fight him from a distance as, if he gets his hands on you, your invisibility will be no advantage. But whilst you remain invisible, you have the following advantages:",
+      false,
+      "</br>",
+      true,
+      "You may add 2 to your dice roll when determining your Attack Strength.",
+      false,
+      "</br>",
+      true,
+      "Each successful attack will cause him 3 points of damage as, since he cannot see you, he cannot defend himself properly.",
+      false,
+      "</br>",
+      true,
+      "Each time he inflicts a wound on you, throw one die. If the number is odd, he wounds you as normal. If the number is 2 or 4, he only inflicts a 1-point wound. If you roll a 6, you can parry the blow and he does no damage.",
+      false,
+      "</br>",
+      true,
+      "[ISI]",
+      false,
+      "</br>",
+      true,
+      "Resolve the battle:",
+      false,
+      "</br>",
+      true,
+      "WARLOCK SKILL 11 STAMINA 18",
+      false,
+      "</br>",
+      true,
+      "If you win, <span class='roomNumber' onclick='clickRoom(396)'>turn to 396</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 40,
+    "text_array": [
+      true,
+      "The ear-piercing sound gets louder and louder. The pain is unbearable. Reduce your SKILL Score by 1 for the agony. You begin to grope in the dark for a wall. Do you head for:",
+      false,
+      "</br>",
+      true,
+      "The west wall? <span class='roomNumber' onclick='clickRoom(355)'>Turn to 355</span>",
+      false,
+      "</br>",
+      true,
+      "The north wall? <span class='roomNumber' onclick='clickRoom(265)'>Turn to 265</span>",
+      false,
+      "</br>",
+      true,
+      "The east wall? <span class='roomNumber' onclick='clickRoom(181)'>Turn to 181</span>",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "- Battle",
+    "ID": 41,
+    "text_array": [
+      true,
+      "He is a powerful adversary-a WIGHT! He is large, strong and evil. The battle commences:",
+      false,
+      "</br>",
+      true,
+      "WIGHT SKILL 9 STAMINA 6",
+      false,
+      "</br>",
+      true,
+      "You fight with your sword. After you have inflicted your first wound on him, <span class='roomNumber' onclick='clickRoom(310)'>turn to 310</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 42,
+    "text_array": [
+      true,
+      "You eventually arrive at the end of the passage, at a three-way junction. You may turn either to the west (<span class='roomNumber' onclick='clickRoom(257)'>turn to 257</span>) or to the east (<span class='roomNumber' onclick='clickRoom(113)'>turn to 113</span>).",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 43,
+    "text_array": [
+      true,
+      "You are in a north-south passageway. To go north, <span class='roomNumber' onclick='clickRoom(354)'>turn to 354</span>. To go south, <span class='roomNumber' onclick='clickRoom(52)'>turn to 52</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 44,
+    "text_array": [
+      true,
+      "Panting after the struggle, you sit down to collect yourself and finish the Provisions you started. Eventually you pack your bag and wade into the stream. <span class='roomNumber' onclick='clickRoom(399)'>Turn to 399</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 45,
+    "text_array": [
+      true,
+      "The Cheese hits the portrait and bounces off. You hear an evil laugh coming from the walls and realize the Warlock is mocking you. You decide to leave the room by the north door. <span class='roomNumber' onclick='clickRoom(90)'>Turn to 90</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 46,
+    "text_array": [
+      true,
+      "You are standing in a short east-west passageway, with a door blocking the way to the east. To the west, the passage turns southwards after several metres. To go round this bend <span class='roomNumber' onclick='clickRoom(4)'>turn to 4</span>. To go through the door, <span class='roomNumber' onclick='clickRoom(206)'>turn to 206</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 47,
+    "text_array": [
+      true,
+      "In the middle of the river, the bridge swings to and fro as it strains to take your weight. The handrail comes away suddenly as you lean on it. Roll one die. A roll of 6 sends you plunging into the river below - <span class='roomNumber' onclick='clickRoom(158)'>turn to 158</span>. A roll of 1-5 means you regain your balance. To go on, <span class='roomNumber' onclick='clickRoom(298)'>turn to 298</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 48,
+    "text_array": [
+      true,
+      "You are in an east-west corridor. If you go east, you will turn a corner northwards. To go this way, <span class='roomNumber' onclick='clickRoom(391)'>turn to 391</span>. To go west, <span class='roomNumber' onclick='clickRoom(60)'>turn to 60</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 49,
+    "text_array": [
+      true,
+      "The door squeaks open on rusty hinges. The room is dark and your eyes begin to adjust themselves as you close the door behind you. You hear a shuffling in the room but before you can react, a blow to your head knocks you senseless. Lose 2 STAMINA points and <span class='roomNumber' onclick='clickRoom(122)'>turn to 122</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 50,
+    "text_array": [
+      true,
+      "The slain creature crashes to the ground. You go through his garments and find nothing, but a small pouch hangs around his neck. Inside this pouch is a small bronze key, with the number 9 cast into it. You may take this if you wish. Nothing else is of value in the cavern so you leave and head back to the junc- tion. <span class='roomNumber' onclick='clickRoom(269)'>Turn to 269</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 51,
+    "text_array": [
+      true,
+      "You drink the Potion and can see the look of astonishment spread across the Troll's face. He comes up to you and feels for you, but you step aside and he gropes the air fruitlessly. He thrashes around, clutching for you, but you are easily able to sidestep him. Eventually he gives up and returns to his chamber, just in time, as you feel yourself reappearing. Add 2 LUCK points. You may leave along the passage to the north. <span class='roomNumber' onclick='clickRoom(287)'>Turn to 287</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 52,
+    "text_array": [
+      true,
+      "You are standing at a T-junction where a passage to the east comes off a north-south corridor.",
+      false,
+      "</br>",
+      true,
+      "To go south <span class='roomNumber' onclick='clickRoom(391)'>Turn to 391</span>",
+      false,
+      "</br>",
+      true,
+      "To check for secret passages on the way southwardsn<span class='roomNumber' onclick='clickRoom(362)'>Turn to 362</span>",
+      false,
+      "</br>",
+      true,
+      "To go north <span class='roomNumber' onclick='clickRoom(354)'>Turn to 354</span>",
+      false,
+      "</br>",
+      true,
+      "To check for secret passages on the way northwards <span class='roomNumber' onclick='clickRoom(234)'>Turn to 234</span>",
+      false,
+      "</br>",
+      true,
+      "To go east <span class='roomNumber' onclick='clickRoom(291)'>Turn to 291</span>",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 53,
+    "text_array": [
+      true,
+      "You charge the door, hitting it squarely with your shoulder. Roll 2 dice. If the number rolled is equal to or less than your SKILL Score, the door opens (<span class='roomNumber' onclick='clickRoom(155)'>turn to 155</span>). If the number exceeds your SKILL Score, the door shudders but does not budge, and you wince in pain as you hit the door - lose 1 STAMINA point and continue up the corridor (<span class='roomNumber' onclick='clickRoom(300)'>turn to 300</span>).",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 54,
+    "text_array": [
+      true,
+      "You are standing outside a door at the north end of a north-south passage. To go south, <span class='roomNumber' onclick='clickRoom(308)'>turn to 308</span>. To go through the door, <span class='roomNumber' onclick='clickRoom(179)'>turn to 179</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 55,
+    "text_array": [
+      true,
+      "Roll two dice. If the total rolled is less than or equal to your LUCK Score and is also less than or equal to your STAMINA score, then you manage to hold on and manoeuvre the raft across to the north bank (do not deduct a LUCK point). You arrive safely but as you step on to the bank, the raft drifts away and makes its own way across the river to the south bank. <span class='roomNumber' onclick='clickRoom(7)'>Turn to 7</span>.",
+      false,
+      "</br>",
+      true,
+      "If you exceed your LUCK and/or STAMINA totals, the raft throws you into the water and you start to swim back to the south bank. <span class='roomNumber' onclick='clickRoom(166)'>Turn to 166</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 56,
+    "text_array": [
+      true,
+      "As your sword splashes into the water, a bubbly voice says, 'Thank you!' It now seems that the only way onwards is to swim downstream to the east. You plunge into the water. <span class='roomNumber' onclick='clickRoom(399)'>Turn to 399</span>.",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 57,
+    "text_array": [
+      true,
+      "As you enter the cavern you hear loud footsteps behind you, crunching heavily on the rocky floor. You crouch down beside the entrance in a small alcove in the rock. The steps get louder and you see a great OGRE enter the cavern! He stands over two metres tall and is dressed in ill-fitting garments made from some sort of hide. He carries a large wooden club. You may:",
+      false,
+      "</br>",
+      true,
+      "Attack him as he enters <span class='roomNumber' onclick='clickRoom(16)'>Turn to 16</span>",
+      false,
+      "</br>",
+      true,
+      "Try to creep out without him noticing you <span class='roomNumber' onclick='clickRoom(2)'>Turn to 2</span>",
+      false,
+      "</br>",
+      true,
+      "Try to distract him by throwing something into a far corner of the cavern <span class='roomNumber' onclick='clickRoom(119)'>Turn to 119</span>",
+      false,
+      "</br>"
+    ]
+  },
+  {
+    "short_name": "",
+    "ID": 58,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 59,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 60,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 61,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 62,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 63,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 64,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 65,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 66,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 67,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 68,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 69,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 70,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 71,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 72,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 73,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 74,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 75,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 76,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 77,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 78,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 79,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 80,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 81,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 82,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 83,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 84,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 85,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 86,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 87,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 88,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 89,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 90,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 91,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 92,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 93,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 94,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 95,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 96,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 97,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 98,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 99,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 100,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 101,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 102,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 103,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 104,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 105,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 106,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 107,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 108,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 109,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 110,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 111,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 112,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 113,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 114,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 115,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 116,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 117,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 118,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 119,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 120,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 121,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 122,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 123,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 124,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 125,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 126,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 127,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 128,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 129,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 130,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 131,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 132,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 133,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 134,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 135,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 136,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 137,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 138,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 139,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 140,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 141,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 142,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 143,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 144,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 145,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 146,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 147,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 148,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 149,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 150,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 151,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 152,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 153,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 154,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 155,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 156,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 157,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 158,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 159,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 160,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 161,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 162,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 163,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 164,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 165,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 166,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 167,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 168,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 169,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 170,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 171,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 172,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 173,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 174,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 175,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 176,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 177,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 178,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 179,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 180,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 181,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 182,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 183,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 184,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 185,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 186,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 187,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 188,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 189,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 190,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 191,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 192,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 193,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 194,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 195,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 196,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 197,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 198,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 199,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 200,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 201,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 202,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 203,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 204,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 205,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 206,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 207,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 208,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 209,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 210,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 211,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 212,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 213,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 214,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 215,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 216,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 217,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 218,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 219,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 220,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 221,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 222,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 223,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 224,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 225,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 226,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 227,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 228,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 229,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 230,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 231,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 232,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 233,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 234,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 235,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 236,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 237,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 238,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 239,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 240,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 241,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 242,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 243,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 244,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 245,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 246,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 247,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 248,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 249,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 250,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 251,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 252,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 253,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 254,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 255,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 256,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 257,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 258,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 259,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 260,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 261,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 262,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 263,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 264,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 265,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 266,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 267,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 268,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 269,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 270,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 271,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 272,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 273,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 274,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 275,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 276,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 277,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 278,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 279,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 280,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 281,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 282,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 283,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 284,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 285,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 286,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 287,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 288,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 289,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 290,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 291,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 292,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 293,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 294,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 295,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 296,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 297,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 298,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 299,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 300,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 301,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 302,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 303,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 304,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 305,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 306,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 307,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 308,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 309,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 310,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 311,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 312,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 313,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 314,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 315,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 316,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 317,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 318,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 319,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 320,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 321,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 322,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 323,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 324,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 325,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 326,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 327,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 328,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 329,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 330,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 331,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 332,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 333,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 334,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 335,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 336,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 337,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 338,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 339,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 340,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 341,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 342,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 343,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 344,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 345,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 346,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 347,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 348,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 349,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 350,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 351,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 352,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 353,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 354,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 355,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 356,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 357,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 358,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 359,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 360,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 361,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 362,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 363,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 364,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 365,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 366,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 367,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 368,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 369,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 370,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 371,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 372,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 373,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 374,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 375,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 376,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 377,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 378,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 379,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 380,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 381,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 382,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 383,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 384,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 385,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 386,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 387,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 388,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 389,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 390,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 391,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 392,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 393,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 394,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 395,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 396,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 397,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 398,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 399,
+    "text_array": []
+  },
+  {
+    "short_name": "",
+    "ID": 400,
+    "text_array": []
+  },
+  {
+    "short_name": "Adventure Sheet",
+    "ID": "advshe",
+
+    "text_array": [
+      true,
+      "______________________________________________________________",
+      false,
+      "</br>",
+      true,
+      "|SKILL&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|STAMINA&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|LUCK&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|Initial&nbspSkill=&nbsp&nbsp&nbsp&nbsp&nbsp|Initial&nbspStamina=&nbsp&nbsp&nbsp|Initial&nbspLuck=&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|___________________|___________________|____________________|",
+      false,
+      "</br>",
+      true,
+      "|ITEMS&nbspOF&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|GOLD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|EQUIPMENT&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|CARRIED&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|___________________________________|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|JEWELS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|___________________________________|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|POTIONS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|___________________________________|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|PROVISIONS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|REMAINING&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|",
+      false,
+      "</br>",
+      true,
+      "|________________________|___________________________________|",
+      false,
+      "</br>",
+      true,
+      "",
+      false,
+      "</br>"
+    ]
+  }
+]

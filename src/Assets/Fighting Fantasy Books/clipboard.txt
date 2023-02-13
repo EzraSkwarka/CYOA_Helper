@@ -1,0 +1,30 @@
+		false, "</br>",
+		true, "",
+
+false, "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>",
+
+load Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json
+
+//JS Fiddle for generating rooms
+
+<div id = 'output'>
+
+</div>
+
+var target = document.getElementById('output');
+
+for (let i = 1; i < 401; i++) {
+	target.innerHTML += "\{ </br> " 
+  + "\"short_name\": \"\"," 
+  + "</br>"
+  + "\"ID\": " + String(i) + ","
+  + "</br>"
+  + "\"text_array\": \["
+  + "</br>"
+  + "</br>"
+  + "\]"
+  + "</br>"
+  + "\},"
+  + "</br>"
+
+}
