@@ -1252,389 +1252,986 @@
   {
     "short_name": "",
     "ID": 58,
-    "text_array": [true, "Cautiously you creep along the passageway. After a short time it turns sharply to the north. At the corner there is a bench of solid wood and above the bench a sign reads 'Rest Ye Here Weary Traveller'. Here you may stop and eat Provisions if you wish (<span class='roomNumber' onclick='clickRoom(15)'>turn to 15</span>) or continue (<span class='roomNumber' onclick='clickRoom(367)'>turn to 367</span>).", false, "</br>"]
+    "text_array": [
+      true,
+      "Cautiously you creep along the passageway. After a short time it turns sharply to the north. At the corner there is a bench of solid wood and above the bench a sign reads 'Rest Ye Here Weary Traveller'. Here you may stop and eat Provisions if you wish (<span class='roomNumber' onclick='clickRoom(15)'>turn to 15</span>) or continue (<span class='roomNumber' onclick='clickRoom(367)'>turn to 367</span>).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 59,
-    "text_array": [true, "You walk westwards for some time, then north round a peculiar bend which hairpins straight round to the south. Eventually you wind up at a three-way junction. <span class='roomNumber' onclick='clickRoom(150)'>Turn to 150</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "You walk westwards for some time, then north round a peculiar bend which hairpins straight round to the south. Eventually you wind up at a three-way junction. <span class='roomNumber' onclick='clickRoom(150)'>Turn to 150</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 60,
-    "text_array": [true, "You walk along the corridor, only to find that the way westwards is blocked by a heavy portcullis. You walk back to where you were. <span class='roomNumber' onclick='clickRoom(48)'>Turn to 48</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "You walk along the corridor, only to find that the way westwards is blocked by a heavy portcullis. You walk back to where you were. <span class='roomNumber' onclick='clickRoom(48)'>Turn to 48</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "- Battle",
     "ID": 61,
-    "text_array": [true, "As you investigate the cavern, you suddenly hear a scurry of steps behind you and swing round to face the grotesque black shape of a GIANT SPIDER which has been stalking you. The Spider's body is at least a metre across and you quickly draw your sword to defend yourself.", false, "</br>",
-    true, "GIANT SPIDER SKILL 7 STAMINA 8", false, "</br>",
-    true, "If you win the battle, turn to 29. You may Escape from the fight down the passageway after two Attack Rounds and will end up at the junction-<span class='roomNumber' onclick='clickRoom(375)'>turn to 375</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "As you investigate the cavern, you suddenly hear a scurry of steps behind you and swing round to face the grotesque black shape of a GIANT SPIDER which has been stalking you. The Spider's body is at least a metre across and you quickly draw your sword to defend yourself.",
+      false,
+      "</br>",
+      true,
+      "GIANT SPIDER SKILL 7 STAMINA 8",
+      false,
+      "</br>",
+      true,
+      "If you win the battle, turn to 29. You may Escape from the fight down the passageway after two Attack Rounds and will end up at the junction-<span class='roomNumber' onclick='clickRoom(375)'>turn to 375</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 62,
-    "text_array": [true, "You continue along the passageway to the east. After some thirty metres it turns to the south. Following it round the bend you eventually come to a stop at a large armoured door. To try the door, <span class='roomNumber' onclick='clickRoom(6)'>turn to 6</span>. If you would prefer to return along the passage and go through the narrow opening, <span class='roomNumber' onclick='clickRoom(89)'>turn to 89</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "You continue along the passageway to the east. After some thirty metres it turns to the south. Following it round the bend you eventually come to a stop at a large armoured door. To try the door, <span class='roomNumber' onclick='clickRoom(6)'>turn to 6</span>. If you would prefer to return along the passage and go through the narrow opening, <span class='roomNumber' onclick='clickRoom(89)'>turn to 89</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 63,
-    "text_array": [true, "As you walk along the corridor, you can see ahead that it is getting narrower. At one point you stoop, and as you do so, a deep, resonating laugh starts up around you. Do you wish to continue? If so, <span class='roomNumber' onclick='clickRoom(281)'>turn to 281</span>. If you wish to turn back, <span class='roomNumber' onclick='clickRoom(10)'>turn to 10</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "As you walk along the corridor, you can see ahead that it is getting narrower. At one point you stoop, and as you do so, a deep, resonating laugh starts up around you. Do you wish to continue? If so, <span class='roomNumber' onclick='clickRoom(281)'>turn to 281</span>. If you wish to turn back, <span class='roomNumber' onclick='clickRoom(10)'>turn to 10</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 64,
-    "text_array": [true, "The Ghoul dances with glee around your body, lays it next to the others on the ground, turns you over and sinks its teeth into your rump. It is not often it gets fresh meat to feed on.", false, "</br>",
-    true, "Your adventure is over.", false, "</br>"]
+    "text_array": [
+      true,
+      "The Ghoul dances with glee around your body, lays it next to the others on the ground, turns you over and sinks its teeth into your rump. It is not often it gets fresh meat to feed on.",
+      false,
+      "</br>",
+      true,
+      "Your adventure is over.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 65,
-    "text_array": [true, "As you spring at the Chieftain, his servant rises to his feet, picks up a hefty wooden stick and joins the melee. But to your disappointment he attacks you! Ungrateful wretch! Seeing this, you may Escape through the door down the corridor (<span class='roomNumber' onclick='clickRoom(293)'>turn to 293</span>) or continue the fight (<span class='roomNumber' onclick='clickRoom(372)'>turn to 372</span>). If you choose to Escape, you suffer normal escaping penalties.", false, "</br>"]
+    "text_array": [
+      true,
+      "As you spring at the Chieftain, his servant rises to his feet, picks up a hefty wooden stick and joins the melee. But to your disappointment he attacks you! Ungrateful wretch! Seeing this, you may Escape through the door down the corridor (<span class='roomNumber' onclick='clickRoom(293)'>turn to 293</span>) or continue the fight (<span class='roomNumber' onclick='clickRoom(372)'>turn to 372</span>). If you choose to Escape, you suffer normal escaping penalties.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 66,
-    "text_array": [true, "The door opens and you find yourself in the passage leading back to the riverbank. You return to the river and may now either go for the door in the middle of the rockface (<span class='roomNumber' onclick='clickRoom(104)'>turn to 104</span>) or go down the passage running off eastwards along the riverbank (<span class='roomNumber' onclick='clickRoom(99)'>turn to 99</span>).", false, "</br>"]
+    "text_array": [
+      true,
+      "The door opens and you find yourself in the passage leading back to the riverbank. You return to the river and may now either go for the door in the middle of the rockface (<span class='roomNumber' onclick='clickRoom(104)'>turn to 104</span>) or go down the passage running off eastwards along the riverbank (<span class='roomNumber' onclick='clickRoom(99)'>turn to 99</span>).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 67,
-    "text_array": [true, "You pull on the rope and a small door swings open revealing a passage into a north-south corridor. Will you return to the crossroads (<span class='roomNumber' onclick='clickRoom(267)'>turn to 267</span>) or go through the secret door (<span class='roomNumber' onclick='clickRoom(177)'>turn to 177</span>)?", false, "</br>"]
+    "text_array": [
+      true,
+      "You pull on the rope and a small door swings open revealing a passage into a north-south corridor. Will you return to the crossroads (<span class='roomNumber' onclick='clickRoom(267)'>turn to 267</span>) or go through the secret door (<span class='roomNumber' onclick='clickRoom(177)'>turn to 177</span>)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 68,
-    "text_array": [true, "The two GOBLIN torturers look at each other amazed, then look at you. They chatter to themselves and then indicate for you to wait while they go off and get another Dwarf to give them some more fun. They disappear out of the room and you cut down the Dwarf who is, as you guessed, quite dead. You decide it best to leave and press on northwards up the corridor. <span class='roomNumber' onclick='clickRoom(303)'>Turn to 303</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "The two GOBLIN torturers look at each other amazed, then look at you. They chatter to themselves and then indicate for you to wait while they go off and get another Dwarf to give them some more fun. They disappear out of the room and you cut down the Dwarf who is, as you guessed, quite dead. You decide it best to leave and press on northwards up the corridor. <span class='roomNumber' onclick='clickRoom(303)'>Turn to 303</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 69,
-    "text_array": [true, "Some way along the passage, the corridor bends round to the north and you follow it until you reach another junction. At this junction you see an arrow cut into the rock, pointing to the north, and you decide to try this direction. <span class='roomNumber' onclick='clickRoom(244)'>Turn to 244</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "Some way along the passage, the corridor bends round to the north and you follow it until you reach another junction. At this junction you see an arrow cut into the rock, pointing to the north, and you decide to try this direction. <span class='roomNumber' onclick='clickRoom(244)'>Turn to 244</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 70,
-    "text_array": [true, "You follow the cobbled corridor east, then north, then east again and finally north until you wind up at a crossroads. <span class='roomNumber' onclick='clickRoom(267)'>Turn to 267</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "You follow the cobbled corridor east, then north, then east again and finally north until you wind up at a crossroads. <span class='roomNumber' onclick='clickRoom(267)'>Turn to 267</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 71,
-    "text_array": [true, "There is a right-hand turn to the north in the passage. Cautiously you approach a sentry post on the corner and, as you look in, you can see a strange Goblin-like creature in leather armour asleep at his post. You try to tiptoe past him. Test your Luck. If you are Lucky, he does not wake up and remains snoring loudly-<span class='roomNumber' onclick='clickRoom(301)'>turn to 301</span>. If you are Unlucky, you step with a crunch on some loose ground and his eyes flick open-<span class='roomNumber' onclick='clickRoom(248)'>turn to 248</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "There is a right-hand turn to the north in the passage. Cautiously you approach a sentry post on the corner and, as you look in, you can see a strange Goblin-like creature in leather armour asleep at his post. You try to tiptoe past him. Test your Luck. If you are Lucky, he does not wake up and remains snoring loudly-<span class='roomNumber' onclick='clickRoom(301)'>turn to 301</span>. If you are Unlucky, you step with a crunch on some loose ground and his eyes flick open-<span class='roomNumber' onclick='clickRoom(248)'>turn to 248</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 72,
-    "text_array": [true, "You now have a fresh set of armour, equivalent to your own. Decide which of the two you wish to keep, throw the other away, and <span class='roomNumber' onclick='clickRoom(319)'>turn to 319</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "You now have a fresh set of armour, equivalent to your own. Decide which of the two you wish to keep, throw the other away, and <span class='roomNumber' onclick='clickRoom(319)'>turn to 319</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 73,
-    "text_array": [true, "The passage ahead leads you northwards. The rocky floor becomes sandy until eventually you are walk- ing on a sort of coarse sand. You notice the passage is widening and ahead you can hear a flowing river. You continue until you find yourself in a large cavern through which a river flows. <span class='roomNumber' onclick='clickRoom(218)'>Turn to 218</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "The passage ahead leads you northwards. The rocky floor becomes sandy until eventually you are walk- ing on a sort of coarse sand. You notice the passage is widening and ahead you can hear a flowing river. You continue until you find yourself in a large cavern through which a river flows. <span class='roomNumber' onclick='clickRoom(218)'>Turn to 218</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 74,
-    "text_array": [true, "Test your Luck. If you are Lucky, you break his gaze and can prepare to attack. <span class='roomNumber' onclick='clickRoom(279)'>Turn to 279</span>. If you are Unlucky, you are under his control and drop your sword at his command - <span class='roomNumber' onclick='clickRoom(118)'>turn to 118</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "Test your Luck. If you are Lucky, you break his gaze and can prepare to attack. <span class='roomNumber' onclick='clickRoom(279)'>Turn to 279</span>. If you are Unlucky, you are under his control and drop your sword at his command - <span class='roomNumber' onclick='clickRoom(118)'>turn to 118</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 75,
-    "text_array": [true, "You sit back and rest from the exhausting battle. You may eat Provisions here. You prise the jewel from the still statue. It is heavy in your hand and is worth 50 Gold Pieces. You put it in your pack. As you explore the room and the statue, you notice that one of its breastplate sections is loose. When you open this, a small key is inside. You examine this and notice the number 111 on it. With a smile you put the jewel and the key in your pack and set off back to the junction. <span class='roomNumber' onclick='clickRoom(93)'>Turn to 93</span>, after adding 3 LUCK points - you have a valuable artefact here.", false, "</br>"]
+    "text_array": [
+      true,
+      "You sit back and rest from the exhausting battle. You may eat Provisions here. You prise the jewel from the still statue. It is heavy in your hand and is worth 50 Gold Pieces. You put it in your pack. As you explore the room and the statue, you notice that one of its breastplate sections is loose. When you open this, a small key is inside. You examine this and notice the number 111 on it. With a smile you put the jewel and the key in your pack and set off back to the junction. <span class='roomNumber' onclick='clickRoom(93)'>Turn to 93</span>, after adding 3 LUCK points - you have a valuable artefact here.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 76,
-    "text_array": [true, "You arrive at another junction. An arrow on the wall points northwards and you decide to proceed in this direction. <span class='roomNumber' onclick='clickRoom(244)'>Turn to 244</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "You arrive at another junction. An arrow on the wall points northwards and you decide to proceed in this direction. <span class='roomNumber' onclick='clickRoom(244)'>Turn to 244</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 77,
-    "text_array": [true, "Several metres up the passageway you arrive at a junction where you may turn either west or east. Set in the rock on the north wall is a small recess where you may rest and eat Provisions without being seen. If you wish to take Provisions here, do so. After- wards you may set off either eastwards (<span class='roomNumber' onclick='clickRoom(345)'>turn to 345</span>) or westwards (<span class='roomNumber' onclick='clickRoom(18)'>turn to 18</span>).", false, "</br>"]
+    "text_array": [
+      true,
+      "Several metres up the passageway you arrive at a junction where you may turn either west or east. Set in the rock on the north wall is a small recess where you may rest and eat Provisions without being seen. If you wish to take Provisions here, do so. After- wards you may set off either eastwards (<span class='roomNumber' onclick='clickRoom(345)'>turn to 345</span>) or westwards (<span class='roomNumber' onclick='clickRoom(18)'>turn to 18</span>).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 78,
-    "text_array": [true, "The passage ends at a solid wooden door with metal hinges. Listening at the door, you hear strange mutterings and the clatter of what could be pots and pans. Whatever is in there, there are several of them. Do you want to go through the door (<span class='roomNumber' onclick='clickRoom(159)'>turn to 159</span>) or turn back (<span class='roomNumber' onclick='clickRoom(237)'>turn to 237</span>)?", false, "</br>"]
+    "text_array": [
+      true,
+      "The passage ends at a solid wooden door with metal hinges. Listening at the door, you hear strange mutterings and the clatter of what could be pots and pans. Whatever is in there, there are several of them. Do you want to go through the door (<span class='roomNumber' onclick='clickRoom(159)'>turn to 159</span>) or turn back (<span class='roomNumber' onclick='clickRoom(237)'>turn to 237</span>)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 79,
-    "text_array": [true, "The passageway ends in front of you in a dead end. If you wish to search for secret passageways, <span class='roomNumber' onclick='clickRoom(137)'>turn to 137</span>. If not, return to the <span class='roomNumber' onclick='clickRoom(267)'>crossroads at 267</span>.", false, "</br>"]
+    "text_array": [
+      true,
+      "The passageway ends in front of you in a dead end. If you wish to search for secret passageways, <span class='roomNumber' onclick='clickRoom(137)'>turn to 137</span>. If not, return to the <span class='roomNumber' onclick='clickRoom(267)'>crossroads at 267</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 80,
-    "text_array": [true, "The key fits the lock and opens the door. You find yourself in a large boathouse. Various boats, in different stages of construction, are lying around. Apart from the door behind you, there is another in the north wall. As you enter, the Skeletons stop their work and crane their bony necks around to look at you. They pick up planks of wood and hammers and advance towards you. There are five of them. Do you:", false, "</br>",
-    true, "Smile nervously and back out of the door into the passage? <span class='roomNumber' onclick='clickRoom(129)'>Turn to 129</span>", false, "</br>",
-    true, "Tell them you've come about buying a boat? <span class='roomNumber' onclick='clickRoom(123)'>Turn to 123</span>", false, "</br>",
-    true, "Tell them you're their new boss and order them back to work? <span class='roomNumber' onclick='clickRoom(195)'>Turn to 195</span>", false, "</br>",
-    true, "Draw your sword and prepare for battle? <span class='roomNumber' onclick='clickRoom(140)'>Turn to 140</span>", false, "</br>"]
+    "text_array": [
+      true,
+      "The key fits the lock and opens the door. You find yourself in a large boathouse. Various boats, in different stages of construction, are lying around. Apart from the door behind you, there is another in the north wall. As you enter, the Skeletons stop their work and crane their bony necks around to look at you. They pick up planks of wood and hammers and advance towards you. There are five of them. Do you:",
+      false,
+      "</br>",
+      true,
+      "Smile nervously and back out of the door into the passage? <span class='roomNumber' onclick='clickRoom(129)'>Turn to 129</span>",
+      false,
+      "</br>",
+      true,
+      "Tell them you've come about buying a boat? <span class='roomNumber' onclick='clickRoom(123)'>Turn to 123</span>",
+      false,
+      "</br>",
+      true,
+      "Tell them you're their new boss and order them back to work? <span class='roomNumber' onclick='clickRoom(195)'>Turn to 195</span>",
+      false,
+      "</br>",
+      true,
+      "Draw your sword and prepare for battle? <span class='roomNumber' onclick='clickRoom(140)'>Turn to 140</span>",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 81,
-    "text_array": []
+    "text_array": [
+      true,
+      "A noise startles you, prompting you to leave the room quickly. You walk up to investigate the north door. <span class='roomNumber' onclick='clickRoom(205)'>Turn to 205</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 82,
-    "text_array": []
+    "text_array": [
+      true,
+      "The door opens to reveal a small, smelly room. In the centre of the room is a rickety wooden table on which stands a lit candle. Underneath the table is a small wooden box. Asleep on a straw mattress in the far corner of the room is a short, stocky creature with an ugly, warty face; the same sort of creature that you found asleep at the sentry post. He must be the guard for the night watch. You may either return to the corridor and press on northwards (<span class='roomNumber' onclick='clickRoom(208)'>turn to 208</span>) or creep into the room and try to take the box without waking the creature. If you want to try to steal the box, Test your Luck. If you are Lucky, he does not wake up - <span class='roomNumber' onclick='clickRoom(147)'>turn to 147</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(33)'>turn to 33</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 83,
-    "text_array": []
+    "text_array": [
+      true,
+      "Test your Luck. If you are Lucky, you make it out through the north door <span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(154)'>turn to 154</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 84,
-    "text_array": []
+    "text_array": [
+      true,
+      "The door opens into a small room, comfortably fur- nished with a table, several chairs and a large book- case which covers one wall. Seated at the table is an old man with a long grey beard, and squatting on the old man's shoulder is a small winged beast. This creature is no more than six centimetres tall. It has two arms and legs; its skin is a dusty grey colour. It has tiny sharp white teeth and its wings are folded behind its back. The old man says nothing as you walk in through the door, but he beckons you over to sit down at the table. He is tossing in his hand two small white objects. Will you:",
+      false,
+      "</br>",
+      true,
+      "Sit down as he tells you? <span class='roomNumber' onclick='clickRoom(204)'>Turn to 204</span>",
+      false,
+      "</br>",
+      true,
+      "Leave the room and return to the junction? <span class='roomNumber' onclick='clickRoom(280)'>Turn to 280</span>",
+      false,
+      "</br>",
+      true,
+      "Draw your sword and rush forward? <span class='roomNumber' onclick='clickRoom(377)'>Turn to 377</span>",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 85,
-    "text_array": []
+    "text_array": [
+      true,
+      "You are at a crossroads.",
+      false,
+      "</br>",
+      true,
+      "To go north <span class='roomNumber' onclick='clickRoom(106)'>Turn to 106</span>",
+      false,
+      "</br>",
+      true,
+      "To go south <span class='roomNumber' onclick='clickRoom(373)'>Turn to 373</span>",
+      false,
+      "</br>",
+      true,
+      "To go east <span class='roomNumber' onclick='clickRoom(318)'>Turn to 318</span>",
+      false,
+      "</br>",
+      true,
+      "To go west <span class='roomNumber' onclick='clickRoom(59)'>Turn to 59</span>",
+      false,
+      "</br>"
+    ]
   },
   {
-    "short_name": "",
+    "short_name": "- Battle",
     "ID": 86,
-    "text_array": []
+    "text_array": [
+      true,
+      "A huge jaw yawns open in front of you. By the size of it, the CROCODILE you are swimming towards must be at least three metres long. The beast slaps its tail in the water and glides towards you. You must fight two Attack Rounds.",
+      false,
+      "</br>",
+      true,
+      "CROCODILE SKILL 7 STAMINA 6",
+      false,
+      "</br>",
+      true,
+      "[ISI]",
+      false,
+      "</br>",
+      true,
+      "Your combined thrashings attract a 'turbulence' in the water that you had noticed before and this now makes its way towards your part of the river. Out of the corner of your eye you notice this and must decide what to do. If you believe that the Crocodile is on its last legs and you wish to continue the battle, then do so. If you win, <span class='roomNumber' onclick='clickRoom(259)'>turn to 259</span>. Otherwise you can keep the beast occupied in the faint hope that this mysterious visitor will help you in some way. Have one more Attack Round and <span class='roomNumber' onclick='clickRoom(350)'>turn to 350</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 87,
-    "text_array": []
+    "text_array": [
+      true,
+      "You arrive back at the junction and this time turn northwards. <span class='roomNumber' onclick='clickRoom(262)'>Turn to 262</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 88,
-    "text_array": []
+    "text_array": [
+      true,
+      "You enter another small room, bare except for a fountain in the middle. Not a particularly grand affair, the fountain is a small carved fish, and a short jet of water comes from its mouth. A wooden sign hangs from the fish and this bears a message. It is written in Goblin tongue, at which you are not very proficient. The first word you cannot understand, but the others read:'... NOT DRINK'. But you are extremely thirsty. Will you drink from the fountain? If so, turn to 216. Otherwise you can pass it by and leave through a door in the north wall (<span class='roomNumber' onclick='clickRoom(384)'>turn to 384</span>).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 89,
-    "text_array": []
+    "text_array": [
+      true,
+      "You climb through the opening and find yourself at the top of a narrow staircase leading downwards. Cautiously, you descend the stairs... <span class='roomNumber' onclick='clickRoom(286)'>Turn to 286</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 90,
-    "text_array": []
+    "text_array": [
+      true,
+      "You open the door into a narrow passage and follow it northwards. Some metres up the passageway, it turns to the east, then turns to the north. However, at this second bend, there is a small alcove in the rock. It seems a convenient hiding place and a large rock forms a comfortable seat. You may stop here and eat Provisions if you wish. When you have rested, continue northwards. <span class='roomNumber' onclick='clickRoom(253)'>Turn to 253</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 91,
-    "text_array": []
+    "text_array": [
+      true,
+      "If you are lucky, your cheating will not be dis- covered. Test your Luck. If you are Lucky, you get away with it. Roll two dice to see how many Gold Pieces you win. Mark these on your Adventure Sheet and <span class='roomNumber' onclick='clickRoom(131)'>turn to 131</span>.",
+      false,
+      "</br>",
+      true,
+      "If you are Unlucky, the four notice you are dealing from the bottom of the deck. They pick up axes from behind their chairs and turn on you. <span class='roomNumber' onclick='clickRoom(20)'>Turn to 20</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 92,
-    "text_array": []
+    "text_array": [
+      true,
+      "You arrive back at the junction in the passage. You look left to see the cave entrance in the dim distance but walk straight on. <span class='roomNumber' onclick='clickRoom(71)'>Turn to 71</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 93,
-    "text_array": []
+    "text_array": [
+      true,
+      "You arrive back at the junction and this time you turn northwards. <span class='roomNumber' onclick='clickRoom(8)'>Turn to 8</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 94,
-    "text_array": []
+    "text_array": [
+      true,
+      "You walk along a passageway that runs due south, then turns west. After several metres, it ends at a three-way junction. You can check for secret pass- ages along the way (<span class='roomNumber' onclick='clickRoom(260)'>turn to 260</span>) or go straight to the junction (<span class='roomNumber' onclick='clickRoom(329)'>turn to 329</span>).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 95,
-    "text_array": []
+    "text_array": [
+      true,
+      "You find nothing remarkable about the weapons, in fact not a single weapon looks more useful than your sword. As you search the debris, you hear a deep thumping from the north followed by a scream which sends a shiver down your spine. You rush to the north door to investigate. <span class='roomNumber' onclick='clickRoom(205)'>Turn to 205</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 96,
-    "text_array": []
+    "text_array": [
+      true,
+      "The door opens into a short corridor about fifteen metres long. There are two doors, one at each end. You now realize what the noise was. More Skele-tons! Four of them, armed with swords, are running down the corridor towards you.",
+      false,
+      "</br>",
+      true,
+      "They don't appear to have seen you and you notice a slight recess in the wall which may be a useful hiding place. You decide to try it. <span class='roomNumber' onclick='clickRoom(374)'>Turn to 374</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 97,
-    "text_array": []
+    "text_array": [
+      true,
+      "A voice bids you 'Come in!' and you walk into a small room furnished with a table and chair, shelves, cupboards and the like, all of which have seen better days. Plates, bowls, cups and hundreds of old books line the shelves. In the midst of all this clutter, you see a little old man in a grubby white gown swaying to and fro in a rocking chair, still humming happily to himself, his eyes fixed on you, but seeming at peace with the world. He bids you 'Good day.' Do you:",
+      false,
+      "</br>",
+      true,
+      "Start to make conversation with him? <span class='roomNumber' onclick='clickRoom(334)'>Turn to 334</span>",
+      false,
+      "</br>",
+      true,
+      "Draw your sword and charge at him? <span class='roomNumber' onclick='clickRoom(247)'>Turn to 247</span>",
+      false,
+      "</br>",
+      true,
+      "Decide not to waste time with him and leave, going northwards? <span class='roomNumber' onclick='clickRoom(292)'>Turn to 292</span>",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 98,
-    "text_array": []
+    "text_array": [
+      true,
+      "As you crawl into the room, a voice booms out: 'Welcome, adventurer. I have been expecting you.' You stop, look around and rise to your feet. The little old man has changed. He is not so old and grey any more, and he's of an imposing height. His eyes are deep and black and they are fixed on you relentlessly. <span class='roomNumber' onclick='clickRoom(358)'>Turn to 358</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 99,
-    "text_array": []
+    "text_array": [
+      true,
+      "The passageway runs eastwards. Ahead of you, you can see that a solid-looking door blocks the passage. You step up to investigate. <span class='roomNumber' onclick='clickRoom(383)'>Turn to 383</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 100,
-    "text_array": []
+    "text_array": [
+      true,
+      "Hesitantly, they agree to let you join in. As you play and chat, they loosen up and eventually you are all laughing and exchanging stories.",
+      false,
+      "</br>",
+      true,
+      "They seem quite harmless. You may play cards either fairly or you may try to cheat. If you wish to play fairly, <span class='roomNumber' onclick='clickRoom(346)'>turn to 346</span>. If you wish to cheat, <span class='roomNumber' onclick='clickRoom(91)'>turn to 91</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 101,
-    "text_array": []
+    "text_array": [
+      true,
+      "Your lucky throw catches the Vampire unawares and he shrieks in agony as the stake sinks into his heart. You leap over and thrust it further into his body. His death cries grow weaker and his lifeless body slumps to the floor. <span class='roomNumber' onclick='clickRoom(327)'>Turn to 327</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 102,
-    "text_array": []
+    "text_array": [
+      true,
+      "The door is not locked and opens. The room in front of you seems to be a small torture chamber, with various torture devices around the walls. In the centre of the room, two small, hunchbacked creatures are having their fiendish way with a Dwarf, who is tied to a hook in the ceiling by his wrists. The two hunchbacks are poking and cutting him viciously with their swords. The Dwarf lets out a final scream and falls silent, eyes closed. His cap- tors make disappointed noises and look round angrily at you as if it were your fault that the Dwarf has collapsed. You must act quickly. Will you:",
+      false,
+      "</br>",
+      true,
+      "Close the door quickly and continue up the corridor? <span class='roomNumber' onclick='clickRoom(303)'>Turn to 303</span>",
+      false,
+      "</br>",
+      true,
+      "Draw your sword and try to fight the creatures? <span class='roomNumber' onclick='clickRoom(19)'>Turn to 19</span>",
+      false,
+      "</br>",
+      true,
+      "Stride over to the Dwarf, give him a jab with your sword and put on an evil laugh for the torturers? <span class='roomNumber' onclick='clickRoom(68)'>Turn to 68</span>",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 103,
-    "text_array": []
+    "text_array": [
+      true,
+      "You feel a stone move and behind it you find a lever. Will you pull the lever, or leave it and return to the crossroads? If you dare pull the lever, <span class='roomNumber' onclick='clickRoom(252)'>turn to 252</span>. If you go back to the crossroads, <span class='roomNumber' onclick='clickRoom(359)'>turn to 359</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 104,
-    "text_array": []
+    "text_array": [
+      true,
+      "You find yourself in a short, narrow passageway with a door ahead to the north. You try this door. <span class='roomNumber' onclick='clickRoom(49)'>Turn to 49</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 105,
-    "text_array": []
+    "text_array": [
+      true,
+      "You rummage through your haversack. What is in there? You may attempt to use any of the following items if you have them on your Equipment List:",
+      false,
+      "</br>",
+      true,
+      "Potion of Invisibility <span class='roomNumber' onclick='clickRoom(39)'>Turn to 39</span>",
+      false,
+      "</br>",
+      true,
+      "The Eye of the Cyclops <span class='roomNumber' onclick='clickRoom(382)'>Turn to 382</span>",
+      false,
+      "</br>",
+      true,
+      "A piece of Cheese <span class='roomNumber' onclick='clickRoom(368)'>Turn to 368</span>",
+      false,
+      "</br>",
+      true,
+      "Bow with Silver Arrow <span class='roomNumber' onclick='clickRoom(194)'>Turn to 194</span>",
+      false,
+      "</br>",
+      true,
+      "A Y-shaped Stick <span class='roomNumber' onclick='clickRoom(215)'>Turn to 215</span>",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 106,
-    "text_array": []
+    "text_array": [
+      true,
+      "The passageway ahead runs northwards for some time. You may rest along the passage to eat Pro- visions. It then bends to the west and begins to get quite narrow. You reach a small rocky arch which you will have to stoop to get through. On the other side of the arch you pause and look around. You are in a large cavern which disappears into distant blackness. The cavern is partially lit by natural light which streams in through a hole in the roof. You cannot see a way through.",
+      false,
+      "</br>",
+      true,
+      "As you shine your lantern around the cavern, you hear a rumble. A dull glow flickers in the blackness. Suddenly, a jet of fire shoots from the depths of the cavern, narrowly missing you and singeing the mossy growths on the wall! You throw yourself on to the ground and look up to see a large DRAGON stalking out of the darkness towards you. Smoke curls from its nostrils. Its scaly red skin glistens with an oily covering. The beast is some fifteen metres long! How will you attack the creature?",
+      false,
+      "</br>",
+      true,
+      "Draw your sword and prepare to attack? <span class='roomNumber' onclick='clickRoom(152)'>Turn to 152</span>",
+      false,
+      "</br>",
+      true,
+      "Search your memory for another means of attack? <span class='roomNumber' onclick='clickRoom(126)'>Turn to 126</span>",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 107,
-    "text_array": []
+    "text_array": [
+      true,
+      "You tiptoe through the room, up a narrow staircase, ending up at the top of the stairs in a passage. 'That was easy,' you think, and you begin to have second thoughts about whether it would have been worth- while to search the bodies. If you want to return and search the bodies, starting with the third, <span class='roomNumber' onclick='clickRoom(148)'>turn to 148</span>. If you want to press on, <span class='roomNumber' onclick='clickRoom(197)'>turn to 197</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 108,
-    "text_array": []
+    "text_array": [
+      true,
+      "The moment your foot touches a hand tile, you feel a vice-like grip on your ankle and look down to see a ghostly white hand gripping your leg. You fight for your balance and manage to regain it. But to your horror you see that, from every hand-shaped tile in the floor, a similar apparition has appeared, and the floor across to the door is now scattered with ghoulish hands, flexing and snatching in the air. You draw your sword and chop at the hand. Resolve this battle:",
+      false,
+      "</br>",
+      true,
+      "HAND SKILL 6 STAMINA 4",
+      false,
+      "</br>",
+      true,
+      "If you win, <span class='roomNumber' onclick='clickRoom(185)'>turn to 185</span>.",
+      false,
+      "</br>",
+      true,
+      "[ISI]",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 109,
-    "text_array": []
+    "text_array": [
+      true,
+      "The liquid is smooth and watery and, as you drink it, you begin to glow. You feel euphoric and a little drunk at the same time. Your confidence grows and your weariness disappears.",
+      false,
+      "</br>",
+      true,
+      "The bottle contains HOLY WATER, blessed by the Overpriest of Kaynlesh-Ma. It has restored your STAMINA almost to full strength. Increase your STAMINA to 2 points below your Initial STAMINA (if your STAMINA was already higher than this, leave it as it is-you are strong enough!). Add points to your current SKILL to take the total to 1 point under your Initial SKILL. You may add 4 LUCK points for making such a lucky find.",
+      false,
+      "</br>",
+      true,
+      "If you have already looked at the parchment, you may leave the room northwards (<span class='roomNumber' onclick='clickRoom(120)'>turn to 120</span>). If you have not, you may look at it (<span class='roomNumber' onclick='clickRoom(212)'>turn to 212</span>) or you may forget about it and go northwards anyway.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 110,
-    "text_array": []
+    "text_array": [
+      true,
+      "You are now 8 Gold Pieces richer. You also find another 2 Gold Pieces in his boot, hidden there for safety. <span class='roomNumber' onclick='clickRoom(319)'>Turn to 319</span>. Record the Gold on your Adventure Sheet.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 111,
-    "text_array": []
+    "text_array": [
+      true,
+      "He will not be pacified. As you shift uneasily around the room, he shouts a word at the dog. <span class='roomNumber' onclick='clickRoom(249)'>Turn to 249</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 112,
-    "text_array": []
+    "text_array": [
+      true,
+      "You see nothing in the room likely to help you in your battle. Will you:",
+      false,
+      "</br>",
+      true,
+      "Draw your sword, grit your teeth and advance? <span class='roomNumber' onclick='clickRoom(142)'>Turn to 142</span>",
+      false,
+      "</br>",
+      true,
+      "Search your rucksack for a weapon to use? <span class='roomNumber' onclick='clickRoom(105)'>Turn to 105</span>",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 113,
-    "text_array": []
+    "text_array": [
+      true,
+      "You arrive at another junction in the passage. You may either go northwards (<span class='roomNumber' onclick='clickRoom(285)'>turn to 285</span>) or continue eastwards (<span class='roomNumber' onclick='clickRoom(78)'>turn to 78</span>).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 114,
-    "text_array": []
+    "text_array": [
+      true,
+      "The passage goes south, then east and you eventu- ally find yourself at a crossroads. <span class='roomNumber' onclick='clickRoom(359)'>Turn to 359</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 115,
-    "text_array": []
+    "text_array": [
+      true,
+      "The poor wretches lying dead at your feet almost look happy to be relieved of the burden of life. But as you look down at them, you sense that you are not the only one to know of their deaths. Looking around the room, you may:",
+      false,
+      "</br>",
+      true,
+      "Investigate the weapons lying around <span class='roomNumber' onclick='clickRoom(95)'>Turn to 95</span>",
+      false,
+      "</br>",
+      true,
+      "Go over to the dead body in the north-east corner <span class='roomNumber' onclick='clickRoom(313)'>Turn to 313</span>",
+      false,
+      "</br>",
+      true,
+      "Check the barrels <span class='roomNumber' onclick='clickRoom(330)'>Turn to 330</span>",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 116,
-    "text_array": []
+    "text_array": [
+      true,
+      "The two drunken ORCS you now face are obviously startled at your entrance and, as quickly as they are able, they fumble around for the weapons. You must attack each one in turn. Their drunken- ness allows you to add 1 point to your dice roll when rolling to work out your Attack Strength, during each Attack Round.",
+      false,
+      "</br>",
+      true,
+      "SKILL STAMINA",
+      false,
+      "</br>",
+      true,
+      "First ORC 5 4",
+      false,
+      "</br>",
+      true,
+      "Second ORC 5 4",
+      false,
+      "</br>",
+      true,
+      "[ISI]",
+      false,
+      "</br>",
+      true,
+      "If you win the battle, <span class='roomNumber' onclick='clickRoom(378)'>turn to 378</span>. If you wish to Escape during the battle, you may do so by tur<span class='roomNumber' onclick='clickRoom(42)'>ning to 42</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 117,
-    "text_array": []
+    "text_array": [
+      true,
+      "You are in an east-west passageway. To go east, <span class='roomNumber' onclick='clickRoom(354)'>turn to 354</span>. To go west, <span class='roomNumber' onclick='clickRoom(308)'>turn to 308</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 118,
-    "text_array": []
+    "text_array": [
+      true,
+      "As you approach he rises from his coffin, spreads his cloak and takes you under it. Your last living memory is a flash of pain as his sharp teeth sink into your neck. You should never have let yourself get into eye-contact with a VAMPIRE!",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 119,
-    "text_array": []
+    "text_array": [
+      true,
+      "You open your pack and reach inside for something suitable to throw across the cavern. Check your Equipment List, choose one item to throw and cross it off your List. If you have no Equipment you will have to throw a Gold Piece. You throw the object across the cavern, where it lands with a clatter. The Ogre looks towards the noise, and goes over to investigate. Meanwhile you creep out, down the passage and back to the junction. <span class='roomNumber' onclick='clickRoom(269)'>Turn to 269</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 120,
-    "text_array": []
+    "text_array": [
+      true,
+      "You leave the chamber, walk down a short passage and reach a staircase going up. You climb the stairs and arrive at the top in a passageway. <span class='roomNumber' onclick='clickRoom(197)'>Turn to 197</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 121,
-    "text_array": []
+    "text_array": [
+      true,
+      "The corridor goes east for several metres, then south, then east again, where it finally ends. Will you investigate the dead end (<span class='roomNumber' onclick='clickRoom(103)'>turn to 103</span>) or return to the crossroads (<span class='roomNumber' onclick='clickRoom(359)'>turn to 359</span>)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 122,
-    "text_array": []
+    "text_array": [
+      true,
+      "You awake with a throbbing head and look around. The room is about eight metres square, with doors to the north and south. You have been dumped in the south-west corner. Standing motionless in the centre of the room are four men. At least, they appear to be men. Their skin is a greeny-grey colour. Their clothes are tattered and torn and they are all staring vacantly at the ceiling. One carries a club, one a scythe, one an axe and one a pick. They are ignoring you completely.",
+      false,
+      "</br>",
+      true,
+      "Around the room are various peasant-style weapons (pitchforks, axe-handles, pointed sticks, etc.), one or two shields, and several barrels. In the north-east corner is a human corpse with a sword in one hand and a shield in the other. You move your hand up to your head to feel for signs of blood and you are relieved to find you are not bleeding. But as your hand moves, the strange creatures in the centre of the room turn their eyes down towards you. Do you:",
+      false,
+      "</br>",
+      true,
+      "Try to talk to them? <span class='roomNumber' onclick='clickRoom(268)'>Turn to 268</span>",
+      false,
+      "</br>",
+      true,
+      "Jump to your feet and charge them with your sword? <span class='roomNumber' onclick='clickRoom(282)'>Turn to 282</span>",
+      false,
+      "</br>",
+      true,
+      "Scramble for an exit through the south door? <span class='roomNumber' onclick='clickRoom(13)'>Turn to 13</span>",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 123,
-    "text_array": []
+    "text_array": [
+      true,
+      "Will they believe your story about buying a boat? Skeletons are pretty simple-minded, so roll one die. A 1, 2 or 3 means they believe you, and they all go running through the door in the north wall, leaving you alone in the Boat House. Add 2 LUCK points and <span class='roomNumber' onclick='clickRoom(184)'>turn to 184</span>.",
+      false,
+      "</br>",
+      true,
+      "A 4 or 5 means they're not sure. They send two of their members through the north door whilst the other three watch you with their makeshift weapons. <span class='roomNumber' onclick='clickRoom(164)'>Turn to 164</span>.",
+      false,
+      "</br>",
+      true,
+      "A roll of 6 means they definitely don't believe you and keep on advancing. <span class='roomNumber' onclick='clickRoom(140)'>Turn to 140</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 124,
-    "text_array": []
+    "text_array": [
+      true,
+      "The door opens into a wide passageway and you follow this for some distance before reaching a junc- tion. Here you may either go northwards (<span class='roomNumber' onclick='clickRoom(138)'>turn to 138</span>) or turn to the east (<span class='roomNumber' onclick='clickRoom(76)'>turn to 76</span>).",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 125,
-    "text_array": []
+    "text_array": [
+      true,
+      "You pick up the rope. It looks normal. In fact it looks as if it might be quite useful. You open your pack to put it in. Suddenly, it comes alive in your fingers, snakes quickly up your arm and attempts to wrap itself around your neck. You struggle to cut the rope with your sword before its grip tightens. Test your Luck. If you are Lucky, you cut the rope and it drops to the ground. If you are not, the rope tightens-lose 1 STAMINA point. You must Test your Luck again to try to cut the rope, and keep trying until you do. Each time you fail, you lose another STAMINA point (and reduce your LUCK Score). If you finally defeat the rope, you may leave through the north door. <span class='roomNumber' onclick='clickRoom(73)'>Turn to 73</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 126,
-    "text_array": []
+    "text_array": [
+      true,
+      "Does the name 'Farrigo Di Maggio' mean anything to you? If not, you must fight the Dragon. <span class='roomNumber' onclick='clickRoom(152)'>Turn to 152</span>. If it does, <span class='roomNumber' onclick='clickRoom(26)'>turn to 26</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 127,
-    "text_array": []
+    "text_array": [
+      true,
+      "He doesn't take at all kindly to your threats. As you argue and his anger builds, you notice a transforma- tion taking place. He begins to straighten up and grows physically stronger in front of your very eyes. His face and arms grow hairy. His teeth become sharp and pointed. You must make a quick decision. Will you offer him 5 Gold Pieces to calm him down (deduct this from your Gold and <span class='roomNumber' onclick='clickRoom(272)'>turn to 272</span>), or prepare to attack him (<span class='roomNumber' onclick='clickRoom(188)'>turn to 188</span>)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 128,
-    "text_array": []
+    "text_array": [
+      true,
+      "You hear a deep rumbling noise and the ground begins to shudder. Slowly and noisily the portcullis rises into the ceiling. You may now walk to the junction. Will you turn west (<span class='roomNumber' onclick='clickRoom(210)'>turn to 210</span>) or east (<span class='roomNumber' onclick='clickRoom(58)'>turn to 58</span>)?",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 129,
-    "text_array": []
+    "text_array": [
+      true,
+      "You return to the riverbank and decide to try the door in the middle of the rockface. <span class='roomNumber' onclick='clickRoom(104)'>Turn to 104</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 130,
-    "text_array": []
+    "text_array": [
+      true,
+      "The old man asks you your stake. You may bet between 1 and 20 Gold Pieces (but not more than you possess!). He tosses the white dice he has been playing with to you and asks you to roll. Roll two dice once for yourself and once for the old man. If your total is higher, you win the amount of your stake from the old man. If his total is higher, you lose your stake. You may continue for as long as you have Gold Pieces, and then leave through the door and return to the junction. Add 2 points to your SKILL, STAMINA and LUCK Scores if you win. <span class='roomNumber' onclick='clickRoom(280)'>Turn to 280</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 131,
-    "text_array": []
+    "text_array": [
+      true,
+      "You chat about various things and they seem eager to be friendly. They feel lonely in the dungeon with so much evil about and are happy to speak to visitors of a lawful disposition. They tell you that you are in The Maze of Zagor. The only way out is to go deeper into the dungeon. They tell you that the way through the maze is to leave the room, turn right, right, left, keep going straight... and then they begin to get a bit vague. They're not entirely sure it is correct.",
+      false,
+      "</br>",
+      true,
+      "You may, if you wish, eat a meal from your Pro- visions, but you will have to share it with them and thus will only gain half the normal STAMINA points. Eventually you thank them and leave the room<span class='roomNumber' onclick='clickRoom(291)'>. Go to 291</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 132,
-    "text_array": []
+    "text_array": [
+      true,
+      "The shield is a standard wooden type. You may keep it or throw it away. <span class='roomNumber' onclick='clickRoom(319)'>Turn to 319</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
     "ID": 133,
-    "text_array": []
+    "text_array": [
+      true,
+      "You are in a north-south corridor which ends in a dead end. You look around the rock face for signs of anything interesting, when suddenly a rock breaks loose above you and lands on your head. Although the blow was not particularly hard, you find you are feeling dizzy. You fight to remain conscious, but are unable to do so. You slump to the ground. When you open your eyes, you are at a junction. <span class='roomNumber' onclick='clickRoom(52)'>Turn to 52</span>.",
+      false,
+      "</br>"
+    ]
   },
   {
     "short_name": "",
