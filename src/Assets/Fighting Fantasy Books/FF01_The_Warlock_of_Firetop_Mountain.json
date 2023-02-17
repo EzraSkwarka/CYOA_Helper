@@ -155,11 +155,11 @@
       false,
       "</br>",
       true,
-      "<span class='subsectionHeader' onclick=''>Escaping</span>",
+      "<span class='subsectionHeader' onclick=''><span class='escape' onclick=''>Escaping</span></span>",
       false,
       "</br>",
       true,
-      "On some pages you may be given the option of running away from a battle should things be going badly for you. However, if you do run away, the creature automatically gets in one wound on you (subtract 2 <span class='gameStatsStamina' onclick=''>STAMINA</span> points) as you flee. Such is the price of cowardice. Note that you may use <span class='gameStatsLuck' onclick=''>LUCK</span> on this wound in the normal way (see below). You may only Escape if that option is specifically given to you on the page.",
+      "On some pages you may be given the option of running away from a battle should things be going badly for you. However, if you do run away, the creature automatically gets in one wound on you (subtract 2 <span class='gameStatsStamina' onclick=''>STAMINA</span> points) as you flee. Such is the price of cowardice. Note that you may use <span class='gameStatsLuck' onclick=''>LUCK</span> on this wound in the normal way (see below). You may only <span class='escape' onclick=''>Escape</span> if that option is specifically given to you on the page.",
       false,
       "</br>",
       true,
@@ -546,7 +546,7 @@
     "ID": 2,
     "text_array": [
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you escape without attracting the Ogre's attention. If you are Unlucky, you curse as you kick a small stone which goes skidding across the cavern floor. You draw your sword in case the Ogre has heard it - <span class='roomNumber' onclick='clickRoom(16)'>turn to 16</span>. If you were Lucky, you creep down the corridor back to the crossroads.<span class='roomNumber' onclick='clickRoom(269)'> Turn to 269</span>.",
+      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you <span class='escape' onclick=''>escape</span> without attracting the Ogre's attention. If you are Unlucky, you curse as you kick a small stone which goes skidding across the cavern floor. You draw your sword in case the Ogre has heard it - <span class='roomNumber' onclick='clickRoom(16)'>turn to 16</span>. If you were Lucky, you creep down the corridor back to the crossroads.<span class='roomNumber' onclick='clickRoom(269)'> Turn to 269</span>.",
       false,
       "</br>"
     ]
@@ -611,7 +611,7 @@
       "</br>",
       true, "<table id='combatTable'><tbody><tr><td><div>BARBARIAN</div></td><td><div><span class='gameStatsSkill' onclick=''>SKILL</span> 7</div></td><td><div><span class='gameStatsStamina' onclick=''>STAMINA</span> 6</div></td></tr></tbody></table>", false, "</br>",
       true,
-      "There is a door in the north wall opposite, through which you may Escape during the battle (<span class='roomNumber' onclick='clickRoom(189)'>turn to 189</span>). If you defeat the Barbarian, <span class='roomNumber' onclick='clickRoom(273)'>turn to 273</span>.",
+      "There is a door in the north wall opposite, through which you may <span class='escape' onclick=''>Escape</span> during the battle (<span class='roomNumber' onclick='clickRoom(189)'>turn to 189</span>). If you defeat the Barbarian, <span class='roomNumber' onclick='clickRoom(273)'>turn to 273</span>.",
       false,
       "</br>"
     ]
@@ -725,7 +725,7 @@
       false,
       "</br>",
       true,
-      "If you defeat him, <span class='roomNumber' onclick='clickRoom(50)'>turn to 50</span>. After the second Attack Round, you may Escape down the passage (<span class='roomNumber' onclick='clickRoom(269)'>turn to 269</span>).",
+      "If you defeat him, <span class='roomNumber' onclick='clickRoom(50)'>turn to 50</span>. After the second Attack Round, you may <span class='escape' onclick=''>Escape</span> down the passage (<span class='roomNumber' onclick='clickRoom(269)'>turn to 269</span>).",
       false,
       "</br>"
     ]
@@ -739,7 +739,7 @@
       false,
       "</br>",
       true,
-      "As you advance, you stumble and fall forwards. As luck would have it, the stake flies forward and plunges into the shrieking creature. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, the stake pierces the Vampire's heart. If you are Unlucky, the Vampire is merely grazed by the wound (deduct 3 points from its <span class='gameStatsStamina' onclick=''>STAMINA</span>) and it flings you backwards across the room towards the west door. To Escape through it, <span class='roomNumber' onclick='clickRoom(380)'>turn to 380</span>. To keep on fighting, <span class='roomNumber' onclick='clickRoom(144)'>turn to 144</span>. If you were Lucky and killed the Vampire, you may look for its treasure- <span class='roomNumber' onclick='clickRoom(327)'>turn to 327</span>.",
+      "As you advance, you stumble and fall forwards. As luck would have it, the stake flies forward and plunges into the shrieking creature. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, the stake pierces the Vampire's heart. If you are Unlucky, the Vampire is merely grazed by the wound (deduct 3 points from its <span class='gameStatsStamina' onclick=''>STAMINA</span>) and it flings you backwards across the room towards the west door. To <span class='escape' onclick=''>Escape</span> through it, <span class='roomNumber' onclick='clickRoom(380)'>turn to 380</span>. To keep on fighting, <span class='roomNumber' onclick='clickRoom(144)'>turn to 144</span>. If you were Lucky and killed the Vampire, you may look for its treasure- <span class='roomNumber' onclick='clickRoom(327)'>turn to 327</span>.",
       false,
       "</br>"
     ]
@@ -827,7 +827,7 @@
       false,
       "</br>",
       true,
-      "If you win, <span class='roomNumber' onclick='clickRoom(376)'>turn to 376</span>. If the battle is going badly, you may Escape through the door. <span class='roomNumber' onclick='clickRoom(291)'>Turn to 291</span> -- but don't forget your Escaping penalty.",
+      "If you win, <span class='roomNumber' onclick='clickRoom(376)'>turn to 376</span>. If the battle is going badly, you may <span class='escape' onclick=''>Escape</span> through the door. <span class='roomNumber' onclick='clickRoom(291)'>Turn to 291</span> -- but don't forget your <span class='escape' onclick=''>Escaping</span> penalty.",
       false,
       "</br>"
     ]
@@ -867,7 +867,7 @@
     "ID": 24,
     "text_array": [
       true,
-      "After you have suffered your third wound, you notice that your strength is ebbing. Lose 1 <span class='gameStatsSkill' onclick=''>SKILL</span> point. You deduce that this is yet another magical power of this foul creature and you feel a shiver of panic. Will you continue or run? If you want to Escape, pay the penalty and <span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span> to flee through the north door. Otherwise the fight goes on.",
+      "After you have suffered your third wound, you notice that your strength is ebbing. Lose 1 <span class='gameStatsSkill' onclick=''>SKILL</span> point. You deduce that this is yet another magical power of this foul creature and you feel a shiver of panic. Will you continue or run? If you want to <span class='escape' onclick=''>Escape</span>, pay the penalty and <span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span> to flee through the north door. Otherwise the fight goes on.",
       false,
       "</br>",
       true,
@@ -881,7 +881,7 @@
     "ID": 25,
     "text_array": [
       true,
-      "The paintings are portraits of men. Your spine shivers as you read the nameplate under the one on the west wall it is that of Zagor, the Warlock whose treasure you are seeking. You look at his portrait and realize you are pitting yourself against an awesome adversary. You have the feeling that you are being watched and notice the piercing eyes following you as you move. You find yourself drawn towards his portrait and your fear rises. Lose 1 <span class='gameStatsSkill' onclick=''>SKILL</span> point. Do you have the courage to try to combat the Warlock? You may either leave through the north door straightaway (<span class='roomNumber' onclick='clickRoom(90)'>turn to 90</span>) -- but treat this as an Escape. Or you may look through your pack for a weapon to use against the Warlock's power <span class='roomNumber' onclick='clickRoom(340)'>turn to 340</span>.",
+      "The paintings are portraits of men. Your spine shivers as you read the nameplate under the one on the west wall it is that of Zagor, the Warlock whose treasure you are seeking. You look at his portrait and realize you are pitting yourself against an awesome adversary. You have the feeling that you are being watched and notice the piercing eyes following you as you move. You find yourself drawn towards his portrait and your fear rises. Lose 1 <span class='gameStatsSkill' onclick=''>SKILL</span> point. Do you have the courage to try to combat the Warlock? You may either leave through the north door straightaway (<span class='roomNumber' onclick='clickRoom(90)'>turn to 90</span>) -- but treat this as an <span class='escape' onclick=''>Escape</span>. Or you may look through your pack for a weapon to use against the Warlock's power <span class='roomNumber' onclick='clickRoom(340)'>turn to 340</span>.",
       false,
       "</br>"
     ]
@@ -989,7 +989,7 @@
     "ID": 33,
     "text_array": [
       true,
-      "The sleeping creature awakens startled. He jumps up and rushes at you, unarmed. With your sword you should be able to defeat him, but his sharp teeth look rather vicious. You may Escape through the door (<span class='roomNumber' onclick='clickRoom(320)'>turn to 320</span>) or stand and fight the ORC who is attacking you.",
+      "The sleeping creature awakens startled. He jumps up and rushes at you, unarmed. With your sword you should be able to defeat him, but his sharp teeth look rather vicious. You may <span class='escape' onclick=''>Escape</span> through the door (<span class='roomNumber' onclick='clickRoom(320)'>turn to 320</span>) or stand and fight the ORC who is attacking you.",
       false,
       "</br>",
       true,
@@ -1035,7 +1035,7 @@
     "ID": 35,
     "text_array": [
       true,
-      "As you step into the room, the door swings shut behind you. As it closes, there is a click and a hiss. From the centre of the ceiling, a jet of gas is filling the room with an acrid vapour. You breathe and cough deeply. You look at the door and then the key. Will you return to the door and escape quickly (<span class='roomNumber' onclick='clickRoom(136)'>turn to 136</span>) or hold your breath and dash for the key first (<span class='roomNumber' onclick='clickRoom(361)'>turn to 361</span>)?",
+      "As you step into the room, the door swings shut behind you. As it closes, there is a click and a hiss. From the centre of the ceiling, a jet of gas is filling the room with an acrid vapour. You breathe and cough deeply. You look at the door and then the key. Will you return to the door and <span class='escape' onclick=''>escape</span> quickly (<span class='roomNumber' onclick='clickRoom(136)'>turn to 136</span>) or hold your breath and dash for the key first (<span class='roomNumber' onclick='clickRoom(361)'>turn to 361</span>)?",
       false,
       "</br>"
     ]
@@ -1405,7 +1405,7 @@
       false,
       "</br>",
       true,
-      "If you win the battle, <span class='roomNumber' onclick='clickRoom(29)'>turn to 29</span>. You may Escape from the fight down the passageway after two Attack Rounds and will end up at the junction-<span class='roomNumber' onclick='clickRoom(375)'>turn to 375</span>.",
+      "If you win the battle, <span class='roomNumber' onclick='clickRoom(29)'>turn to 29</span>. You may <span class='escape' onclick=''>Escape</span> from the fight down the passageway after two Attack Rounds and will end up at the junction-<span class='roomNumber' onclick='clickRoom(375)'>turn to 375</span>.",
       false,
       "</br>"
     ]
@@ -1449,7 +1449,7 @@
     "ID": 65,
     "text_array": [
       true,
-      "As you spring at the Chieftain, his servant rises to his feet, picks up a hefty wooden stick and joins the melee. But to your disappointment he attacks you! Ungrateful wretch! Seeing this, you may Escape through the door down the corridor (<span class='roomNumber' onclick='clickRoom(293)'>turn to 293</span>) or continue the fight (<span class='roomNumber' onclick='clickRoom(372)'>turn to 372</span>). If you choose to Escape, you suffer normal escaping penalties.",
+      "As you spring at the Chieftain, his servant rises to his feet, picks up a hefty wooden stick and joins the melee. But to your disappointment he attacks you! Ungrateful wretch! Seeing this, you may <span class='escape' onclick=''>Escape</span> through the door down the corridor (<span class='roomNumber' onclick='clickRoom(293)'>turn to 293</span>) or continue the fight (<span class='roomNumber' onclick='clickRoom(372)'>turn to 372</span>). If you choose to <span class='escape' onclick=''>Escape</span>, you suffer normal escaping penalties.",
       false,
       "</br>"
     ]
@@ -2185,7 +2185,7 @@
       false,
       "</br>",
       true,
-      "If you win the battle, <span class='roomNumber' onclick='clickRoom(378)'>turn to 378</span>. If you wish to Escape during the battle, you may do so by tur<span class='roomNumber' onclick='clickRoom(42)'>ning to 42</span>.",
+      "If you win the battle, <span class='roomNumber' onclick='clickRoom(378)'>turn to 378</span>. If you wish to <span class='escape' onclick=''>Escape</span> during the battle, you may do so by tur<span class='roomNumber' onclick='clickRoom(42)'>ning to 42</span>.",
       false,
       "</br>"
     ]
@@ -2563,7 +2563,7 @@
       false,
       "</br>",
       true,
-      "If you win, <span class='roomNumber' onclick='clickRoom(44)'>turn to 44</span>. If you want to Escape, after three Attack Rounds, you may dive into the river and swim downstream (<span class='roomNumber' onclick='clickRoom(399)'>turn to 399</span>), but you have lost the Provisions you started to eat.",
+      "If you win, <span class='roomNumber' onclick='clickRoom(44)'>turn to 44</span>. If you want to <span class='escape' onclick=''>Escape</span>, after three Attack Rounds, you may dive into the river and swim downstream (<span class='roomNumber' onclick='clickRoom(399)'>turn to 399</span>), but you have lost the Provisions you started to eat.",
       false,
       "</br>",
       false,
@@ -2793,7 +2793,7 @@
     "ID": 159,
     "text_array": [
       true,
-      "You open the door into a large room which can only be the dining room of the same warty-faced creatures you now recognize. Sitting round a large table are five ORCS busily drinking and dribbling their bowls of rat-gizzard soup. All are involved in a rowdy argument as to who will get to chew the rat bones left in the large soup cauldron, so they do not see you enter. You may be bold and prepare to attack them (<span class='roomNumber' onclick='clickRoom(365)'>turn to 365</span>) or you may not relish the prospect of taking on five of these creatures and try to escape. If you wish to leave the room, <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you get out without them noticing (<span class='roomNumber' onclick='clickRoom(237)'>turn to 237</span>) - there is no penalty for escaping. If you are Unlucky, they notice you. Prepare for battle and <span class='roomNumber' onclick='clickRoom(365)'>turn to 365</span>.",
+      "You open the door into a large room which can only be the dining room of the same warty-faced creatures you now recognize. Sitting round a large table are five ORCS busily drinking and dribbling their bowls of rat-gizzard soup. All are involved in a rowdy argument as to who will get to chew the rat bones left in the large soup cauldron, so they do not see you enter. You may be bold and prepare to attack them (<span class='roomNumber' onclick='clickRoom(365)'>turn to 365</span>) or you may not relish the prospect of taking on five of these creatures and try to <span class='escape' onclick=''>escape</span>. If you wish to leave the room, <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you get out without them noticing (<span class='roomNumber' onclick='clickRoom(237)'>turn to 237</span>) - there is no penalty for escaping. If you are Unlucky, they notice you. Prepare for battle and <span class='roomNumber' onclick='clickRoom(365)'>turn to 365</span>.",
       false,
       "</br>"
     ]
@@ -2877,7 +2877,7 @@
       false,
       "</br>",
       true,
-      "If you win, <span class='roomNumber' onclick='clickRoom(28)'>turn to 28</span>. You may Escape after three Attack Rounds down the passageway, where he will not be able to follow (<span class='roomNumber' onclick='clickRoom(351)'>turn to 351</span>).",
+      "If you win, <span class='roomNumber' onclick='clickRoom(28)'>turn to 28</span>. You may <span class='escape' onclick=''>Escape</span> after three Attack Rounds down the passageway, where he will not be able to follow (<span class='roomNumber' onclick='clickRoom(351)'>turn to 351</span>).",
       false,
       "</br>"
     ]
@@ -3021,7 +3021,7 @@
     "ID": 173,
     "text_array": [
       true,
-      "Silver weapons only will be effective here. When the creature inflicts its third wound on you, <span class='roomNumber' onclick='clickRoom(24)'>turn to 24</span>. If you defeat it before this happens, <span class='roomNumber' onclick='clickRoom(135)'>turn to 135</span>, or you may Escape through the north door (<span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span>). If you can use 'The Giver of Sleep', <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you hit and the creature dies instantly. If you are Unlucky, you miss.",
+      "Silver weapons only will be effective here. When the creature inflicts its third wound on you, <span class='roomNumber' onclick='clickRoom(24)'>turn to 24</span>. If you defeat it before this happens, <span class='roomNumber' onclick='clickRoom(135)'>turn to 135</span>, or you may <span class='escape' onclick=''>Escape</span> through the north door (<span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span>). If you can use 'The Giver of Sleep', <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you hit and the creature dies instantly. If you are Unlucky, you miss.",
       false,
       "</br>"
     ]
@@ -3093,7 +3093,7 @@
       false,
       "</br>",
       true,
-      "After three Attack Rounds, you manoeuvre yourself round to be able to run through the door. If you wish to Escape at this time, <span class='roomNumber' onclick='clickRoom(54)'>turn to 54</span> and pay the penalty. If you continue fighting and kill him, <span class='roomNumber' onclick='clickRoom(258)'>turn to 258</span>. If you have already been in this room on this adventure and killed the Minotaur, you find it empty. Leave and <span class='roomNumber' onclick='clickRoom(54)'>turn to 54</span>.",
+      "After three Attack Rounds, you manoeuvre yourself round to be able to run through the door. If you wish to <span class='escape' onclick=''>Escape</span> at this time, <span class='roomNumber' onclick='clickRoom(54)'>turn to 54</span> and pay the penalty. If you continue fighting and kill him, <span class='roomNumber' onclick='clickRoom(258)'>turn to 258</span>. If you have already been in this room on this adventure and killed the Minotaur, you find it empty. Leave and <span class='roomNumber' onclick='clickRoom(54)'>turn to 54</span>.",
       false,
       "</br>"
     ]
@@ -3199,7 +3199,7 @@
       false,
       "</br>",
       true,
-      "Resolve your battle with him. If you win, <span class='roomNumber' onclick='clickRoom(342)'>turn to 342</span>. If you decide to Escape, you may run over the rickety bridge (<span class='roomNumber' onclick='clickRoom(209)'>turn to 209</span>).",
+      "Resolve your battle with him. If you win, <span class='roomNumber' onclick='clickRoom(342)'>turn to 342</span>. If you decide to <span class='escape' onclick=''>Escape</span>, you may run over the rickety bridge (<span class='roomNumber' onclick='clickRoom(209)'>turn to 209</span>).",
       false,
       "</br>"
     ]
@@ -3502,7 +3502,7 @@
       false,
       "</br>",
       true,
-      "If you have a silver weapon, you had better use it now and <span class='roomNumber' onclick='clickRoom(173)'>turn to 173</span>. If you have not, or if you have suffered enough damage, you'd better run for the north door <span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span>. Remember that you are Escaping here and he inflicts a final wound as you flee.",
+      "If you have a silver weapon, you had better use it now and <span class='roomNumber' onclick='clickRoom(173)'>turn to 173</span>. If you have not, or if you have suffered enough damage, you'd better run for the north door <span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span>. Remember that you are <span class='escape' onclick=''>Escaping</span> here and he inflicts a final wound as you flee.",
       false,
       "</br>"
     ]
@@ -4120,11 +4120,11 @@
       false,
       "</br>",
       true,
-      "In addition to its normal attack, throw one die every Attack Round for its fiery breath. On a roll of 1 or 2, it scorches you for 1 point of damage - subtract from your <span class='gameStatsStamina' onclick=''>STAMINA</span>-but on a roll of 3-6, you avoid the blast. You may use your <span class='gameStatsLuck' onclick=''>LUCK</span> against the fire. The only Escape open is through the south door (<span class='roomNumber' onclick='clickRoom(66)'>turn to 66</span>).",
+      "In addition to its normal attack, throw one die every Attack Round for its fiery breath. On a roll of 1 or 2, it scorches you for 1 point of damage - subtract from your <span class='gameStatsStamina' onclick=''>STAMINA</span>-but on a roll of 3-6, you avoid the blast. You may use your <span class='gameStatsLuck' onclick=''>LUCK</span> against the fire. The only <span class='escape' onclick=''>Escape</span> open is through the south door (<span class='roomNumber' onclick='clickRoom(66)'>turn to 66</span>).",
       false,
       "</br>",
       true,
-      "The old man watches the fight but does not move unless you kill his dog. If you kill the dog, you may Escape through the south door (<span class='roomNumber' onclick='clickRoom(66)'>turn to 66</span>), but you will not have time to take anything with you. If you wish to stay, <span class='roomNumber' onclick='clickRoom(304)'>turn to 304</span>. Add 1 <span class='gameStatsLuck' onclick=''>LUCK</span> point anyway.",
+      "The old man watches the fight but does not move unless you kill his dog. If you kill the dog, you may <span class='escape' onclick=''>Escape</span> through the south door (<span class='roomNumber' onclick='clickRoom(66)'>turn to 66</span>), but you will not have time to take anything with you. If you wish to stay, <span class='roomNumber' onclick='clickRoom(304)'>turn to 304</span>. Add 1 <span class='gameStatsLuck' onclick=''>LUCK</span> point anyway.",
       false,
       "</br>"
     ]
@@ -4152,7 +4152,7 @@
       false,
       "</br>",
       true,
-      "If you win, <span class='roomNumber' onclick='clickRoom(344)'>turn to 344</span>. You may Escape by jumping into the river (<span class='roomNumber' onclick='clickRoom(399)'>turn to 399</span>).",
+      "If you win, <span class='roomNumber' onclick='clickRoom(344)'>turn to 344</span>. You may <span class='escape' onclick=''>Escape</span> by jumping into the river (<span class='roomNumber' onclick='clickRoom(399)'>turn to 399</span>).",
       false,
       "</br>"
     ]
@@ -4914,7 +4914,7 @@
       false,
       "</br>",
       true,
-      "You can Escape only through the door behind you to the south (<span class='roomNumber' onclick='clickRoom(66)'>turn to 66</span>). Otherwise you must fight him:",
+      "You can <span class='escape' onclick=''>Escape</span> only through the door behind you to the south (<span class='roomNumber' onclick='clickRoom(66)'>turn to 66</span>). Otherwise you must fight him:",
       false,
       "</br>",
       true,
@@ -5362,7 +5362,7 @@
       false,
       "</br>",
       true,
-      "If you defeat the Vampire, <span class='roomNumber' onclick='clickRoom(327)'>turn to 327</span>. If you wish to try to Escape, which you may only do after 6 full Attack Rounds, you will have to be lucky. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you may Escape through the west door (<span class='roomNumber' onclick='clickRoom(380)'>turn to 380</span>). If you are Unlucky, you must continue this fight for a further 6 Attack Rounds before trying to Escape again. If you roll an 11 or 12 and you are Unlucky (i.e. your current <span class='gameStatsLuck' onclick=''>LUCK</span> score is below 11), then <span class='roomNumber' onclick='clickRoom(224)'>turn to 224</span>.",
+      "If you defeat the Vampire, <span class='roomNumber' onclick='clickRoom(327)'>turn to 327</span>. If you wish to try to <span class='escape' onclick=''>Escape</span>, which you may only do after 6 full Attack Rounds, you will have to be lucky. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you may <span class='escape' onclick=''>Escape</span> through the west door (<span class='roomNumber' onclick='clickRoom(380)'>turn to 380</span>). If you are Unlucky, you must continue this fight for a further 6 Attack Rounds before trying to <span class='escape' onclick=''>Escape</span> again. If you roll an 11 or 12 and you are Unlucky (i.e. your current <span class='gameStatsLuck' onclick=''>LUCK</span> score is below 11), then <span class='roomNumber' onclick='clickRoom(224)'>turn to 224</span>.",
       false,
       "</br>"
     ]
@@ -5436,7 +5436,7 @@
       false,
       "</br>",
       true,
-      "If you win, <span class='roomNumber' onclick='clickRoom(75)'>turn to 75</span>. If you want to Escape during combat, you can run through the door back to the junction. <span class='roomNumber' onclick='clickRoom(93)'>Turn to 93</span>. ",
+      "If you win, <span class='roomNumber' onclick='clickRoom(75)'>turn to 75</span>. If you want to <span class='escape' onclick=''>Escape</span> during combat, you can run through the door back to the junction. <span class='roomNumber' onclick='clickRoom(93)'>Turn to 93</span>. ",
       false,
       "</br>"
     ]
@@ -5692,7 +5692,7 @@
     "ID": 355,
     "text_array": [
       true,
-      "You grope along the wall but can find no way of escape. The noise is causing you to scream in pain! Subtract 1 <span class='gameStatsSkill' onclick=''>SKILL</span> point. You may try either the east wall (<span class='roomNumber' onclick='clickRoom(181)'>turn to 181</span>) or the north wall (<span class='roomNumber' onclick='clickRoom(265)'>turn to 265</span>).",
+      "You grope along the wall but can find no way of <span class='escape' onclick=''>escape</span>. The noise is causing you to scream in pain! Subtract 1 <span class='gameStatsSkill' onclick=''>SKILL</span> point. You may try either the east wall (<span class='roomNumber' onclick='clickRoom(181)'>turn to 181</span>) or the north wall (<span class='roomNumber' onclick='clickRoom(265)'>turn to 265</span>).",
       false,
       "</br>"
     ]
@@ -5852,7 +5852,7 @@
       false,
       "</br>",
       true,
-      "If you win, <span class='roomNumber' onclick='clickRoom(183)'>turn to 183</span>. If you wish to Escape during the battle (don't forget your penalty for this), <span class='roomNumber' onclick='clickRoom(237)'>turn to 237</span>.",
+      "If you win, <span class='roomNumber' onclick='clickRoom(183)'>turn to 183</span>. If you wish to <span class='escape' onclick=''>Escape</span> during the battle (don't forget your penalty for this), <span class='roomNumber' onclick='clickRoom(237)'>turn to 237</span>.",
       false,
       "</br>"
     ]
@@ -5996,7 +5996,7 @@
     "ID": 377,
     "text_array": [
       true,
-      "As you draw your sword, the WINGED GREMLIN flaps into the air and attacks you, while the old man rushes over to the bookshelf, touches a book and escapes through a secret doorway that opens for him. But you must fight his pet.",
+      "As you draw your sword, the WINGED GREMLIN flaps into the air and attacks you, while the old man rushes over to the bookshelf, touches a book and <span class='escape' onclick=''>escape</span>s through a secret doorway that opens for him. But you must fight his pet.",
       false,
       "</br>",
       true,
