@@ -28,3 +28,10 @@ for (let i = 1; i < 401; i++) {
   + "</br>"
 
 }
+
+
+false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",
+true, "/>_________________________________", false, "</br>",
+true, "[########[]_________________________________>", false, "</br>",
+false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",
+true, "\>", false, "</br>",
