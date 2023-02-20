@@ -27,8 +27,8 @@ function readPlayerInput(inputString) {
     gotoRoom(inputStringLower);
   } else if (/help/.test(inputStringLower)) {
     helpCommand(inputString);
-  } else if (/^load /.test(inputStringLower)) {
-    loadBook(inputString);
+  } else if (/^open /.test(inputStringLower)) {
+    openBook(inputString);
   } else if (/^roll/.test(inputStringLower)) {
     rollDice(inputString);
   } else if (/^setspeed \d+$/.test(inputStringLower)) {
@@ -91,7 +91,7 @@ Arguments:
 	
 	return = None
 */
-function loadBook(str) {
+function openBook(str) {
   //Slice of the load of the command
   var bookString = String(str).slice(5);
   //Update user

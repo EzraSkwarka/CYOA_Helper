@@ -44,7 +44,7 @@ Arguments:
 */
 function onBookLoad(bookString) {
   //Update player that book load worked
-  renderConsoleEntry([false, "Load '" + bookString + "' success."]);
+  renderConsoleEntry([false, "Open '" + bookString + "' success."]);
   //load book specific style
   var cssString = "";
   fetch(loadedBookPath)

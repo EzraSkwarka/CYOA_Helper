@@ -40,7 +40,7 @@ Arguments:
 	
 	return = None
 */
-function loadBook(str) {
+function openBook(str) {
   //Slice of the load of the command
   var bookString = String(str).slice(5);
   //Update user
