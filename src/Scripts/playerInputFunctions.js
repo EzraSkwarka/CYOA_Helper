@@ -40,7 +40,7 @@ Arguments:
 	
 	return = None
 */
-function loadBook(str) {
+function openBook(str) {
   //Slice of the load of the command
   var bookString = String(str).slice(5);
   //Update user
@@ -202,7 +202,7 @@ Arguments:
 */
 function accessTerminalLog(inputLogIndex) {
   //inputBox
-  document.getElementById("roomNumber").value = inputLog.at(inputLogIndex);
+  document.getElementById("inputBoxTextArea").value = inputLog.at(inputLogIndex);
 }
 
 /*
@@ -251,7 +251,7 @@ function changeDefaultFont(choice) {
   var targetArray = [
     document.getElementById("main"),
     document.getElementById("notesBox"),
-    document.getElementById("roomNumber"),
+    document.getElementById("inputBoxTextArea"),
   ];
   var fontstring = "";
   if (/ IBMBios/.test(choice)) {

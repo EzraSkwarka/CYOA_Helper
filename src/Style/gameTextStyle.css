@@ -35,7 +35,7 @@ html {
   white-space: nowrap;
 }
 
-#inputBox #roomNumber {
+#inputBox #inputBoxTextArea {
   /* width: 100%; */
   padding: 0;
   white-space: nowrap;
@@ -49,6 +49,11 @@ html {
 #inputContianer input {
   font-family: IBMBios, monospace;
   font-size: 1em;
+}
+
+.typedRoom {
+	margin-left: 1.15em;
+	text-indent: -1.15em;
 }
 
 
