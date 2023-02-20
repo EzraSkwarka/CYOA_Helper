@@ -29,7 +29,7 @@
       true,
       ".",
       true,
-      "What happens if you nest a nonbreaking space in a span? <span>A&nbspSpace&nbspIs&nbspHere</span>?"
+      "What happens if you nest a nonbreaking space in a span? <span>A Space Is Here</span>?"
     ]
   },
   {
