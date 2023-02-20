@@ -19,7 +19,7 @@
     "ID": -1,
     "text_array": [
       true,
-      "The text to display as the player enters the room.",
+      "The text        to display as the player enters the room.",
       false,
       "</br>",
       true,
@@ -27,7 +27,9 @@
       true,
       "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>",
       true,
-      "."
+      ".",
+      true,
+      "What happens if you nest a nonbreaking space in a span? <span>A&nbspSpace&nbspIs&nbspHere</span>?"
     ]
   },
   {

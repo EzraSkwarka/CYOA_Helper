@@ -139,7 +139,7 @@ async function renderConsoleEntry(
   fromPlayer = false
 ) {
   if (renderingConsoleEntry == true) {
-    console.log("err: Already running renderConsoleEntry")
+    console.log("err: Already running renderConsoleEntry");
     return;
   }
   renderingConsoleEntry = true;
@@ -157,7 +157,7 @@ async function renderConsoleEntry(
   } else {
     var frontString = ">> ";
   }
-  //Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
+  //Format Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
   var textString = "";
   var tempString = "";
   var i = 0;
@@ -180,7 +180,9 @@ async function renderConsoleEntry(
       //if we are to type
       var n = 0;
       var inSpan = false;
-      for (n; n < textString.length; n++) {
+      var doneSomething = false;
+      for (n; n < textString.length;) {
+        doneSomething = false;
         //Early exit check
         if (interuptRender) {
           interuptRender = false;
@@ -189,42 +191,40 @@ async function renderConsoleEntry(
         }
         //Pull whats already in the div
         tempString = div.innerHTML;
-        //See Issue #23, this is where that check will need to go
-
+        //This is gonna need a fundamental rework as it can't handle nested anythings and by the nature of if/else imposes hierarchy
+          //Each if section should just build the tempString and have a final statement append tempString to div.innerHTML
         //Enter a span tag
         if (textString.slice(n, n + 5) == "<span") {
           inSpan = true;
-          // console.log('Found "<" tag at n: ' + n)
-          //find closing '>' tag
-          var x = distanceToClosingTag(textString, n);
-          // console.log('Found ">" ' + x + 'chars away');
-          //capture tag
-          var tagText = textString.slice(n, x + 1);
-          //add the tag onto tempString
-          tempString += tagText;
-          //update n
-          n = x + 1;
-          div.innerHTML = tempString + textString.charAt(n) + "</span>";
+          var x = distanceToClosingTag(textString, n); //find closing '>' tag
+          var tagText = textString.slice(n, x + 1); //capture tag text
+          tempString += tagText; //add the tag onto tempString
+          n = x + 1; //update n based on distance to closing >
+          tempString += textString.charAt(n) + "</span>";
+          n++;
+        }
+        //if in a span tag but not ready to leave
+        else if (inSpan && textString.slice(n, n + 7) != "</span>") {
+          tempString = tempString.slice(0, -7); //Slice off the '</span>' from the end of the string
+          tempString += textString.charAt(n) + "</span>"; //add the next character and close the span tag
+          n++;
         }
         //if ready to leave the span tag
         else if (inSpan && textString.slice(n, n + 7) == "</span>") {
-          // console.log('Closing <span>')
-          tempString += "</span>";
-          n += 6;
-          inSpan = false;
-        }
-        //if in a span tag abut not ready to leave
-        else if (inSpan) {
-          //Slice off the '</span>'
-          tempString = tempString.slice(0, -7);
-          div.innerHTML = tempString + textString.charAt(n);
-        } else if (textString.slice(n, n + 5) == "&nbsp") {
-          n += 4;
-          div.innerHTML = div.innerHTML + "&nbsp";
-        } else {
+          n += 7; //update n by length of '</span>'
+          inSpan = false; //clear inSpan flag
+        }  
+
+        //Exception for Non-Breaking Spaces no longer needed
+        
+        //Nothing Special is happening
+        if (tempString == div.innerHTML) {
           //add the next char
-          div.innerHTML = tempString + textString.charAt(n);
+          tempString += textString.charAt(n);
+          n++;
         }
+        div.innerHTML = tempString;
+
         //Keep the bottom of the typer in view
         div.scrollIntoView(false);
         //Sleep so we get the animation effect
@@ -270,7 +270,7 @@ Arguments:
 function setInterupt() {
   console.log("Calling for early exit.");
   interuptRender = true;
-  
+
   return true;
 }
 
