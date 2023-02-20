@@ -51,6 +51,11 @@ html {
   font-size: 1em;
 }
 
+.typedRoom {
+	margin-left: 1.15em;
+	text-indent: -1.15em;
+}
+
 
 /* Styles that are book independent */
 #helpTable td {
