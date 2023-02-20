@@ -180,9 +180,8 @@ async function renderConsoleEntry(
       //if we are to type
       var n = 0;
       var inSpan = false;
-      var doneSomething = false;
-      for (n; n < textString.length;) {
-        doneSomething = false;
+      var inATag = false;
+      for (n; n < textString.length; ) {
         //Early exit check
         if (interuptRender) {
           interuptRender = false;
@@ -192,7 +191,7 @@ async function renderConsoleEntry(
         //Pull whats already in the div
         tempString = div.innerHTML;
         //This is gonna need a fundamental rework as it can't handle nested anythings and by the nature of if/else imposes hierarchy
-          //Each if section should just build the tempString and have a final statement append tempString to div.innerHTML
+        //Each if section should just build the tempString and have a final statement append tempString to div.innerHTML
         //Enter a span tag
         if (textString.slice(n, n + 5) == "<span") {
           inSpan = true;
@@ -200,29 +199,50 @@ async function renderConsoleEntry(
           var tagText = textString.slice(n, x + 1); //capture tag text
           tempString += tagText; //add the tag onto tempString
           n = x + 1; //update n based on distance to closing >
-          tempString += textString.charAt(n) + "</span>";
-          n++;
         }
         //if in a span tag but not ready to leave
         else if (inSpan && textString.slice(n, n + 7) != "</span>") {
           tempString = tempString.slice(0, -7); //Slice off the '</span>' from the end of the string
-          tempString += textString.charAt(n) + "</span>"; //add the next character and close the span tag
-          n++;
         }
         //if ready to leave the span tag
         else if (inSpan && textString.slice(n, n + 7) == "</span>") {
           n += 7; //update n by length of '</span>'
           inSpan = false; //clear inSpan flag
-        }  
+        }
+
+        //Exception for <a> tag
+        if (textString.slice(n, n + 3) == "<a ") {
+          inATag = true;
+          var x = distanceToClosingTag(textString, n); //find closing '>' tag
+          var tagText = textString.slice(n, x + 1); //capture tag text
+          tempString += tagText; //add the tag onto tempString
+          n = x + 1; //update n based on distance to closing >
+        }
+        //if in a tag but not ready to leave
+        else if (inATag && textString.slice(n, n + 4) != "</a>") {
+          tempString = tempString.slice(0, -4); //Slice off the '</a>' from the end of the string
+        }
+        //if ready to leave the a tag
+        else if (inATag && textString.slice(n, n + 4) == "</a>") {
+          n += 4; //update n by length of '</a>'
+          inATag = false; //clear inATag flag
+        }
+
 
         //Exception for Non-Breaking Spaces no longer needed
-        
-        //Nothing Special is happening
-        if (tempString == div.innerHTML) {
-          //add the next char
-          tempString += textString.charAt(n);
-          n++;
+
+        //Exception for </br>
+        if (textString.slice(n, n + 5) == "</br>") {
+          tempString += "</br>";
+          n += 5;
         }
+
+        //Nothing Special is happening
+        //add the next char
+        tempString += textString.charAt(n);
+        n++;
+
+        //Update div.innerHTML
         div.innerHTML = tempString;
 
         //Keep the bottom of the typer in view

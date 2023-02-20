@@ -25,11 +25,11 @@
       true,
       "The text to display as the player gets ready to leave the room and lists where they can go. For instance, I'd recommend room ",
       true,
-      "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>",
+      "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>. ",
       true,
-      ".",
+      "What happens if you put a linebreak in the middle </br> of a line?",
       true,
-      "What happens if you nest a nonbreaking space in a span? <span>A Space Is Here</span>?"
+      "<a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> "
     ]
   },
   {
@@ -42,13 +42,7 @@
     "ID": 1,
     "text_array": [
       true,
-      "This room is the first room at the player should enter.",
-      false,
-      "</br>",
-      true,
-      "From the entrance way you can go south to the t-junction ",
-      true,
-      "<span class='roomNumber'>(#2)</span>."
+      "This room is the first room at the player should enter.</br>From the entrance way you can go south to the t-junction <span class='roomNumber'>(#2)</span>."
     ]
   },
   {
