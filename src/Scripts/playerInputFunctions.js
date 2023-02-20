@@ -202,7 +202,7 @@ Arguments:
 */
 function accessTerminalLog(inputLogIndex) {
   //inputBox
-  document.getElementById("roomNumber").value = inputLog.at(inputLogIndex);
+  document.getElementById("inputBoxTextArea").value = inputLog.at(inputLogIndex);
 }
 
 /*
@@ -251,7 +251,7 @@ function changeDefaultFont(choice) {
   var targetArray = [
     document.getElementById("main"),
     document.getElementById("notesBox"),
-    document.getElementById("roomNumber"),
+    document.getElementById("inputBoxTextArea"),
   ];
   var fontstring = "";
   if (/ IBMBios/.test(choice)) {

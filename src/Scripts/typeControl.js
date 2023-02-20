@@ -12,7 +12,7 @@ onkeydown = (event) => {
     !ctrlDepressed &&
     activeElement != document.getElementById("notesBoxtextarea")
   ) {
-    document.getElementById("roomNumber").focus();
+    document.getElementById("inputBoxTextArea").focus();
 
   }
 
@@ -29,7 +29,7 @@ onkeyup = (event) => {
 };
 
 //Listener events for input box
-var input = document.getElementById("roomNumber");
+var input = document.getElementById("inputBoxTextArea");
 var inputLog = [""];
 var inputLogIndex = 0;
 input.addEventListener("keyup", function (event) {

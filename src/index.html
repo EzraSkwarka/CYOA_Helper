@@ -42,15 +42,15 @@ An excellent place to keep notes while you play, does not save between sessions 
           <!-- Display Text -->
           <span id="consoleID">[home ~/]></span>
           <!-- Input Box -->
-          <input type="text" spellcheck="false" id="roomNumber" autofocus />
+          <input type="text" spellcheck="false" id="inputBoxTextArea" autofocus />
           <!-- Go Box -->
           <input
             id="inputTriggerButton"
             type="button"
             value="Go"
-            onclick="readPlayerInput(document.getElementById('roomNumber').value);
-                  inputLog.push(document.getElementById('roomNumber').value);
-                  document.getElementById('roomNumber').value=''"
+            onclick="readPlayerInput(document.getElementById('inputBoxTextArea').value);
+                  inputLog.push(document.getElementById('inputBoxTextArea').value);
+                  document.getElementById('inputBoxTextArea').value=''"
             hidden
           />
         </div>
