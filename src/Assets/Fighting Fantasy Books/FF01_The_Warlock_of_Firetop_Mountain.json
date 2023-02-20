@@ -13,11 +13,11 @@
       false,
       "</br>"
     ],
-    "css": ".typedRoom {margin-left: 1.15em;text-indent: -1.15em;}.roomNumber {color: #ffb000;;cursor: pointer;text-decoration: underline;}.gameStatsSkill {color: #8cf3fa;font-size: 0.9em;}.gameStatsStamina {color: #1ebd23;font-size: 0.9em;}.gameStatsLuck {color: #3df543;font-size: 0.9em;}.gameStatsInitial {color: #f3e5ab;font-size: 0.9em;font-style: italic;}.rollDiceCommand {color: #c91064;}.sectionHeader {color: #e18335;}.subsectionHeader {color: #e18c47;}#gameText a:link, #gameText a:visited {color: pink;text-decoration: underline;cursor: auto;}#gameText a:link:active, #gameText a:visited:active {color: pink;}.testyourluck {color: #7dffc9;cursor: pointer;text-decoration: underline;}.escape {font-style: italic;}.combatTable > thead td , .combatTable > tbody td {text-align: center; padding-left: 10px;}.combatTable > thead td:nth-child(1), .combatTable > tbody td:nth-child(1){color: red;}.combatTable > thead td:nth-child(2), .combatTable > tbody td:nth-child(2){color: #8cf3fa;}.combatTable > thead td:nth-child(3), .combatTable > tbody td:nth-child(3){color: #1ebd23;}"
+    "css": ".typedRoom {margin-left: 1.15em;text-indent: -1.15em;}.roomNumber {color: #ffb000;;cursor: pointer;text-decoration: underline;}.gameStatsSkill {color: #8cf3fa;font-size: 0.9em;}.gameStatsStamina {color: #1ebd23;font-size: 0.9em;}.gameStatsLuck {color: #3df543;font-size: 0.9em;}.gameStatsInitial {color: #f3e5ab;font-size: 0.9em;font-style: italic;}.rollDiceCommand {color: #c91064;}.sectionHeader {color: #e18335;}.subsectionHeader {color: #e18c47;}#gameText a:link, #gameText a:visited {color: pink;text-decoration: underline;cursor: auto;}#gameText a:link:active, #gameText a:visited:active {color: pink;}.testyourluck {color: #7dffc9;cursor: pointer;text-decoration: underline;}.escape {font-style: italic;}.combatTable > thead td , .combatTable > tbody td , .expandedCombatTable > thead td , .expandedCombatTable > tbody td {text-align: center;padding-left: 10px;}.combatTable, .expandedCombatTable {width: 45ch;}.expandedCombatTable > thead td:nth-child(1), .expandedCombatTable > tbody td:nth-child(1) {color: #c91064;}.combatTable > thead td:nth-child(1), .combatTable > tbody td:nth-child(1), .expandedCombatTable > thead td:nth-child(2), .expandedCombatTable > tbody td:nth-child(2) {color: red;}.combatTable > thead td:nth-child(2), .combatTable > tbody td:nth-child(2), .expandedCombatTable > thead td:nth-child(3), .expandedCombatTable > tbody td:nth-child(3) {color: #8cf3fa;}.combatTable > thead td:nth-child(3), .combatTable > tbody td:nth-child(3), .expandedCombatTable > thead td:nth-child(4), .expandedCombatTable > tbody td:nth-child(4) {color: #1ebd23;}"
   },
   {
     "short_name": "",
-    "ID": "onload",
+    "ID": "on-load",
 
     "text_array": [
       true,
@@ -1173,7 +1173,7 @@
       false,
       "</br>",
       true,
-      "Each time he inflicts a wound on you, throw one die. If the number is odd, he wounds you as normal. If the number is 2 or 4, he only inflicts a 1-point wound. If you roll a 6, you can parry the blow and he does no damage.",
+      "Each time he inflicts a wound on you, <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>throw one die</span>. If the number is odd, he wounds you as normal. If the number is 2 or 4, he only inflicts a 1-point wound. If you roll a 6, you can parry the blow and he does no damage.",
       false,
       "</br>",
       true,
@@ -3051,7 +3051,7 @@
     "ID": 155,
     "text_array": [
       true,
-      "The door splits along its length and you can wrench the timbers apart to let yourself in. A torch hangs from one wall lighting up a small armoury room stocked with swords, shields, helmets, daggers, breastplates and the like. You examine the weaponry and find nothing appearing superior to your own sword. However, a circular iron shield with a golden crescent at its centre catches your eye. You pick it up and feel its weight on your arm. If you wish to take this shield it will aid you in battles by helping to fend off wound damage inflicted by a creature on you. If, in future during a battle in which you are using this shield, a creature wounds you, you may throw one die. If you throw a 6, the creature inflicts only 1 point of damage instead of the normal 2. If, for some reason, the creature would normally only inflict 1 point of damage, then a successful roll of 6 would mean that no damage is done. However, the shield is heavy and you will have to leave behind one item of equipment (adjust your Equipment List) to be able to carry it. ",
+      "The door splits along its length and you can wrench the timbers apart to let yourself in. A torch hangs from one wall lighting up a small armoury room stocked with swords, shields, helmets, daggers, breastplates and the like. You examine the weaponry and find nothing appearing superior to your own sword. However, a circular iron shield with a golden crescent at its centre catches your eye. You pick it up and feel its weight on your arm. If you wish to take this shield it will aid you in battles by helping to fend off wound damage inflicted by a creature on you. If, in future during a battle in which you are using this shield, a creature wounds you, you may <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>throw one die</span>. If you throw a 6, the creature inflicts only 1 point of damage instead of the normal 2. If, for some reason, the creature would normally only inflict 1 point of damage, then a successful roll of 6 would mean that no damage is done. However, the shield is heavy and you will have to leave behind one item of equipment (adjust your Equipment List) to be able to carry it. ",
       false,
       "</br>",
       true,
@@ -3170,7 +3170,7 @@
       "<span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>Roll one die</span>. Consult the table below and over to find out what has come to investigate. Fight the creature as normal. Wandering monsters never carry any treasure. If you defeat this monster, return to the reference you have noted.",
       false,
       "</br>",
-      false, "</br>", false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",true, "\/>_________________________________", false, "</br>",true, "[########[]_________________________________>", false, "</br>",false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",true, "\\>", false, "</br>", false, "<table class='expandedCombatTable'><thead><td>DIE ROLL<td><td>NAME</td><td><div>SKILL</div></td><td><div>STAMINA</div></td></thead><tbody><tr><td>1<td><td>GOBLIN</td><td>5</td><td>3</td></tr><tr><td>2<td><td>ORC</td><td>6</td><td>3</td></tr><tr><td>3<td><td>GREMLIN</td><td>6</td><td>4</td></tr><tr><td>4<td><td>GIANT RAT</td><td>5</td><td>4</td></tr><tr><td>5<td><td>SKELETON</td><td>6</td><td>5</td></tr><tr><td>6<td><td>TROLL</td><td>8</td><td>4</td></tr></tbody></table>", true, "&nbsp_________________________________<\\", false, "</br>",true, "<_________________________________[]########]", false, "</br>",true, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp", true, "<\/", false, "</br>", false, "</br>"
+      false, "</br>", false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",true, "\/>_________________________________", false, "</br>",true, "[########[]_________________________________>", false, "</br>",false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",true, "\\>", false, "</br>", false, "<table class='expandedCombatTable'><thead><td>DIE ROLL</td><td>NAME</td><td><div>SKILL</div></td><td><div>STAMINA</div></td></thead><tbody><tr><td>1</td><td>GOBLIN</td><td>5</td><td>3</td></tr><tr><td>2</td><td>ORC</td><td>6</td><td>3</td></tr><tr><td>3</td><td>GREMLIN</td><td>6</td><td>4</td></tr><tr><td>4</td><td>GIANT RAT</td><td>5</td><td>4</td></tr><tr><td>5</td><td>SKELETON</td><td>6</td><td>5</td></tr><tr><td>6</td><td>TROLL</td><td>8</td><td>4</td></tr></tbody></table>", true, "&nbsp_________________________________<\\", false, "</br>",true, "<_________________________________[]########]", false, "</br>",true, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp", true, "<\/", false, "</br>", false, "</br>"
     ]
   },
   {
@@ -4659,7 +4659,7 @@
       false,
       "</br>",
       true,
-      "In addition to its normal attack, throw one die every Attack Round for its fiery breath. On a roll of 1 or 2, it scorches you for 1 point of damage - subtract from your <span class='gameStatsStamina' onclick=''>STAMINA</span>-but on a roll of 3-6, you avoid the blast. You may use your <span class='gameStatsLuck' onclick=''>LUCK</span> against the fire. The only <span class='escape' onclick=''>Escape</span> open is through the south door (<span class='roomNumber' onclick='clickRoom(66)'>turn to 66</span>).",
+      "In addition to its normal attack, <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>throw one die</span> every Attack Round for its fiery breath. On a roll of 1 or 2, it scorches you for 1 point of damage - subtract from your <span class='gameStatsStamina' onclick=''>STAMINA</span>-but on a roll of 3-6, you avoid the blast. You may use your <span class='gameStatsLuck' onclick=''>LUCK</span> against the fire. The only <span class='escape' onclick=''>Escape</span> open is through the south door (<span class='roomNumber' onclick='clickRoom(66)'>turn to 66</span>).",
       false,
       "</br>",
       true,
@@ -5421,23 +5421,23 @@
       false,
       "</br>",
       true,
-      "And so, you who now hold this book you have my life's work in your hands. The power of destruction is yours if you wish it, but do not waste it. Unless you use the Spell for the purpose for which it was intended, you shall be consumed by evil itself and die by the fire from your own hands.Remember, only when the Dragon breathes its fire at you should you raise your arms and say: ",
+      "<span style='font-style: italic;'>And so, you who now hold this book you have my life's work in your hands. The power of destruction is yours if you wish it, but do not waste it. Unless you use the Spell for the purpose for which it was intended, you shall be consumed by evil itself and die by the fire from your own hands.Remember, only when the Dragon breathes its fire at you should you raise your arms and say: </span>",
       false,
       "</br>",
       true,
-      "Ckil Erif",
+      "&nbsp&nbsp&nbsp&nbsp&nbsp<span style='font-style: italic;'>Ckil Erif</span>",
       false,
       "</br>",
       true,
-      "Ckam Erif ",
+      "&nbsp&nbsp&nbsp&nbsp&nbsp<span style='font-style: italic;'>Ckam Erif</span>",
       false,
       "</br>",
       true,
-      "Erif Erif ",
+      "&nbsp&nbsp&nbsp&nbsp&nbsp<span style='font-style: italic;'>Erif Erif</span>",
       false,
       "</br>",
       true,
-      "Di Maggio'",
+      "&nbsp&nbsp&nbsp&nbsp&nbsp<span style='font-style: italic;'>Di Maggio</span>",
       false,
       "</br>",
       true,
@@ -6251,7 +6251,7 @@
       false,
       "</br>",
       true,
-      "Alternatively, you may use your <span class='gameStatsLuck' onclick=''>LUCK</span> to help you win. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, throw two dice to see how many Gold Pieces you win. If you are Unlucky, throw two dice to see how many Gold Pieces you lose.",
+      "Alternatively, you may use your <span class='gameStatsLuck' onclick=''>LUCK</span> to help you win. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>throw two dice</span> to see how many Gold Pieces you win. If you are Unlucky, <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>throw two dice</span> to see how many Gold Pieces you lose.",
       false,
       "</br>",
       true,
