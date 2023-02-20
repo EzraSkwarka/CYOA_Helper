@@ -192,42 +192,46 @@ async function renderConsoleEntry(
         tempString = div.innerHTML;
         //This is gonna need a fundamental rework as it can't handle nested anythings and by the nature of if/else imposes hierarchy
         //Each if section should just build the tempString and have a final statement append tempString to div.innerHTML
-        //Enter a span tag
+
+        //The exception for `<tag` code should be abstractable into something more modular. I think I can build a dictionary and specify the target strings to look for (i.e. `<span ` or `<a `) and use the dictionary to track the in`tag` boolean so that I can expand this to cover any arbitrary tag. Furthermore, if I have a good record of which tags are active, I can close them safely at the end without relying on an abuse of case and making the DOM autoclose them.
+
+        //Exception for span tag
         if (textString.slice(n, n + 5) == "<span") {
           inSpan = true;
           var x = distanceToClosingTag(textString, n); //find closing '>' tag
           var tagText = textString.slice(n, x + 1); //capture tag text
           tempString += tagText; //add the tag onto tempString
           n = x + 1; //update n based on distance to closing >
-        }
-        //if in a span tag but not ready to leave
-        else if (inSpan && textString.slice(n, n + 7) != "</span>") {
-          tempString = tempString.slice(0, -7); //Slice off the '</span>' from the end of the string
-        }
-        //if ready to leave the span tag
-        else if (inSpan && textString.slice(n, n + 7) == "</span>") {
-          n += 7; //update n by length of '</span>'
-          inSpan = false; //clear inSpan flag
+        } //if in span tag and...
+        else if (inSpan) {
+          //ready to leave the a tag
+          if (textString.slice(n, n + 7) == "</span>") {
+            n += 7; //update n by length of '</a>'
+            inSpan = false; //clear inSpan flag
+          } //not ready to leave
+          else {
+            tempString = tempString.slice(0, -7); //Slice off the '</span>' from the end of the string
+          }
         }
 
         //Exception for <a> tag
         if (textString.slice(n, n + 3) == "<a ") {
           inATag = true;
           var x = distanceToClosingTag(textString, n); //find closing '>' tag
-          var tagText = textString.slice(n, x + 1); //capture tag text
-          tempString += tagText; //add the tag onto tempString
+          tempString += textString.slice(n, x + 1); //add the tag onto tempString
           n = x + 1; //update n based on distance to closing >
         }
-        //if in a tag but not ready to leave
-        else if (inATag && textString.slice(n, n + 4) != "</a>") {
-          tempString = tempString.slice(0, -4); //Slice off the '</a>' from the end of the string
+        //if in a tag and...
+        else if (inATag) {
+          //ready to leave the a tag
+          if (textString.slice(n, n + 4) == "</a>") {
+            n += 4; //update n by length of '</a>'
+            inATag = false; //clear inATag flag
+          } //not ready to leave
+          else {
+            tempString = tempString.slice(0, -4); //Slice off the '</a>' from the end of the string
+          }
         }
-        //if ready to leave the a tag
-        else if (inATag && textString.slice(n, n + 4) == "</a>") {
-          n += 4; //update n by length of '</a>'
-          inATag = false; //clear inATag flag
-        }
-
 
         //Exception for Non-Breaking Spaces no longer needed
 
@@ -251,7 +255,7 @@ async function renderConsoleEntry(
         const result = await sleep();
       }
     } else {
-      //if we are to print, mostly for html tags like span
+      //if we are to print instead of type
       //Early Exit Check
       if (interuptRender) {
         interuptRender = false;

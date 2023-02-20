@@ -29,7 +29,7 @@
       true,
       "What happens if you put a linebreak in the middle </br> of a line?",
       true,
-      "<a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> "
+      "<span style='font-style: italic;'><a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> </span>"
     ]
   },
   {
