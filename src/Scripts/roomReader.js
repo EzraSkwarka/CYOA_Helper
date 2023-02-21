@@ -181,6 +181,12 @@ async function renderConsoleEntry(
       var n = 0;
       var inSpan = false;
       var inATag = false;
+
+      var tagDict = {
+        "<span": false,
+        "<a ": false
+
+      }
       for (n; n < textString.length; ) {
         //Early exit check
         if (interuptRender) {
