@@ -242,7 +242,7 @@ function changeDefaultFont(choice) {
     true,
     ". Remember, font choices are case sensitive. ibmbios =/= IBMBios. The fonts currently supported are:",
     false,
-    "</br>",
+    "<br>",
     true,
     "IBMBios; OpenDyslexic",
   ];

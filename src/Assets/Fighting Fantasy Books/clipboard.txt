@@ -1,4 +1,4 @@
-		false, "</br>",
+		false, "<br>",
 		true, "",
 
 false, "<span class='inputBoxTextArea' onclick='clickRoom(1)'>(#1)</span>",
@@ -14,31 +14,31 @@ load Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json
 var target = document.getElementById('output');
 
 for (let i = 1; i < 401; i++) {
-	target.innerHTML += "\{ </br> " 
+	target.innerHTML += "\{ <br> " 
   + "\"short_name\": \"\"," 
-  + "</br>"
+  + "<br>"
   + "\"ID\": " + String(i) + ","
-  + "</br>"
+  + "<br>"
   + "\"text_array\": \["
-  + "</br>"
-  + "</br>"
+  + "<br>"
+  + "<br>"
   + "\]"
-  + "</br>"
+  + "<br>"
   + "\},"
-  + "</br>"
+  + "<br>"
 
 }
 
 
-false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",
-true, "\/>_________________________________", false, "</br>",
-true, "[########[]_________________________________>", false, "</br>",
-false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",
-true, "\\>", false, "</br>",
+false, "         ",
+true, "\/>_________________________________", false, "<br>",
+true, "[########[]_________________________________>", false, "<br>",
+false, "         ",
+true, "\\>", false, "<br>",
 
-true, " _________________________________<\\", false, "</br>",true, "<_________________________________[]########]", false, "</br>",true, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp", false, "</br>",true, "<\/", false, "</br>",
+true, " _________________________________<\\", false, "<br>",true, "<_________________________________[]########]", false, "<br>",true, "                                  ", false, "<br>",true, "<\/", false, "<br>",
 
-false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",true, "\/>_________________________________", false, "</br>",true, "[########[]_________________________________>", false, "</br>",false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",true, "\\>", false, "</br>",
+false, "         ",true, "\/>_________________________________", false, "<br>",true, "[########[]_________________________________>", false, "<br>",false, "         ",true, "\\>", false, "<br>",
 
 
 "<table class='combatTable'><thead><td></td><td><div><span class='gameStatsSkill' onclick=''>SKILL</span></div></td><td><div><span class='gameStatsStamina' onclick=''>STAMINA</span></div></td></thead><tbody><tr><td><div>BARBARIAN</div></td><td><div class='gameStatsSkill'>7</div></td><td><div class='gameStatsStamina'>6</div></td></tr></tbody></table>"
@@ -47,4 +47,4 @@ false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",true, "\/>_______________
 
 
 
-false, "</br>", false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",true, "\/>_________________________________", false, "</br>",true, "[########[]_________________________________>", false, "</br>",false, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",true, "\\>", false, "</br>", false, "<table class='expandedCombatTable'><thead><td>DIE ROLL<td><td>NAME</td><td><div>SKILL</div></td><td><div>STAMINA</div></td></thead><tbody><tr><td>1<td><td>GOBLIN</td><td>5</td><td>3</td></tr><tr><td>2<td><td>ORC</td><td>6</td><td>3</td></tr><tr><td>3<td><td>GREMLIN</td><td>6</td><td>4</td></tr><tr><td>4<td><td>GIANT RAT</td><td>5</td><td>4</td></tr><tr><td>5<td><td>SKELETON</td><td>6</td><td>5</td></tr><tr><td>6<td><td>TROLL</td><td>8</td><td>4</td></tr></tbody></table>", true, "&nbsp_________________________________<\\", false, "</br>",true, "<_________________________________[]########]", false, "</br>",true, "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp", true, "<\/", false, "</br>", false, "</br>",
+false, "<br>", false, "         ",true, "\/>_________________________________", false, "<br>",true, "[########[]_________________________________>", false, "<br>",false, "         ",true, "\\>", false, "<br>", false, "<table class='expandedCombatTable'><thead><td>DIE ROLL<td><td>NAME</td><td><div>SKILL</div></td><td><div>STAMINA</div></td></thead><tbody><tr><td>1<td><td>GOBLIN</td><td>5</td><td>3</td></tr><tr><td>2<td><td>ORC</td><td>6</td><td>3</td></tr><tr><td>3<td><td>GREMLIN</td><td>6</td><td>4</td></tr><tr><td>4<td><td>GIANT RAT</td><td>5</td><td>4</td></tr><tr><td>5<td><td>SKELETON</td><td>6</td><td>5</td></tr><tr><td>6<td><td>TROLL</td><td>8</td><td>4</td></tr></tbody></table>", true, " _________________________________<\\", false, "<br>",true, "<_________________________________[]########]", false, "<br>",true, "                                  ", true, "<\/", false, "<br>", false, "<br>",

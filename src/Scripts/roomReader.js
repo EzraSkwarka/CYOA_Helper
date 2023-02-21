@@ -108,7 +108,7 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
               data[i].short_name +
               "</span>",
             false,
-            "</br>",
+            "<br>",
           ].concat(data[i].text_array);
         } else {
           roomPackage = data[i].text_array;
@@ -139,7 +139,7 @@ async function renderConsoleEntry(
   fromPlayer = false
 ) {
   if (renderingConsoleEntry == true) {
-    console.log("err: Already running renderConsoleEntry")
+    console.log("err: Already running renderConsoleEntry");
     return;
   }
   renderingConsoleEntry = true;
@@ -157,7 +157,7 @@ async function renderConsoleEntry(
   } else {
     var frontString = ">> ";
   }
-  //Formet Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
+  //Format Text --> need to break into own function that packages the text with tags to know if they are to be typed or rendered at once (i.e. a string of flavor text or a new line command)
   var textString = "";
   var tempString = "";
   var i = 0;
@@ -179,8 +179,26 @@ async function renderConsoleEntry(
     if (textArray[i] == true && animate) {
       //if we are to type
       var n = 0;
-      var inSpan = false;
-      for (n; n < textString.length; n++) {
+      var didNothing = true;
+      var inATag = false;
+
+      var tagDict = {
+        "<span": false,
+        "<a": false,
+        "<div": false,
+        // "<div>": false,
+        "<td": false,
+        // "<td>": false,
+        "<tr": false,
+        // "<tr>": false,
+        "<tbody": false,
+        // "<tbody>": false,
+        "<thead": false,
+        // "<thead>": false,
+        "<table": false,
+        // "<table>": false,
+      };
+      for (n; n < textString.length; ) {
         //Early exit check
         if (interuptRender) {
           interuptRender = false;
@@ -189,49 +207,71 @@ async function renderConsoleEntry(
         }
         //Pull whats already in the div
         tempString = div.innerHTML;
-        //See Issue #23, this is where that check will need to go
+        didNothing = true;
+        //This is gonna need a fundamental rework as it can't handle nested anythings and by the nature of if/else imposes hierarchy
+        //Each if section should just build the tempString and have a final statement append tempString to div.innerHTML
 
-        //Enter a span tag
-        if (textString.slice(n, n + 5) == "<span") {
-          inSpan = true;
-          // console.log('Found "<" tag at n: ' + n)
-          //find closing '>' tag
-          var x = distanceToClosingTag(textString, n);
-          // console.log('Found ">" ' + x + 'chars away');
-          //capture tag
-          var tagText = textString.slice(n, x + 1);
-          //add the tag onto tempString
-          tempString += tagText;
-          //update n
-          n = x + 1;
-          div.innerHTML = tempString + textString.charAt(n) + "</span>";
+        //The exception for `<tag` code should be abstractable into something more modular. I think I can build a dictionary and specify the target strings to look for (i.e. `<span ` or `<a `) and use the dictionary to track the in`tag` boolean so that I can expand this to cover any arbitrary tag. Furthermore, if I have a good record of which tags are active, I can close them safely at the end without relying on an abuse of case and making the DOM autoclose them.
+
+        //First check if you need to cut any tags off to get to where you are going to add new content
+        for (tag in tagDict) {
+          if (tagDict[tag]) {
+            tempString = tempString.slice(0, 0 - (2 + tag.length)); //Slice off the '</tag>' from the end of the string
+          }
         }
-        //if ready to leave the span tag
-        else if (inSpan && textString.slice(n, n + 7) == "</span>") {
-          // console.log('Closing <span>')
-          tempString += "</span>";
-          n += 6;
-          inSpan = false;
+
+        //Then check if you need to open any new tags
+        for (tag in tagDict) {
+          if (textString.slice(n, n + tag.length) == tag) {
+            // console.log("Opened a `" + tag + "`");
+            tagDict[tag] = true; //Flag the tag as found in tagDict
+            tempString += textString.slice(
+              n,
+              distanceToClosingTag(textString, n) + 1
+            ); //add the tag text onto tempString found by using the distance to the closing `>`
+            n = distanceToClosingTag(textString, n) + 1; //update n based on distance to closing >
+            didNothing = false; //Mark that we did something so we don't print a new character or increment n
+          } //if in tag and...
+          else if (
+            tagDict[tag] &&
+            textString.slice(n, n + tag.length + 2) == "</" + tag.slice(1) + ">" //turn the leading '<' into a '</' and make sure the closing '>' is present, add 2 total characters, hence `tag.length + 2` above
+          ) {
+            n += tag.length + 2; //update n by length of '</tag>'
+            tagDict[tag] = false; //clear tag flag in tagDict
+            didNothing = false; //Mark that we did something so we don't print a new character or increment n
+          }
         }
-        //if in a span tag abut not ready to leave
-        else if (inSpan) {
-          //Slice off the '</span>'
-          tempString = tempString.slice(0, -7);
-          div.innerHTML = tempString + textString.charAt(n);
-        } else if (textString.slice(n, n + 5) == "&nbsp") {
+
+        //Exception for <br>
+        if (textString.slice(n, n + 4) == "<br>") {
+          tempString += "<br>";
           n += 4;
-          div.innerHTML = div.innerHTML + "&nbsp";
-        } else {
-          //add the next char
-          div.innerHTML = tempString + textString.charAt(n);
+          didNothing = false;
         }
+
+        //Nothing special was done, add the next character and increase n
+        if (didNothing) {
+          tempString += textString.charAt(n);
+          n++;
+        }
+
+        //add the closing tags or we end up in a heap of trouble
+        for (tag in tagDict) {
+          if (tagDict[tag]) {
+            tempString += "</" + tag.slice(1) + ">";
+          }
+        }
+
+        //Update div.innerHTML
+        div.innerHTML = tempString;
+
         //Keep the bottom of the typer in view
         div.scrollIntoView(false);
         //Sleep so we get the animation effect
         const result = await sleep();
       }
     } else {
-      //if we are to print, mostly for html tags like span
+      //if we are to print instead of type
       //Early Exit Check
       if (interuptRender) {
         interuptRender = false;
@@ -251,7 +291,8 @@ async function renderConsoleEntry(
 
 function distanceToClosingTag(str, base) {
   var x = base;
-  for (x; x < str.length; x++) {
+  while (x < str.length) {
+    x++;
     if (str.charAt(x) == ">") {
       return x;
     }
@@ -270,7 +311,7 @@ Arguments:
 function setInterupt() {
   console.log("Calling for early exit.");
   interuptRender = true;
-  
+
   return true;
 }
 
