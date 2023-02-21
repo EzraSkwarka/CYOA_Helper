@@ -207,51 +207,40 @@ async function renderConsoleEntry(
         }
         //Pull whats already in the div
         tempString = div.innerHTML;
-        console.log(tempString)
         didNothing = true;
         //This is gonna need a fundamental rework as it can't handle nested anythings and by the nature of if/else imposes hierarchy
         //Each if section should just build the tempString and have a final statement append tempString to div.innerHTML
 
         //The exception for `<tag` code should be abstractable into something more modular. I think I can build a dictionary and specify the target strings to look for (i.e. `<span ` or `<a `) and use the dictionary to track the in`tag` boolean so that I can expand this to cover any arbitrary tag. Furthermore, if I have a good record of which tags are active, I can close them safely at the end without relying on an abuse of case and making the DOM autoclose them.
 
+        //First check if you need to cut any tags off to get to where you are going to add new content
         for (tag in tagDict) {
           if (tagDict[tag]) {
-          console.log("Slice: " + tempString + " -> ")
-          tempString = tempString.slice(0, 0 - (2 + tag.length)); //Slice off the '</tag>' from the end of the string
-          console.log(tempString)
+            tempString = tempString.slice(0, 0 - (2 + tag.length)); //Slice off the '</tag>' from the end of the string
           }
         }
 
+        //Then check if you need to open any new tags
         for (tag in tagDict) {
           if (textString.slice(n, n + tag.length) == tag) {
-            console.log("Opened a `" + tag + "`");
+            // console.log("Opened a `" + tag + "`");
             tagDict[tag] = true; //Flag the tag as found in tagDict
             tempString += textString.slice(
               n,
               distanceToClosingTag(textString, n) + 1
             ); //add the tag text onto tempString found by using the distance to the closing `>`
-            console.log(
-              "Adding to tempString: " +
-                textString.slice(n, distanceToClosingTag(textString, n) + 1)
-            );
             n = distanceToClosingTag(textString, n) + 1; //update n based on distance to closing >
-            didNothing = false;
+            didNothing = false; //Mark that we did something so we don't print a new character or increment n
           } //if in tag and...
-          else if (tagDict[tag]) {
-            //ready to leave the tag
-            if (
-              textString.slice(n, n + tag.length + 2) ==
-              "</" + tag.slice(1) + ">" //turn the leading '<' into a '</' and make sure the closing '>' is present
-            ) {
-              console.log("Closed a `" + ("</" + tag.slice(1) + ">") + "`");
-              n += tag.length + 2; //update n by length of '</tag>'
-              tagDict[tag] = false; //clear tag flag in tagDict
-              didNothing = false;
-            } //not ready to leave
+          else if (
+            tagDict[tag] &&
+            textString.slice(n, n + tag.length + 2) == "</" + tag.slice(1) + ">" //turn the leading '<' into a '</' and make sure the closing '>' is present, add 2 total characters, hence `tag.length + 2` above
+          ) {
+            n += tag.length + 2; //update n by length of '</tag>'
+            tagDict[tag] = false; //clear tag flag in tagDict
+            didNothing = false; //Mark that we did something so we don't print a new character or increment n
           }
         }
-
-        //Exception for Non-Breaking Spaces no longer needed
 
         //Exception for </br>
         if (textString.slice(n, n + 5) == "</br>") {
@@ -264,10 +253,12 @@ async function renderConsoleEntry(
         //add the next char
         if (didNothing) {
           tempString += textString.charAt(n);
-          console.log("New chartAt(n): " +
-          textString.charAt(n) +
-          " : " +
-          textString.slice(n, n + 6))
+          console.log(
+            "New chartAt(n): " +
+              textString.charAt(n) +
+              " : " +
+              textString.slice(n, n + 6)
+          );
           n++;
         }
 
