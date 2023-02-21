@@ -628,7 +628,7 @@
       false,
       "</br>",
       false,
-      "<table class='combatTable'><thead><td>NAME</td><td><div>SKILL</div></td><td><div>STAMINA</div></td></thead><tbody><tr><td><div>BARBARIAN</div></td><td><div>7</div></td><td><div>6</div></td></tr></tbody></table>",
+      "<table class='combatTable'><thead><td>NAME</td><td>SKILL</td><td>STAMINA</td></thead><tbody><tr><td>BARBARIAN</td><td>7</td><td>6</td></tr></tbody></table>",
       true,
       " _________________________________<\\",
       false,
@@ -3170,7 +3170,7 @@
       "<span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>Roll one die</span>. Consult the table below and over to find out what has come to investigate. Fight the creature as normal. Wandering monsters never carry any treasure. If you defeat this monster, return to the reference you have noted.",
       false,
       "</br>",
-      false, "</br>", false, "         ",true, "\/>_________________________________", false, "</br>",true, "[########[]_________________________________>", false, "</br>",false, "         ",true, "\\>", false, "</br>", false, "<table class='expandedCombatTable'><thead><td>DIE ROLL</td><td>NAME</td><td><div>SKILL</div></td><td><div>STAMINA</div></td></thead><tbody><tr><td>1</td><td>GOBLIN</td><td>5</td><td>3</td></tr><tr><td>2</td><td>ORC</td><td>6</td><td>3</td></tr><tr><td>3</td><td>GREMLIN</td><td>6</td><td>4</td></tr><tr><td>4</td><td>GIANT RAT</td><td>5</td><td>4</td></tr><tr><td>5</td><td>SKELETON</td><td>6</td><td>5</td></tr><tr><td>6</td><td>TROLL</td><td>8</td><td>4</td></tr></tbody></table>", true, " _________________________________<\\", false, "</br>",true, "<_________________________________[]########]", false, "</br>",true, "                                  ", true, "<\/", false, "</br>", false, "</br>"
+      false, "</br>", false, "         ",true, "\/>_________________________________", false, "</br>",true, "[########[]_________________________________>", false, "</br>",false, "         ",true, "\\>", false, "</br>", true, "<table class='expandedCombatTable'><thead><tr><td>DIE ROLL</td><td>NAME</td><td><div>SKILL</div></td><td><div>STAMINA</div></td></tr></thead><tbody><tr><td>1</td><td>GOBLIN</td><td>5</td><td>3</td></tr><tr><td>2</td><td>ORC</td><td>6</td><td>3</td></tr><tr><td>3</td><td>GREMLIN</td><td>6</td><td>4</td></tr><tr><td>4</td><td>GIANT RAT</td><td>5</td><td>4</td></tr><tr><td>5</td><td>SKELETON</td><td>6</td><td>5</td></tr><tr><td>6</td><td>TROLL</td><td>8</td><td>4</td></tr></tbody></table>", true, " _________________________________<\\", false, "</br>",true, "<_________________________________[]########]", false, "</br>",true, "                                  ", true, "<\/", false, "</br>", false, "</br>"
     ]
   },
   {

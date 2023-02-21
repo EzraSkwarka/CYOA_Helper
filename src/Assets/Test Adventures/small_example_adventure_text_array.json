@@ -27,15 +27,17 @@
       true,
       "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>. ",
       true,
-      "What happens if you put a linebreak in the middle </br> of a line?",
+      "What happens if you put a linebreak in the middle </br> of a line? <a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> </br>",
       true,
-      "<span style='font-style: italic;'><a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> </span>"
+      "<span style='font-style: italic;'><a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> </span>",
+      true,
+      "</br></br><table class='combatTable'><thead><tr><td>NAME</td><td>SKILL</td><td>STAMINA</td></tr></thead><tbody><tr><td>BARBARIAN</td><td>7</td><td>6</td></tr></tbody></table>"
     ]
   },
   {
     "short_name": "",
     "ID": 0,
-    "text_array": [" "]
+    "text_array": [true, "</br></br><table class='combatTable'><thead><tr><td>6</td></tr></thead></table>"]
   },
   {
     "short_name": "Entryway",
