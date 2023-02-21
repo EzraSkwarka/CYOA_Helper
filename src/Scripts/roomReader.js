@@ -249,20 +249,13 @@ async function renderConsoleEntry(
           didNothing = false;
         }
 
-        //Nothing Special is happening
-        //add the next char
+        //Nothing special was done, add the next character and increase n
         if (didNothing) {
           tempString += textString.charAt(n);
-          console.log(
-            "New chartAt(n): " +
-              textString.charAt(n) +
-              " : " +
-              textString.slice(n, n + 6)
-          );
           n++;
         }
 
-        //add the closing tags
+        //add the closing tags or we end up in a heap of trouble
         for (tag in tagDict) {
           if (tagDict[tag]) {
             tempString += "</" + tag.slice(1) + ">";
