@@ -49,7 +49,7 @@ For example, the room:
       true,
       "This room is the first room at the player should enter.",
       false,
-      "</br>",
+      "<br>",
       true,
       "From the entrance way you can go south to the t-junction ",
       false,
@@ -130,15 +130,15 @@ This is, of course, not what we are after. This is because we didn't add any lin
 ```
 "text_array" = [
     true, "This is the 92nd room. I feel as though I am being",
-    true, "</br>",
+    true, "<br>",
     true, ".",
-    true, "</br>",
+    true, "<br>",
     true, ".",
-    true, "</br>",
+    true, "<br>",
     false, "watched.",
-    true, "</br>",
+    true, "<br>",
     true, "",
-    true, "</br>",
+    true, "<br>",
     true, "Turn to page 11"
 ]
 ```
@@ -147,23 +147,23 @@ If we run this we get:
 
 ```
 >> 92
-   This is the 92nd room. I feel as though I am being</br>.</br>.</br>watched.</br></br>Turn to page 11
+   This is the 92nd room. I feel as though I am being<br>.<br>.<br>watched.<br><br>Turn to page 11
 ```
 
-This happens because `</br>` is a special HTML tag. If we add it one character at a time, we wont have a `</br>` added, instead we get a `<`, then a `/` and so on. Lets edit those tags to print them instead of typing them:
+This happens because `<br>` is a special HTML tag. If we add it one character at a time, we wont have a `<br>` added, instead we get a `<`, then a `/` and so on. Lets edit those tags to print them instead of typing them:
 
 ```
 "text_array" = [
     true, "This is the 92nd room. I feel as though I am being",
-    false, "</br>",
+    false, "<br>",
     true, ".",
-    false, "</br>",
+    false, "<br>",
     true, ".",
-    false, "</br>",
+    false, "<br>",
     false, "watched.",
-    false, "</br>",
+    false, "<br>",
     true, "",
-    false, "</br>",
+    false, "<br>",
     true, "Turn to page 11"
 ]
 ```
@@ -184,7 +184,7 @@ There are other special tags you can use in the `text_array`s, see below.
 
 #### How to I use special html tags in `text_array`?
 
-The most common method for including special tags is the method outlined above for `</br>` tags. Generally speaking, to include any kind of special tag just include it in a single line of `text_array` and set that line to print. Doing so will insert the HTML *exactly* as you typed it, so as long as you inclose it properly you can do just about anything you want.
+The most common method for including special tags is the method outlined above for `<br>` tags. Generally speaking, to include any kind of special tag just include it in a single line of `text_array` and set that line to print. Doing so will insert the HTML *exactly* as you typed it, so as long as you inclose it properly you can do just about anything you want.
 
 That said, there is one method I want to call out specifically, `<span>` tags. 
 

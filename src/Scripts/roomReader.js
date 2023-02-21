@@ -108,7 +108,7 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
               data[i].short_name +
               "</span>",
             false,
-            "</br>",
+            "<br>",
           ].concat(data[i].text_array);
         } else {
           roomPackage = data[i].text_array;
@@ -242,10 +242,10 @@ async function renderConsoleEntry(
           }
         }
 
-        //Exception for </br>
-        if (textString.slice(n, n + 5) == "</br>") {
-          tempString += "</br>";
-          n += 5;
+        //Exception for <br>
+        if (textString.slice(n, n + 4) == "<br>") {
+          tempString += "<br>";
+          n += 4;
           didNothing = false;
         }
 
