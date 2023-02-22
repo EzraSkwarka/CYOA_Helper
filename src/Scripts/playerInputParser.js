@@ -12,14 +12,14 @@ async function readPlayerInput(inputString) {
   //Clearing input box handled by the call
   while (renderingConsoleEntry) { //stop any ongoing prints
     setInterrupt();
-    console.log("readPlayerInput Sleeping.")
+    // console.log("readPlayerInput Sleeping.")
     const result = await sleep(1); //sleep so it doesn't fire to fast
   }
   //Echo input
   renderConsoleEntry([false, inputString], false, true);
   while (renderingConsoleEntry) { //stop any ongoing prints
     setInterrupt();
-    console.log("readPlayerInput Echo Sleeping.")
+    // console.log("readPlayerInput Echo Sleeping.")
     const result = await sleep(1); //sleep so it doesn't fire to fast
   }
   //Simplify input

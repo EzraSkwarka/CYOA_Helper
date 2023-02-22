@@ -114,12 +114,16 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
         } else {
           roomPackage = data[i].text_array;
         }
-        // console.log(roomPackage);
         renderConsoleEntry(roomPackage, !print);
-
         break;
       }
     }
+  }
+  if (roomPackage) { //checks to see if it exists, if it doesn't it will print the error
+    renderConsoleEntry(
+      [true, "err: no matching page for ", true, ID_target, true, " found"],
+      true
+    );
   }
 }
 
@@ -141,7 +145,7 @@ async function renderConsoleEntry(
 ) {
   while (waitForInterrupt) {
     const result = await sleep(1);
-    console.log("Renderer sleeping.")
+    console.log("Renderer sleeping.");
   }
 
   renderingConsoleEntry = true;
@@ -317,7 +321,7 @@ function setInterrupt() {
   console.log("Calling for early exit.");
   interruptRender = true;
   if (renderingConsoleEntry) {
-      waitForInterrupt = true;
+    waitForInterrupt = true;
   }
   return true;
 }
