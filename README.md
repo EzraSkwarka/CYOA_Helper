@@ -6,7 +6,7 @@
 
 ​		The goal of this project is to create a stand alone engine for experiencing old Choose Your Own Adventure style books as though they are a text adventure game played on an older terminal style computer but with modern conveniences. If you're wondering why I'm doing this, I just thought it would be cool. And I'm right.
 
-To get started just download the latest release and boot it up. If you're unsure where to start run 'help' or run 'ls -book' to see they currently available adventures.
+To get started just download the latest release and boot it up. If you're unsure where to start run 'help' or run 'ls -book' to see the adventures currently available.
 
 ## Current Features
 
@@ -15,13 +15,14 @@ To get started just download the latest release and boot it up. If you're unsure
 - Book-specific Custom Style packs
 - A Collapsible Notes Section
 - A fully playable adventure
+- A write-up on how to build custom books
+  - Serviceable, but needs some TLC
 
 ## Planned features
 
 - Tab-completion in the terminal interface
 - A way to save/load the current notes
 - A way to save/load the current terminal output
-- A write-up on how to build custom books
 - A better experience for creating new books
   - There may be an external tool for this, it is just a JSON file after all
 
