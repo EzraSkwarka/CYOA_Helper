@@ -1,8 +1,8 @@
 {
-  "name": "coya_helper",
-  "productName": "coya_helper",
+  "name": "cyoa_helper",
+  "productName": "cyoa_helper",
   "version": "0.4.0",
-  "description": "coya_helper",
+  "description": "cyoa_helper",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -13,14 +13,14 @@
     "build-installer": "electron-builder"
   },
   "build": {
-    "appId": "coya_helper",
+    "appId": "cyoa_helper",
     "win": {
       "target": [
         "nsis"
       ]
     },
     "nsis": {
-      "uninstallDisplayName": "COYA Helper",
+      "uninstallDisplayName": "CYOA Helper",
       "license": "license.txt",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
