@@ -54,7 +54,8 @@ html {
 .typedRoom {
 	margin-left: 1.15em;
 	text-indent: -1.15em;
-  white-space: break-spaces
+  white-space: break-spaces;
+  font-size: 1em;
 }
 
 
