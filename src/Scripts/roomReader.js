@@ -324,7 +324,7 @@ Arguments:
 	
 	return = None
 */
-function clickRoom(roomID) {
+function clickPage(roomID) {
   renderConsoleEntry([false, "goto " + String(roomID)], false, true);
   requestRoom(roomID, ctrlDepressed);
 }

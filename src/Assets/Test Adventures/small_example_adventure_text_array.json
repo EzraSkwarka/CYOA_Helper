@@ -25,7 +25,7 @@
       true,
       "The text to display as the player gets ready to leave the room and lists where they can go. For instance, I'd recommend room ",
       true,
-      "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>. ",
+      "<span class='roomNumber' onclick='clickPage(1)'>(#1)</span>. ",
       true,
       "What happens if you put a line-break in the middle <br> of a line? <a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> <br>",
       true,

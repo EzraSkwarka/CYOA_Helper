@@ -148,7 +148,7 @@ Arguments:
 	
 	return = None
 */
-async function gotoRoom(str) {
+async function gotoPage(str) {
   //Attempt to resolve room ref
   if (/ false$/.test(inputStringLower)) {
     //Slice off false

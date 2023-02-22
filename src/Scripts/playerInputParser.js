@@ -20,11 +20,11 @@ function readPlayerInput(inputString) {
   if (/^goto /.test(inputStringLower)) {
     //Slice off the goto of the command
     inputStringLower = String(inputStringLower).slice(5);
-    gotoRoom(inputStringLower);
+    gotoPage(inputStringLower);
   } else if (/^turn to /.test(inputStringLower)) {
     //Slice off the turn to of the command
     inputStringLower = String(inputStringLower).slice(8);
-    gotoRoom(inputStringLower);
+    gotoPage(inputStringLower);
   } else if (/help/.test(inputStringLower)) {
     helpCommand(inputString);
   } else if (/^open /.test(inputStringLower)) {
@@ -199,7 +199,7 @@ Arguments:
 	
 	return = None
 */
-async function gotoRoom(str) {
+async function gotoPage(str) {
   //Attempt to resolve room ref
   if (/ false$/.test(inputStringLower)) {
     //Slice off false
