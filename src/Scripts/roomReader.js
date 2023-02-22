@@ -85,6 +85,7 @@ Arguments:
 	return = None
 */
 function requestRoom(ID_target, print = false, print_subheading = true) {
+  var roomFoundBool = false;
   //Add a check here so see if a book has already been loaded
   fetch(loadedBookPath)
     .then(function (response) {
@@ -115,15 +116,20 @@ function requestRoom(ID_target, print = false, print_subheading = true) {
           roomPackage = data[i].text_array;
         }
         renderConsoleEntry(roomPackage, !print);
+        roomFoundBool = true;
         break;
       }
     }
+    roomFound(roomFoundBool);
   }
-  if (roomPackage) { //checks to see if it exists, if it doesn't it will print the error
-    renderConsoleEntry(
-      [true, "err: no matching page for ", true, ID_target, true, " found"],
-      true
-    );
+  function roomFound(test) {
+    //checks to see if it exists, if it doesn't it will print the error
+    if (!test) {
+      renderConsoleEntry(
+        [true, "err: no matching page for ", true, ID_target, true, " found"],
+        true
+      );
+    }
   }
 }
 
