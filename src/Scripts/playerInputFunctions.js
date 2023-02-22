@@ -148,7 +148,7 @@ Arguments:
 	
 	return = None
 */
-async function gotoPage(str) {
+async function gotoRoom(str) {
   //Attempt to resolve room ref
   if (/ false$/.test(inputStringLower)) {
     //Slice off false
@@ -187,7 +187,7 @@ function listBooks() {
     for (var i = 0; i < data.length; i++) {
       bookList.push(data[i]);
     }
-    renderConsoleEntry(bookList);
+    renderConsoleEntry(bookList, true);
   }
 }
 
