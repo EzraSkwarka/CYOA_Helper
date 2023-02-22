@@ -46,7 +46,7 @@ body::after {
 }
 
 /* Clickable book links under 'ls -book'*/
-.clickablebook {
+.clickableBook {
   color: #d0ff00c7; /*Amber*/
   cursor: pointer;
   text-decoration: underline;

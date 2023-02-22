@@ -17,7 +17,7 @@ document
     }
   });
 
-function notesBoxtestareresize() {
+function notesBoxTextAreaResize() {
   //Cap size based on Window
   if (notesBoxContent.style.maxHeight) {
     w = Math.floor(window.innerWidth / 2);
@@ -29,9 +29,9 @@ function notesBoxtestareresize() {
 
 //Global listeners
 addEventListener("resize", (event) => {
-  notesBoxtestareresize();
-}); //bounds the size of the notesTextarea on screensize change
+  notesBoxTextAreaResize();
+}); //bounds the size of the notesTextarea on screen size change
 
-const resizeObserver = new ResizeObserver(notesBoxtestareresize).observe(
-  document.getElementById("notesBoxtextarea")
+const resizeObserver = new ResizeObserver(notesBoxTextAreaResize).observe(
+  document.getElementById("notesBoxTextArea")
 ); //Bounds the resize of the drag on notesTextarea
