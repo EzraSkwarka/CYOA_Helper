@@ -9,6 +9,7 @@ var styleTagText = "";
 var interruptRender = false;
 var loadedBookStyle = "";
 var renderingConsoleEntry = false;
+var waitForInterrupt = false;
 
 /*
 Short Description:
@@ -138,10 +139,11 @@ async function renderConsoleEntry(
   animate = false,
   fromPlayer = false
 ) {
-  if (renderingConsoleEntry == true) {
-    console.log("err: Already running renderConsoleEntry");
-    return;
+  while (waitForInterrupt) {
+    const result = await sleep(1);
+    console.log("Renderer sleeping.")
   }
+
   renderingConsoleEntry = true;
   //Create Container
   var div = createConsoleEntry();
@@ -166,6 +168,7 @@ async function renderConsoleEntry(
     if (interruptRender) {
       interruptRender = false;
       renderingConsoleEntry = false;
+      waitForInterrupt = false;
       return false;
     }
     //Apply identifier on first pass
@@ -203,6 +206,7 @@ async function renderConsoleEntry(
         if (interruptRender) {
           interruptRender = false;
           renderingConsoleEntry = false;
+          waitForInterrupt = false;
           return false;
         }
         //Pull whats already in the div
@@ -276,6 +280,7 @@ async function renderConsoleEntry(
       if (interruptRender) {
         interruptRender = false;
         renderingConsoleEntry = false;
+        waitForInterrupt = false;
         return false;
       }
       tempString = div.innerHTML;
@@ -311,7 +316,9 @@ Arguments:
 function setInterrupt() {
   console.log("Calling for early exit.");
   interruptRender = true;
-
+  if (renderingConsoleEntry) {
+      waitForInterrupt = true;
+  }
   return true;
 }
 
