@@ -27,7 +27,7 @@ function helpCommand(str) {
     for (var i = 0; i < data.length; i++) {
       helpArray.push(data[i]);
     }
-    renderConsoleEntry(helpArray);
+    renderConsoleEntry(helpArray, true);
   }
 }
 
