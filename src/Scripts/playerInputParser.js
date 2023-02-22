@@ -1,7 +1,7 @@
 //
 /*
 Short Description:
-	This function exists to see if the user's input is valid and if not to alert the user, this is just a disambuigation function
+	This function exists to see if the user's input is valid and if not to alert the user, this is just a disambiguation function
 	
 Arguments:
 	inputString =  Str, input to be parsed
@@ -31,7 +31,7 @@ function readPlayerInput(inputString) {
     openBook(inputString);
   } else if (/^roll/.test(inputStringLower)) {
     rollDice(inputString);
-  } else if (/^setspeed \d+$/.test(inputStringLower)) {
+  } else if (/^setSpeed \d+$/.test(inputStringLower)) {
     setSpeed(inputStringLower);
   } else if (/^reload$/.test(inputStringLower)) {
     window.location.reload();
@@ -40,10 +40,10 @@ function readPlayerInput(inputString) {
   } else if (/^ls -book/.test(inputStringLower)) {
     listBooks();
   } else if (/^stop$/.test(inputStringLower)) {
-    setInterupt();
+    setInterrupt();
   } else if (/^cls$/.test(inputStringLower)) {
     clearLogScreen();
-  } else if (/^setfont/.test(inputStringLower)) {
+  } else if (/^setFont/.test(inputStringLower)) {
     changeDefaultFont(inputString);
   } else {
     renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
@@ -53,7 +53,7 @@ function readPlayerInput(inputString) {
 
 /*
 Short Description:
-	This function outputs the help menu, later it will check to see if a specfic command is reffrenced for a more detailed help command
+	This function outputs the help menu, later it will check to see if a specific command is referenced for a more detailed help command
 	
 Arguments:
 	str =  Str, command to follow up on
@@ -73,7 +73,7 @@ function helpCommand(str) {
     .catch(function (err) {
       console.log("error: " + err);
     });
-  //called by second .then statment
+  //called by second .then statement
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       helpArray.push(data[i]);
@@ -84,7 +84,7 @@ function helpCommand(str) {
 
 /*
 Short Description:
-	This function outputs the help menu, later it will check to see if a specfic command is reffrenced for a more detailed help command
+	This function outputs the help menu, later it will check to see if a specific command is referenced for a more detailed help command
 	
 Arguments:
 	str =  Str, command to follow up on
@@ -233,7 +233,7 @@ function listBooks() {
     .catch(function (err) {
       console.log("error: " + err);
     });
-  //called by second .then statment
+  //called by second .then statement
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       bookList.push(data[i]);

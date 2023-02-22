@@ -9,7 +9,7 @@
       false,
       "<br>"
     ],
-    "css": ".typedRoom {\n  /* This will apply to all new entries into the main console*/\n   margin-left: 1.15em;\n   text-indent: -1.15em;\n}\n .roomNumber {\n  /* This is specifically the clickable room numbers embedded in the text*/\n   color: #ffb000;\n  /*Amber*/; cursor: pointer; text-decoration: underline;\n}\n .gameStats {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n}\n .gameStatsInitial {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n   font-style: italic;\n}\n .sectionHeader {\n   color: #e18335;\n}\n .subsectionHeader {\n   color: #e18c47;\n}\n/* Specified in such a way as to only hit the a tags within the game text, in case I do a sidebar or overlay with a tags not happy with this color, but its fine*/\n #gameText a:link, #gameText a:visited {\n   color: pink;\n   text-decoration: underline;\n   cursor: auto;\n}\n #gameText a:link:active, #gameText a:visited:active {\n   color: pink;\n}\n .testyourluck {color: #7dffc9; cursor: pointer; text-decoration: underline;} .magicspell {color: #3dd9eb}"
+    "css": ".typedRoom {\n  /* This will apply to all new entries into the main console*/\n   margin-left: 1.15em;\n   text-indent: -1.15em;\n}\n .roomNumber {\n  /* This is specifically the clickable room numbers embedded in the text*/\n   color: #ffb000;\n  /*Amber*/; cursor: pointer; text-decoration: underline;\n}\n .gameStats {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n}\n .gameStatsInitial {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n   font-style: italic;\n}\n .sectionHeader {\n   color: #e18335;\n}\n .subsectionHeader {\n   color: #e18c47;\n}\n/* Specified in such a way as to only hit the a tags within the game text, in case I do a sidebar or overlay with a tags not happy with this color, but its fine*/\n #gameText a:link, #gameText a:visited {\n   color: pink;\n   text-decoration: underline;\n   cursor: auto;\n}\n #gameText a:link:active, #gameText a:visited:active {\n   color: pink;\n}\n .testYourLuck {color: #7dffc9; cursor: pointer; text-decoration: underline;} .magicSpell {color: #3dd9eb}"
   },
   {
     "short_name": "",
@@ -249,15 +249,15 @@
       false,
       "<br>",
       true,
-      "Roll two dice. Add 6 to the number rolled and enter this total in the <span class='magicspell'>MAGIC</span> box on your *Adventure Sheet*.",
+      "Roll two dice. Add 6 to the number rolled and enter this total in the <span class='magicSpell'>MAGIC</span> box on your *Adventure Sheet*.",
       false,
       "<br>",
       true,
-      "Your <span class='magicspell'>MAGIC</span> score determines how many Magic Spells you may use during your quest. These spells may be chosen from the list following this section. After considering the spells available, enter your choices in the Magic Spells box on your Adventure Sheet.",
+      "Your <span class='magicSpell'>MAGIC</span> score determines how many Magic Spells you may use during your quest. These spells may be chosen from the list following this section. After considering the spells available, enter your choices in the Magic Spells box on your Adventure Sheet.",
       false,
       "<br>",
       true,
-      "If for example, you roll a 4 and a 3, your your <span class='magicspell'>MAGIC</span> score will be 13 (i.e. 1+4+6), which means you will be able to use thirteen spells during your adventure. From the list of spells given below, you may choose thirteen spells as you please. Perhaps you would like to take three Stamina Spells, five E.S.P. Spells, and five Fire Spells -- or maybe you would prefer one of each of the twelve spells plus an extra Creature Copy Spell. The choice is yours.",
+      "If for example, you roll a 4 and a 3, your your <span class='magicSpell'>MAGIC</span> score will be 13 (i.e. 1+4+6), which means you will be able to use thirteen spells during your adventure. From the list of spells given below, you may choose thirteen spells as you please. Perhaps you would like to take three Stamina Spells, five E.S.P. Spells, and five Fire Spells -- or maybe you would prefer one of each of the twelve spells plus an extra Creature Copy Spell. The choice is yours.",
       false,
       "<br>",
       true,
@@ -275,7 +275,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Creature Copy</span>",
+      "<span class='magicSpell'>Creature Copy</span>",
       false,
       "<br>",
       true,
@@ -283,7 +283,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>E.S.P</span>",
+      "<span class='magicSpell'>E.S.P</span>",
       false,
       "<br>",
       true,
@@ -291,7 +291,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Fire</span>",
+      "<span class='magicSpell'>Fire</span>",
       false,
       "<br>",
       true,
@@ -299,7 +299,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Fool's Gold</span>",
+      "<span class='magicSpell'>Fool's Gold</span>",
       false,
       "<br>",
       true,
@@ -307,7 +307,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Illusion</span>",
+      "<span class='magicSpell'>Illusion</span>",
       false,
       "<br>",
       true,
@@ -315,7 +315,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Levitation</span>",
+      "<span class='magicSpell'>Levitation</span>",
       false,
       "<br>",
       true,
@@ -323,7 +323,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Luck</span>",
+      "<span class='magicSpell'>Luck</span>",
       false,
       "<br>",
       true,
@@ -331,7 +331,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Shielding</span>",
+      "<span class='magicSpell'>Shielding</span>",
       false,
       "<br>",
       true,
@@ -339,7 +339,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Skill</span>",
+      "<span class='magicSpell'>Skill</span>",
       false,
       "<br>",
       true,
@@ -347,7 +347,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Stamina</span>",
+      "<span class='magicSpell'>Stamina</span>",
       false,
       "<br>",
       true,
@@ -355,7 +355,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Strength</span>",
+      "<span class='magicSpell'>Strength</span>",
       false,
       "<br>",
       true,
@@ -363,7 +363,7 @@
       false,
       "<br>",
       true,
-      "<span class='magicspell'>Weakness</span>",
+      "<span class='magicSpell'>Weakness</span>",
       false,
       "<br>",
       true,
@@ -780,7 +780,7 @@
       false,
       "<br>",
       true,
-      "You hear muffled gruntings as you approach, and two misshapen creatures step forward. On the left stands an ugly creature with the head of a dog and the body of a great ape, flexing its powerful arms. Its opposite number is indeed its opposite, with the head of an ape on the body of a large dog. This latter guard approaches you on all fours. It stops some metres in front of you, raises itself on its hind legs and addresses you.",
+      "You hear muffled grunting as you approach, and two misshapen creatures step forward. On the left stands an ugly creature with the head of a dog and the body of a great ape, flexing its powerful arms. Its opposite number is indeed its opposite, with the head of an ape on the body of a large dog. This latter guard approaches you on all fours. It stops some metres in front of you, raises itself on its hind legs and addresses you.",
       false,
       "<br>",
       true,
@@ -813,7 +813,7 @@
 
     "text_array": [
       true,
-      "A little way up the passage there is a doorway on the right-hand side. This door has some strange scrawlings on it, but they are in a language that you do not understand. Will you try opening the door <span class='roomNumber' onclick='clickRoom(142)'>(turn to 142)</span>, or will you continue up the passage <span class='roomNumber' onclick='clickRoom(343)'>(turn to 343)</span>?"
+      "A little way up the passage there is a doorway on the right-hand side. This door has some strange scrawling on it, but they are in a language that you do not understand. Will you try opening the door <span class='roomNumber' onclick='clickRoom(142)'>(turn to 142)</span>, or will you continue up the passage <span class='roomNumber' onclick='clickRoom(343)'>(turn to 343)</span>?"
     ]
   },
   {
@@ -1109,7 +1109,7 @@
 
     "text_array": [
       true,
-      "You taste the wine and, as you are considering its flavour, you hear a clinking noise. You turn to look in the direction that the noise is coming from and you are horrified to see that the bottles in the racks are moving on their own. One bottle flies from its place and hurtles towards you, narrowly missing your head and smashing on the wall behind you. Another flies at you, then another, until you are being pelted by bottles from all directions. You realize that your unly defence is to use a Shielding Spell. Cast this Spell if you can and <span class='roomNumber' onclick='clickRoom(372)'>turn to 372</span>. If you cannot cast this Spell, <span class='roomNumber' onclick='clickRoom(219)'>turn to 219</span>.",
+      "You taste the wine and, as you are considering its flavour, you hear a clinking noise. You turn to look in the direction that the noise is coming from and you are horrified to see that the bottles in the racks are moving on their own. One bottle flies from its place and hurtles towards you, narrowly missing your head and smashing on the wall behind you. Another flies at you, then another, until you are being pelted by bottles from all directions. You realize that your only defence is to use a Shielding Spell. Cast this Spell if you can and <span class='roomNumber' onclick='clickRoom(372)'>turn to 372</span>. If you cannot cast this Spell, <span class='roomNumber' onclick='clickRoom(219)'>turn to 219</span>.",
       false,
       "<br>"
     ]
@@ -1524,7 +1524,7 @@
 
     "text_array": [
       true,
-      "What do I want with your berries?' she laughs. 'My appetite died with my body! And as you look closer you can see that she too is nothing but a Chost. She floats across in the air towards you. <span class='roomNumber' onclick='clickRoom(194)'>Turn to 194</span>.",
+      "What do I want with your berries?' she laughs. 'My appetite died with my body! And as you look closer you can see that she too is nothing but a ghost. She floats across in the air towards you. <span class='roomNumber' onclick='clickRoom(194)'>Turn to 194</span>.",
       false,
       "<br>"
     ]
@@ -1571,7 +1571,7 @@
 
     "text_array": [
       true,
-      "The BLACK ELF approaching you is skinny and ragged. He asks whether you are aguest or an adventurer. You tell him you are a guest, come down to sample the wine he keeps in his famous Wine Cellar. With a certain pride, he shows you the vintage bottles he keeps for his Lord, the Demi-Sorcerer. Some of them, he claims, have magical powers. He offers to let you sample the wine. Will you try a sample of:",
+      "The BLACK ELF approaching you is skinny and ragged. He asks whether you are a guest or an adventurer. You tell him you are a guest, come down to sample the wine he keeps in his famous Wine Cellar. With a certain pride, he shows you the vintage bottles he keeps for his Lord, the Demisorcerer. Some of them, he claims, have magical powers. He offers to let you sample the wine. Will you try a sample of:",
       false,
       "<br>",
       true,
@@ -1632,7 +1632,7 @@
 
     "text_array": [
       true,
-      "They are revolted by your gift and run over to the corner of the room, hiding under the beds. Some what puzzled by their behaviour, you leave the Jar on the floor and make for the door on the far side of the room. Turn to 140.",
+      "They are revolted by your gift and run over to the corner of the room, hiding under the beds. Some what puzzled by their behavior, you leave the Jar on the floor and make for the door on the far side of the room. Turn to 140.",
       true,
       "Levitation Spell  <span class='roomNumber' onclick='clickRoom(033)'>Turn to 033</span>",
       false,
@@ -1823,7 +1823,7 @@
 
     "text_array": [
       true,
-      "Luck is not with you. Your first glance at the serpent-headed creature was enough to scal your fate. You cry out in anguish as you feel your joints begin to seize and your limbs become heavy and uncontrollable. As the Gorgon's stony stare takes effect, you fight for balance - but lose it and crash to the floor. Your petrified body cracks on impact and you now lie in several pieces before Balthus Dire. You have failed in your mission.",
+      "Luck is not with you. Your first glance at the serpent-headed creature was enough to seal your fate. You cry out in anguish as you feel your joints begin to seize and your limbs become heavy and uncontrollable. As the Gorgon's stony stare takes effect, you fight for balance - but lose it and crash to the floor. Your petrified body cracks on impact and you now lie in several pieces before Balthus Dire. You have failed in your mission.",
       false,
       "<br>"
     ]
@@ -1834,7 +1834,7 @@
 
     "text_array": [
       true,
-      "Either you may try to cut yourself free from the Sewer Snake, or you may wardit off with a Spell. If has you will fight the creature, resolve this battle:",
+      "Either you may try to cut yourself free from the Sewer Snake, or you may ward it off with a Spell. If has you will fight the creature, resolve this battle:",
       false,
       "<br>",
       true,
@@ -2053,7 +2053,7 @@
 
     "text_array": [
       true,
-      "The door is extremely strong, but cracks a little under your charge. You may try charging it as often as you wish until you break it. Roll a die for cach attempt. If you roll a six, you succeed (<span class='roomNumber' onclick='clickRoom(292)'>turn to 292</span>). For each unsuccessful attempt, you must lose 1 STAMINA point. If you decide against this course of action, you may use a Strength Spell (<span class='roomNumber' onclick='clickRoom(170)'>turn to 170</span>), or try either the middle door (<span class='roomNumber' onclick='clickRoom(064)'>turn to 064</span>) or the door at the far end of the balcony (<span class='roomNumber' onclick='clickRoom(304)'>turn to 304</span>) instead.",
+      "The door is extremely strong, but cracks a little under your charge. You may try charging it as often as you wish until you break it. Roll a die for each attempt. If you roll a six, you succeed (<span class='roomNumber' onclick='clickRoom(292)'>turn to 292</span>). For each unsuccessful attempt, you must lose 1 STAMINA point. If you decide against this course of action, you may use a Strength Spell (<span class='roomNumber' onclick='clickRoom(170)'>turn to 170</span>), or try either the middle door (<span class='roomNumber' onclick='clickRoom(064)'>turn to 064</span>) or the door at the far end of the balcony (<span class='roomNumber' onclick='clickRoom(304)'>turn to 304</span>) instead.",
       false,
       "<br>"
     ]
@@ -2098,7 +2098,7 @@
 
     "text_array": [
       true,
-      "She looks at your offering and her eyes widen. Let me see that,' she commands. You carefully advance towards her and hold out the brush. She snatches it and spends several moments admiring it. This is indeed a work of art,' she says, and she gets out of bed to try it in front of her mirror. As she brushes her hair with it, her hair takes on an unusual sheen, glimmering softly. She is fascinated with your gift and now is your chance to leave unnoticed through a door in the far corner. You may try to take with you a Golden Fleece which is lying on the bed. <span class= 'testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your luck</span>. If you are Lucky, you manage to snatch it quickly and can leave through the other door (<span class='roomNumber' onclick='clickRoom(140)'>turn to 140</span>). If you are Unlucky, you may Test your luck again until you are finally Lucky. Or, if I uck is not with you, you may ignore the cumbersome thing and leave anyway (<span class='roomNumber' onclick='clickRoom(140)'>turn to 140</span>).",
+      "She looks at your offering and her eyes widen. Let me see that,' she commands. You carefully advance towards her and hold out the brush. She snatches it and spends several moments admiring it. This is indeed a work of art,' she says, and she gets out of bed to try it in front of her mirror. As she brushes her hair with it, her hair takes on an unusual sheen, glimmering softly. She is fascinated with your gift and now is your chance to leave unnoticed through a door in the far corner. You may try to take with you a Golden Fleece which is lying on the bed. <span class= 'testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your luck</span>. If you are Lucky, you manage to snatch it quickly and can leave through the other door (<span class='roomNumber' onclick='clickRoom(140)'>turn to 140</span>). If you are Unlucky, you may Test your luck again until you are finally Lucky. Or, if I uck is not with you, you may ignore the cumbersome thing and leave anyway (<span class='roomNumber' onclick='clickRoom(140)'>turn to 140</span>).",
       false,
       "<br>"
     ]
@@ -2273,7 +2273,7 @@
 
     "text_array": [
       true,
-      "You try the handle and it turns. The door is stiff and you must shove it open. The room inside is some sort of living abode, with tables, chairs, shelves and a collection of animal heads on the wall. There is a plush pile carpet on the floor. Suddenly, one of the animal heads turns and looks towards you. It is some kind of dog, and it barks loudly in a tone which is a warning, both to you and to any of its cronies which may be within earshot. As you watch the head, you do not notice a carpet, which flies up off the floor and whisks past you, clipping your ear. You spin round in time to see one of the chairs, slowly re-forming itself into a tall man. 'What busi- ness have you here?' he booms. Will you:",
+      "You try the handle and it turns. The door is stiff and you must shove it open. The room inside is some sort of living abode, with tables, chairs, shelves and a collection of animal heads on the wall. There is a plush pile carpet on the floor. Suddenly, one of the animal heads turns and looks towards you. It is some kind of dog, and it barks loudly in a tone which is a warning, both to you and to any of its cronies which may be within earshot. As you watch the head, you do not notice a carpet, which flies up off the floor and whisks past you, clipping your ear. You spin round in time to see one of the chairs, slowly re-forming itself into a tall man. 'What business have you here?' he booms. Will you:",
       false,
       "<br>",
       true,
@@ -2311,7 +2311,7 @@
 
     "text_array": [
       true,
-      "She laughs again and tells you she likes to see people getting angry. In good humour, she accom- panies you for several metres. Conversation is difficult. She sees something in the distant shadows and nips off to investigate, allowing you to advance to the Citadel's main entrance. <span class='roomNumber' onclick='clickRoom(218)'>Turn to 218</span>.",
+      "She laughs again and tells you she likes to see people getting angry. In good humour, she accompanies you for several metres. Conversation is difficult. She sees something in the distant shadows and nips off to investigate, allowing you to advance to the Citadel's main entrance. <span class='roomNumber' onclick='clickRoom(218)'>Turn to 218</span>.",
       false,
       "<br>"
     ]
@@ -2502,7 +2502,7 @@
 
     "text_array": [
       true,
-      "You concentrate and images from the Calacorm flash through your mind. You see a plate full of dead snakes, then a similar-looking creature with greyish skin-possibly the female of its species- then you feel a great sense of pleasure as you see an unfortun ate creature bound to the wall having its toes tickled with a burning torch. Then you see the plate of snakes again. Evidently this creature thinks about little but the simple pleasures of its miserable life and you will not learn much about how to escape. You had better try a Fool's Gold Spell (<span class='roomNumber' onclick='clickRoom(211)'>turn to 211</span>) or an Illusion Spell (<span class='roomNumber' onclick='clickRoom(035)'>turn to 035</span>). If you have neither, <span class='roomNumber' onclick='clickRoom(283)'>turn to 283</span>.",
+      "You concentrate and images from the Calacorm flash through your mind. You see a plate full of dead snakes, then a similar-looking creature with greyish skin-possibly the female of its species- then you feel a great sense of pleasure as you see an unfortunate creature bound to the wall having its toes tickled with a burning torch. Then you see the plate of snakes again. Evidently this creature thinks about little but the simple pleasures of its miserable life and you will not learn much about how to escape. You had better try a Fool's Gold Spell (<span class='roomNumber' onclick='clickRoom(211)'>turn to 211</span>) or an Illusion Spell (<span class='roomNumber' onclick='clickRoom(035)'>turn to 035</span>). If you have neither, <span class='roomNumber' onclick='clickRoom(283)'>turn to 283</span>.",
       false,
       "<br>"
     ]
@@ -2546,7 +2546,7 @@
 
     "text_array": [
       true,
-      "She lifts her head and calls into the air. You stop in your tracks as you see the washing on the line rustle and kickabout in the air. Freeing themselves from the line, several pieces of clothing wisp through the air towards you and, as they get close, you can make out ghostly bodies with long-dead faces inside the clothes. Protect me, my sons and daughters!' she cries and suddenly the clothes are all around you. Some whip their sleeves at you, stinging you painfully. One pair of arms wraps itself around your neck, making it difficult to breathe and tightening its grip. You are flailing about with your sword, but doing little damage to the GHOSTS. The stranglehold is tightening and you will have to use your magic to get free, unless you have something in your backpack to offer the woman. Will you:",
+      "She lifts her head and calls into the air. You stop in your tracks as you see the washing on the line rustle and kick about in the air. Freeing themselves from the line, several pieces of clothing wisp through the air towards you and, as they get close, you can make out ghostly bodies with long-dead faces inside the clothes. Protect me, my sons and daughters!' she cries and suddenly the clothes are all around you. Some whip their sleeves at you, stinging you painfully. One pair of arms wraps itself around your neck, making it difficult to breathe and tightening its grip. You are flailing about with your sword, but doing little damage to the GHOSTS. The stranglehold is tightening and you will have to use your magic to get free, unless you have something in your backpack to offer the woman. Will you:",
       false,
       "<br>",
       true,
@@ -2679,7 +2679,7 @@
 
     "text_array": [
       true,
-      "They are taken aback by your audacity. Rather than waiting for them to talk, you act aggressively and demand to know how to get into the Citadel. They point to the main entrance, obviously a little be wildered by your confident manner, and whisper amongst themselves. The Orc tells you that you will need the password, 'Scimitar, to get in. You ask about the vial of liquid within the box, whereupon they get agitated. Will you press them for more information about the vial (<span class='roomNumber' onclick='clickRoom(060)'>turn to 060</span>), leave them and head for the two men you saw earlier (<span class='roomNumber' onclick='clickRoom(269)'>turn to 269</span>), or press on towards the Black Tower (<span class='roomNumber' onclick='clickRoom(245)'>turn to 245</span>)?",
+      "They are taken aback by your audacity. Rather than waiting for them to talk, you act aggressively and demand to know how to get into the Citadel. They point to the main entrance, obviously a little bewildered by your confident manner, and whisper amongst themselves. The Orc tells you that you will need the password, 'Scimitar, to get in. You ask about the vial of liquid within the box, whereupon they get agitated. Will you press them for more information about the vial (<span class='roomNumber' onclick='clickRoom(060)'>turn to 060</span>), leave them and head for the two men you saw earlier (<span class='roomNumber' onclick='clickRoom(269)'>turn to 269</span>), or press on towards the Black Tower (<span class='roomNumber' onclick='clickRoom(245)'>turn to 245</span>)?",
       false,
       "<br>"
     ]
@@ -2724,7 +2724,7 @@
 
     "text_array": [
       true,
-      "The man is old and has been hit about the head with a club of some surt. He asks for medicine but you have none. You could use a Stamina Spell to fix him up and he offers to help you if you will. If you will use your magic, <span class='roomNumber' onclick='clickRoom(383)'>turn to 383</span>. If not, you will have to leave him and continue along the wall (<span class='roomNumber' onclick='clickRoom(014)'>turn to 014</span>).",
+      "The man is old and has been hit about the head with a club of some sort. He asks for medicine but you have none. You could use a Stamina Spell to fix him up and he offers to help you if you will. If you will use your magic, <span class='roomNumber' onclick='clickRoom(383)'>turn to 383</span>. If not, you will have to leave him and continue along the wall (<span class='roomNumber' onclick='clickRoom(014)'>turn to 014</span>).",
       false,
       "<br>"
     ]
@@ -2776,7 +2776,7 @@
 
     "text_array": [
       true,
-      "The liquid tastes salty and you break into a cold sweat as it goes down. You begin to tremble and try to steady yourself on the altar. However, you trip forward, knocking the other two chalices onto the floor, spilling the other liquids. You slump to the floor yourself, feeling extremely ill and hazy, Asifin a dream, you see a vision of a strange, muscular creature with two heads, a long tail, and scaly grey skin. In its hand it holds a large bunch of keys. A mouse runs across the table at which it is sitting and it shrieks loudly... The cry wakes you up with a start and you realize where you are. You pick yourself up and grope for the door handle - you must have some fresh air! You leave the chamber, rest for a few moments outside, and set off for the Citadel. <span class='roomNumber' onclick='clickRoom(156)'>Turn to 156</span>.",
+      "The liquid tastes salty and you break into a cold sweat as it goes down. You begin to tremble and try to steady yourself on the altar. However, you trip forward, knocking the other two chalices onto the floor, spilling the other liquids. You slump to the floor yourself, feeling extremely ill and hazy, As if in a dream, you see a vision of a strange, muscular creature with two heads, a long tail, and scaly grey skin. In its hand it holds a large bunch of keys. A mouse runs across the table at which it is sitting and it shrieks loudly... The cry wakes you up with a start and you realize where you are. You pick yourself up and grope for the door handle - you must have some fresh air! You leave the chamber, rest for a few moments outside, and set off for the Citadel. <span class='roomNumber' onclick='clickRoom(156)'>Turn to 156</span>.",
       false,
       "<br>"
     ]
@@ -2918,7 +2918,7 @@
 
     "text_array": [
       true,
-      "The suits of armour are a variety of shapes and sizes and you shiver to think of the strange creatures they must have been made for; perhaps you may yet come across some of them. As you examine one particularly grand suit, its hand suddenly rises and whacks you across the face! You stagger back, spitting blood. Lose 2 51AMINA points. But the armour makes no further move, and you decide it may be prudent to continue upstairs, either up the left-hand staircase (<span class='roomNumber' onclick='clickRoom(019)'>turn to 019</span>), or up the right-hand staircase (<span class='roomNumber' onclick='clickRoom(197)'>turn to 197</span>).",
+      "The suits of armour are a variety of shapes and sizes and you shiver to think of the strange creatures they must have been made for; perhaps you may yet come across some of them. As you examine one particularly grand suit, its hand suddenly rises and whacks you across the face! You stagger back, spitting blood. Lose 2 STAMINA points. But the armour makes no further move, and you decide it may be prudent to continue upstairs, either up the left-hand staircase (<span class='roomNumber' onclick='clickRoom(019)'>turn to 019</span>), or up the right-hand staircase (<span class='roomNumber' onclick='clickRoom(197)'>turn to 197</span>).",
       false,
       "<br>"
     ]
@@ -2929,7 +2929,7 @@
 
     "text_array": [
       true,
-      "You cast your Spell and the creature stops in its tracks, not quite sure whathas happened to it. With some effort it picks up its axe and comes towards you, but is evidently not such a strong adversary as before. You draw out your sword to finish the Gark off.",
+      "You cast your Spell and the creature stops in its tracks, not quite sure what has happened to it. With some effort it picks up its axe and comes towards you, but is evidently not such a strong adversary as before. You draw out your sword to finish the Gark off.",
       false,
       "<br>",
       true,
@@ -2985,7 +2985,7 @@
 
     "text_array": [
       true,
-      "As you stride across the open courtyard, you notice that you are walkingalongside a small mound, almost like a buried pipeline running from the Black Tower to the temple. You bend over to investigate it; could it perhaps have been made by a mole of some kind? As you touch the mound, it caves in and, to your horror, a long, grey tentacle covered in warty growths bursts out of the ground and wraps itself around your leg! How will you fight this 'thing':",
+      "As you stride across the open courtyard, you notice that you are walking alongside a small mound, almost like a buried pipeline running from the Black Tower to the temple. You bend over to investigate it; could it perhaps have been made by a mole of some kind? As you touch the mound, it caves in and, to your horror, a long, grey tentacle covered in warty growths bursts out of the ground and wraps itself around your leg! How will you fight this 'thing':",
       false,
       "<br>",
       true,
@@ -2993,7 +2993,7 @@
       false,
       "<br>",
       true,
-      "Casta Levitation Spell? <span class='roomNumber' onclick='clickRoom(284)'>Turn to 284</span> ",
+      "Cast a Levitation Spell? <span class='roomNumber' onclick='clickRoom(284)'>Turn to 284</span> ",
       false,
       "<br>",
       true,
@@ -3008,7 +3008,7 @@
 
     "text_array": [
       true,
-      "The sorcerer cries out in anguish and turns away from you, holding his head. You rush forward and he wheels round to face you. You gasp! He is no longer the demi-sorcerer but has changed into a wicked-faced hag with wrinkled skin. His - or rather her - hair is now a squirming mass of hissing serpents! Will you press an attack (<span class='roomNumber' onclick='clickRoom(199)'>turn to 199</span>), or retreat quickly (<span class='roomNumber' onclick='clickRoom(232)'>turn to 232</span>)?",
+      "The sorcerer cries out in anguish and turns away from you, holding his head. You rush forward and he wheels round to face you. You gasp! He is no longer the demisorcerer but has changed into a wicked-faced hag with wrinkled skin. His - or rather her - hair is now a squirming mass of hissing serpents! Will you press an attack (<span class='roomNumber' onclick='clickRoom(199)'>turn to 199</span>), or retreat quickly (<span class='roomNumber' onclick='clickRoom(232)'>turn to 232</span>)?",
       false,
       "<br>"
     ]
@@ -3052,7 +3052,7 @@
 
     "text_array": [
       true,
-      "She is deeply insulted by your indifference. The Whirlwind rises once more and this time she knocks you off your feet. You try crawling forward, but she positions herself in front of you in whichever direc tion you turn. You will have to try to outwit her, but how will you start:",
+      "She is deeply insulted by your indifference. The Whirlwind rises once more and this time she knocks you off your feet. You try crawling forward, but she positions herself in front of you in whichever direction you turn. You will have to try to outwit her, but how will you start:",
       false,
       "<br>",
       true,
@@ -3128,7 +3128,7 @@
 
     "text_array": [
       true,
-      "As you feel the strength surging through your body, you draw out your sword and dig into the earthy walls. By making a foothole, then stepping on to it as you dig the next, you make your way up the shaft quite quickly with your boost of power. Halfway up, however, your strength begins to ebb and you realize you are returning to normal. If you allow this to happen, you will fall backwards into the pit once more. You may either cast another Strength Spell to give you the energy to complete your staircase (<span class='roomNumber' onclick='clickRoom(398)'>turn to 398</span>), or you may shout for help (<span class='roomNumber' onclick='clickRoom(202)'>turn to 202</span>).",
+      "As you feel the strength surging through your body, you draw out your sword and dig into the earthy walls. By making a foot hole, then stepping on to it as you dig the next, you make your way up the shaft quite quickly with your boost of power. Halfway up, however, your strength begins to ebb and you realize you are returning to normal. If you allow this to happen, you will fall backwards into the pit once more. You may either cast another Strength Spell to give you the energy to complete your staircase (<span class='roomNumber' onclick='clickRoom(398)'>turn to 398</span>), or you may shout for help (<span class='roomNumber' onclick='clickRoom(202)'>turn to 202</span>).",
       false,
       "<br>"
     ]
@@ -3154,7 +3154,7 @@
 
     "text_array": [
       true,
-      "You bend over the broth and take a sniff. Phew! It is revolting! You ask them what on earth it is, and as you look up, you can see that one of them has been quietly waving her hands at the broth. You pull your head back, but too late. A large SNAPPERFISHI rises from the broth and snaps its sharp teeth at your head. Test your Luck. If you are Lucky, <span class='roomNumber' onclick='clickRoom(224)'>turn to 224</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(331)'>turn to 331</span>.",
+      "You bend over the broth and take a sniff. Phew! It is revolting! You ask them what on earth it is, and as you look up, you can see that one of them has been quietly waving her hands at the broth. You pull your head back, but too late. A large SNAPPERFISH rises from the broth and snaps its sharp teeth at your head. Test your Luck. If you are Lucky, <span class='roomNumber' onclick='clickRoom(224)'>turn to 224</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(331)'>turn to 331</span>.",
       false,
       "<br>"
     ]
@@ -3359,7 +3359,7 @@
 
     "text_array": [
       true,
-      "You feel yourself sucked into the room. As if by magic, your torch flickers and dies. The room is pitch black. From nowhere, yet everywhere, comes a mocking laugh which fills the room. Foolish adventurer, says another voice, which changes its tone from high to low as it speaks, Welcome to the home of the GANJFES! Unfortunately, it will be the last room you will ever see... Ah, but of course, you cannot see, can you? But we can see you, can't we brothers? And laughing voices come from all around you. Suddenly a ghostly white luminous face flies towards you. You recoil in horror, throwing yourself on the ground, and begin to feel very frightened. Lose 1 SKILL, 2 STAMINA and 1 LUCK point for your fear. What can you do here:",
+      "You feel yourself sucked into the room. As if by magic, your torch flickers and dies. The room is pitch black. From nowhere, yet everywhere, comes a mocking laugh which fills the room. Foolish adventurer, says another voice, which changes its tone from high to low as it speaks, Welcome to the home of the GANJEES! Unfortunately, it will be the last room you will ever see... Ah, but of course, you cannot see, can you? But we can see you, can't we brothers? And laughing voices come from all around you. Suddenly a ghostly white luminous face flies towards you. You recoil in horror, throwing yourself on the ground, and begin to feel very frightened. Lose 1 SKILL, 2 STAMINA and 1 LUCK point for your fear. What can you do here:",
       false,
       "<br>",
       true,
@@ -3434,7 +3434,7 @@
       false,
       "<br>",
       true,
-      "He is now mumbling under his breath, watching you with one eye. He raises one hand in the air and concentrates his gaze on it. Then he looks at you. He waves his hand in the air, backwards and forwards and side to side, faster and faster. With a crash he brings his hand down on the table. You fall to the floor not in surprise, but because the ground beneath you is shaking violently. The whole room seems to be lossing like a ship in a tempest. Although he has a firm footing and is now walking towards you, you cannot rise to your feet at all. Your only chance is a Spell, if you have any left. If so, will you use:",
+      "He is now mumbling under his breath, watching you with one eye. He raises one hand in the air and concentrates his gaze on it. Then he looks at you. He waves his hand in the air, backwards and forwards and side to side, faster and faster. With a crash he brings his hand down on the table. You fall to the floor not in surprise, but because the ground beneath you is shaking violently. The whole room seems to be tossing like a ship in a tempest. Although he has a firm footing and is now walking towards you, you cannot rise to your feet at all. Your only chance is a Spell, if you have any left. If so, will you use:",
       false,
       "<br>",
       true,
@@ -3507,7 +3507,7 @@
 
     "text_array": [
       true,
-      "A perfect copy of the Golem forms in front of you. You command it to attackthe real Golem, which is now almost upon you. Resolve the battle of the Golems:",
+      "A perfect copy of the Golem forms in front of you. You command it to attack the real Golem, which is now almost upon you. Resolve the battle of the Golems:",
       false,
       "<br>",
       true,
@@ -3526,7 +3526,7 @@
 
     "text_array": [
       true,
-      "You gasp as the Spell materializes itself in front of you. A perfect replica of yourself, armed as you are, now stands in front of you. At the sorcerer's com- mand, your twin advances and you must fight it. It has the same SKILL, STAMINA and 1UCK scores as you have. The only advantage you may have is by using your LUCK to do extra damage or minimize wounds - your twin will not use its LUCK here. If you win, <span class='roomNumber' onclick='clickRoom(119)'>turn to 119</span>.",
+      "You gasp as the Spell materializes itself in front of you. A perfect replica of yourself, armed as you are, now stands in front of you. At the sorcerer's command, your twin advances and you must fight it. It has the same SKILL, STAMINA and 1UCK scores as you have. The only advantage you may have is by using your LUCK to do extra damage or minimize wounds - your twin will not use its LUCK here. If you win, <span class='roomNumber' onclick='clickRoom(119)'>turn to 119</span>.",
       false,
       "<br>"
     ]
@@ -3623,7 +3623,7 @@
 
     "text_array": [
       true,
-      "You think quickly. You reach into your bag and pull out a handful of weeds. Showing them to the crea- ture, you explain that you are a herbalist and have come to treat the Lord's librarian, who is critically ill. The messenger never told you of any passwords. Will he believe you? Test your Luck. If you are Lucky, he believes you and lets you in (<span class='roomNumber' onclick='clickRoom(177)'>turn to 177</span>). If you are Unlucky, he doesn't care who you are, you may not enter without the password, and he advances towards you with his pike (<span class='roomNumber' onclick='clickRoom(290)'>turn to 290</span>).",
+      "You think quickly. You reach into your bag and pull out a handful of weeds. Showing them to the creature, you explain that you are a herbalist and have come to treat the Lord's librarian, who is critically ill. The messenger never told you of any passwords. Will he believe you? Test your Luck. If you are Lucky, he believes you and lets you in (<span class='roomNumber' onclick='clickRoom(177)'>turn to 177</span>). If you are Unlucky, he doesn't care who you are, you may not enter without the password, and he advances towards you with his pike (<span class='roomNumber' onclick='clickRoom(290)'>turn to 290</span>).",
       false,
       "<br>"
     ]
@@ -3671,7 +3671,7 @@
 
     "text_array": [
       true,
-      "After several minutes of shouting, you hear voices in a strange tongue coming closer. To your relief you see four heads peering into the pit, silhouetted against the sky. You yell at them to get some rope. They chatter and disappear. Eventually you hear their scurrying footsteps returning. They stand once more at the top of the pit and throw down to you, not a rescue rope, but the contents of a caul- dron of boiling oil! You will have to watch your footing on your next adventure, for this one is over. And remember - strangers are not welcome at the Citadel of Chaos...",
+      "After several minutes of shouting, you hear voices in a strange tongue coming closer. To your relief you see four heads peering into the pit, silhouetted against the sky. You yell at them to get some rope. They chatter and disappear. Eventually you hear their scurrying footsteps returning. They stand once more at the top of the pit and throw down to you, not a rescue rope, but the contents of a cauldron of boiling oil! You will have to watch your footing on your next adventure, for this one is over. And remember - strangers are not welcome at the Citadel of Chaos...",
       false,
       "<br>"
     ]
@@ -3917,7 +3917,7 @@
 
     "text_array": [
       true,
-      "The knives hit your magic shield and drop to the ground. The Wheelies likewise bump into the shield and bounce off, somewhat mystified. They chatter to each other, holding you at bay while your Spell wears off. They seem to reach some sort of agreement and one rolls off back up the corridor, presum- ably to fetch help. The other two reach for their belts and pull out small blowpipes. Putting some kind of pellets in their mouths first, they prepare to aim. You will have to leap on them first with your sword. Resolve this battle (fight each in turn):",
+      "The knives hit your magic shield and drop to the ground. The Wheelies likewise bump into the shield and bounce off, somewhat mystified. They chatter to each other, holding you at bay while your Spell wears off. They seem to reach some sort of agreement and one rolls off back up the corridor, presumably to fetch help. The other two reach for their belts and pull out small blowpipes. Putting some kind of pellets in their mouths first, they prepare to aim. You will have to leap on them first with your sword. Resolve this battle (fight each in turn):",
       false,
       "<br>",
       true,
@@ -4126,7 +4126,7 @@
 
     "text_array": [
       true,
-      "Afraid that the commotion may have attracted attention, you peer out into the darkness. Nothing seems to be happening. Going through the pockets of the creatures you find 8 Gold Pieces, a copper- coloured key, and a jar of a dark, creamy ointment. You may take any two of these with you. Turning to the vial of liquid, you can make out an inscription on the lid, written in runes. Your heart leaps as you realize that this is a Potion of Magik and is very rare. Within the vial is enough liquid for two doses, and each has the effect of raising your MAGIC Score by 1 point, allowing you the energy to use one extra spell. You may take this Potion with you to use after using any Spell. When you drink the Potion, you need not cross that Spell off your list. Remember this Potion will only work twice. Now you may carry on, either towards the Citadel (<span class='roomNumber' onclick='clickRoom(245)'>turn to 245</span>), or over to the two men talking by torchlight (<span class='roomNumber' onclick='clickRoom(269)'>turn to 269</span>).",
+      "Afraid that the commotion may have attracted attention, you peer out into the darkness. Nothing seems to be happening. Going through the pockets of the creatures you find 8 Gold Pieces, a copper- coloured key, and a jar of a dark, creamy ointment. You may take any two of these with you. Turning to the vial of liquid, you can make out an inscription on the lid, written in runes. Your heart leaps as you realize that this is a Potion of Magic and is very rare. Within the vial is enough liquid for two doses, and each has the effect of raising your MAGIC Score by 1 point, allowing you the energy to use one extra spell. You may take this Potion with you to use after using any Spell. When you drink the Potion, you need not cross that Spell off your list. Remember this Potion will only work twice. Now you may carry on, either towards the Citadel (<span class='roomNumber' onclick='clickRoom(245)'>turn to 245</span>), or over to the two men talking by torchlight (<span class='roomNumber' onclick='clickRoom(269)'>turn to 269</span>).",
       false,
       "<br>"
     ]
@@ -4148,7 +4148,7 @@
 
     "text_array": [
       true,
-      "You open the door and step forwards into a pas- sageway, which runs eastwards for several metres and then ends at the foot of a staircase. You climb the stairs and eventually find yourself in a narrow passageway. A short distance ahead, you can see an opening into a large, well-lit room. You press on forwards. <span class='roomNumber' onclick='clickRoom(169)'>Turn to 169</span>.",
+      "You open the door and step forwards into a passageway, which runs eastwards for several metres and then ends at the foot of a staircase. You climb the stairs and eventually find yourself in a narrow passageway. A short distance ahead, you can see an opening into a large, well-lit room. You press on forwards. <span class='roomNumber' onclick='clickRoom(169)'>Turn to 169</span>.",
       false,
       "<br>"
     ]
@@ -4181,7 +4181,7 @@
 
     "text_array": [
       true,
-      "You hold up a flaming hand, running it down the back of the gown with its arms around your neck The garment bursts into flames and a silent scream comes from the dead mouth within it. The other Chosts back off. You set fire to a couple more as they retreat. Unluckily they are too close and you lose 2 STAMINA points for your burns. Walking carefully forward you hold the rest of the Ghosts at bay until you are safely past the woman. <span class='roomNumber' onclick='clickRoom(006)'>Turn to 006</span>.",
+      "You hold up a flaming hand, running it down the back of the gown with its arms around your neck The garment bursts into flames and a silent scream comes from the dead mouth within it. The other ghosts back off. You set fire to a couple more as they retreat. Unluckily they are too close and you lose 2 STAMINA points for your burns. Walking carefully forward you hold the rest of the Ghosts at bay until you are safely past the woman. <span class='roomNumber' onclick='clickRoom(006)'>Turn to 006</span>.",
       false,
       "<br>"
     ]
@@ -4513,7 +4513,7 @@
       false,
       "<br>",
       true,
-      "RIIINO-MAN SKILL 5 STAMINA 9",
+      "RHINO-MAN SKILL 5 STAMINA 9",
       false,
       "<br>",
       true,
@@ -4606,7 +4606,7 @@
 
     "text_array": [
       true,
-      "You grasp his hand and introduce yourself-and cry out as the nerves down your arm go numb! O'Seamus bursts out laughing. Lose 1 SKILL point, as you were using your sword arm. You are becom- ing angry, but the little man continues to shake your hand and laugh. A laugh comes from behind you and you look round to see him floating in the air, grinning. But you are still shaking his hand in front of you... or are you? In fact, you now realize you are frantically shaking hands with a stuffed dummy which is flopping around on the end of your arm as you shake it. You throw it to the ground - but it is stuck to your hand! The situation is ludicrous, and you are becoming very angry. Just a little joke,' says the Leprechaun, who snaps his fingers. The dum- my disappears. Now, what can I do for you? Will you ask him the way onwards (<span class='roomNumber' onclick='clickRoom(348)'>turn to 348</span>), or draw your sword (<span class='roomNumber' onclick='clickRoom(131)'>turn to 131</span>)?",
+      "You grasp his hand and introduce yourself-and cry out as the nerves down your arm go numb! O'Seamus bursts out laughing. Lose 1 SKILL point, as you were using your sword arm. You are becoming angry, but the little man continues to shake your hand and laugh. A laugh comes from behind you and you look round to see him floating in the air, grinning. But you are still shaking his hand in front of you... or are you? In fact, you now realize you are frantically shaking hands with a stuffed dummy which is flopping around on the end of your arm as you shake it. You throw it to the ground - but it is stuck to your hand! The situation is ludicrous, and you are becoming very angry. Just a little joke,' says the Leprechaun, who snaps his fingers. The dum- my disappears. Now, what can I do for you? Will you ask him the way onwards (<span class='roomNumber' onclick='clickRoom(348)'>turn to 348</span>), or draw your sword (<span class='roomNumber' onclick='clickRoom(131)'>turn to 131</span>)?",
       false,
       "<br>"
     ]
@@ -4681,7 +4681,7 @@
 
     "text_array": [
       true,
-      "You fall to the bottom of a deep pit - possibly a filled-in well. You pick yourself up and you appear to be intact. But how are you going to get out? To dig footholes up the sides of the pit with your sword would take far too long. You could cast a Strength Spell to assist you in this (<span class='roomNumber' onclick='clickRoom(165)'>turn to 165</span>), or you could shout for help (<span class='roomNumber' onclick='clickRoom(202)'>turn to 202</span>). Which will you choose?",
+      "You fall to the bottom of a deep pit - possibly a filled-in well. You pick yourself up and you appear to be intact. But how are you going to get out? To dig foot holes up the sides of the pit with your sword would take far too long. You could cast a Strength Spell to assist you in this (<span class='roomNumber' onclick='clickRoom(165)'>turn to 165</span>), or you could shout for help (<span class='roomNumber' onclick='clickRoom(202)'>turn to 202</span>). Which will you choose?",
       false,
       "<br>"
     ]
@@ -4719,7 +4719,7 @@
 
     "text_array": [
       true,
-      "Runestones is a somewhat dangerous game, but the prizes are high. Before the game begins, your Games Master, who is an apprentice sorcerer, casts a Spell on a rock, which will cause it to explode some time later. The players stand in a circle and toss the rock from one to another around the circle. When the rock explodes, the player holding it is out of the game and winds up with badly burned hands! The remaining players are given another Runestone to toss around again and the game continues until there is only one player left. Onlookers bet on the players but, before they can bet, they must contri- bute 3 Gold Pieces cach to the prize money. In this game you will stand to win 36 Gold Pieces, at the risk of injuring your hands. Having chosen this option, you must play the game at least once, but you may continue to play for as long as you like. If you win, you will claim 36 Gold Pieces for each game you play. If you lose, you must deduct 2 SKILL and 4 STAMINA points for each game.",
+      "Runestones is a somewhat dangerous game, but the prizes are high. Before the game begins, your Games Master, who is an apprentice sorcerer, casts a Spell on a rock, which will cause it to explode some time later. The players stand in a circle and toss the rock from one to another around the circle. When the rock explodes, the player holding it is out of the game and winds up with badly burned hands! The remaining players are given another Runestone to toss around again and the game continues until there is only one player left. Onlookers bet on the players but, before they can bet, they must contribute 3 Gold Pieces each to the prize money. In this game you will stand to win 36 Gold Pieces, at the risk of injuring your hands. Having chosen this option, you must play the game at least once, but you may continue to play for as long as you like. If you win, you will claim 36 Gold Pieces for each game you play. If you lose, you must deduct 2 SKILL and 4 STAMINA points for each game.",
       false,
       "<br>",
       true,
@@ -4799,7 +4799,7 @@
 
     "text_array": [
       true,
-      "You cast a small fireball directly at the Sewer Snake, which burns through its body cutting it into two halves. Both halves now attack you and are crushing your chest. Lose 2 STAMINA points. Trying a different strategy, you create flames which burn in each hand and rub them over the Snake's coils. The creature twitches violently and releases its grip! You find its head and smother it in your flaining hands, burning it to death. <span class='roomNumber' onclick='clickRoom(112)'>Turn to 112</span>.",
+      "You cast a small fireball directly at the Sewer Snake, which burns through its body cutting it into two halves. Both halves now attack you and are crushing your chest. Lose 2 STAMINA points. Trying a different strategy, you create flames which burn in each hand and rub them over the Snake's coils. The creature twitches violently and releases its grip! You find its head and smother it in your flaming hands, burning it to death. <span class='roomNumber' onclick='clickRoom(112)'>Turn to 112</span>.",
       false,
       "<br>"
     ]
@@ -4836,7 +4836,7 @@
 
     "text_array": [
       true,
-      "You tell them you mean them no harm, you are just on your way onwards. They sigh with relief. The room is sparsely decorated with bits of foliage and a small fire burns under a hole in the ceiling in one corner. In the wall opposite there are two doors. The little creatures tell you you can make your way anwards through either of these doors. Will you choose the door on the left (<span class='roomNumber' onclick='clickRoom(185)'>turn to 185</span>), or the door on the right (<span class='roomNumber' onclick='clickRoom(023)'>turn to 023</span>)?",
+      "You tell them you mean them no harm, you are just on your way onwards. They sigh with relief. The room is sparsely decorated with bits of foliage and a small fire burns under a hole in the ceiling in one corner. In the wall opposite there are two doors. The little creatures tell you you can make your way onwards through either of these doors. Will you choose the door on the left (<span class='roomNumber' onclick='clickRoom(185)'>turn to 185</span>), or the door on the right (<span class='roomNumber' onclick='clickRoom(023)'>turn to 023</span>)?",
       false,
       "<br>"
     ]
@@ -4858,7 +4858,7 @@
 
     "text_array": [
       true,
-      "You offer the Jar of Ointment. Something invisible whisks it out of your hand and over to one of the animal heads. Unseen hands unscrew the top and the head sniffs the ointment inside. Turning to you, the head snorts, 'Why this is naught but an alchem- ist's healing balm! What use have we for this?' The Jar falls to the floor and smashes. You may either:",
+      "You offer the Jar of Ointment. Something invisible whisks it out of your hand and over to one of the animal heads. Unseen hands unscrew the top and the head sniffs the ointment inside. Turning to you, the head snorts, 'Why this is naught but an alchemist's healing balm! What use have we for this?' The Jar falls to the floor and smashes. You may either:",
       false,
       "<br>",
       true,
@@ -4985,7 +4985,7 @@
 
     "text_array": [
       true,
-      "The room is an elegant bed-chamber, plushly decor- ated with fine lace and a fur carpet. In the centre of the room is a large four-poster bed. Sitting up in the bed, evidently awakened by all the commotion, is a beautiful, sylph-like woman with long dark hair and deep piercing eyes. 'What right have you in here?' she screams at you. With those words her eyes turn blood-red and two jets of liquid fire shoot from them directly at you. Will you:",
+      "The room is an elegant bed-chamber, plushly decorated with fine lace and a fur carpet. In the centre of the room is a large four-poster bed. Sitting up in the bed, evidently awakened by all the commotion, is a beautiful, sylph-like woman with long dark hair and deep piercing eyes. 'What right have you in here?' she screams at you. With those words her eyes turn blood-red and two jets of liquid fire shoot from them directly at you. Will you:",
       false,
       "<br>",
       true,
@@ -5118,7 +5118,7 @@
 
     "text_array": [
       true,
-      "The Golem advances and you slash at it with your sword. Your sword hits solid rock and clangs noisily. You will have to resolve this battle and deduct 1 SKILI point during the fight:",
+      "The Golem advances and you slash at it with your sword. Your sword hits solid rock and clangs noisily. You will have to resolve this battle and deduct 1 SKILL point during the fight:",
       false,
       "<br>",
       true,
@@ -5280,7 +5280,7 @@
 
     "text_array": [
       true,
-      "The fruit is sweet and juicy. You eat one, then another-it tastes delicious! Gain 2 STAMINA points. But to your surprise, as you try to clear your throat afterwards, not a sound comes from your mouth. You have eaten a Fruit of Silence. Its peculiar effect is only temporary, but you will not be able to speak properly for some time although you will be able to make yourself understood with difficulty. This means, in effect, that you will not be able to use your magic (the next time a Spells option is given) but after this you will return to normal. You may con- tinue either through the door in the left-hand wall (<span class='roomNumber' onclick='clickRoom(013)'>turn to 013</span>), or through the door opposite the one you have just come through (<span class='roomNumber' onclick='clickRoom(281)'>turn to 281</span>).",
+      "The fruit is sweet and juicy. You eat one, then another-it tastes delicious! Gain 2 STAMINA points. But to your surprise, as you try to clear your throat afterwards, not a sound comes from your mouth. You have eaten a Fruit of Silence. Its peculiar effect is only temporary, but you will not be able to speak properly for some time although you will be able to make yourself understood with difficulty. This means, in effect, that you will not be able to use your magic (the next time a Spells option is given) but after this you will return to normal. You may continue either through the door in the left-hand wall (<span class='roomNumber' onclick='clickRoom(013)'>turn to 013</span>), or through the door opposite the one you have just come through (<span class='roomNumber' onclick='clickRoom(281)'>turn to 281</span>).",
       false,
       "<br>"
     ]
@@ -5313,7 +5313,7 @@
 
     "text_array": [
       true,
-      "The footsteps you heard - which really ought to be called 'handsteps belong to three WHEELIES which now roll down the passageway towards you, forcing you back to the door. These creatures are peculiar beasts having, instead of legs, an extra set of hands. They move by cartwheeling along at quite a rapid pace. Their heads-or at least their faces are set in the centre of their chests. While they are not well-practised at swordsmanship given their awk- ward means of movement, they are excellent knife- throwers. Grasping knives from their belts as they spin along, they can launch them at a rapid-fire pace, like large catherine wheels. At the moment, three such knives are speeding their way towards you. You may either use a Shielding Spell to protect you (<span class='roomNumber' onclick='clickRoom(220)'>turn to 220</span>) or Test your Luck. If you opt for the latter and are lucky, turn to 139. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(300)'>turn to 300</span>.",
+      "The footsteps you heard - which really ought to be called 'hand steps belong to three WHEELIES which now roll down the passageway towards you, forcing you back to the door. These creatures are peculiar beasts having, instead of legs, an extra set of hands. They move by cartwheeling along at quite a rapid pace. Their heads-or at least their faces are set in the centre of their chests. While they are not well-practiced at swordsmanship given their awk- ward means of movement, they are excellent knife- throwers. Grasping knives from their belts as they spin along, they can launch them at a rapid-fire pace, like large catherine wheels. At the moment, three such knives are speeding their way towards you. You may either use a Shielding Spell to protect you (<span class='roomNumber' onclick='clickRoom(220)'>turn to 220</span>) or Test your Luck. If you opt for the latter and are lucky, turn to 139. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(300)'>turn to 300</span>.",
       false,
       "<br>"
     ]
@@ -5414,7 +5414,7 @@
       false,
       "<br>",
       true,
-      "When you are both able to control yourselves, you eventually settle down to chat. He is a pleasant little man. Before you leave, he says, 'Indeed you are a good sport. Your way ahead is fraught with danger, though. But perhaps these will help you. With a wave of his hand, a sword and a plate appear on the table. The sword is a magic battlesword and will add 1 point to the dice roll when throwing for your Attack Strength. The plate is, in fact, a Silver Mirror of fine workmanship. You may take these with you, but you will have to leave your old sword behind. Leave the room through either:",
+      "When you are both able to control yourselves, you eventually settle down to chat. He is a pleasant little man. Before you leave, he says, 'Indeed you are a good sport. Your way ahead is fraught with danger, though. But perhaps these will help you. With a wave of his hand, a sword and a plate appear on the table. The sword is a magic battle sword and will add 1 point to the dice roll when throwing for your Attack Strength. The plate is, in fact, a Silver Mirror of fine workmanship. You may take these with you, but you will have to leave your old sword behind. Leave the room through either:",
       false,
       "<br>",
       true,
@@ -5586,7 +5586,7 @@
 
     "text_array": [
       true,
-      "Fixed under the table is a secret drawer, slightly ajar, and poking out of the drawer is a scroll of parch- ment. You grab the scroll and thrust it into your tunic. But you can hear Balthus murmuring under his breath. A Spell! But what will this one be? And what can you do about it? Suddenly he is running around the table, touching each side as he goes. At his touch, the table responds with a cracking noise. <span class='roomNumber' onclick='clickRoom(342)'>Turn to 342</span>.",
+      "Fixed under the table is a secret drawer, slightly ajar, and poking out of the drawer is a scroll of parchment. You grab the scroll and thrust it into your tunic. But you can hear Balthus murmuring under his breath. A Spell! But what will this one be? And what can you do about it? Suddenly he is running around the table, touching each side as he goes. At his touch, the table responds with a cracking noise. <span class='roomNumber' onclick='clickRoom(342)'>Turn to 342</span>.",
       false,
       "<br>"
     ]
@@ -5639,7 +5639,7 @@
 
     "text_array": [
       true,
-      "The door opens into a passageway. You follow the passageway onwards for some time and it twists and turns through the rock. You pass another pas- sageway joining from the right and carry straight on. Eventually the path widens out. <span class='roomNumber' onclick='clickRoom(090)'>Turn to 090</span>.",
+      "The door opens into a passageway. You follow the passageway onwards for some time and it twists and turns through the rock. You pass another passageway joining from the right and carry straight on. Eventually the path widens out. <span class='roomNumber' onclick='clickRoom(090)'>Turn to 090</span>.",
       false,
       "<br>"
     ]
@@ -5650,7 +5650,7 @@
 
     "text_array": [
       true,
-      "A motley crew sit around the fire. A warty-faced Orc is handing out scraggy chunks of half-cooked meat to the others. A snarling Dwarf with green skin is complaining about the size of his piece, while two scruffy Goblins-a man and a woman-are cuddling each other. They giggle and laugh, and every so often she slaps his ugly face causing more merri- ment. As you approach they stop and turn round to look at you with unwelcoming laces. They sneer at your neat appearance and the female Goblin whis- pers some comment to her mate. In front of the Dwarf you can see an open box. You can just make out a vial of liquid within it. Will you:",
+      "A motley crew sit around the fire. A warty-faced Orc is handing out scraggy chunks of half-cooked meat to the others. A snarling Dwarf with green skin is complaining about the size of his piece, while two scruffy Goblins-a man and a woman-are cuddling each other. They giggle and laugh, and every so often she slaps his ugly face causing more merriment. As you approach they stop and turn round to look at you with unwelcoming laces. They sneer at your neat appearance and the female Goblin whispers some comment to her mate. In front of the Dwarf you can see an open box. You can just make out a vial of liquid within it. Will you:",
       false,
       "<br>",
       true,
@@ -5777,7 +5777,7 @@
 
     "text_array": [
       true,
-      "'Oh, I shouldn't go this way,' says O'Seamus. 'These are not pleasant parts.' These three doors are the only ways onward. Two of them are very dan- gerous and the other is very smelly. On the opposite side of the room are three doors. One has a brass handle, one has a copper handle and one has a bronze handle. Which will you choose:",
+      "'Oh, I shouldn't go this way,' says O'Seamus. 'These are not pleasant parts.' These three doors are the only ways onward. Two of them are very dangerous and the other is very smelly. On the opposite side of the room are three doors. One has a brass handle, one has a copper handle and one has a bronze handle. Which will you choose:",
       false,
       "<br>",
       true,
@@ -5804,7 +5804,7 @@
 
     "text_array": [
       true,
-      "A replica of Balthus Dire materializes in front of you. Dire himself raises an eyebrow. 'Attack!' you com- mand the duplicate, who turns towards the centre of the room and advances. Two metres from the Sorcerer, it stops and clutches its head. It looks up from its hands, turns and comes towards you! The sorcerer laughs. Two can play at this game!' says Dire. You concentrate and will the replica back towards Dire. Eventually it ceases its approach and turns back as you command. For some moments this goes on, and you realize that you both have the power to command this creature, but only within a certain range. Backwards and forwards it goes, until the Spell begins to wear off. It gradually fades from view. The concentration has been somewhat stren- uous for you. You look up to see Balthus Dire holding his hands in the air and then bring them down hard on the table. What magic is he using now? <span class='roomNumber' onclick='clickRoom(157)'>Turn to 157</span>.",
+      "A replica of Balthus Dire materializes in front of you. Dire himself raises an eyebrow. 'Attack!' you command the duplicate, who turns towards the centre of the room and advances. Two metres from the Sorcerer, it stops and clutches its head. It looks up from its hands, turns and comes towards you! The sorcerer laughs. Two can play at this game!' says Dire. You concentrate and will the replica back towards Dire. Eventually it ceases its approach and turns back as you command. For some moments this goes on, and you realize that you both have the power to command this creature, but only within a certain range. Backwards and forwards it goes, until the Spell begins to wear off. It gradually fades from view. The concentration has been somewhat strenuous for you. You look up to see Balthus Dire holding his hands in the air and then bring them down hard on the table. What magic is he using now? <span class='roomNumber' onclick='clickRoom(157)'>Turn to 157</span>.",
       false,
       "<br>"
     ]
@@ -5917,7 +5917,7 @@
 
     "text_array": [
       true,
-      "They are somewhat relieved that you mean them no harm, and settle back on to the floor, inviting you to join them. The room is small and plain and bits of greenery have been mounted on the walls, presum- ably for decoration, although the leaves are now wilted and long-dead. A small fire burns in one corner, under a hole in the ceiling. Two doors are in the wall opposite you; one on the left, the other on the right. You sit down for a chat. You discover that these small, skinny creatures call themselves SCOUTS and they are indeed a likeable lot, joking and laughing with you. You decide not to risk telling them too much of your mission, but you ask general questions about the place. Balthus Dire is the master of the house and spends most of his time high up in the Citadel. Ilis ladywife is a beautiful sorceress who is very vain and who enjoys the things that money and power can buy. There are many evil creatures within the Citadel, but you must be particularly careful of the Ganjees, who roam the Tower at night. Eventually you get up, thank them for the chat and prepare to press on. You may add 2 STAMINA and 1 LUCK point for the rest and information you have gained. The Scouts also offer to do a good deed for you before you go, as they have also enjoyed your company. You may either:",
+      "They are somewhat relieved that you mean them no harm, and settle back on to the floor, inviting you to join them. The room is small and plain and bits of greenery have been mounted on the walls, presumably for decoration, although the leaves are now wilted and long-dead. A small fire burns in one corner, under a hole in the ceiling. Two doors are in the wall opposite you; one on the left, the other on the right. You sit down for a chat. You discover that these small, skinny creatures call themselves SCOUTS and they are indeed a likeable lot, joking and laughing with you. You decide not to risk telling them too much of your mission, but you ask general questions about the place. Balthus Dire is the master of the house and spends most of his time high up in the Citadel. His lady-wife is a beautiful sorceress who is very vain and who enjoys the things that money and power can buy. There are many evil creatures within the Citadel, but you must be particularly careful of the Ganjees, who roam the Tower at night. Eventually you get up, thank them for the chat and prepare to press on. You may add 2 STAMINA and 1 LUCK point for the rest and information you have gained. The Scouts also offer to do a good deed for you before you go, as they have also enjoyed your company. You may either:",
       false,
       "<br>",
       true,
@@ -6048,15 +6048,15 @@
 
     "text_array": [
       true,
-      "You have chosen a deadly gambling game which is outlawed in most kingdoms. Since you have chosen to play, you must play at least one game, but you may play more if you wish. Your Games Master is an apprentice sorcerer and he has selected a choice of prizes for you. If you survive, you may claim either: two extra Spells (which you may choose from the list at the beginning of the book), 50 Gold Pieces, or an Enchanted Breastplate (which will allow you to deduct 2 points from a creature's dice roll when throwing for its Allack Strength).",
+      "You have chosen a deadly gambling game which is outlawed in most kingdoms. Since you have chosen to play, you must play at least one game, but you may play more if you wish. Your Games Master is an apprentice sorcerer and he has selected a choice of prizes for you. If you survive, you may claim either: two extra Spells (which you may choose from the list at the beginning of the book), 50 Gold Pieces, or an Enchanted Breastplate (which will allow you to deduct 2 points from a creature's dice roll when throwing for its Attack Strength).",
       false,
       "<br>",
       true,
-      "The game is played like this: six daggers lie on a table. One is a real weapon while the other five have spring loaded blades and will do you no harm. You are playing the game against one of the other crea tures in the room and only one of you will survive. In turn, you must select one of the daggers and stab yourself in the chest with it. If the dagger is real, death is certain. If it is a dummy, it must be returned to the table to be shuffled back in with the other live.",
+      "The game is played like this: six daggers lie on a table. One is a real weapon while the other five have spring loaded blades and will do you no harm. You are playing the game against one of the other creatures in the room and only one of you will survive. In turn, you must select one of the daggers and stab yourself in the chest with it. If the dagger is real, death is certain. If it is a dummy, it must be returned to the table to be shuffled back in with the other live.",
       false,
       "<br>",
       true,
-      "The game continues until one of you selects the real dagger and stabs yourself through the heart, where- upon the survivor can claim the prize. Your oppo- nent will make the first selection. Throw one die for him. Then do the same for yourself. As soon as one of you rolls a 6, the real dagger has been chosen. If this is you, you will have killed yourself!",
+      "The game continues until one of you selects the real dagger and stabs yourself through the heart, where- upon the survivor can claim the prize. Your opponent will make the first selection. Throw one die for him. Then do the same for yourself. As soon as one of you rolls a 6, the real dagger has been chosen. If this is you, you will have killed yourself!",
       false,
       "<br>",
       true,
@@ -6153,7 +6153,7 @@
 
     "text_array": [
       true,
-      "As you cast your Shielding Spell, a bottle hits you on the shoulder. You feel nothing. Something is not quite right, and you try to cancel your Spell. Unfor- tunately it has already been cast and you can see the bottles smashing into the magic shield you have created. The bottle which has hit you has dis- appeared. You curse as you realize that the wine you just tasted must have had some hallucinatory properties and you are imagining the bottle attack. As this idea dawns on you, the bottles cease pelting you. You blink and look again. All the bottles are in place on their racks as normal! You decide to press onwards. <span class='roomNumber' onclick='clickRoom(095)'>Turn to 095</span>.",
+      "As you cast your Shielding Spell, a bottle hits you on the shoulder. You feel nothing. Something is not quite right, and you try to cancel your Spell. Unfortunately it has already been cast and you can see the bottles smashing into the magic shield you have created. The bottle which has hit you has dis- appeared. You curse as you realize that the wine you just tasted must have had some hallucinatory properties and you are imagining the bottle attack. As this idea dawns on you, the bottles cease pelting you. You blink and look again. All the bottles are in place on their racks as normal! You decide to press onwards. <span class='roomNumber' onclick='clickRoom(095)'>Turn to 095</span>.",
       false,
       "<br>"
     ]
@@ -6195,11 +6195,11 @@
       false,
       "<br>",
       true,
-      "Leaning against the table, with eyes fixed on you, is Balthus Dire himself! His very stature is formidable. Well over two metres tall, he is built like an ox, with broad shoulders and muscular arms. In his battle tunic of leather with wide, studded wristbands, he looks more a soldier than the demi-sorcerer he really is.",
+      "Leaning against the table, with eyes fixed on you, is Balthus Dire himself! His very stature is formidable. Well over two metres tall, he is built like an ox, with broad shoulders and muscular arms. In his battle tunic of leather with wide, studded wristbands, he looks more a soldier than the demisorcerer he really is.",
       false,
       "<br>",
       true,
-      "'Impudent peasant!' he growls, 'Do you think you are any match for Balthus Dire?' With these words he snaps his fingers and you hear a grunting from behind. You swing round to see a grotesque crea- ture shambling towards you. Its hairy body has four arms, each ending in vicious-looking hooks. As it approaches, it slashes the air in front of it. 'Why, I'll wager you are not even a match for a CLAWBEAST!' laughs Dire. Will you:",
+      "'Impudent peasant!' he growls, 'Do you think you are any match for Balthus Dire?' With these words he snaps his fingers and you hear a grunting from behind. You swing round to see a grotesque creature shambling towards you. Its hairy body has four arms, each ending in vicious-looking hooks. As it approaches, it slashes the air in front of it. 'Why, I'll wager you are not even a match for a CLAWBEAST!' laughs Dire. Will you:",
       false,
       "<br>",
       true,
@@ -6684,9 +6684,9 @@
       false,
       "<br>",
       true,
-      "|Inital Magic=",
+      "|Initial Magic=",
       false,
-      "              ",
+      "             ",
       true,
       "|",
       false,

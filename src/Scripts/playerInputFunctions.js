@@ -2,7 +2,7 @@
 
 /*
 Short Description:
-	This function outputs the help menu, later it will check to see if a specfic command is reffrenced for a more detailed help command
+	This function outputs the help menu, later it will check to see if a specific command is referenced for a more detailed help command
 	
 Arguments:
 	str =  Str, command to follow up on
@@ -22,7 +22,7 @@ function helpCommand(str) {
     .catch(function (err) {
       console.log("error: " + err);
     });
-  //called by second .then statment
+  //called by second .then statement
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       helpArray.push(data[i]);
@@ -182,7 +182,7 @@ function listBooks() {
     .catch(function (err) {
       console.log("error: " + err);
     });
-  //called by second .then statment
+  //called by second .then statement
   function appendData(data) {
     for (var i = 0; i < data.length; i++) {
       bookList.push(data[i]);
@@ -207,7 +207,7 @@ function accessTerminalLog(inputLogIndex) {
 
 /*
 Short Description:
-	Clears all previous entrees by deleting the 'typedroom' children of 'gameText' 
+	Clears all previous entrees by deleting the 'typedRoom' children of 'gameText' 
 	
 Arguments:
 	None
@@ -225,7 +225,7 @@ function clearLogScreen() {
 
 /*
 Short Description:
-	Clears all previous entrees by deleting the 'typedroom' children of 'gameText' 
+	Clears all previous entrees by deleting the 'typedRoom' children of 'gameText' 
 	
 Arguments:
 	None
@@ -253,15 +253,15 @@ function changeDefaultFont(choice) {
     document.getElementById("notesBox"),
     document.getElementById("inputBoxTextArea"),
   ];
-  var fontstring = "";
+  var fontString = "";
   if (/ IBMBios/.test(choice)) {
-    fontstring = "IBMBios, monospace";
+    fontString = "IBMBios, monospace";
   } else if (/OpenDyslexic$/.test(choice)) {
-    fontstring = "OpenDyslexic, monospace";
+    fontString = "OpenDyslexic, monospace";
   }
-  if (fontstring != "") {
+  if (fontString != "") {
     for (i in targetArray) {
-      targetArray[i].style.fontFamily = fontstring;
+      targetArray[i].style.fontFamily = fontString;
     }
   } else {
     //Font not supported or mistyped

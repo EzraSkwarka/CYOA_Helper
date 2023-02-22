@@ -9,11 +9,11 @@
 
     "text_array": [
       true,
-      "This room holds the metadata for the book The Warlock Of Firetop Mountian.",
+      "This room holds the metadata for the book The Warlock Of Firetop Mountain.",
       false,
       "<br>"
     ],
-    "css": ".typedRoom {margin-left: 1.15em;text-indent: -1.15em;}.roomNumber {color: #ffb000;;cursor: pointer;text-decoration: underline;}.gameStatsSkill {color: #8cf3fa;font-size: 0.9em;}.gameStatsStamina {color: #1ebd23;font-size: 0.9em;}.gameStatsLuck {color: #3df543;font-size: 0.9em;}.gameStatsInitial {color: #f3e5ab;font-size: 0.9em;font-style: italic;}.rollDiceCommand {color: #c91064;}.sectionHeader {color: #e18335;}.subsectionHeader {color: #e18c47;}#gameText a:link, #gameText a:visited {color: pink;text-decoration: underline;cursor: auto;}#gameText a:link:active, #gameText a:visited:active {color: pink;}.testyourluck {color: #7dffc9;cursor: pointer;text-decoration: underline;}.escape {font-style: italic;}.combatTable > thead td , .combatTable > tbody td , .expandedCombatTable > thead td , .expandedCombatTable > tbody td {text-align: center;padding-left: 10px;}.combatTable, .expandedCombatTable {width: 45ch;}.expandedCombatTable > thead td:nth-child(1), .expandedCombatTable > tbody td:nth-child(1) {color: #c91064;}.combatTable > thead td:nth-child(1), .combatTable > tbody td:nth-child(1), .expandedCombatTable > thead td:nth-child(2), .expandedCombatTable > tbody td:nth-child(2) {color: red;}.combatTable > thead td:nth-child(2), .combatTable > tbody td:nth-child(2), .expandedCombatTable > thead td:nth-child(3), .expandedCombatTable > tbody td:nth-child(3) {color: #8cf3fa;}.combatTable > thead td:nth-child(3), .combatTable > tbody td:nth-child(3), .expandedCombatTable > thead td:nth-child(4), .expandedCombatTable > tbody td:nth-child(4) {color: #1ebd23;}"
+    "css": ".typedRoom {margin-left: 1.15em;text-indent: -1.15em;}.roomNumber {color: #ffb000;;cursor: pointer;text-decoration: underline;}.gameStatsSkill {color: #8cf3fa;font-size: 0.9em;}.gameStatsStamina {color: #1ebd23;font-size: 0.9em;}.gameStatsLuck {color: #3df543;font-size: 0.9em;}.gameStatsInitial {color: #f3e5ab;font-size: 0.9em;font-style: italic;}.rollDiceCommand {color: #c91064;}.sectionHeader {color: #e18335;}.subsectionHeader {color: #e18c47;}#gameText a:link, #gameText a:visited {color: pink;text-decoration: underline;cursor: auto;}#gameText a:link:active, #gameText a:visited:active {color: pink;}.testYourLuck {color: #7dffc9;cursor: pointer;text-decoration: underline;}.escape {font-style: italic;}.combatTable > thead td , .combatTable > tbody td , .expandedCombatTable > thead td , .expandedCombatTable > tbody td {text-align: center;padding-left: 10px;}.combatTable, .expandedCombatTable {width: 45ch;}.expandedCombatTable > thead td:nth-child(1), .expandedCombatTable > tbody td:nth-child(1) {color: #c91064;}.combatTable > thead td:nth-child(1), .combatTable > tbody td:nth-child(1), .expandedCombatTable > thead td:nth-child(2), .expandedCombatTable > tbody td:nth-child(2) {color: red;}.combatTable > thead td:nth-child(2), .combatTable > tbody td:nth-child(2), .expandedCombatTable > thead td:nth-child(3), .expandedCombatTable > tbody td:nth-child(3) {color: #8cf3fa;}.combatTable > thead td:nth-child(3), .combatTable > tbody td:nth-child(3), .expandedCombatTable > thead td:nth-child(4), .expandedCombatTable > tbody td:nth-child(4) {color: #1ebd23;}"
   },
   {
     "short_name": "",
@@ -191,7 +191,7 @@
       false,
       "<br>",
       true,
-      "This procedure is known as Testing your Luck. Each time you '<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>', you must subtract one point from your current <span class='gameStatsLuck' onclick=''>LUCK</span> Score. Thus you will soon realize that the more you rely on your luck, the more risky this will become.",
+      "This procedure is known as Testing your Luck. Each time you '<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>', you must subtract one point from your current <span class='gameStatsLuck' onclick=''>LUCK</span> Score. Thus you will soon realize that the more you rely on your luck, the more risky this will become.",
       false,
       "<br>",
       true,
@@ -203,19 +203,19 @@
       false,
       "<br>",
       true,
-      "On certain pages of the book you will be told to <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> and will be told the consequences of your being lucky or unlucky. However, in battles, you always have the option of using your luck either to inflict a more serious wound on a creature you have just wounded, or to minimize the effects of a wound the creature has just inflicted on you.",
+      "On certain pages of the book you will be told to <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> and will be told the consequences of your being lucky or unlucky. However, in battles, you always have the option of using your luck either to inflict a more serious wound on a creature you have just wounded, or to minimize the effects of a wound the creature has just inflicted on you.",
       false,
       "<br>",
       true,
-      "If you have just wounded the creature, you may <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> as described above. If you are lucky, you have inflicted a severe wound and may subtract an extra 2 points from the creature's <span class='gameStatsStamina' onclick=''>STAMINA</span> Score. However, if you are unlucky, the wound was a mere graze and you must restore 1 point to the creature's <span class='gameStatsStamina' onclick=''>STAMINA</span> (i.e. instead of scoring the normal 2 points of damage, you have now scored only 1).",
+      "If you have just wounded the creature, you may <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> as described above. If you are lucky, you have inflicted a severe wound and may subtract an extra 2 points from the creature's <span class='gameStatsStamina' onclick=''>STAMINA</span> Score. However, if you are unlucky, the wound was a mere graze and you must restore 1 point to the creature's <span class='gameStatsStamina' onclick=''>STAMINA</span> (i.e. instead of scoring the normal 2 points of damage, you have now scored only 1).",
       false,
       "<br>",
       true,
-      "If the creature has just wounded you, you may <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> to try to minimize the wound. If you are lucky, you have managed to avoid the full damage of the blow. Restore 1 point of <span class='gameStatsStamina' onclick=''>STAMINA</span> (i.e. instead of doing 2 points of damage it has done only 1). If you are unlucky, you have taken a more serious blow. Subtract 1 extra <span class='gameStatsStamina' onclick=''>STAMINA</span> point.",
+      "If the creature has just wounded you, you may <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> to try to minimize the wound. If you are lucky, you have managed to avoid the full damage of the blow. Restore 1 point of <span class='gameStatsStamina' onclick=''>STAMINA</span> (i.e. instead of doing 2 points of damage it has done only 1). If you are unlucky, you have taken a more serious blow. Subtract 1 extra <span class='gameStatsStamina' onclick=''>STAMINA</span> point.",
       false,
       "<br>",
       true,
-      "Remember that you must subtract 1 point from your Own <span class='gameStatsLuck' onclick=''>LUCK</span> score each time you <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>.",
+      "Remember that you must subtract 1 point from your Own <span class='gameStatsLuck' onclick=''>LUCK</span> score each time you <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>.",
       false,
       "<br>",
       true,
@@ -546,7 +546,7 @@
     "ID": 2,
     "text_array": [
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you <span class='escape' onclick=''>escape</span> without attracting the Ogre's attention. If you are Unlucky, you curse as you kick a small stone which goes skidding across the cavern floor. You draw your sword in case the Ogre has heard it - <span class='roomNumber' onclick='clickRoom(16)'>turn to 16</span>. If you were Lucky, you creep down the corridor back to the crossroads.<span class='roomNumber' onclick='clickRoom(269)'> Turn to 269</span>.",
+      "<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you <span class='escape' onclick=''>escape</span> without attracting the Ogre's attention. If you are Unlucky, you curse as you kick a small stone which goes skidding across the cavern floor. You draw your sword in case the Ogre has heard it - <span class='roomNumber' onclick='clickRoom(16)'>turn to 16</span>. If you were Lucky, you creep down the corridor back to the crossroads.<span class='roomNumber' onclick='clickRoom(269)'> Turn to 269</span>.",
       false,
       "<br>"
     ]
@@ -786,7 +786,7 @@
       false,
       "<br>",
       true,
-      "As you advance, you stumble and fall forwards. As luck would have it, the stake flies forward and plunges into the shrieking creature. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, the stake pierces the Vampire's heart. If you are Unlucky, the Vampire is merely grazed by the wound (deduct 3 points from its <span class='gameStatsStamina' onclick=''>STAMINA</span>) and it flings you backwards across the room towards the west door. To <span class='escape' onclick=''>Escape</span> through it, <span class='roomNumber' onclick='clickRoom(380)'>turn to 380</span>. To keep on fighting, <span class='roomNumber' onclick='clickRoom(144)'>turn to 144</span>. If you were Lucky and killed the Vampire, you may look for its treasure- <span class='roomNumber' onclick='clickRoom(327)'>turn to 327</span>.",
+      "As you advance, you stumble and fall forwards. As luck would have it, the stake flies forward and plunges into the shrieking creature. <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, the stake pierces the Vampire's heart. If you are Unlucky, the Vampire is merely grazed by the wound (deduct 3 points from its <span class='gameStatsStamina' onclick=''>STAMINA</span>) and it flings you backwards across the room towards the west door. To <span class='escape' onclick=''>Escape</span> through it, <span class='roomNumber' onclick='clickRoom(380)'>turn to 380</span>. To keep on fighting, <span class='roomNumber' onclick='clickRoom(144)'>turn to 144</span>. If you were Lucky and killed the Vampire, you may look for its treasure- <span class='roomNumber' onclick='clickRoom(327)'>turn to 327</span>.",
       false,
       "<br>"
     ]
@@ -796,7 +796,7 @@
     "ID": 18,
     "text_array": [
       true,
-      "You walk westwards along the passageway. After fifty metres or so, the way turns northwards. Two or three paces up the passage, you hear a crumbling beneath your feet and you try to leap back as the ground gives way. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you manage to leap quickly backwards before a pit opens. If you are Unlucky, you are too slow and you fall over two metres down into a pit - lose 1 <span class='gameStatsStamina' onclick=''>STAMINA</span> point. If you were Lucky, you had better return to the junction (<span class='roomNumber' onclick='clickRoom(261)'>turn to 261</span>). If you were Unlucky, <span class='roomNumber' onclick='clickRoom(348)'>turn to 348</span>.",
+      "You walk westwards along the passageway. After fifty metres or so, the way turns northwards. Two or three paces up the passage, you hear a crumbling beneath your feet and you try to leap back as the ground gives way. <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you manage to leap quickly backwards before a pit opens. If you are Unlucky, you are too slow and you fall over two metres down into a pit - lose 1 <span class='gameStatsStamina' onclick=''>STAMINA</span> point. If you were Lucky, you had better return to the junction (<span class='roomNumber' onclick='clickRoom(261)'>turn to 261</span>). If you were Unlucky, <span class='roomNumber' onclick='clickRoom(348)'>turn to 348</span>.",
       false,
       "<br>"
     ]
@@ -1379,7 +1379,7 @@
     "ID": 50,
     "text_array": [
       true,
-      "The slain creature crashes to the ground. You go through his garments and find nothing, but a small pouch hangs around his neck. Inside this pouch is a small bronze key, with the number 9 cast into it. You may take this if you wish. Nothing else is of value in the cavern so you leave and head back to the junc- tion. <span class='roomNumber' onclick='clickRoom(269)'>Turn to 269</span>.",
+      "The slain creature crashes to the ground. You go through his garments and find nothing, but a small pouch hangs around his neck. Inside this pouch is a small bronze key, with the number 9 cast into it. You may take this if you wish. Nothing else is of value in the cavern so you leave and head back to the junction. <span class='roomNumber' onclick='clickRoom(269)'>Turn to 269</span>.",
       false,
       "<br>"
     ]
@@ -1407,7 +1407,7 @@
       false,
       "<br>",
       true,
-      "To check for secret passages on the way southwardsn<span class='roomNumber' onclick='clickRoom(362)'>Turn to 362</span>",
+      "To check for secret passages on the way southwards<span class='roomNumber' onclick='clickRoom(362)'>Turn to 362</span>",
       false,
       "<br>",
       true,
@@ -1449,7 +1449,7 @@
     "ID": 55,
     "text_array": [
       true,
-      "Roll two dice. If the total rolled is less than or equal to your <span class='gameStatsLuck' onclick=''>LUCK</span> Score and is also less than or equal to your <span class='gameStatsStamina' onclick=''>STAMINA</span> score, then you manage to hold on and manoeuvre the raft across to the north bank (do not deduct a <span class='gameStatsLuck' onclick=''>LUCK</span> point). You arrive safely but as you step on to the bank, the raft drifts away and makes its own way across the river to the south bank. <span class='roomNumber' onclick='clickRoom(7)'>Turn to 7</span>.",
+      "Roll two dice. If the total rolled is less than or equal to your <span class='gameStatsLuck' onclick=''>LUCK</span> Score and is also less than or equal to your <span class='gameStatsStamina' onclick=''>STAMINA</span> score, then you manage to hold on and manoeuver the raft across to the north bank (do not deduct a <span class='gameStatsLuck' onclick=''>LUCK</span> point). You arrive safely but as you step on to the bank, the raft drifts away and makes its own way across the river to the south bank. <span class='roomNumber' onclick='clickRoom(7)'>Turn to 7</span>.",
       false,
       "<br>",
       true,
@@ -1495,7 +1495,7 @@
     "ID": 58,
     "text_array": [
       true,
-      "Cautiously you creep along the passageway. After a short time it turns sharply to the north. At the corner there is a bench of solid wood and above the bench a sign reads 'Rest Ye Here Weary Traveller'. Here you may stop and eat Provisions if you wish (<span class='roomNumber' onclick='clickRoom(15)'>turn to 15</span>) or continue (<span class='roomNumber' onclick='clickRoom(367)'>turn to 367</span>).",
+      "Cautiously you creep along the passageway. After a short time it turns sharply to the north. At the corner there is a bench of solid wood and above the bench a sign reads 'Rest Ye Here Weary Traveler'. Here you may stop and eat Provisions if you wish (<span class='roomNumber' onclick='clickRoom(15)'>turn to 15</span>) or continue (<span class='roomNumber' onclick='clickRoom(367)'>turn to 367</span>).",
       false,
       "<br>"
     ]
@@ -1547,7 +1547,7 @@
       false,
       "<br>",
       false,
-      "<table class='combatTable'><thead><td>NAME</td><td><div>SKILL</div></td><td><div>STAMINA</div></td></thead><tbody><tr><td>GINAT SPIDER</td><td>7</td><td>8</td></tr></tbody></table>",
+      "<table class='combatTable'><thead><td>NAME</td><td><div>SKILL</div></td><td><div>STAMINA</div></td></thead><tbody><tr><td>GIANT SPIDER</td><td>7</td><td>8</td></tr></tbody></table>",
       true,
       " _________________________________<\\",
       false,
@@ -1619,7 +1619,7 @@
     "ID": 66,
     "text_array": [
       true,
-      "The door opens and you find yourself in the passage leading back to the riverbank. You return to the river and may now either go for the door in the middle of the rockface (<span class='roomNumber' onclick='clickRoom(104)'>turn to 104</span>) or go down the passage running off eastwards along the riverbank (<span class='roomNumber' onclick='clickRoom(99)'>turn to 99</span>).",
+      "The door opens and you find yourself in the passage leading back to the riverbank. You return to the river and may now either go for the door in the middle of the rock-face (<span class='roomNumber' onclick='clickRoom(104)'>turn to 104</span>) or go down the passage running off eastwards along the riverbank (<span class='roomNumber' onclick='clickRoom(99)'>turn to 99</span>).",
       false,
       "<br>"
     ]
@@ -1669,7 +1669,7 @@
     "ID": 71,
     "text_array": [
       true,
-      "There is a right-hand turn to the north in the passage. Cautiously you approach a sentry post on the corner and, as you look in, you can see a strange Goblin-like creature in leather armour asleep at his post. You try to tiptoe past him. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, he does not wake up and remains snoring loudly-<span class='roomNumber' onclick='clickRoom(301)'>turn to 301</span>. If you are Unlucky, you step with a crunch on some loose ground and his eyes flick open-<span class='roomNumber' onclick='clickRoom(248)'>turn to 248</span>.",
+      "There is a right-hand turn to the north in the passage. Cautiously you approach a sentry post on the corner and, as you look in, you can see a strange Goblin-like creature in leather armour asleep at his post. You try to tiptoe past him. <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, he does not wake up and remains snoring loudly-<span class='roomNumber' onclick='clickRoom(301)'>turn to 301</span>. If you are Unlucky, you step with a crunch on some loose ground and his eyes flick open-<span class='roomNumber' onclick='clickRoom(248)'>turn to 248</span>.",
       false,
       "<br>"
     ]
@@ -1699,7 +1699,7 @@
     "ID": 74,
     "text_array": [
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you break his gaze and can prepare to attack. <span class='roomNumber' onclick='clickRoom(279)'>Turn to 279</span>. If you are Unlucky, you are under his control and drop your sword at his command - <span class='roomNumber' onclick='clickRoom(118)'>turn to 118</span>.",
+      "<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you break his gaze and can prepare to attack. <span class='roomNumber' onclick='clickRoom(279)'>Turn to 279</span>. If you are Unlucky, you are under his control and drop your sword at his command - <span class='roomNumber' onclick='clickRoom(118)'>turn to 118</span>.",
       false,
       "<br>"
     ]
@@ -1795,7 +1795,7 @@
     "ID": 82,
     "text_array": [
       true,
-      "The door opens to reveal a small, smelly room. In the centre of the room is a rickety wooden table on which stands a lit candle. Underneath the table is a small wooden box. Asleep on a straw mattress in the far corner of the room is a short, stocky creature with an ugly, warty face; the same sort of creature that you found asleep at the sentry post. He must be the guard for the night watch. You may either return to the corridor and press on northwards (<span class='roomNumber' onclick='clickRoom(208)'>turn to 208</span>) or creep into the room and try to take the box without waking the creature. If you want to try to steal the box, <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, he does not wake up - <span class='roomNumber' onclick='clickRoom(147)'>turn to 147</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(33)'>turn to 33</span>.",
+      "The door opens to reveal a small, smelly room. In the centre of the room is a rickety wooden table on which stands a lit candle. Underneath the table is a small wooden box. Asleep on a straw mattress in the far corner of the room is a short, stocky creature with an ugly, warty face; the same sort of creature that you found asleep at the sentry post. He must be the guard for the night watch. You may either return to the corridor and press on northwards (<span class='roomNumber' onclick='clickRoom(208)'>turn to 208</span>) or creep into the room and try to take the box without waking the creature. If you want to try to steal the box, <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, he does not wake up - <span class='roomNumber' onclick='clickRoom(147)'>turn to 147</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(33)'>turn to 33</span>.",
       false,
       "<br>"
     ]
@@ -1805,7 +1805,7 @@
     "ID": 83,
     "text_array": [
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you make it out through the north door <span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(154)'>turn to 154</span>.",
+      "<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you make it out through the north door <span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(154)'>turn to 154</span>.",
       false,
       "<br>"
     ]
@@ -1815,7 +1815,7 @@
     "ID": 84,
     "text_array": [
       true,
-      "The door opens into a small room, comfortably fur- nished with a table, several chairs and a large book- case which covers one wall. Seated at the table is an old man with a long grey beard, and squatting on the old man's shoulder is a small winged beast. This creature is no more than six centimetres tall. It has two arms and legs; its skin is a dusty grey colour. It has tiny sharp white teeth and its wings are folded behind its back. The old man says nothing as you walk in through the door, but he beckons you over to sit down at the table. He is tossing in his hand two small white objects. Will you:",
+      "The door opens into a small room, comfortably furnished with a table, several chairs and a large book- case which covers one wall. Seated at the table is an old man with a long grey beard, and squatting on the old man's shoulder is a small winged beast. This creature is no more than six centimetres tall. It has two arms and legs; its skin is a dusty grey colour. It has tiny sharp white teeth and its wings are folded behind its back. The old man says nothing as you walk in through the door, but he beckons you over to sit down at the table. He is tossing in his hand two small white objects. Will you:",
       false,
       "<br>",
       true,
@@ -1953,7 +1953,7 @@
     "ID": 91,
     "text_array": [
       true,
-      "If you are lucky, your cheating will not be dis- covered. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you get away with it. Roll two dice to see how many Gold Pieces you win. Mark these on your Adventure Sheet and <span class='roomNumber' onclick='clickRoom(131)'>turn to 131</span>.",
+      "If you are lucky, your cheating will not be dis- covered. <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you get away with it. Roll two dice to see how many Gold Pieces you win. Mark these on your Adventure Sheet and <span class='roomNumber' onclick='clickRoom(131)'>turn to 131</span>.",
       false,
       "<br>",
       true,
@@ -2007,7 +2007,7 @@
     "ID": 96,
     "text_array": [
       true,
-      "The door opens into a short corridor about fifteen metres long. There are two doors, one at each end. You now realize what the noise was. More Skele-tons! Four of them, armed with swords, are running down the corridor towards you.",
+      "The door opens into a short corridor about fifteen metres long. There are two doors, one at each end. You now realize what the noise was. More Skeletons! Four of them, armed with swords, are running down the corridor towards you.",
       false,
       "<br>",
       true,
@@ -2485,7 +2485,7 @@
     "ID": 124,
     "text_array": [
       true,
-      "The door opens into a wide passageway and you follow this for some distance before reaching a junc- tion. Here you may either go northwards (<span class='roomNumber' onclick='clickRoom(138)'>turn to 138</span>) or turn to the east (<span class='roomNumber' onclick='clickRoom(76)'>turn to 76</span>).",
+      "The door opens into a wide passageway and you follow this for some distance before reaching a junction. Here you may either go northwards (<span class='roomNumber' onclick='clickRoom(138)'>turn to 138</span>) or turn to the east (<span class='roomNumber' onclick='clickRoom(76)'>turn to 76</span>).",
       false,
       "<br>"
     ]
@@ -2495,7 +2495,7 @@
     "ID": 125,
     "text_array": [
       true,
-      "You pick up the rope. It looks normal. In fact it looks as if it might be quite useful. You open your pack to put it in. Suddenly, it comes alive in your fingers, snakes quickly up your arm and attempts to wrap itself around your neck. You struggle to cut the rope with your sword before its grip tightens. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you cut the rope and it drops to the ground. If you are not, the rope tightens-lose 1 <span class='gameStatsStamina' onclick=''>STAMINA</span> point. You must <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> again to try to cut the rope, and keep trying until you do. Each time you fail, you lose another <span class='gameStatsStamina' onclick=''>STAMINA</span> point (and reduce your <span class='gameStatsLuck' onclick=''>LUCK</span> Score). If you finally defeat the rope, you may leave through the north door. <span class='roomNumber' onclick='clickRoom(73)'>Turn to 73</span>.",
+      "You pick up the rope. It looks normal. In fact it looks as if it might be quite useful. You open your pack to put it in. Suddenly, it comes alive in your fingers, snakes quickly up your arm and attempts to wrap itself around your neck. You struggle to cut the rope with your sword before its grip tightens. <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you cut the rope and it drops to the ground. If you are not, the rope tightens-lose 1 <span class='gameStatsStamina' onclick=''>STAMINA</span> point. You must <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> again to try to cut the rope, and keep trying until you do. Each time you fail, you lose another <span class='gameStatsStamina' onclick=''>STAMINA</span> point (and reduce your <span class='gameStatsLuck' onclick=''>LUCK</span> Score). If you finally defeat the rope, you may leave through the north door. <span class='roomNumber' onclick='clickRoom(73)'>Turn to 73</span>.",
       false,
       "<br>"
     ]
@@ -2515,7 +2515,7 @@
     "ID": 127,
     "text_array": [
       true,
-      "He doesn't take at all kindly to your threats. As you argue and his anger builds, you notice a transforma- tion taking place. He begins to straighten up and grows physically stronger in front of your very eyes. His face and arms grow hairy. His teeth become sharp and pointed. You must make a quick decision. Will you offer him 5 Gold Pieces to calm him down (deduct this from your Gold and <span class='roomNumber' onclick='clickRoom(272)'>turn to 272</span>), or prepare to attack him (<span class='roomNumber' onclick='clickRoom(188)'>turn to 188</span>)?",
+      "He doesn't take at all kindly to your threats. As you argue and his anger builds, you notice a transformation taking place. He begins to straighten up and grows physically stronger in front of your very eyes. His face and arms grow hairy. His teeth become sharp and pointed. You must make a quick decision. Will you offer him 5 Gold Pieces to calm him down (deduct this from your Gold and <span class='roomNumber' onclick='clickRoom(272)'>turn to 272</span>), or prepare to attack him (<span class='roomNumber' onclick='clickRoom(188)'>turn to 188</span>)?",
       false,
       "<br>"
     ]
@@ -2535,7 +2535,7 @@
     "ID": 129,
     "text_array": [
       true,
-      "You return to the riverbank and decide to try the door in the middle of the rockface. <span class='roomNumber' onclick='clickRoom(104)'>Turn to 104</span>.",
+      "You return to the riverbank and decide to try the door in the middle of the rock-face. <span class='roomNumber' onclick='clickRoom(104)'>Turn to 104</span>.",
       false,
       "<br>"
     ]
@@ -2877,7 +2877,7 @@
       false,
       "<br>",
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, <span class='roomNumber' onclick='clickRoom(101)'>turn to 101</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(217)'>turn to 217</span>.",
+      "<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, <span class='roomNumber' onclick='clickRoom(101)'>turn to 101</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(217)'>turn to 217</span>.",
       false,
       "<br>"
     ]
@@ -3139,7 +3139,7 @@
     "ID": 159,
     "text_array": [
       true,
-      "You open the door into a large room which can only be the dining room of the same warty-faced creatures you now recognize. Sitting round a large table are five ORCS busily drinking and dribbling their bowls of rat-gizzard soup. All are involved in a rowdy argument as to who will get to chew the rat bones left in the large soup cauldron, so they do not see you enter. You may be bold and prepare to attack them (<span class='roomNumber' onclick='clickRoom(365)'>turn to 365</span>) or you may not relish the prospect of taking on five of these creatures and try to <span class='escape' onclick=''>escape</span>. If you wish to leave the room, <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you get out without them noticing (<span class='roomNumber' onclick='clickRoom(237)'>turn to 237</span>) - there is no penalty for escaping. If you are Unlucky, they notice you. Prepare for battle and <span class='roomNumber' onclick='clickRoom(365)'>turn to 365</span>.",
+      "You open the door into a large room which can only be the dining room of the same warty-faced creatures you now recognize. Sitting round a large table are five ORCS busily drinking and dribbling their bowls of rat-gizzard soup. All are involved in a rowdy argument as to who will get to chew the rat bones left in the large soup cauldron, so they do not see you enter. You may be bold and prepare to attack them (<span class='roomNumber' onclick='clickRoom(365)'>turn to 365</span>) or you may not relish the prospect of taking on five of these creatures and try to <span class='escape' onclick=''>escape</span>. If you wish to leave the room, <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you get out without them noticing (<span class='roomNumber' onclick='clickRoom(237)'>turn to 237</span>) - there is no penalty for escaping. If you are Unlucky, they notice you. Prepare for battle and <span class='roomNumber' onclick='clickRoom(365)'>turn to 365</span>.",
       false,
       "<br>"
     ]
@@ -3188,7 +3188,7 @@
     "ID": 163,
     "text_array": [
       true,
-      "You draw your sword and enter the cavern. The Giant stops in the middle of a mouthful, raises his head and sniffs the air. He swings round and catches sight of you approaching. Roaring loudly, he flings the pig's carcass at you. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, it misses. If you are Unlucky, it hits you with quite some force-lose 1 <span class='gameStatsStamina' onclick=''>STAMINA</span> point. Then he picks up his hammer and prepares to club you with it. Resolve this battle.",
+      "You draw your sword and enter the cavern. The Giant stops in the middle of a mouthful, raises his head and sniffs the air. He swings round and catches sight of you approaching. Roaring loudly, he flings the pig's carcass at you. <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, it misses. If you are Unlucky, it hits you with quite some force-lose 1 <span class='gameStatsStamina' onclick=''>STAMINA</span> point. Then he picks up his hammer and prepares to club you with it. Resolve this battle.",
       false,
       "<br>",
       false,
@@ -3248,7 +3248,7 @@
     "ID": 165,
     "text_array": [
       true,
-      "The old man thanks you and rather sheepishly ties up his boots. You explain that you mean no harm and he calms down, calling off his dog. He tells you that this area is the only passageway through to the inner chambers. Some years ago the river swelled after a particularly severe spring thaw and cut off supplies from the outside world. All the area's inhabitants starved to death but the Master, realizing he needed defences against the outside world, put a curse on the area. The last remaining creatures became the Undead and now guard the passageways through.",
+      "The old man thanks you and rather sheepishly ties up his boots. You explain that you mean no harm and he calms down, calling off his dog. He tells you that this area is the only passageway through to the inner chambers. Some years ago the river swelled after a particularly severe spring thaw and cut off supplies from the outside world. All the area's inhabitants starved to death but the Master, realizing he needed defenses against the outside world, put a curse on the area. The last remaining creatures became the Undead and now guard the passageways through.",
       false,
       "<br>",
       true,
@@ -3274,7 +3274,7 @@
     "ID": 166,
     "text_array": [
       true,
-      "You land in the icy water and frantically swim for the south bank. To your amazement the raft turns round in mid-stream and makes its own way back to the south bank. You quicken your pace, aware that your splashings may at any time attract the attentions of any underwater creatures living in the river.",
+      "You land in the icy water and frantically swim for the south bank. To your amazement the raft turns round in mid-stream and makes its own way back to the south bank. You quicken your pace, aware that your splashing may at any time attract the attentions of any underwater creatures living in the river.",
       false,
       "<br>",
       true,
@@ -3372,7 +3372,7 @@
     "ID": 173,
     "text_array": [
       true,
-      "Silver weapons only will be effective here. When the creature inflicts its third wound on you, <span class='roomNumber' onclick='clickRoom(24)'>turn to 24</span>. If you defeat it before this happens, <span class='roomNumber' onclick='clickRoom(135)'>turn to 135</span>, or you may <span class='escape' onclick=''>Escape</span> through the north door (<span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span>). If you can use 'The Giver of Sleep', <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you hit and the creature dies instantly. If you are Unlucky, you miss.",
+      "Silver weapons only will be effective here. When the creature inflicts its third wound on you, <span class='roomNumber' onclick='clickRoom(24)'>turn to 24</span>. If you defeat it before this happens, <span class='roomNumber' onclick='clickRoom(135)'>turn to 135</span>, or you may <span class='escape' onclick=''>Escape</span> through the north door (<span class='roomNumber' onclick='clickRoom(360)'>turn to 360</span>). If you can use 'The Giver of Sleep', <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you hit and the creature dies instantly. If you are Unlucky, you miss.",
       false,
       "<br>"
     ]
@@ -3412,7 +3412,7 @@
     "ID": 177,
     "text_array": [
       true,
-      "You are standing in a north-south passage. To the north you can see a passage off to the east. To investigate, <span class='roomNumber' onclick='clickRoom(52)'>turn to 52</span>. To the south, the passage turns westwards. You may go to the southern end of the passage by tur<span class='roomNumber' onclick='clickRoom(391)'>ning to 391</span>. In the west wall in front of you is a secret door. To go through this, <span class='roomNumber' onclick='clickRoom(175)'>turn to 175</span>.",
+      "You are standing in a north-south passage. To the north you can see a passage off to the east. To investigate, <span class='roomNumber' onclick='clickRoom(52)'>turn to 52</span>. To the south, the passage turns westwards. You may go to the southern end of the passage by <span class='roomNumber' onclick='clickRoom(391)'>turning to 391</span>. In the west wall in front of you is a secret door. To go through this, <span class='roomNumber' onclick='clickRoom(175)'>turn to 175</span>.",
       false,
       "<br>"
     ]
@@ -3476,7 +3476,7 @@
       false,
       "<br>",
       true,
-      "After three Attack Rounds, you manoeuvre yourself round to be able to run through the door. If you wish to <span class='escape' onclick=''>Escape</span> at this time, <span class='roomNumber' onclick='clickRoom(54)'>turn to 54</span> and pay the penalty. If you continue fighting and kill him, <span class='roomNumber' onclick='clickRoom(258)'>turn to 258</span>. If you have already been in this room on this adventure and killed the Minotaur, you find it empty. Leave and <span class='roomNumber' onclick='clickRoom(54)'>turn to 54</span>.",
+      "After three Attack Rounds, you manoeuver yourself round to be able to run through the door. If you wish to <span class='escape' onclick=''>Escape</span> at this time, <span class='roomNumber' onclick='clickRoom(54)'>turn to 54</span> and pay the penalty. If you continue fighting and kill him, <span class='roomNumber' onclick='clickRoom(258)'>turn to 258</span>. If you have already been in this room on this adventure and killed the Minotaur, you find it empty. Leave and <span class='roomNumber' onclick='clickRoom(54)'>turn to 54</span>.",
       false,
       "<br>"
     ]
@@ -3750,7 +3750,7 @@
       false,
       "<br>",
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, the darts miss you, and you awake with a sore head. Lose 2 <span class='gameStatsStamina' onclick=''>STAMINA</span> points. If you are Unlucky, the darts strike and you never recover consciousness. If you were Lucky, you may try different keys (remember - one of the keys you just used fits perfectly). Add the key totals and turn to that page.",
+      "<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, the darts miss you, and you awake with a sore head. Lose 2 <span class='gameStatsStamina' onclick=''>STAMINA</span> points. If you are Unlucky, the darts strike and you never recover consciousness. If you were Lucky, you may try different keys (remember - one of the keys you just used fits perfectly). Add the key totals and turn to that page.",
       false,
       "<br>",
       true,
@@ -3993,7 +3993,7 @@
     "ID": 214,
     "text_array": [
       true,
-      "Facing northwards, the rock face is smooth and glistening with moisture. Moss of many different hues grows on the surface. There is an eerie silence punctuated only by the splashings of the river as it flows behind you. You have three options:",
+      "Facing northwards, the rock face is smooth and glistening with moisture. Moss of many different hues grows on the surface. There is an eerie silence punctuated only by the splashing of the river as it flows behind you. You have three options:",
       false,
       "<br>",
       true,
@@ -4237,7 +4237,7 @@
     "ID": 230,
     "text_array": [
       true,
-      "The creature now standing before you is a semidecayed man. His quick eyes dart from side to side watching you. His long tongue flashes out with a hissing noise. His teeth and nails are sharp and he doesn't seem to be afraid of your weapon. He is a GHOUL!",
+      "The creature now standing before you is a semi-decayed man. His quick eyes dart from side to side watching you. His long tongue flashes out with a hissing noise. His teeth and nails are sharp and he doesn't seem to be afraid of your weapon. He is a GHOUL!",
       false,
       "<br>",
       false,
@@ -4319,11 +4319,11 @@
     "ID": 234,
     "text_array": [
       true,
-      "You find no secret passages. However, your rummagings attract the attentions of something sinister ... <span class='roomNumber' onclick='clickRoom(161)'>Turn to 161</span> to discover what has appeared in the passageway in front of you. Fight this monster.",
+      "You find no secret passages. However, your rummaging attract the attentions of something sinister ... <span class='roomNumber' onclick='clickRoom(161)'>Turn to 161</span> to discover what has appeared in the passageway in front of you. Fight this monster.",
       false,
       "<br>",
       true,
-      "If you defeat the creature, you can continue up the passageway by tur<span class='roomNumber' onclick='clickRoom(43)'>ning to 43</span>. Write down '43' so you will know where to go.",
+      "If you defeat the creature, you can continue up the passageway by <span class='roomNumber' onclick='clickRoom(43)'>turning to 43</span>. Write down '43' so you will know where to go.",
       false,
       "<br>"
     ]
@@ -4531,7 +4531,7 @@
     "ID": 244,
     "text_array": [
       true,
-      "The passage runs northwards, and ahead you can hear the splashings of an underground river. The air becomes cool and fresh. You soon reach a wide opening of a river bank but despair as you look across to see no way through on the other side. To the east the river flows through a cave in the rock. You may either sit, rest and eat Provisions (<span class='roomNumber' onclick='clickRoom(143)'>turn to 143</span>) or continue by what seems to be the only way forward, jumping into the river and swimming downstream (<span class='roomNumber' onclick='clickRoom(399)'>turn to 399</span>).",
+      "The passage runs northwards, and ahead you can hear the splashing of an underground river. The air becomes cool and fresh. You soon reach a wide opening of a river bank but despair as you look across to see no way through on the other side. To the east the river flows through a cave in the rock. You may either sit, rest and eat Provisions (<span class='roomNumber' onclick='clickRoom(143)'>turn to 143</span>) or continue by what seems to be the only way forward, jumping into the river and swimming downstream (<span class='roomNumber' onclick='clickRoom(399)'>turn to 399</span>).",
       false,
       "<br>"
     ]
@@ -4573,7 +4573,7 @@
     "ID": 247,
     "text_array": [
       true,
-      "He is a little startled by your onslaught, but simply raises his hand. As he does so, you suddenly collide heavily into... apparently nothing. You sit on the floor in a heap, rubbing your nose. Lose 2 <span class='gameStatsStamina' onclick=''>STAMINA</span> points. The old man chuckles and says, 'You poor fool. Did you think I was defenceless in such a den of evil as this? You will regret your folly.' You rise to your feet and return to the passageway, turning north up the corridor. <span class='roomNumber' onclick='clickRoom(292)'>Turn to 292</span>.",
+      "He is a little startled by your onslaught, but simply raises his hand. As he does so, you suddenly collide heavily into... apparently nothing. You sit on the floor in a heap, rubbing your nose. Lose 2 <span class='gameStatsStamina' onclick=''>STAMINA</span> points. The old man chuckles and says, 'You poor fool. Did you think I was defenseless in such a den of evil as this? You will regret your folly.' You rise to your feet and return to the passageway, turning north up the corridor. <span class='roomNumber' onclick='clickRoom(292)'>Turn to 292</span>.",
       false,
       "<br>"
     ]
@@ -5051,7 +5051,7 @@
       false,
       "<br>",
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, the creature misses. If you are Unlucky, it has caught you across the leg and you suffer 1 <span class='gameStatsStamina' onclick=''>STAMINA</span> point's worth of dam- age. <span class='roomNumber' onclick='clickRoom(230)'>Turn to 230</span>.",
+      "<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, the creature misses. If you are Unlucky, it has caught you across the leg and you suffer 1 <span class='gameStatsStamina' onclick=''>STAMINA</span> point's worth of dam- age. <span class='roomNumber' onclick='clickRoom(230)'>Turn to 230</span>.",
       false,
       "<br>"
     ]
@@ -5347,7 +5347,7 @@
     "ID": 291,
     "text_array": [
       true,
-      "You are standing in the middle of an east-west corridor. To the east is a dead end, which you can investigate by <span class='roomNumber' onclick='clickRoom(315)'>turning to 315</span>. To the west is a tam- iliar junction. To go this way <span class='roomNumber' onclick='clickRoom(52)'>turn to 52</span>. Another passageway quite a short one leads off to the north and ends in a large wooden door. If you wish to try the door, <span class='roomNumber' onclick='clickRoom(227)'>turn to 227</span>.",
+      "You are standing in the middle of an east-west corridor. To the east is a dead end, which you can investigate by <span class='roomNumber' onclick='clickRoom(315)'>turning to 315</span>. To the west is a familiar junction. To go this way <span class='roomNumber' onclick='clickRoom(52)'>turn to 52</span>. Another passageway quite a short one leads off to the north and ends in a large wooden door. If you wish to try the door, <span class='roomNumber' onclick='clickRoom(227)'>turn to 227</span>.",
       false,
       "<br>"
     ]
@@ -5399,7 +5399,7 @@
     "ID": 295,
     "text_array": [
       true,
-      "You find no secret passages. However, your explo- rations attract some sort of creature, and as you listen you can hear something coming down the corridor towards you.",
+      "You find no secret passages. However, your explorations attract some sort of creature, and as you listen you can hear something coming down the corridor towards you.",
       false,
       "<br>",
       true,
@@ -5425,11 +5425,11 @@
       false,
       "<br>",
       true,
-      "     <span style='font-style: italic;'>Ckil Erif</span>",
+      "     <span style='font-style: italic;'>Ekil Erif</span>",
       false,
       "<br>",
       true,
-      "     <span style='font-style: italic;'>Ckam Erif</span>",
+      "     <span style='font-style: italic;'>Ekam Erif</span>",
       false,
       "<br>",
       true,
@@ -5461,7 +5461,7 @@
     "ID": 298,
     "text_array": [
       true,
-      "The bridge is slippery from the splashings of the water. At one point you slip on a tuft of wet moss covering the timbers. <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>Roll one die</span>. A roll of 6 means you slip from the bridge into the water below and start swimming for the nearest bank - <span class='roomNumber' onclick='clickRoom(86)'>turn to 86</span>. Any other roll is lucky; you managed to hold on and you reach the north bank (<span class='roomNumber' onclick='clickRoom(7)'>turn to 7</span>).",
+      "The bridge is slippery from the splashing of the water. At one point you slip on a tuft of wet moss covering the timbers. <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>Roll one die</span>. A roll of 6 means you slip from the bridge into the water below and start swimming for the nearest bank - <span class='roomNumber' onclick='clickRoom(86)'>turn to 86</span>. Any other roll is lucky; you managed to hold on and you reach the north bank (<span class='roomNumber' onclick='clickRoom(7)'>turn to 7</span>).",
       false,
       "<br>"
     ]
@@ -5583,7 +5583,7 @@
     "ID": 305,
     "text_array": [
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> three times. If you are Lucky each time, you make it across to the far door and can leave the room. <span class='roomNumber' onclick='clickRoom(162)'>Turn to 162</span>. On the first throw that you are unlucky, you step on a hand tile - <span class='roomNumber' onclick='clickRoom(108)'>turn to 108</span>.",
+      "<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span> three times. If you are Lucky each time, you make it across to the far door and can leave the room. <span class='roomNumber' onclick='clickRoom(162)'>Turn to 162</span>. On the first throw that you are unlucky, you step on a hand tile - <span class='roomNumber' onclick='clickRoom(108)'>turn to 108</span>.",
       false,
       "<br>"
     ]
@@ -5767,7 +5767,7 @@
     "ID": 316,
     "text_array": [
       true,
-      "The water is icy cold. You start to swim and notice that your splashings are attracting a moving 'turbulence' in the water. Will your strength and stamina hold out? Roll two dice. If the roll is equal to or less than your <span class='gameStatsStamina' onclick=''>STAMINA</span> Score, you believe you can make it and swim furiously for the north bank- <span class='roomNumber' onclick='clickRoom(151)'>turn to 151</span>. If the roll totals more than your <span class='gameStatsStamina' onclick=''>STAMINA</span> Score, you decide not to risk it and return to the south bank - <span class='roomNumber' onclick='clickRoom(218)'>turn to 218</span>. You may eat Provisions on the south bank.",
+      "The water is icy cold. You start to swim and notice that your splashing are attracting a moving 'turbulence' in the water. Will your strength and stamina hold out? Roll two dice. If the roll is equal to or less than your <span class='gameStatsStamina' onclick=''>STAMINA</span> Score, you believe you can make it and swim furiously for the north bank- <span class='roomNumber' onclick='clickRoom(151)'>turn to 151</span>. If the roll totals more than your <span class='gameStatsStamina' onclick=''>STAMINA</span> Score, you decide not to risk it and return to the south bank - <span class='roomNumber' onclick='clickRoom(218)'>turn to 218</span>. You may eat Provisions on the south bank.",
       false,
       "<br>"
     ]
@@ -5797,7 +5797,7 @@
     "ID": 319,
     "text_array": [
       true,
-      "To find the secret of the second item you have col- lected, <span class='roomNumber' onclick='clickRoom(221)'>turn to 221</span> and investigate. If you have already investigated both items, <span class='roomNumber' onclick='clickRoom(81)'>turn to 81</span>.",
+      "To find the secret of the second item you have collected, <span class='roomNumber' onclick='clickRoom(221)'>turn to 221</span> and investigate. If you have already investigated both items, <span class='roomNumber' onclick='clickRoom(81)'>turn to 81</span>.",
       false,
       "<br>"
     ]
@@ -5877,7 +5877,7 @@
     "ID": 327,
     "text_array": [
       true,
-      "The body on the floor turns visibly older in front of your eyes. The face looks fifty, then ninety, then well over a hundred years old. The skin rots and the eyes decompose as you watch. You notice a move- ment coming from the creature's chest. As the remnants of the Vampire decay, a small black face breaks through its chest. It resembles a small black shrew, but as it frees itself and unfurls its wings you realize it is a bat. You lunge at it, but it flaps away into the darkness.",
+      "The body on the floor turns visibly older in front of your eyes. The face looks fifty, then ninety, then well over a hundred years old. The skin rots and the eyes decompose as you watch. You notice a movement coming from the creature's chest. As the remnants of the Vampire decay, a small black face breaks through its chest. It resembles a small black shrew, but as it frees itself and unfurls its wings you realize it is a bat. You lunge at it, but it flaps away into the darkness.",
       false,
       "<br>",
       true,
@@ -6041,7 +6041,7 @@
       false,
       "<br>",
       true,
-      "If you defeat the Vampire, <span class='roomNumber' onclick='clickRoom(327)'>turn to 327</span>. If you wish to try to <span class='escape' onclick=''>Escape</span>, which you may only do after 6 full Attack Rounds, you will have to be lucky. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you may <span class='escape' onclick=''>Escape</span> through the west door (<span class='roomNumber' onclick='clickRoom(380)'>turn to 380</span>). If you are Unlucky, you must continue this fight for a further 6 Attack Rounds before trying to <span class='escape' onclick=''>Escape</span> again. If you roll an 11 or 12 and you are Unlucky (i.e. your current <span class='gameStatsLuck' onclick=''>LUCK</span> score is below 11), then <span class='roomNumber' onclick='clickRoom(224)'>turn to 224</span>.",
+      "If you defeat the Vampire, <span class='roomNumber' onclick='clickRoom(327)'>turn to 327</span>. If you wish to try to <span class='escape' onclick=''>Escape</span>, which you may only do after 6 full Attack Rounds, you will have to be lucky. <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, you may <span class='escape' onclick=''>Escape</span> through the west door (<span class='roomNumber' onclick='clickRoom(380)'>turn to 380</span>). If you are Unlucky, you must continue this fight for a further 6 Attack Rounds before trying to <span class='escape' onclick=''>Escape</span> again. If you roll an 11 or 12 and you are Unlucky (i.e. your current <span class='gameStatsLuck' onclick=''>LUCK</span> score is below 11), then <span class='roomNumber' onclick='clickRoom(224)'>turn to 224</span>.",
       false,
       "<br>"
     ]
@@ -6051,7 +6051,7 @@
     "ID": 334,
     "text_array": [
       true,
-      "As you speak the old man rises to his feet. 'Oh my, oh my, a stranger!' he starts. 'Well, do come in, the shop is open. What can I get you? What would you like to buy? What takes your fancy? Which way are you headed? North? Well?' You tell the old man your story. He listens intently and replies, 'Oh yes, in that case you will undoubtedly need one of my Blue Candles. That will be 20 Gold Pieces please. Cash if you don't mind. Yes, I know it's expensive, but isn't everything these days? Not so long ago these were only 5 Gold Pieces each; but you know what has happened to the price of candlewax since the Long Dark Night - oh, but you probably don't since you don't come from these parts. Never mind. I can guarantee it's still worth the price. You might need it sooner than you think...'",
+      "As you speak the old man rises to his feet. 'Oh my, oh my, a stranger!' he starts. 'Well, do come in, the shop is open. What can I get you? What would you like to buy? What takes your fancy? Which way are you headed? North? Well?' You tell the old man your story. He listens intently and replies, 'Oh yes, in that case you will undoubtedly need one of my Blue Candles. That will be 20 Gold Pieces please. Cash if you don't mind. Yes, I know it's expensive, but isn't everything these days? Not so long ago these were only 5 Gold Pieces each; but you know what has happened to the price of candle wax since the Long Dark Night - oh, but you probably don't since you don't come from these parts. Never mind. I can guarantee it's still worth the price. You might need it sooner than you think...'",
       false,
       "<br>",
       true,
@@ -6193,7 +6193,7 @@
     "ID": 341,
     "text_array": [
       true,
-      "The old man glares at you as you enter the room. You may either apologize, explain that you lost your way and leave through either the door in the west (<span class='roomNumber' onclick='clickRoom(46)'>turn to 46</span>) or south (<span class='roomNumber' onclick='clickRoom(392)'>turn to 392</span>) walls, or alterna- tively you may try to talk to the old man. If you want to talk to him, you can either be pleasant (<span class='roomNumber' onclick='clickRoom(220)'>turn to 220</span>) or you can demand that he answers your ques- tions (<span class='roomNumber' onclick='clickRoom(191)'>turn to 191</span>).",
+      "The old man glares at you as you enter the room. You may either apologize, explain that you lost your way and leave through either the door in the west (<span class='roomNumber' onclick='clickRoom(46)'>turn to 46</span>) or south (<span class='roomNumber' onclick='clickRoom(392)'>turn to 392</span>) walls, or alternatively you may try to talk to the old man. If you want to talk to him, you can either be pleasant (<span class='roomNumber' onclick='clickRoom(220)'>turn to 220</span>) or you can demand that he answers your questions (<span class='roomNumber' onclick='clickRoom(191)'>turn to 191</span>).",
       false,
       "<br>"
     ]
@@ -6251,7 +6251,7 @@
       false,
       "<br>",
       true,
-      "Alternatively, you may use your <span class='gameStatsLuck' onclick=''>LUCK</span> to help you win. <span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>throw two dice</span> to see how many Gold Pieces you win. If you are Unlucky, <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>throw two dice</span> to see how many Gold Pieces you lose.",
+      "Alternatively, you may use your <span class='gameStatsLuck' onclick=''>LUCK</span> to help you win. <span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>throw two dice</span> to see how many Gold Pieces you win. If you are Unlucky, <span class='rollDiceCommand' onclick='rollDice(\"roll 1d6\")'>throw two dice</span> to see how many Gold Pieces you lose.",
       false,
       "<br>",
       true,
@@ -6275,7 +6275,7 @@
     "ID": 348,
     "text_array": [
       true,
-      "You are in a pit, a little bruised but not too seriously hurt. You look around as you get back on your feet and can see two passageways: a short one to the south which opens into a small chamber, and another heading northwards. You are a little worried about the crash your fall has made, and even more by the gruntings you can hear coming from the chamber to the south. Before you can col- lect your thoughts, a large, ugly head pokes around the corner and a TROLL emerges from its chamber. Your ankle is twisted and you cannot move quickly, but the Troll is ready for a fight. You will have to face the brute. <span class='roomNumber' onclick='clickRoom(331)'>Turn to 331</span> - but if you have a Potion of Invisibility, <span class='roomNumber' onclick='clickRoom(51)'>turn to 51</span>.",
+      "You are in a pit, a little bruised but not too seriously hurt. You look around as you get back on your feet and can see two passageways: a short one to the south which opens into a small chamber, and another heading northwards. You are a little worried about the crash your fall has made, and even more by the grunting you can hear coming from the chamber to the south. Before you can col- lect your thoughts, a large, ugly head pokes around the corner and a TROLL emerges from its chamber. Your ankle is twisted and you cannot move quickly, but the Troll is ready for a fight. You will have to face the brute. <span class='roomNumber' onclick='clickRoom(331)'>Turn to 331</span> - but if you have a Potion of Invisibility, <span class='roomNumber' onclick='clickRoom(51)'>turn to 51</span>.",
       false,
       "<br>"
     ]
@@ -6295,7 +6295,7 @@
     "ID": 350,
     "text_array": [
       true,
-      "As the 'turbulence' surrounds you, you can feel the jostlings of many small fish. They start ripping your flesh with vicious bites and you realize that you are surrounded by deadly PIRANHAS!",
+      "As the 'turbulence' surrounds you, you can feel the jostling of many small fish. They start ripping your flesh with vicious bites and you realize that you are surrounded by deadly PIRANHAS!",
       false,
       "<br>",
       true,
@@ -6619,7 +6619,7 @@
     "ID": 366,
     "text_array": [
       true,
-      "You are following a passageway which leads ahead to the north. After several metres it bends sharply to the east. You continue eastwards until you eventu- ally come across a narrow opening in the north wall. You may go through this opening (<span class='roomNumber' onclick='clickRoom(89)'>turn to 89</span>) or continue eastwards (<span class='roomNumber' onclick='clickRoom(62)'>turn to 62</span>).",
+      "You are following a passageway which leads ahead to the north. After several metres it bends sharply to the east. You continue eastwards until you eventually come across a narrow opening in the north wall. You may go through this opening (<span class='roomNumber' onclick='clickRoom(89)'>turn to 89</span>) or continue eastwards (<span class='roomNumber' onclick='clickRoom(62)'>turn to 62</span>).",
       false,
       "<br>"
     ]
@@ -6841,7 +6841,7 @@
       false,
       "<br>",
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, your sword has shattered and lies on the floor, but you managed to release your grip just before the lightning struck. If you are Unlucky, your charred remains have formed a small black outline on the floor. Next time, do not try to strike the chest! If you were Lucky, you may try to use keys from your rucksack. <span class='roomNumber' onclick='clickRoom(139)'>Turn to 139</span>.",
+      "<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, your sword has shattered and lies on the floor, but you managed to release your grip just before the lightning struck. If you are Unlucky, your charred remains have formed a small black outline on the floor. Next time, do not try to strike the chest! If you were Lucky, you may try to use keys from your rucksack. <span class='roomNumber' onclick='clickRoom(139)'>Turn to 139</span>.",
       false,
       "<br>"
     ]
@@ -6957,7 +6957,7 @@
     "ID": 389,
     "text_array": [
       true,
-      "<span class='testyourluck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, <span class='roomNumber' onclick='clickRoom(289)'>turn to 289</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(112)'>turn to 112</span>.",
+      "<span class='testYourLuck' onclick='rollDice(\"roll 2d6\")'>Test your Luck</span>. If you are Lucky, <span class='roomNumber' onclick='clickRoom(289)'>turn to 289</span>. If you are Unlucky, <span class='roomNumber' onclick='clickRoom(112)'>turn to 112</span>.",
       false,
       "<br>"
     ]
@@ -7119,7 +7119,7 @@
     "ID": 400,
     "text_array": [
       true,
-      "The Warlock of Firetop Mountain is no more and you are now the owner of the Sorcerer's riches. At least a thousand Gold Pieces, jewellery, diamonds, rubies and pearls are in the chest. Hidden under these you find the Warlock's spell book and as you leaf through the pages, you realize that this tome is probably more valuable than all the treasure. Instructions are given for the control of all the secrets and the creatures - of Firetop Mountain. With this book, unlimited power is yours and the safety of your return to the village is ensured. Or, if you would prefer, you could remain as master of the domain of Firetop Mountain ...",
+      "The Warlock of Firetop Mountain is no more and you are now the owner of the Sorcerer's riches. At least a thousand Gold Pieces, jewelry, diamonds, rubies and pearls are in the chest. Hidden under these you find the Warlock's spell book and as you leaf through the pages, you realize that this tome is probably more valuable than all the treasure. Instructions are given for the control of all the secrets and the creatures - of Firetop Mountain. With this book, unlimited power is yours and the safety of your return to the village is ensured. Or, if you would prefer, you could remain as master of the domain of Firetop Mountain ...",
       false,
       "<br>"
     ]

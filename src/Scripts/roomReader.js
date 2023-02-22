@@ -6,18 +6,18 @@ var loadedBookPath =
 var typeSpeed = 2;
 var consoleFontSize = "1em";
 var styleTagText = "";
-var interuptRender = false;
+var interruptRender = false;
 var loadedBookStyle = "";
 var renderingConsoleEntry = false;
 
 /*
 Short Description:
-	Creates a new div as a child of #gameText and returns a refrence to it, also updates the DOM which will eventually be its own function
+	Creates a new div as a child of #gameText and returns a reference to it, also updates the DOM which will eventually be its own function
 	
 Arguments:
 	None
 	
-	return = div, a refrence
+	return = div, a reference
 */
 function createConsoleEntry() {
   //Create new container
@@ -163,8 +163,8 @@ async function renderConsoleEntry(
   var i = 0;
   for (let i = 0; i < textArray.length; i += 2) {
     //Early exit check
-    if (interuptRender) {
-      interuptRender = false;
+    if (interruptRender) {
+      interruptRender = false;
       renderingConsoleEntry = false;
       return false;
     }
@@ -200,8 +200,8 @@ async function renderConsoleEntry(
       };
       for (n; n < textString.length; ) {
         //Early exit check
-        if (interuptRender) {
-          interuptRender = false;
+        if (interruptRender) {
+          interruptRender = false;
           renderingConsoleEntry = false;
           return false;
         }
@@ -211,7 +211,7 @@ async function renderConsoleEntry(
         //This is gonna need a fundamental rework as it can't handle nested anythings and by the nature of if/else imposes hierarchy
         //Each if section should just build the tempString and have a final statement append tempString to div.innerHTML
 
-        //The exception for `<tag` code should be abstractable into something more modular. I think I can build a dictionary and specify the target strings to look for (i.e. `<span ` or `<a `) and use the dictionary to track the in`tag` boolean so that I can expand this to cover any arbitrary tag. Furthermore, if I have a good record of which tags are active, I can close them safely at the end without relying on an abuse of case and making the DOM autoclose them.
+        //The exception for `<tag` code should be abstracted into something more modular. I think I can build a dictionary and specify the target strings to look for (i.e. `<span ` or `<a `) and use the dictionary to track the in`tag` boolean so that I can expand this to cover any arbitrary tag. Furthermore, if I have a good record of which tags are active, I can close them safely at the end without relying on an abuse of case and making the DOM autoclose them.
 
         //First check if you need to cut any tags off to get to where you are going to add new content
         for (tag in tagDict) {
@@ -265,7 +265,7 @@ async function renderConsoleEntry(
         //Update div.innerHTML
         div.innerHTML = tempString;
 
-        //Keep the bottom of the typer in view
+        //Keep the bottom of the typed element in view
         div.scrollIntoView(false);
         //Sleep so we get the animation effect
         const result = await sleep();
@@ -273,8 +273,8 @@ async function renderConsoleEntry(
     } else {
       //if we are to print instead of type
       //Early Exit Check
-      if (interuptRender) {
-        interuptRender = false;
+      if (interruptRender) {
+        interruptRender = false;
         renderingConsoleEntry = false;
         return false;
       }
@@ -308,16 +308,16 @@ Arguments:
 	
 	return = None
 */
-function setInterupt() {
+function setInterrupt() {
   console.log("Calling for early exit.");
-  interuptRender = true;
+  interruptRender = true;
 
   return true;
 }
 
 /*
 Short Description:
-	Used to handle room clicks from the text log smoothly by calling the approbrate log and print functions
+	Used to handle room clicks from the text log smoothly by calling the appropriate log and print functions
 	
 Arguments:
 	roomID = Int, the room to print
@@ -334,7 +334,7 @@ Short Description:
 	creates a delay so that the terminal can have a typing effect
 
 Arguments:
-	ms = Int, time in ms that this function will cause the excution string to hang, must be accompined by an await inside an async function
+	ms = Int, time in ms that this function will cause the execution string to hang, must be accompanied by an await inside an async function
 	
 	return = None
 */

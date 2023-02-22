@@ -10,14 +10,14 @@ onkeydown = (event) => {
   //When the user starts typing, autofocus on the input box, will not trigger if the user is holding the ctrl key or if the user is in the notes box
   if (
     !ctrlDepressed &&
-    activeElement != document.getElementById("notesBoxtextarea")
+    activeElement != document.getElementById("notesBoxTextArea")
   ) {
     document.getElementById("inputBoxTextArea").focus();
 
   }
 
-  if (ctrlDepressed && event.key == 'c' && activeElement != document.getElementById("notesBoxtextarea")) {
-    setInterupt();
+  if (ctrlDepressed && event.key == 'c' && activeElement != document.getElementById("notesBoxTextArea")) {
+    setInterrupt();
     renderConsoleEntry([false, "^C"])
   }
 

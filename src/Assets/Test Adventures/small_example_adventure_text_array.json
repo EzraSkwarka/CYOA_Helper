@@ -3,7 +3,7 @@
       "short_name": "Book Meta Data",
       "ID": "Meta",
   
-      "css": ".typedRoom {\n  /* This will apply to all new entries into the main console*/\n   margin-left: 1.15em;\n   text-indent: -1.15em;\n}\n .roomNumber {\n  /* This is specifically the clickable room numbers embedded in the text*/\n   color: #ffb000;\n  /*Amber*/; cursor: pointer; text-decoration: underline;\n}\n .gameStats {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n}\n .gameStatsInitial {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n   font-style: italic;\n}\n .sectionHeader {\n   color: #e18335;\n}\n .subsectionHeader {\n   color: #e18c47;\n}\n/* Specified in such a way as to only hit the a tags within the game text, in case I do a sidebar or overlay with a tags not happy with this color, but its fine*/\n #gameText a:link, #gameText a:visited {\n   color: pink;\n   text-decoration: underline;\n   cursor: auto;\n}\n #gameText a:link:active, #gameText a:visited:active {\n   color: pink;\n}\n .testyourluck {color: #7dffc9; cursor: pointer; text-decoration: underline;} .magicspell {color: #3dd9eb}"
+      "css": ".typedRoom {\n  /* This will apply to all new entries into the main console*/\n   margin-left: 1.15em;\n   text-indent: -1.15em;\n}\n .roomNumber {\n  /* This is specifically the clickable room numbers embedded in the text*/\n   color: #ffb000;\n  /*Amber*/; cursor: pointer; text-decoration: underline;\n}\n .gameStats {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n}\n .gameStatsInitial {\n  /* This is used when books call out stats that would show up on the adventure sheet*/\n   color: #f3e5ab;\n   font-size: 0.9em;\n   font-style: italic;\n}\n .sectionHeader {\n   color: #e18335;\n}\n .subsectionHeader {\n   color: #e18c47;\n}\n/* Specified in such a way as to only hit the a tags within the game text, in case I do a sidebar or overlay with a tags not happy with this color, but its fine*/\n #gameText a:link, #gameText a:visited {\n   color: pink;\n   text-decoration: underline;\n   cursor: auto;\n}\n #gameText a:link:active, #gameText a:visited:active {\n   color: pink;\n}\n .testYourLuck {color: #7dffc9; cursor: pointer; text-decoration: underline;} .magicSpell {color: #3dd9eb}"
     },
     {
       "short_name": "",
@@ -27,7 +27,7 @@
       true,
       "<span class='roomNumber' onclick='clickRoom(1)'>(#1)</span>. ",
       true,
-      "What happens if you put a linebreak in the middle <br> of a line? <a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> <br>",
+      "What happens if you put a line-break in the middle <br> of a line? <a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> <br>",
       true,
       "<span style='font-style: italic;'><a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> </span>",
       true,
@@ -112,7 +112,7 @@
     "ID": 7,
     "text_array": [
       true,
-      "It happend agian, as you go through the red door, you hear it close and lock behind you. The only thing in this room is yet another red door at its far side",
+      "It happened again, as you go through the red door, you hear it close and lock behind you. The only thing in this room is yet another red door at its far side",
       true,
       "You should not be able to get back to this room, this is an error: Red Door Room #2",
       true,
@@ -177,7 +177,7 @@
     "ID": 12,
     "text_array": [
       true,
-      "This should be Room 1 but with typed formating",
+      "This should be Room 1 but with typed formatting",
       false,
       "<br>",
       true,

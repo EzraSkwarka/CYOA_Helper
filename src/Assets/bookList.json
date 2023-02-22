@@ -8,7 +8,7 @@
   false,
   "<br>",
   true,
-  "<span class='clickablebook' onclick='openBook(\"load Assets/Test Adventures/small_example_adventure_text_array.json\")'>Assets/Test Adventures/small_example_adventure_text_array.json</span>",
+  "<span class='clickableBook' onclick='openBook(\"load Assets/Test Adventures/small_example_adventure_text_array.json\")'>Assets/Test Adventures/small_example_adventure_text_array.json</span>",
   false,
   "<br>",
   false,
@@ -18,9 +18,9 @@
   false,
   "<br>",
   true,
-  "<span class='clickablebook' onclick='openBook(\"load Assets/Fighting Fantasy Books/FF01_The_Warlock_of_Firetop_Mountain.json\")'>Assets/Fighting Fantasy Books/FF01_The_Warlock_of_Firetop_Mountain.json</span>",
+  "<span class='clickableBook' onclick='openBook(\"load Assets/Fighting Fantasy Books/FF01_The_Warlock_of_Firetop_Mountain.json\")'>Assets/Fighting Fantasy Books/FF01_The_Warlock_of_Firetop_Mountain.json</span>",
   false,
   "<br>",
   true,
-  "<span class='clickablebook' onclick='openBook(\"load Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json\")'>Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json</span>"
+  "<span class='clickableBook' onclick='openBook(\"load Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json\")'>Assets/Fighting Fantasy Books/FF02_Citadel_of_Chaos.json</span>"
 ]
