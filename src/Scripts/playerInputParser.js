@@ -54,7 +54,9 @@ async function readPlayerInput(inputString) {
   } else if (/^cls$/.test(inputString)) {
     clearLogScreen();
   } else if (/^setFont/.test(inputString)) {
-    changeDefaultFont(inputString);
+    changeDefaultFont(inputString);  
+  } else if (/^save/.test(inputString)) {
+      saveGame();
   } else {
     renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
   }

@@ -202,9 +202,59 @@ Arguments:
 */
 function accessTerminalLog(inputLogIndex) {
   //inputBox
-  document.getElementById("inputBoxTextArea").value = inputLog.at(inputLogIndex);
+  document.getElementById("inputBoxTextArea").value =
+    inputLog.at(inputLogIndex);
 }
 
+
+
+/*
+Short Description:
+	This function opens the file picker to save the current gamestate as a .txt file so the user can later load it back into the console
+	
+  //fileHandeling: https://developer.chrome.com/articles/file-system-access/#write-file
+Arguments:
+	None
+	
+	return = None
+*/
+async function saveGame() {
+  console.log("Save Game");
+  const fileHandle = getNewFileHandle();
+  // Create a FileSystemWritableFileStream to write to.
+  const writable = await fileHandle.createWritable();
+  // Write the contents of the file to the stream.
+  await writable.write("TEST");
+  // Close the file and write the contents to disk.
+  await writable.close();
+}
+
+/*
+Short Description:
+	This function opens the file picker to grab a file handler and returns it
+	
+Arguments:
+	None
+	
+	return = None
+*/
+
+async function getNewFileHandle() {
+  const options = {
+    suggestedName: 'CYOA_save.txt',
+    //TODO: startIn: directoryHandle
+    types: [ //TODO: use .json files instead of .txt
+      {
+        description: "Text Files",
+        accept: {
+          "text/plain": [".txt"],
+        },
+      },
+    ],
+  };
+  const handle = await window.showSaveFilePicker(options); //Grab the handle
+  return handle; //pass it back
+}
 /*
 Short Description:
 	Clears all previous entrees by deleting the 'typedRoom' children of 'gameText' 
