@@ -27,33 +27,33 @@ async function readPlayerInput(inputString) {
 
   //Test Cases
 
-  if (/^goto /.test(inputStringLower)) {
+  if (/^goto /.test(inputString)) {
     //Slice off the goto of the command
-    inputStringLower = String(inputStringLower).slice(5);
+    inputStringLower = String(inputString).slice(5);
     gotoPage(inputStringLower);
-  } else if (/^turn to /.test(inputStringLower)) {
+  } else if (/^turn to /.test(inputString)) {
     //Slice off the turn to of the command
-    inputStringLower = String(inputStringLower).slice(8);
+    inputStringLower = String(inputString).slice(8);
     gotoPage(inputStringLower);
-  } else if (/help/.test(inputStringLower)) {
+  } else if (/help/.test(inputString)) {
     helpCommand(inputString);
-  } else if (/^open /.test(inputStringLower)) {
+  } else if (/^open /.test(inputString)) {
     openBook(inputString);
-  } else if (/^roll/.test(inputStringLower)) {
+  } else if (/^roll/.test(inputString)) {
     rollDice(inputString);
-  } else if (/^setSpeed \d+$/.test(inputStringLower)) {
-    setSpeed(inputStringLower);
-  } else if (/^reload$/.test(inputStringLower)) {
+  } else if (/^setSpeed \d+$/.test(inputString)) {
+    setSpeed(inputString);
+  } else if (/^reload$/.test(inputString)) {
     window.location.reload();
     // } else if (/^fontsize \d{1,}(px|em)$/.test(inputStringLower)) {
     // setFont(inputStringLower);
-  } else if (/^ls -book/.test(inputStringLower)) {
+  } else if (/^ls -book/.test(inputString)) {
     listBooks();
-  } else if (/^stop$/.test(inputStringLower)) {
+  } else if (/^stop$/.test(inputString)) {
     setInterrupt();
-  } else if (/^cls$/.test(inputStringLower)) {
+  } else if (/^cls$/.test(inputString)) {
     clearLogScreen();
-  } else if (/^setFont/.test(inputStringLower)) {
+  } else if (/^setFont/.test(inputString)) {
     changeDefaultFont(inputString);
   } else {
     renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);

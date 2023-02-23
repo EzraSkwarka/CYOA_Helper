@@ -98,7 +98,7 @@
       true,
       "<span class='subsectionHeader' onclick=''>Luck</span><br>",
       true,
-      "At various times during your adventure, either in battles or when you come across situations in which you could either be lucky or unlucky (details of these are given on the pages themselves), you may call on your luck to make the outcome more favour- able. But beware! Using luck is a risky business and if you are unlucky, the results could be disastrous.<br>",
+      "At various times during your adventure, either in battles or when you come across situations in which you could either be lucky or unlucky (details of these are given on the pages themselves), you may call on your luck to make the outcome more favourable. But beware! Using luck is a risky business and if you are unlucky, the results could be disastrous.<br>",
       true,
       "The procedure for using your luck is as follows: <span class='rollDiceCommand' onclick='rollDice(\"roll 2d6\">roll two dice</span>. If the number rolled is equal to or less than your current <span class='gameStatsLuck' onclick=''>LUCK</span> score, you have been lucky and the result will go in your favour. If the number rolled is higher than your current <span class='gameStatsLuck' onclick=''>LUCK</span> Score, you have been unlucky and you will be penalized.<br>",
       true,
