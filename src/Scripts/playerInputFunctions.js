@@ -206,13 +206,11 @@ function accessTerminalLog(inputLogIndex) {
     inputLog.at(inputLogIndex);
 }
 
-
-
 /*
 Short Description:
 	This function opens the file picker to save the current gamestate as a .txt file so the user can later load it back into the console
 	
-  //fileHandeling: https://developer.chrome.com/articles/file-system-access/#write-file
+  Source: https://stackoverflow.com/questions/34504050/how-to-convert-selected-html-to-json
 Arguments:
 	None
 	
@@ -220,41 +218,35 @@ Arguments:
 */
 async function saveGame() {
   console.log("Save Game");
-  const fileHandle = getNewFileHandle();
-  // Create a FileSystemWritableFileStream to write to.
-  const writable = await fileHandle.createWritable();
-  // Write the contents of the file to the stream.
-  await writable.write("TEST");
-  // Close the file and write the contents to disk.
-  await writable.close();
+  //  Grab the HTMLElement object
+  var element = document.getElementById("main");
+  //  Turn it into a string
+  var htmlString = element.outerHTML;
+  // format the stings as a collection of JSON objects
+  var data = { main: htmlString };
+
+  //Stringify JSON object
+  var dataStr =
+    "data:text/json;charset=utf-8," +
+    encodeURIComponent(JSON.stringify(data));
+
+  //Generate save name
+  var saveName = 'testSave'
+
+  //Create a <a> tag to use the download attribute of HTML
+  var downloadAnchorNode = document.createElement("a");
+  downloadAnchorNode.setAttribute("href", dataStr);
+  downloadAnchorNode.setAttribute("download", saveName + ".json");
+  downloadAnchorNode.click();
+  downloadAnchorNode.remove();
 }
 
-/*
-Short Description:
-	This function opens the file picker to grab a file handler and returns it
-	
-Arguments:
-	None
-	
-	return = None
-*/
 
-async function getNewFileHandle() {
-  const options = {
-    suggestedName: 'CYOA_save.txt',
-    //TODO: startIn: directoryHandle
-    types: [ //TODO: use .json files instead of .txt
-      {
-        description: "Text Files",
-        accept: {
-          "text/plain": [".txt"],
-        },
-      },
-    ],
-  };
-  const handle = await window.showSaveFilePicker(options); //Grab the handle
-  return handle; //pass it back
+async function loadGame() {
+  console.log("Load Game");
+
 }
+
 /*
 Short Description:
 	Clears all previous entrees by deleting the 'typedRoom' children of 'gameText' 

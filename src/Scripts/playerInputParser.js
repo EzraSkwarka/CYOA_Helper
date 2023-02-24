@@ -10,14 +10,16 @@ Arguments:
 */
 async function readPlayerInput(inputString) {
   //Clearing input box handled by the call
-  while (renderingConsoleEntry) { //stop any ongoing prints
+  while (renderingConsoleEntry) {
+    //stop any ongoing prints
     setInterrupt();
     // console.log("readPlayerInput Sleeping.")
     const result = await sleep(1); //sleep so it doesn't fire to fast
   }
   //Echo input
   renderConsoleEntry([false, inputString], false, true);
-  while (renderingConsoleEntry) { //stop any ongoing prints
+  while (renderingConsoleEntry) {
+    //stop any ongoing prints
     setInterrupt();
     // console.log("readPlayerInput Echo Sleeping.")
     const result = await sleep(1); //sleep so it doesn't fire to fast
@@ -54,9 +56,11 @@ async function readPlayerInput(inputString) {
   } else if (/^cls$/.test(inputString)) {
     clearLogScreen();
   } else if (/^setFont/.test(inputString)) {
-    changeDefaultFont(inputString);  
+    changeDefaultFont(inputString);
   } else if (/^save/.test(inputString)) {
-      saveGame();
+    saveGame();
+  } else if (/^load/.test(inputString)) {
+    loadGame();
   } else {
     renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
   }
