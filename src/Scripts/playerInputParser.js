@@ -206,27 +206,7 @@ function setFont(str) {
   return str;
 }
 
-/*
-Short Description:
-	This function renders a room based of user input
-	
-Arguments:
-	str =  Str, the users input string
-	
-	return = None
-*/
-async function gotoPage(str) {
-  //Attempt to resolve room ref
-  if (/ false$/.test(inputStringLower)) {
-    //Slice off false
-    inputStringLower = String(inputStringLower).slice(0, -6);
-    // console.log("Room Input: " + inputStringLower);
-    requestRoom(inputStringLower, true);
-  } else {
-    // console.log("Room Input: " + inputStringLower);
-    requestRoom(inputStringLower);
-  }
-}
+
 
 /*
 Short Description:

@@ -148,19 +148,18 @@ Arguments:
 	
 	return = None
 */
-async function gotoRoom(str) {
+async function gotoPage(str) {
   //Attempt to resolve room ref
-  if (/ false$/.test(inputStringLower)) {
+  if (/ -false$/.test(str)) {
     //Slice off false
-    inputStringLower = String(inputStringLower).slice(0, -6);
-    console.log("Room Input: " + inputStringLower);
-    requestRoom(inputStringLower, true);
+    str = String(str).slice(0, -6);
+    // console.log("Room Input: " + inputStringLower);
+    requestRoom(str, true);
   } else {
-    console.log("Room Input: " + inputStringLower);
-    requestRoom(inputStringLower);
+    // console.log("Room Input: " + inputStringLower);
+    requestRoom(str);
   }
 }
-
 /*
 Short Description:
 	This function outputs a list of all current books to the console, built manually
@@ -208,7 +207,7 @@ function accessTerminalLog(inputLogIndex) {
 
 /*
 Short Description:
-	This function opens the file picker to save the current gamestate as a .txt file so the user can later load it back into the console
+	This function save the current gameState to localStorage as a JS object
 	
   Source: https://stackoverflow.com/questions/34504050/how-to-convert-selected-html-to-json
 Arguments:
@@ -218,33 +217,26 @@ Arguments:
 */
 async function saveGame() {
   console.log("Save Game");
-  //  Grab the HTMLElement object
-  var element = document.getElementById("main");
-  //  Turn it into a string
-  var htmlString = element.outerHTML;
-  // format the stings as a collection of JSON objects
-  var data = { main: htmlString };
+  //  Grab the HTMLElement objects and bundle them into a data pack
+  var data = {
+    gameText: document.getElementById("gameText").innerHTML,
+    notesBoxTextArea: document.getElementById("notesBoxTextArea").value
+  };
 
-  //Stringify JSON object
-  var dataStr =
-    "data:text/json;charset=utf-8," +
-    encodeURIComponent(JSON.stringify(data));
-
-  //Generate save name
-  var saveName = 'testSave'
-
-  //Create a <a> tag to use the download attribute of HTML
-  var downloadAnchorNode = document.createElement("a");
-  downloadAnchorNode.setAttribute("href", dataStr);
-  downloadAnchorNode.setAttribute("download", saveName + ".json");
-  downloadAnchorNode.click();
-  downloadAnchorNode.remove();
+  //Store the JSON object in localStorage
+  localStorage.setItem("saveState", JSON.stringify(data));
 }
-
 
 async function loadGame() {
   console.log("Load Game");
-
+  if (localStorage.getItem("saveState")) {
+    console.log("Save Game Found");
+    var saveGame = JSON.parse(localStorage.getItem("saveState"));
+    document.getElementById("gameText").innerHTML = saveGame["gameText"];
+    document.getElementById("notesBoxTextArea").textContent = saveGame["notesBoxTextArea"];
+  } else {
+    console.log("err: No Save Game Found");
+  }
 }
 
 /*
