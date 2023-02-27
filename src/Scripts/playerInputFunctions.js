@@ -273,7 +273,7 @@ function deleteSaves() {
   if (localStorage.getItem("saveState")) {
     renderConsoleEntry([true, "Deleting Save Game..."], true);
     localStorage.removeItem("saveState");
-    renderConsoleEntry([true, "Done>"], true);
+    renderConsoleEntry([true, "Done"], true);
   } else {
     renderConsoleEntry([true, "err: No Save Game Found"], true);
   }

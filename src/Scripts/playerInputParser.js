@@ -61,7 +61,9 @@ async function readPlayerInput(inputString) {
     saveGame();
   } else if (/^load/.test(inputString)) {
     loadGame();
-  } else {
+  } else if (/^deletesave/.test(inputString)) {
+    deleteSaves();
+  }else {
     renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
   }
   //will need to make sure room ID 'x' exists and if not output something to the user so they know why it failed
