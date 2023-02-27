@@ -209,7 +209,6 @@ function accessTerminalLog(inputLogIndex) {
 Short Description:
 	This function save the current gameState to localStorage as a JS object
 	
-  Source: https://stackoverflow.com/questions/34504050/how-to-convert-selected-html-to-json
 Arguments:
 	None
 	
@@ -220,22 +219,63 @@ async function saveGame() {
   //  Grab the HTMLElement objects and bundle them into a data pack
   var data = {
     gameText: document.getElementById("gameText").innerHTML,
-    notesBoxTextArea: document.getElementById("notesBoxTextArea").value
+    notesBoxTextArea: document.getElementById("notesBoxTextArea").value,
   };
 
   //Store the JSON object in localStorage
   localStorage.setItem("saveState", JSON.stringify(data));
 }
 
+/*
+Short Description:
+	This function loads the current gameState from localStorage as a JS object then sets the relevant vars and HTML segments
+
+Arguments:
+	None
+	
+	return = None
+*/
 async function loadGame() {
-  console.log("Load Game");
+  //Check is there is a current saveState in localStorage
   if (localStorage.getItem("saveState")) {
-    console.log("Save Game Found");
+    //Load the saveState as a JSON object
     var saveGame = JSON.parse(localStorage.getItem("saveState"));
+    //Update HTML
     document.getElementById("gameText").innerHTML = saveGame["gameText"];
-    document.getElementById("notesBoxTextArea").textContent = saveGame["notesBoxTextArea"];
+    document.getElementById("notesBoxTextArea").textContent =
+      saveGame["notesBoxTextArea"];
+
+    //Set any vars
+
+    //Update console
+    renderConsoleEntry([true, "load"], false, true);
+    renderConsoleEntry([true, "Load game successful"], true);
   } else {
-    console.log("err: No Save Game Found");
+    //Send error message
+    renderConsoleEntry([true, "err: No Save Game Found"], true);
+  }
+}
+
+/*
+Short Description:
+	Clears any currently saved saveGames from Local Storage 
+	
+Arguments:
+	None
+	
+	return = None
+
+*/
+function deleteSaves() {
+  //TODO: Add an are you sure prompt
+
+  //
+  if (localStorage.getItem("saveState")) {
+    renderConsoleEntry([true, "Deleting Save Game..."], true);
+    localStorage.removeItem("saveState");
+    renderConsoleEntry([true, "Done>"], true);
+  } else {
+    renderConsoleEntry([true, "err: No Save Game Found"], true);
   }
 }
 
