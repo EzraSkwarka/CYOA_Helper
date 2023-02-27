@@ -295,22 +295,10 @@ async function loadGame() {
     document.getElementById("gameText").innerHTML = saveGame["gameText"];
     document.getElementById("notesBoxTextArea").textContent =
       saveGame["notesBoxTextArea"];
-
     if (saveGame['bookStyle']) {
-      if (document.getElementById('bookStyle')) {
-        //If a bookStyle element already exists:
-        document.getElementById('bookStyle').innerHTML = saveGame['bookStyle'];
-      } else {
-        //Make a bookStyle Element
-        var bookStyleElement = document.createElement("style");
-        bookStyleElement.setAttribute('type', 'text/css');
-        bookStyleElement.setAttribute('id', 'bookStyle');
-        document.getElementsByTagName('head')[0].appendChild(bookStyleElement);
-
-        //Add the CSS
-        bookStyleElement.innerHTML = saveGame['bookStyle'];
-      }
+      setBookStyle(saveGame['bookStyle'])
     }
+    
     //Set any vars
 
     //Update console
