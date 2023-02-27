@@ -268,7 +268,8 @@ async function saveGame() {
     gameText: document.getElementById("gameText").innerHTML,
     notesBoxTextArea: document.getElementById("notesBoxTextArea").value,
     'inputLog': inputLog,
-    'inputLogIndex': inputLogIndex
+    'inputLogIndex': inputLogIndex,
+    'consoleIDTag': document.getElementById("consoleIDTag").textContent
   };
   //Save book style if it is present
   if (document.getElementById("bookStyle")) {
@@ -311,6 +312,7 @@ async function loadGame() {
     }
     if (saveGame["inputLog"]) {inputLog = saveGame['inputLog']};
     if (saveGame["inputLogIndex"]) {inputLog = saveGame['inputLogIndex']};
+    if (saveGame["consoleIDTag"]) {document.getElementById("consoleIDTag").textContent = saveGame['consoleIDTag']};
     
     //Update console
     renderConsoleEntry([true, "load"], false, true);
