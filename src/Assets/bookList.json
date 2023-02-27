@@ -6,6 +6,8 @@
   true,
   "<span class='clickableBook' onclick='openBook(\"load Assets/Test Adventures/small_example_adventure_text_array.json\")'>Assets/Test Adventures/small_example_adventure_text_array.json</span><br>",
   true,
+  "<span class='clickableBook' onclick='openBook(\"load Assets/Test Adventures/tutorial_book.json\")'>Assets/Test Adventures/tutorial_book.json</span><br>",
+  true,
   "<br>",
   true,
   "Fighting Fantasy Gamebooks:<br>",
