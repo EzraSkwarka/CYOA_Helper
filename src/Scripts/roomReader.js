@@ -28,8 +28,6 @@ function createConsoleEntry() {
   mainContainer.appendChild(div);
   //Set Class
   div.className = "typedRoom";
-  //Update DOM
-  consoleFontSize = setFont("fontsize " + consoleFontSize);
 
   return div;
 }
@@ -316,24 +314,6 @@ function distanceToClosingTag(str, base) {
 
 /*
 Short Description:
-	Called from playerInput.js to stop a room render
-	
-Arguments:
-	None
-	
-	return = None
-*/
-function setInterrupt() {
-  console.log("Calling for early exit.");
-  interruptRender = true;
-  if (renderingConsoleEntry) {
-    waitForInterrupt = true;
-  }
-  return true;
-}
-
-/*
-Short Description:
 	Used to handle room clicks from the text log smoothly by calling the appropriate log and print functions
 	
 Arguments:
@@ -365,21 +345,6 @@ function sleep(ms = typeSpeed) {
 
 /*
 Short Description:
-	Modifies the default typeSpeed used in the sleep function, my not be strictly needed
-	
-Arguments:
-	str = String, passed from playerInput.js
-	
-	return = None
-*/
-function setSpeed(str) {
-  // console.log("Old: " + typeSpeed);
-  typeSpeed = inputStringLower.slice(9);
-  // console.log(typeSpeed);
-}
-
-/*
-Short Description:
 	loads the book specific css code and applies is
 	
 Arguments:
@@ -388,14 +353,13 @@ Arguments:
 	return = None
 */
 function setBookStyle(cssText) {
-  if (loadedBookStyle != "") {
-    document.getElementsByTagName("head")[0].removeChild(loadedBookStyle);
-    loadedBookStyle = "";
-  } //does not work, but is the idea of what I'm going for
+  //Delete old book Style
+  if (document.getElementById("bookStyle")) {
+    document.getElementById("bookStyle").remove();
+  }
   var style = document.createElement("style");
-  style.type = "text/css";
-  style.id = "bookStyle";
+  style.setAttribute('type', 'text/css');
+  style.setAttribute('id', 'bookStyle');
   style.innerHTML = cssText;
-  loadedBookStyle = style;
   document.getElementsByTagName("head")[0].appendChild(style);
 }
