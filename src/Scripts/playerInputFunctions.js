@@ -68,7 +68,7 @@ function openBook(str) {
   fetch(bookString, { method: "HEAD" }).then((res) => {
     if (res.ok) {
       loadedBookPath = String(bookString);
-      renderConsoleEntry([false, "Load '" + bookString + "' success."]);
+      onBookLoad(bookString);
     } else {
       renderConsoleEntry([
         false,
@@ -270,7 +270,9 @@ async function saveGame() {
     gameText: document.getElementById("gameText").innerHTML,
     notesBoxTextArea: document.getElementById("notesBoxTextArea").value,
   };
-
+  if (document.getElementById("bookStyle")) {
+    data['bookStyle'] = document.getElementById("bookStyle").innerHTML
+  }
   //Store the JSON object in localStorage
   localStorage.setItem("saveState", JSON.stringify(data));
 }
@@ -294,6 +296,21 @@ async function loadGame() {
     document.getElementById("notesBoxTextArea").textContent =
       saveGame["notesBoxTextArea"];
 
+    if (saveGame['bookStyle']) {
+      if (document.getElementById('bookStyle')) {
+        //If a bookStyle element already exists:
+        document.getElementById('bookStyle').innerHTML = saveGame['bookStyle'];
+      } else {
+        //Make a bookStyle Element
+        var bookStyleElement = document.createElement("style");
+        bookStyleElement.setAttribute('type', 'text/css');
+        bookStyleElement.setAttribute('id', 'bookStyle');
+        document.getElementsByTagName('head')[0].appendChild(bookStyleElement);
+
+        //Add the CSS
+        bookStyleElement.innerHTML = saveGame['bookStyle'];
+      }
+    }
     //Set any vars
 
     //Update console
