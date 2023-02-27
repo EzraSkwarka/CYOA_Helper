@@ -262,7 +262,7 @@ Arguments:
 	return = None
 */
 async function saveGame() {
-  console.log("Save Game");
+  renderConsoleEntry([true, "Save successful!"], true);
   //  Grab the HTMLElement objects and bundle them into a data pack
   var data = {
     gameText: document.getElementById("gameText").innerHTML,
@@ -314,7 +314,7 @@ async function loadGame() {
     
     //Update console
     renderConsoleEntry([true, "load"], false, true);
-    renderConsoleEntry([true, "Load game successful"], true);
+    renderConsoleEntry([true, "Load game successful!"], true);
   } else {
     //Send error message
     renderConsoleEntry([true, "err: No Save Game Found"], true);

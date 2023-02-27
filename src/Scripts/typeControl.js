@@ -15,11 +15,17 @@ onkeydown = (event) => {
     document.getElementById("inputBoxTextArea").focus();
 
   }
-
-  if (ctrlDepressed && event.key == 'c' && activeElement != document.getElementById("notesBoxTextArea")) {
+  if (ctrlDepressed && activeElement != document.getElementById("notesBoxTextArea")) {
+  if (event.key == 'c') {
+    //Stop Command
     setInterrupt();
     renderConsoleEntry([false, "^C"])
+  } else if (event.key == 's') {
+    //Save Command
+    renderConsoleEntry([false, "^S"])
+    readPlayerInput('save')
   }
+}
 
 
 };
