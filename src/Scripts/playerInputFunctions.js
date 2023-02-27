@@ -78,7 +78,6 @@ function openBook(str) {
   });
 }
 
-
 /*
 Short Description:
 	This function rolls dice based on the users input
@@ -188,7 +187,6 @@ function setInterrupt() {
   return true;
 }
 
-
 /*
 Short Description:
 	Clears all previous entrees by deleting the 'typedRoom' children of 'gameText' 
@@ -269,10 +267,18 @@ async function saveGame() {
   var data = {
     gameText: document.getElementById("gameText").innerHTML,
     notesBoxTextArea: document.getElementById("notesBoxTextArea").value,
+    'inputLog': inputLog,
+    'inputLogIndex': inputLogIndex
   };
+  //Save book style if it is present
   if (document.getElementById("bookStyle")) {
-    data['bookStyle'] = document.getElementById("bookStyle").innerHTML
+    data["bookStyle"] = document.getElementById("bookStyle").innerHTML;
   }
+  // Save loaded book path if there is one, can cause save issues if the book changes path
+  if (loadedBookPath != "") {
+    data["loadedBookPath"] = loadedBookPath;
+  }
+
   //Store the JSON object in localStorage
   localStorage.setItem("saveState", JSON.stringify(data));
 }
@@ -295,12 +301,17 @@ async function loadGame() {
     document.getElementById("gameText").innerHTML = saveGame["gameText"];
     document.getElementById("notesBoxTextArea").textContent =
       saveGame["notesBoxTextArea"];
-    if (saveGame['bookStyle']) {
-      setBookStyle(saveGame['bookStyle'])
+    if (saveGame["bookStyle"]) {
+      setBookStyle(saveGame["bookStyle"]);
     }
-    
-    //Set any vars
 
+    //Set any vars
+    if (saveGame["loadedBookPath"]) {
+      loadedBookPath = saveGame["loadedBookPath"];
+    }
+    if (saveGame["inputLog"]) {inputLog = saveGame['inputLog']};
+    if (saveGame["inputLogIndex"]) {inputLog = saveGame['inputLogIndex']};
+    
     //Update console
     renderConsoleEntry([true, "load"], false, true);
     renderConsoleEntry([true, "Load game successful"], true);
@@ -332,4 +343,3 @@ function deleteSaves() {
     renderConsoleEntry([true, "err: No Save Game Found"], true);
   }
 }
-

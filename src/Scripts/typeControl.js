@@ -30,8 +30,8 @@ onkeyup = (event) => {
 
 //Listener events for input box
 var input = document.getElementById("inputBoxTextArea");
-// var inputLog = [""]; //Moved to index.html for save serializer
-// var inputLogIndex = 0;
+var inputLog = [""]; //Moved to index.html for save serializer
+var inputLogIndex = 0;
 input.addEventListener("keyup", function (event) {
   if (event.key == "Enter") {
     event.preventDefault();
