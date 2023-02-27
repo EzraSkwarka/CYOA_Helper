@@ -1,4 +1,24 @@
-//
+/*
+Short Description:
+	This function renders a room based of user input
+	
+Arguments:
+	str =  Str, the users input string
+	
+	return = None
+*/
+async function gotoPage(str) {
+  //Attempt to resolve room ref
+  if (/ -false$/.test(str)) {
+    //Slice off false
+    str = String(str).slice(0, -6);
+    // console.log("Room Input: " + inputStringLower);
+    requestRoom(str, true);
+  } else {
+    // console.log("Room Input: " + inputStringLower);
+    requestRoom(str);
+  }
+}
 
 /*
 Short Description:
@@ -121,48 +141,6 @@ function rollDice(str) {
 
 /*
 Short Description:
-	This function rolls dice based on the users input
-	
-Arguments:
-	str =  Str, the users input string
-	
-	return = None
-*/
-function setFont(str) {
-  str = String(str).slice(9);
-  // console.log("fontsize: " + str);
-  var rooms = document.querySelectorAll(".consoleEntry");
-  rooms.forEach((room) => {
-    room.style.fontSize = str;
-  });
-  consoleFontSize = str;
-  return str;
-}
-
-/*
-Short Description:
-	This function renders a room based of user input
-	
-Arguments:
-	str =  Str, the users input string
-	
-	return = None
-*/
-async function gotoRoom(str) {
-  //Attempt to resolve room ref
-  if (/ false$/.test(inputStringLower)) {
-    //Slice off false
-    inputStringLower = String(inputStringLower).slice(0, -6);
-    console.log("Room Input: " + inputStringLower);
-    requestRoom(inputStringLower, true);
-  } else {
-    console.log("Room Input: " + inputStringLower);
-    requestRoom(inputStringLower);
-  }
-}
-
-/*
-Short Description:
 	This function outputs a list of all current books to the console, built manually
 	
 Arguments:
@@ -193,16 +171,20 @@ function listBooks() {
 
 /*
 Short Description:
-	This function responds to a listener to the input box so the user can press the up arrow key to load their previous command(s)
+	Called from playerInput.js to stop a room render
 	
 Arguments:
-	inputLogIndex; int, the target entry to load
+	None
 	
 	return = None
 */
-function accessTerminalLog(inputLogIndex) {
-  //inputBox
-  document.getElementById("inputBoxTextArea").value = inputLog.at(inputLogIndex);
+function setInterrupt() {
+  console.log("Calling for early exit.");
+  interruptRender = true;
+  if (renderingConsoleEntry) {
+    waitForInterrupt = true;
+  }
+  return true;
 }
 
 /*
@@ -268,4 +250,96 @@ function changeDefaultFont(choice) {
     renderConsoleEntry(knownFontTextArray, true, false);
   }
   return;
+}
+
+/*
+Short Description:
+	This function save the current gameState to localStorage as a JS object
+	
+Arguments:
+	None
+	
+	return = None
+*/
+async function saveGame() {
+  renderConsoleEntry([true, "Save successful!"], true);
+  //  Grab the HTMLElement objects and bundle them into a data pack
+  var data = {
+    gameText: document.getElementById("gameText").innerHTML,
+    notesBoxTextArea: document.getElementById("notesBoxTextArea").value,
+    'inputLog': inputLog,
+    'inputLogIndex': inputLogIndex
+  };
+  //Save book style if it is present
+  if (document.getElementById("bookStyle")) {
+    data["bookStyle"] = document.getElementById("bookStyle").innerHTML;
+  }
+  // Save loaded book path if there is one, can cause save issues if the book changes path
+  if (loadedBookPath != "") {
+    data["loadedBookPath"] = loadedBookPath;
+  }
+
+  //Store the JSON object in localStorage
+  localStorage.setItem("saveState", JSON.stringify(data));
+}
+
+/*
+Short Description:
+	This function loads the current gameState from localStorage as a JS object then sets the relevant vars and HTML segments
+
+Arguments:
+	None
+	
+	return = None
+*/
+async function loadGame() {
+  //Check is there is a current saveState in localStorage
+  if (localStorage.getItem("saveState")) {
+    //Load the saveState as a JSON object
+    var saveGame = JSON.parse(localStorage.getItem("saveState"));
+    //Update HTML
+    document.getElementById("gameText").innerHTML = saveGame["gameText"];
+    document.getElementById("notesBoxTextArea").textContent =
+      saveGame["notesBoxTextArea"];
+    if (saveGame["bookStyle"]) {
+      setBookStyle(saveGame["bookStyle"]);
+    }
+
+    //Set any vars
+    if (saveGame["loadedBookPath"]) {
+      loadedBookPath = saveGame["loadedBookPath"];
+    }
+    if (saveGame["inputLog"]) {inputLog = saveGame['inputLog']};
+    if (saveGame["inputLogIndex"]) {inputLog = saveGame['inputLogIndex']};
+    
+    //Update console
+    renderConsoleEntry([true, "load"], false, true);
+    renderConsoleEntry([true, "Load game successful!"], true);
+  } else {
+    //Send error message
+    renderConsoleEntry([true, "err: No Save Game Found"], true);
+  }
+}
+
+/*
+Short Description:
+	Clears any currently saved saveGames from Local Storage 
+	
+Arguments:
+	None
+	
+	return = None
+
+*/
+function deleteSaves() {
+  //TODO: Add an are you sure prompt
+
+  //
+  if (localStorage.getItem("saveState")) {
+    renderConsoleEntry([true, "Deleting Save Game..."], true);
+    localStorage.removeItem("saveState");
+    renderConsoleEntry([true, "Done"], true);
+  } else {
+    renderConsoleEntry([true, "err: No Save Game Found"], true);
+  }
 }

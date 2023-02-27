@@ -5,8 +5,15 @@
     <!-- Scripts -->
     <script type="text/javascript" src="Scripts/roomReader.js"></script>
     <script type="text/javascript" src="Scripts/playerInputParser.js"></script>
-    <script type="text/javascript" src="Scripts/playerInputFunctions.js"></script>
-    <script type="text/javascript" src="Scripts/collapsibleNotes.js" defer></script>
+    <script
+      type="text/javascript"
+      src="Scripts/playerInputFunctions.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="Scripts/collapsibleNotes.js"
+      defer
+    ></script>
     <script type="text/javascript" src="Scripts/typeControl.js" defer></script>
 
     <!-- Style Sheets -->
@@ -36,11 +43,17 @@ An excellent place to keep notes while you play, does not save between sessions 
       <div id="gameText"></div>
       <!-- This is the players input box, the main way for them to interact -->
       <div id="inputContianer">
+
         <div id="inputBox" class="consoleEntry">
           <!-- Display Text -->
           <span id="consoleID">[home ~/]></span>
           <!-- Input Box -->
-          <input type="text" spellcheck="false" id="inputBoxTextArea" autofocus />
+          <input
+            type="text"
+            spellcheck="false"
+            id="inputBoxTextArea"
+            autofocus
+          />
           <!-- Go Box -->
           <input
             id="inputTriggerButton"
@@ -68,9 +81,9 @@ An excellent place to keep notes while you play, does not save between sessions 
         true,
         "If you have any questions, comments or concerns, feel free to leave some feedback on the GitHub page ",
         false,
-        "<a href='https://github.com/EzraSkwarka/CYOA_Helper' target='_blank'>here</a> ",
+        "<a href='https://github.com/EzraSkwarka/CYOA_Helper ' target='_blank'>here</a> ",
         true,
-        "or you can message me via Discord, my user name is Skwarka#0047"
+        "or you can message me via Discord, my user name is Skwarka#0047",
       ];
       renderConsoleEntry(welcomeArray, true);
     </script>

@@ -15,11 +15,17 @@ onkeydown = (event) => {
     document.getElementById("inputBoxTextArea").focus();
 
   }
-
-  if (ctrlDepressed && event.key == 'c' && activeElement != document.getElementById("notesBoxTextArea")) {
+  if (ctrlDepressed && activeElement != document.getElementById("notesBoxTextArea")) {
+  if (event.key == 'c') {
+    //Stop Command
     setInterrupt();
     renderConsoleEntry([false, "^C"])
+  } else if (event.key == 's') {
+    //Save Command
+    renderConsoleEntry([false, "^S"])
+    readPlayerInput('save')
   }
+}
 
 
 };
@@ -30,7 +36,7 @@ onkeyup = (event) => {
 
 //Listener events for input box
 var input = document.getElementById("inputBoxTextArea");
-var inputLog = [""];
+var inputLog = [""]; //Moved to index.html for save serializer
 var inputLogIndex = 0;
 input.addEventListener("keyup", function (event) {
   if (event.key == "Enter") {
@@ -49,3 +55,18 @@ input.addEventListener("keyup", function (event) {
     accessTerminalLog(0 - inputLogIndex);
   }
 });
+
+/*
+Short Description:
+	This function responds to a listener to the input box so the user can press the up arrow key to load their previous command(s)
+	
+Arguments:
+	inputLogIndex; int, the target entry to load
+	
+	return = None
+*/
+function accessTerminalLog(inputLogIndex) {
+  //inputBox
+  document.getElementById("inputBoxTextArea").value =
+    inputLog.at(inputLogIndex);
+}
