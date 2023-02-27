@@ -60,6 +60,11 @@ function onBookLoad(bookString) {
           // console.log(data[i].css);
           cssString = data[i].css.toString();
         }
+        if (data[i].hasOwnProperty('tag')) {
+          document.getElementById('consoleIDTag').textContent = data[i].tag;
+        } else {
+          document.getElementById('consoleIDTag').textContent = "home";
+        }
       }
     }
     if (cssString == "") {
