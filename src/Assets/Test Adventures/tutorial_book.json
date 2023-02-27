@@ -1,43 +1,48 @@
 [
-    {
-       "short_name": "Book Meta Data",
-       "ID": "Meta",
-   
-       "css": "",
-       "tag": "tutorial"
-     },
-     {
-       "short_name": "",
-       "ID": "on-load",
-   
-       "text_array": [
-         true,
-         "Hello! My name is Skwarka and I want to thank you by checking out my project!!!",
-         true,
-         "<br><br> I'm not gonna spend much time talking about it here, but if you have any questions, comments or concerns, feel free to leave some feedback on the GitHub page <a href='https://github.com/EzraSkwarka/CYOA_Helper ' target='_blank'>here</a> or you can message me via Discord, my user name is Skwarka#0047",
-         true,
-         "<br><br><span class='introHeading'>Getting Started</span>"
+  {
+    "short_name": "Book Meta Data",
+    "ID": "Meta",
 
-       ]
-     },
-   {
-     "short_name": "Example Room Object, does not need to be unique, just serves as a way to help keep the room human trackable",
-     "ID": -1,
-     "text_array": [
-       true,
-       "The text        to display as the player enters the room.",
-       false,
-       "<br>",
-       true,
-       "The text to display as the player gets ready to leave the room and lists where they can go. For instance, I'd recommend room ",
-       true,
-       "<span class='roomNumber' onclick='clickPage(1)'>(#1)</span>. ",
-       true,
-       "What happens if you put a line-break in the middle <br> of a line? <a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> <br>",
-       true,
-       "<span style='font-style: italic;'><a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> </span>",
-       true,
-       "<br><br><table class='combatTable'><thead><tr><td>NAME</td><td>SKILL</td><td>STAMINA</td></tr></thead><tbody><tr><td>BARBARIAN</td><td>7</td><td>6</td></tr></tbody></table>"
-     ]
-   }
+    "css": "",
+    "tag": "tutorial"
+  },
+  {
+    "short_name": "Welcome",
+    "ID": "on-load",
+
+    "text_array": [
+      true,
+      "Hello! My name is Skwarka and I want to thank you by checking out my project!!!",
+      true,
+      "<br><br> I'm not gonna spend much time talking about it here, but if you have any questions, comments or concerns, feel free to leave some feedback on the GitHub page <a href='https://github.com/EzraSkwarka/CYOA_Helper ' target='_blank'>here</a> or you can message me via Discord, my user name is Skwarka#0047",
+      true,
+      "<br><br><span class='introHeading'>Getting Started</span>",
+      true,
+      "If you're reading this it either means you told me you where new here or that you needed a refresher. What you are currently reading is this books <span class='clickabePage'>'on-load'</span> room. As a player, all you need to know is that it is the room that loads on it's own once you open a new book. I'll tell you how to open new books later once you are ready to move on from this one.<br>",
+      true,
+      "Before we get too far I want to point out the <span class='importantText'>'Notes'</span> tab in the top right corner. Hit the plus sign to open it and play around with it for a bit to get used to it. Through out basically every gamebook you are going to want to take notes, and while you could take them down with pen and paper, you can also type them up into the notes box. As long as you save the game the notes will stay with you. Even if you close the window you will be able to load them right back!<br>",
+      true,
+      "Once you are comfortable with the notes tab, <span class='clickablePage' onclick='goto(1)'>click here</span>!"
+    ]
+  },
+  {
+    "short_name": "Example Room Object, does not need to be unique, just serves as a way to help keep the room human trackable",
+    "ID": -1,
+    "text_array": [
+      true,
+      "The text        to display as the player enters the room.",
+      false,
+      "<br>",
+      true,
+      "The text to display as the player gets ready to leave the room and lists where they can go. For instance, I'd recommend room ",
+      true,
+      "<span class='roomNumber' onclick='clickPage(1)'>(#1)</span>. ",
+      true,
+      "What happens if you put a line-break in the middle <br> of a line? <a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> <br>",
+      true,
+      "<span style='font-style: italic;'><a href='https://www.fightingfantasy.com/_files/ugd/29d6b9_9cfa3942217942b58e5dcd39608200dd.pdf' target='_blank'>DOWNLOAD</a> </span>",
+      true,
+      "<br><br><table class='combatTable'><thead><tr><td>NAME</td><td>SKILL</td><td>STAMINA</td></tr></thead><tbody><tr><td>BARBARIAN</td><td>7</td><td>6</td></tr></tbody></table>"
+    ]
+  }
 ]
