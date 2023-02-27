@@ -24,31 +24,18 @@ async function readPlayerInput(inputString) {
     // console.log("readPlayerInput Echo Sleeping.")
     const result = await sleep(1); //sleep so it doesn't fire to fast
   }
-  //Simplify input
-  inputStringLower = inputString.toLowerCase();
-
-  //Test Cases
-
+  
+  //Parse Logic
   if (/^goto /.test(inputString)) {
-    //Slice off the goto of the command
-    inputStringLower = String(inputString).slice(5);
-    gotoPage(inputStringLower);
+    gotoPage(inputString.slice(5));
   } else if (/^turn to /.test(inputString)) {
-    //Slice off the turn to of the command
-    inputStringLower = String(inputString).slice(8);
-    gotoPage(inputStringLower);
+    gotoPage(inputString.slice(8));
   } else if (/help/.test(inputString)) {
     helpCommand(inputString);
   } else if (/^open /.test(inputString)) {
     openBook(inputString);
   } else if (/^roll/.test(inputString)) {
     rollDice(inputString);
-  } else if (/^setSpeed \d+$/.test(inputString)) {
-    setSpeed(inputString);
-  } else if (/^reload$/.test(inputString)) {
-    window.location.reload();
-    // } else if (/^fontsize \d{1,}(px|em)$/.test(inputStringLower)) {
-    // setFont(inputStringLower);
   } else if (/^ls -book/.test(inputString)) {
     listBooks();
   } else if (/^stop$/.test(inputString)) {
@@ -63,9 +50,14 @@ async function readPlayerInput(inputString) {
     loadGame();
   } else if (/^deletesave/.test(inputString)) {
     deleteSaves();
-  }else {
+  } 
+  // Don't have corresponding functions
+  else if (/^setSpeed \d+$/.test(inputString)) {
+    typeSpeed = inputStringLower.slice(9);
+  } else if (/^reload$/.test(inputString)) {
+    window.location.reload();
+  } else {
     renderConsoleEntry([true, "ERROR: INVALID INPUT"], true, false);
   }
   //will need to make sure room ID 'x' exists and if not output something to the user so they know why it failed
 }
-

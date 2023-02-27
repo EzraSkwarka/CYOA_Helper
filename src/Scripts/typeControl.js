@@ -49,3 +49,18 @@ input.addEventListener("keyup", function (event) {
     accessTerminalLog(0 - inputLogIndex);
   }
 });
+
+/*
+Short Description:
+	This function responds to a listener to the input box so the user can press the up arrow key to load their previous command(s)
+	
+Arguments:
+	inputLogIndex; int, the target entry to load
+	
+	return = None
+*/
+function accessTerminalLog(inputLogIndex) {
+  //inputBox
+  document.getElementById("inputBoxTextArea").value =
+    inputLog.at(inputLogIndex);
+}

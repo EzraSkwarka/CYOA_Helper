@@ -314,23 +314,7 @@ function distanceToClosingTag(str, base) {
   }
 }
 
-/*
-Short Description:
-	Called from playerInput.js to stop a room render
-	
-Arguments:
-	None
-	
-	return = None
-*/
-function setInterrupt() {
-  console.log("Calling for early exit.");
-  interruptRender = true;
-  if (renderingConsoleEntry) {
-    waitForInterrupt = true;
-  }
-  return true;
-}
+
 
 /*
 Short Description:
@@ -363,20 +347,7 @@ function sleep(ms = typeSpeed) {
   });
 }
 
-/*
-Short Description:
-	Modifies the default typeSpeed used in the sleep function, my not be strictly needed
-	
-Arguments:
-	str = String, passed from playerInput.js
-	
-	return = None
-*/
-function setSpeed(str) {
-  // console.log("Old: " + typeSpeed);
-  typeSpeed = inputStringLower.slice(9);
-  // console.log(typeSpeed);
-}
+
 
 /*
 Short Description:
