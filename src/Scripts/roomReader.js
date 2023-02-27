@@ -194,6 +194,7 @@ async function renderConsoleEntry(
       var inATag = false;
 
       var tagDict = {
+        // "<img ": false,
         "<span": false,
         "<a": false,
         "<div": false,
@@ -208,6 +209,7 @@ async function renderConsoleEntry(
         // "<thead>": false,
         "<table": false,
         // "<table>": false,
+        
       };
       for (n; n < textString.length; ) {
         //Early exit check
@@ -258,6 +260,13 @@ async function renderConsoleEntry(
         if (textString.slice(n, n + 4) == "<br>") {
           tempString += "<br>";
           n += 4;
+          didNothing = false;
+        }
+
+        if (textString.slice(n, n + 5) == "<img ") {
+          var x = distanceToClosingTag(textString, n) + 1
+          tempString += textString.slice(n, n + x);
+          n += x;
           didNothing = false;
         }
 
