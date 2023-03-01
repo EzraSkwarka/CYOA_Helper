@@ -13,6 +13,8 @@ To get started just download the latest release and boot it up. If you're unsure
 - Book loading and parsing
 - Terminal interaction
 - Book-specific Custom Style packs
+- A way to save/load the current notes
+- A way to save/load the current terminal output
 - A Collapsible Notes Section
 - A fully playable adventure
 - A write-up on how to build custom books
@@ -21,8 +23,7 @@ To get started just download the latest release and boot it up. If you're unsure
 ## Planned features
 
 - Tab-completion in the terminal interface
-- A way to save/load the current notes
-- A way to save/load the current terminal output
+- Support for multiple save files
 - A better experience for creating new books
   - There may be an external tool for this, it is just a JSON file after all
 
